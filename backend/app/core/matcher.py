@@ -12,17 +12,23 @@ SCORING_VERSION = "v1"
 
 
 @dataclass(frozen=True)
-class MatchResult:
-    matched_skills: list[str]
-    missing_skills: list[str]
+class MatchExplanation:
     skill_score: float
     semantic_score: float
     experience_score: Optional[float]
     education_score: Optional[float]
     location_mode_score: Optional[float]
+    weights: dict[str, float]
+    final_score: float
+
+
+@dataclass(frozen=True)
+class MatchResult:
+    matched_skills: list[str]
+    missing_skills: list[str]
+    explanation: MatchExplanation
     final_score: float
     scoring_version: str
-    explanation: str
 
 
 def _skill_coverage(
@@ -92,14 +98,14 @@ def _location_mode_score(
     candidate: SkillProfile,
     target: SkillProfile,
 ) -> Optional[float]:
-    values_available = (
-        candidate.location,
-        target.location,
-        candidate.work_mode,
-        target.work_mode,
-    )
-
-    if not any(values_available):
+    if not any(
+        (
+            candidate.location,
+            target.location,
+            candidate.work_mode,
+            target.work_mode,
+        )
+    ):
         return None
 
     checks: list[float] = []
@@ -131,11 +137,10 @@ def match_profiles(
     target: SkillProfile,
 ) -> MatchResult:
     """
-    Reusable profile matcher.
+    Reusable matching engine.
 
-    The first argument is treated as the candidate/source profile and the
-    second as the required target profile. The same function therefore
-    supports candidate -> job and recruiter/job -> candidate comparisons.
+    candidate -> target supports both applicant-to-job and recruiter-side
+    candidate comparisons by reusing the same scoring implementation.
     """
     skill_score, matched, missing = _skill_coverage(
         candidate,
@@ -172,28 +177,28 @@ def match_profiles(
 
     final_score = calculate_weighted_score(components)
 
-    explanation = (
-        f"Skill coverage={skill_score:.4f}; "
-        f"semantic similarity={semantic_score:.4f}; "
-        f"experience="
-        f"{experience_score if experience_score is not None else 'missing'}; "
-        f"education="
-        f"{education_score if education_score is not None else 'missing'}; "
-        f"location/work-mode="
-        f"{location_mode_score if location_mode_score is not None else 'missing'}; "
-        f"final={final_score:.4f}; "
-        f"version={SCORING_VERSION}"
-    )
+    weights = {
+        "skill": 0.60,
+        "semantic": 0.20,
+        "experience": 0.10,
+        "education": 0.05,
+        "location_mode": 0.05,
+    }
 
-    return MatchResult(
-        matched_skills=matched,
-        missing_skills=missing,
+    explanation = MatchExplanation(
         skill_score=skill_score,
         semantic_score=semantic_score,
         experience_score=experience_score,
         education_score=education_score,
         location_mode_score=location_mode_score,
+        weights=weights,
+        final_score=final_score,
+    )
+
+    return MatchResult(
+        matched_skills=matched,
+        missing_skills=missing,
+        explanation=explanation,
         final_score=final_score,
         scoring_version=SCORING_VERSION,
-        explanation=explanation,
     )
