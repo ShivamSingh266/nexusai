@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env
+.env
+*.db
+
+# ML
+ml/models/*
+!ml/models/.gitkeep
+
+# OS
+.DS_Store
