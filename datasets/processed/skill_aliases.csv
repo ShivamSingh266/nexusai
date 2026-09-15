@@ -1,0 +1,2888 @@
+alias,skill_id,confidence
+C++ framework,SKILL_0001,1.0
+C++ software,SKILL_0001,1.0
+EU data protection,SKILL_0002,1.0
+General Data Protection Regulation,SKILL_0002,1.0
+knowledge of GDPR,SKILL_0002,1.0
+SSL,SKILL_0003,1.0
+TLS,SKILL_0003,1.0
+asymmetric cryptography,SKILL_0003,1.0
+public-key cryptography,SKILL_0003,1.0
+secure sockets layer,SKILL_0003,1.0
+symmetric-key algorithm,SKILL_0003,1.0
+transport layer security,SKILL_0003,1.0
+ICT architecture and infrastructure,SKILL_0004,1.0
+ICT infrastructure and operations,SKILL_0004,1.0
+IT architecture and infrastructure,SKILL_0004,1.0
+IT infrastructure and operations,SKILL_0004,1.0
+ICT network security threats,SKILL_0005,1.0
+information systems security risks,SKILL_0005,1.0
+ICT networking devices,SKILL_0006,1.0
+computer networking devices,SKILL_0006,1.0
+performance analysis techniques,SKILL_0007,1.0
+CMM,SKILL_0008,1.0
+CMMI (Capability Maturity Model Integrated),SKILL_0008,1.0
+Quality maturity models,SKILL_0008,1.0
+software process quality,SKILL_0008,1.0
+ICT recovery methods,SKILL_0009,1.0
+ICT recovery techniques for corrupted data,SKILL_0009,1.0
+ICT recovery techniques for corrupted software components,SKILL_0009,1.0
+ICT recovery techniques for damaged and corrupted software components,SKILL_0009,1.0
+ICT recovery techniques for hardware,SKILL_0009,1.0
+ICT protection,SKILL_0010,1.0
+ICT security,SKILL_0010,1.0
+ICT welfare maintenance,SKILL_0010,1.0
+ICT well-being maintenance,SKILL_0010,1.0
+information and communication technologies safety,SKILL_0010,1.0
+information and communication technology safety,SKILL_0010,1.0
+ICT law,SKILL_0011,1.0
+cyber-security regulation,SKILL_0011,1.0
+legal aspects of computing,SKILL_0011,1.0
+network and information security legislation,SKILL_0011,1.0
+ICT security compliances,SKILL_0012,1.0
+ICT security frameworks,SKILL_0012,1.0
+IT security compliances,SKILL_0012,1.0
+IT security frameworks,SKILL_0012,1.0
+IT security standards,SKILL_0012,1.0
+cyber security compliances,SKILL_0012,1.0
+cyber security frameworks,SKILL_0012,1.0
+cyber security standards,SKILL_0012,1.0
+information security compliances,SKILL_0012,1.0
+information security frameworks,SKILL_0012,1.0
+information security standards,SKILL_0012,1.0
+addressing problems critically,SKILL_0013,1.0
+critically address problems,SKILL_0013,1.0
+critically addressing problems,SKILL_0013,1.0
+think about problems critically,SKILL_0013,1.0
+think critically about problems,SKILL_0013,1.0
+thinking about problems critically,SKILL_0013,1.0
+thinking critically about problems,SKILL_0013,1.0
+advise on management of security risks,SKILL_0014,1.0
+advise on security risks,SKILL_0014,1.0
+advising on security risk management,SKILL_0014,1.0
+make recommendations about security risk management,SKILL_0014,1.0
+offer suggestions on security risk management,SKILL_0014,1.0
+analyse information and communications technology system,SKILL_0015,1.0
+analyze ICT system,SKILL_0015,1.0
+analyze information and communications technology system,SKILL_0015,1.0
+assess ICT system,SKILL_0015,1.0
+assess information and communications technology system,SKILL_0015,1.0
+administer company policies,SKILL_0016,1.0
+apply company policy,SKILL_0016,1.0
+applying company policies,SKILL_0016,1.0
+company policy application,SKILL_0016,1.0
+employ company policies,SKILL_0016,1.0
+implement company policies,SKILL_0016,1.0
+utilise company policies,SKILL_0016,1.0
+administer conflict management,SKILL_0017,1.0
+application of conflict management,SKILL_0017,1.0
+applying conflict management,SKILL_0017,1.0
+conflict management application,SKILL_0017,1.0
+employ conflict management,SKILL_0017,1.0
+implement conflict management,SKILL_0017,1.0
+utilise conflict management,SKILL_0017,1.0
+capture ICT knowledge,SKILL_0018,1.0
+capture IT knowledge,SKILL_0018,1.0
+methods for assessment of risks and threats,SKILL_0019,1.0
+methods for handling security-related information,SKILL_0019,1.0
+principles for handling security-related information,SKILL_0019,1.0
+principles of assessment of risks and threats,SKILL_0019,1.0
+techniques for assessment of risks and threats,SKILL_0019,1.0
+techniques for handling security-related information,SKILL_0019,1.0
+ICT security threats,SKILL_0020,1.0
+cybersecurity threats,SKILL_0020,1.0
+information security threats,SKILL_0020,1.0
+ensure ICT system quality,SKILL_0021,1.0
+ensure ICT systems meet required standards,SKILL_0021,1.0
+audit procedures,SKILL_0022,1.0
+battery audit process,SKILL_0022,1.0
+HVAC systems,SKILL_0023,1.0
+M&E systems,SKILL_0023,1.0
+building M&E systems,SKILL_0023,1.0
+building monitoring systems,SKILL_0023,1.0
+building monitoring technology systems,SKILL_0023,1.0
+lighting systems,SKILL_0023,1.0
+systems of building monitoring technology,SKILL_0023,1.0
+collect cyber defence intelligence,SKILL_0024,1.0
+collect data for cyber defence through DNS request logs,SKILL_0024,1.0
+collect data for cyber defence through online trade records,SKILL_0024,1.0
+gather cyber defence data,SKILL_0024,1.0
+gather cyber defence intelligence,SKILL_0024,1.0
+communicate to stakeholders,SKILL_0025,1.0
+communicate with providers of business support services,SKILL_0025,1.0
+communicating with stakeholders,SKILL_0025,1.0
+inform stakeholders of ideas and objectives,SKILL_0025,1.0
+comply with a legal regulation,SKILL_0026,1.0
+comply with legal laws,SKILL_0026,1.0
+comply with legal legislation,SKILL_0026,1.0
+comply with legal rules,SKILL_0026,1.0
+comply with legal statutes,SKILL_0026,1.0
+complying with legal regulations,SKILL_0026,1.0
+legal regulation compliance,SKILL_0026,1.0
+digital forensic investigation,SKILL_0027,1.0
+forensic IT,SKILL_0027,1.0
+collaborate with co-workers,SKILL_0028,1.0
+collaborate with colleagues,SKILL_0028,1.0
+cooperate with co-workers,SKILL_0028,1.0
+work collaboratively,SKILL_0028,1.0
+work cooperatively,SKILL_0028,1.0
+work in collaboration with co-workers,SKILL_0028,1.0
+work in collaboration with colleague,SKILL_0028,1.0
+work in cooperation with co-workers,SKILL_0028,1.0
+work in cooperation with colleagues,SKILL_0028,1.0
+work together with co-workers,SKILL_0028,1.0
+work together with colleagues,SKILL_0028,1.0
+accident report completion,SKILL_0029,1.0
+complete accident report,SKILL_0029,1.0
+completing accident report,SKILL_0029,1.0
+completion of accident report,SKILL_0029,1.0
+creating incident reports,SKILL_0029,1.0
+creation of incident reports,SKILL_0029,1.0
+incident report creation,SKILL_0029,1.0
+incident reports creation,SKILL_0029,1.0
+cyber defence mechanisms,SKILL_0030,1.0
+cyber/digital/IT/ICT/information security controls,SKILL_0030,1.0
+cybersecurity measures,SKILL_0030,1.0
+network communications security measures,SKILL_0030,1.0
+ICT security,SKILL_0031,1.0
+IT security,SKILL_0031,1.0
+cybersecurity,SKILL_0031,1.0
+digital security,SKILL_0031,1.0
+information and communications technology security,SKILL_0031,1.0
+information security,SKILL_0031,1.0
+data privacy,SKILL_0032,1.0
+information privacy,SKILL_0032,1.0
+paradigms of data privacy,SKILL_0032,1.0
+paradigms of data protection,SKILL_0032,1.0
+principles of data privacy,SKILL_0032,1.0
+principles of data protection,SKILL_0032,1.0
+principles of information privacy,SKILL_0032,1.0
+protection of data,SKILL_0032,1.0
+protection of private data,SKILL_0032,1.0
+protection of private information,SKILL_0032,1.0
+decision support matrix,SKILL_0033,1.0
+decision support software,SKILL_0033,1.0
+decision-making tools,SKILL_0033,1.0
+design and implement security policies,SKILL_0034,1.0
+plan and implement security policies,SKILL_0034,1.0
+define information security approach,SKILL_0035,1.0
+define information security strategy,SKILL_0035,1.0
+educate about data confidentiality,SKILL_0036,1.0
+educating about data confidentiality,SKILL_0036,1.0
+educating on data confidentiality,SKILL_0036,1.0
+instruct on data confidentiality,SKILL_0036,1.0
+teach data confidentiality principles,SKILL_0036,1.0
+achieve shared understandings with stakeholders,SKILL_0037,1.0
+build partnerships with stakeholders,SKILL_0037,1.0
+negotiate agreements with stakeholders,SKILL_0037,1.0
+undertake stakeholders engagement processes,SKILL_0037,1.0
+use processes for negotiated agreements with stakeholders,SKILL_0037,1.0
+enforce adherence to corporate ICT regulations,SKILL_0038,1.0
+guarantee adherence to organisational ICT standards,SKILL_0038,1.0
+guarantee compliance with company IT standards,SKILL_0038,1.0
+ensure compliance with legislative regulations,SKILL_0039,1.0
+certify compliance with policies,SKILL_0040,1.0
+ensure compliance with policy,SKILL_0040,1.0
+ensure policy compliance,SKILL_0040,1.0
+ensuring compliance with policies,SKILL_0040,1.0
+guarantee compliance with policies,SKILL_0040,1.0
+make sure policies are compliant,SKILL_0040,1.0
+build effective cross-group cooperation,SKILL_0041,1.0
+communicate effectively across teams,SKILL_0041,1.0
+ensure cooperation cross-department,SKILL_0041,1.0
+ensure cross-departmental cooperation,SKILL_0041,1.0
+ensure confidentiality of data and information,SKILL_0042,1.0
+ensure data privacy,SKILL_0042,1.0
+maintain privacy and confidentiality of information,SKILL_0042,1.0
+assure information security,SKILL_0043,1.0
+assure information surveillance,SKILL_0043,1.0
+enable information security,SKILL_0043,1.0
+enable information surveillance,SKILL_0043,1.0
+provide information security,SKILL_0043,1.0
+provide information surveillance,SKILL_0043,1.0
+secure information security,SKILL_0043,1.0
+secure information surveillance,SKILL_0043,1.0
+control record keeping system,SKILL_0044,1.0
+double-check document management,SKILL_0044,1.0
+ensure management of proper documents,SKILL_0044,1.0
+ensure proper management of documents,SKILL_0044,1.0
+apply an ISMS,SKILL_0046,1.0
+apply an Information Security Management System,SKILL_0046,1.0
+define an ISMS,SKILL_0046,1.0
+define an Information Security Management System,SKILL_0046,1.0
+implement an ISMS,SKILL_0046,1.0
+implement an Information Security Management System;,SKILL_0046,1.0
+monitor an ISMS,SKILL_0046,1.0
+monitor an Information Security Management System,SKILL_0046,1.0
+ethical hacking techniques,SKILL_0047,1.0
+moral studies,SKILL_0048,1.0
+the study of moral principles,SKILL_0048,1.0
+execute ICT security audits,SKILL_0049,1.0
+execute IT security audits,SKILL_0049,1.0
+execute cyber security audits,SKILL_0049,1.0
+execute information security audits,SKILL_0049,1.0
+test application,SKILL_0050,1.0
+test programs,SKILL_0050,1.0
+follow ethical code of conduct of betting,SKILL_0051,1.0
+follow ethical code of conduct of lottery,SKILL_0051,1.0
+follow gambling's ethical code of conduct,SKILL_0051,1.0
+forecast organisational risk,SKILL_0052,1.0
+forecast organizational risks,SKILL_0052,1.0
+forecasting organisational risks,SKILL_0052,1.0
+foresee organisational risks,SKILL_0052,1.0
+predict organisational risks,SKILL_0052,1.0
+betting games,SKILL_0053,1.0
+gamble games,SKILL_0053,1.0
+gamble gaming,SKILL_0053,1.0
+online gambling,SKILL_0053,1.0
+address guest complaints,SKILL_0054,1.0
+deal with client's negative feedback,SKILL_0054,1.0
+handle complaints by customers,SKILL_0054,1.0
+handle customers' complaints,SKILL_0054,1.0
+analyse cybersecurity incidents,SKILL_0055,1.0
+handle cybersecurity incidents in production facilities,SKILL_0055,1.0
+monitor security logs,SKILL_0055,1.0
+monitor the security of digital systems,SKILL_0055,1.0
+respond to cyber incidents,SKILL_0055,1.0
+handle complaints regarding games,SKILL_0056,1.0
+handle gaming complaints,SKILL_0056,1.0
+handle gaming customer complaints,SKILL_0056,1.0
+resolve gaming complaints,SKILL_0056,1.0
+identify ICT security risks and threats,SKILL_0057,1.0
+model ICT threats,SKILL_0057,1.0
+identify cyber infrastructure vulnerabilities,SKILL_0058,1.0
+identify vulnerabilities of a cyber infrastructure,SKILL_0058,1.0
+ICT safety policies implementing,SKILL_0060,1.0
+apply on-line safety guidelines,SKILL_0060,1.0
+apply on-line security guidelines,SKILL_0060,1.0
+implement ICT safety policies,SKILL_0060,1.0
+implement computer network safety policies,SKILL_0060,1.0
+implement computer network security policies,SKILL_0060,1.0
+implementing ICT safety policies,SKILL_0060,1.0
+implementing computer network safety policies,SKILL_0060,1.0
+on-line safety guidelines applying,SKILL_0060,1.0
+on-line security guidelines applying,SKILL_0060,1.0
+firewall implementing,SKILL_0061,1.0
+implement network firewall,SKILL_0061,1.0
+implementing a firewall,SKILL_0061,1.0
+implementing network firewall,SKILL_0061,1.0
+install a firewall,SKILL_0061,1.0
+install a network security firewall,SKILL_0061,1.0
+installing a firewall,SKILL_0061,1.0
+installing a network security firewall,SKILL_0061,1.0
+network firewall implementing,SKILL_0061,1.0
+VPN implementing,SKILL_0062,1.0
+VPN installing,SKILL_0062,1.0
+implement a VPN,SKILL_0062,1.0
+implementing a VPN,SKILL_0062,1.0
+implementing a virtual private network,SKILL_0062,1.0
+install a VPN,SKILL_0062,1.0
+installing a VPN,SKILL_0062,1.0
+installing a virtual private network,SKILL_0062,1.0
+virtual private network implementing,SKILL_0062,1.0
+virtual private network installing,SKILL_0062,1.0
+anti-malware software installing,SKILL_0063,1.0
+anti-virus software implementing,SKILL_0063,1.0
+anti-virus software installing,SKILL_0063,1.0
+implementing anti-virus software,SKILL_0063,1.0
+install anti-malware software,SKILL_0063,1.0
+install anti-virus software,SKILL_0063,1.0
+installing anti-malware software,SKILL_0063,1.0
+installing anti-virus software,SKILL_0063,1.0
+load malware protection,SKILL_0063,1.0
+loading malware protection,SKILL_0063,1.0
+develop corporate governance structure,SKILL_0064,1.0
+establish corporate governance,SKILL_0064,1.0
+execute corporate governance,SKILL_0064,1.0
+maintain corporate governance procedures,SKILL_0064,1.0
+set up corporate governance structures,SKILL_0064,1.0
+implement email spam filter,SKILL_0065,1.0
+implementing email spam filter,SKILL_0065,1.0
+implementing spam protection,SKILL_0065,1.0
+install spam filter,SKILL_0065,1.0
+installing spam filter,SKILL_0065,1.0
+load spam filter,SKILL_0065,1.0
+spam protection implementing,SKILL_0065,1.0
+methods of incidents and accidents recording,SKILL_0066,1.0
+methods of incidents and accidents reporting,SKILL_0066,1.0
+recording of incidents and accidents,SKILL_0066,1.0
+reporting of incidents and accidents,SKILL_0066,1.0
+techniques for incidents and accidents recording,SKILL_0066,1.0
+techniques for incidents and accidents reporting,SKILL_0066,1.0
+types of incidents and accidents recording,SKILL_0066,1.0
+types of incidents and accidents reporting,SKILL_0066,1.0
+typology of incidents and accidents recording,SKILL_0066,1.0
+typology of incidents and accidents reporting,SKILL_0066,1.0
+InfoSec strategy,SKILL_0067,1.0
+assemble system,SKILL_0068,1.0
+setup system,SKILL_0068,1.0
+risk management internal policy,SKILL_0069,1.0
+internet governance policies,SKILL_0070,1.0
+internet regulation,SKILL_0070,1.0
+keep up-to-date with any regulations,SKILL_0071,1.0
+keep up-to-date with laws,SKILL_0071,1.0
+keep up-to-date with ordinances,SKILL_0071,1.0
+keep up-to-date with regulation,SKILL_0071,1.0
+keep up-to-date with rules,SKILL_0071,1.0
+keep up-to-date with statutes,SKILL_0071,1.0
+direct a team,SKILL_0072,1.0
+lead teams,SKILL_0072,1.0
+leading a team,SKILL_0072,1.0
+supervise a group of people,SKILL_0072,1.0
+conduct disaster recovery trainings,SKILL_0073,1.0
+supervise disaster recovery exercises,SKILL_0073,1.0
+supervise disaster recovery trainings,SKILL_0073,1.0
+gambling legal standards,SKILL_0074,1.0
+legal requirements in gambling,SKILL_0074,1.0
+legal standards in betting,SKILL_0074,1.0
+software integration testing,SKILL_0075,1.0
+keep database security,SKILL_0077,1.0
+maintain a systematic plan of methods for business continuity,SKILL_0078,1.0
+manage ICT virtualization machines,SKILL_0079,1.0
+manage containerization,SKILL_0079,1.0
+manage virtualisation of servers and workstations,SKILL_0079,1.0
+ensure compliance with information security regulations,SKILL_0080,1.0
+oversee IT security compliance,SKILL_0080,1.0
+alarm device,SKILL_0081,1.0
+intrusion detection system,SKILL_0081,1.0
+CCTV,SKILL_0082,1.0
+video surveillance,SKILL_0082,1.0
+implement database theory,SKILL_0083,1.0
+prepare disaster recovery plans,SKILL_0084,1.0
+manage betting operation,SKILL_0085,1.0
+manage gambling operations,SKILL_0085,1.0
+manage lottery operation,SKILL_0085,1.0
+manage operations of gambling,SKILL_0085,1.0
+manage data protection keys,SKILL_0086,1.0
+conduct HR activities,SKILL_0087,1.0
+coordinate and monitor employees,SKILL_0087,1.0
+coordinate and monitor staff,SKILL_0087,1.0
+coordinate and monitor subordinates,SKILL_0087,1.0
+implement HR actions,SKILL_0087,1.0
+manage employees,SKILL_0087,1.0
+manage personnel,SKILL_0087,1.0
+manage subordinates,SKILL_0087,1.0
+manage team,SKILL_0087,1.0
+perform HR,SKILL_0087,1.0
+supervise employees,SKILL_0087,1.0
+supervise personnel,SKILL_0087,1.0
+supervise staff,SKILL_0087,1.0
+undertake HR processes,SKILL_0087,1.0
+manage information security,SKILL_0088,1.0
+BYOD,SKILL_0089,1.0
+bring your own device,SKILL_0089,1.0
+cell phone device management,SKILL_0089,1.0
+mobile terminals,SKILL_0089,1.0
+follow developments in field of expertise,SKILL_0090,1.0
+keep up with developments in field of expertise,SKILL_0090,1.0
+monitor developments in fields of expertise,SKILL_0090,1.0
+monitoring developments in field of expertise,SKILL_0090,1.0
+monitors developments in field of expertise,SKILL_0090,1.0
+stay abreast of developments in field of expertise,SKILL_0090,1.0
+track developments in field of expertise,SKILL_0090,1.0
+system logging,SKILL_0091,1.0
+follow technology industry trends and new technologies,SKILL_0092,1.0
+keep abreast of technical innovations,SKILL_0092,1.0
+keep up with the latest technology trends,SKILL_0092,1.0
+monitor emerging technologies and industry trends,SKILL_0092,1.0
+monitor trends and innovations in technology,SKILL_0092,1.0
+stay up to date on existing and emerging technology trends,SKILL_0092,1.0
+stay up to date with technology trends,SKILL_0092,1.0
+network codes,SKILL_0093,1.0
+network guidelines,SKILL_0093,1.0
+network protocols,SKILL_0093,1.0
+gambling online,SKILL_0094,1.0
+internet gambling,SKILL_0094,1.0
+online betting,SKILL_0094,1.0
+online gamble,SKILL_0094,1.0
+operational strategies for emergency response,SKILL_0095,1.0
+operational tactic for emergency response,SKILL_0095,1.0
+operational tactics for emergency response,SKILL_0095,1.0
+operational tactics for major incidents and catastrophes,SKILL_0095,1.0
+proceedings for emergency responses,SKILL_0095,1.0
+carry out ICT planning,SKILL_0096,1.0
+carry out ICT strategic planning,SKILL_0096,1.0
+enhance choice of ICT solution,SKILL_0096,1.0
+perform ICT planning,SKILL_0096,1.0
+perform ICT strategic planning,SKILL_0096,1.0
+select ICT solution,SKILL_0096,1.0
+business resilience,SKILL_0097,1.0
+operational resilience,SKILL_0097,1.0
+organizational resilience,SKILL_0097,1.0
+Burpsuite,SKILL_0098,1.0
+CA-Examine,SKILL_0098,1.0
+COPS,SKILL_0098,1.0
+Chkpwd,SKILL_0098,1.0
+Cisco Secure Scanner,SKILL_0098,1.0
+GamaScan,SKILL_0098,1.0
+HackerShield,SKILL_0098,1.0
+Hobgoblin,SKILL_0098,1.0
+I.C.U.MVS,SKILL_0098,1.0
+IP360 Vulnerability Management System,SKILL_0098,1.0
+NMAP,SKILL_0098,1.0
+NTCrack,SKILL_0098,1.0
+NTellect,SKILL_0098,1.0
+Nfsbug,SKILL_0098,1.0
+PanSec,SKILL_0098,1.0
+PhoneSweep,SKILL_0098,1.0
+Pmutil,SKILL_0098,1.0
+Quickinspector,SKILL_0098,1.0
+S10SCAN,SKILL_0098,1.0
+SAM Internet Scanner,SKILL_0098,1.0
+SAM System Scanner,SKILL_0098,1.0
+SFProtect Mobile,SKILL_0098,1.0
+SFProtect Server,SKILL_0098,1.0
+Trojan,SKILL_0098,1.0
+VAM,SKILL_0098,1.0
+metasploit,SKILL_0098,1.0
+output of a penetration test,SKILL_0098,1.0
+penetration testing software,SKILL_0098,1.0
+webinspect,SKILL_0098,1.0
+prepare and apply security test plans,SKILL_0099,1.0
+ICT troubleshooting performance,SKILL_0100,1.0
+complete ICT troubleshooting,SKILL_0100,1.0
+implement ICT troubleshooting,SKILL_0100,1.0
+performing ICT troubleshooting,SKILL_0100,1.0
+undertake ICT troubleshooting,SKILL_0100,1.0
+complete risk analysis,SKILL_0101,1.0
+finish risk analysis,SKILL_0101,1.0
+implement risk analysis,SKILL_0101,1.0
+perform a risk analysis,SKILL_0101,1.0
+performing a risk analysis,SKILL_0101,1.0
+risk analysis performance,SKILL_0101,1.0
+undertake risk analysis,SKILL_0101,1.0
+Alcatel-Lucent,SKILL_0102,1.0
+Avaya,SKILL_0102,1.0
+Ciena,SKILL_0102,1.0
+Ericsson,SKILL_0102,1.0
+Juniper Networks,SKILL_0102,1.0
+NEC,SKILL_0102,1.0
+network equipment vendors,SKILL_0102,1.0
+ADT Access Control,SKILL_0103,1.0
+AVG Anti-Virus,SKILL_0103,1.0
+AVS Firewall,SKILL_0103,1.0
+AddTech Controls,SKILL_0103,1.0
+Agnitum Outpost Firewall,SKILL_0103,1.0
+Bitdefender Antivirus,SKILL_0103,1.0
+CleanMail Home,SKILL_0103,1.0
+Cloudmark DesktopOne Pro,SKILL_0103,1.0
+ESET NOD32 Antivirus,SKILL_0103,1.0
+Honeywell Managed Access Control,SKILL_0103,1.0
+IDenticard Systems PremiSys,SKILL_0103,1.0
+Kaspersky Anti-Virus,SKILL_0103,1.0
+Kingsoft Antivirus,SKILL_0103,1.0
+MailWasher Pro,SKILL_0103,1.0
+Matrix Systems Access Control,SKILL_0103,1.0
+McAfee AntiVirus,SKILL_0103,1.0
+Norton Security Deluxe,SKILL_0103,1.0
+SPAMfighter,SKILL_0103,1.0
+Tyco Integrated Security Managed Access Control,SKILL_0103,1.0
+Zone Alarm Firewall,SKILL_0103,1.0
+implement SPAM-ware,SKILL_0103,1.0
+implement private ICT user security measures,SKILL_0103,1.0
+keep ICT devices safe,SKILL_0103,1.0
+protect ICT device,SKILL_0103,1.0
+protect information and communication technologies devices,SKILL_0103,1.0
+protect personal data,SKILL_0103,1.0
+safeguard ICT devices,SKILL_0103,1.0
+set up passwords and private settings,SKILL_0103,1.0
+take care of ICT devices,SKILL_0103,1.0
+up-date online security measures,SKILL_0103,1.0
+use anti-virus software,SKILL_0103,1.0
+defend online privacy and identity,SKILL_0104,1.0
+keep online privacy and identity secure,SKILL_0104,1.0
+protect digital identity,SKILL_0104,1.0
+protect digital privacy,SKILL_0104,1.0
+protect online privacy and identity,SKILL_0104,1.0
+review online privacy settings,SKILL_0104,1.0
+safeguard online identity and privacy,SKILL_0104,1.0
+safeguard online privacy and identities,SKILL_0104,1.0
+safeguard online privacy and identity,SKILL_0104,1.0
+safeguarding online privacy and identity,SKILL_0104,1.0
+take action to ensure online privacy,SKILL_0104,1.0
+provide IT consulting advice,SKILL_0105,1.0
+provide advice in consulting,SKILL_0105,1.0
+quality assurance approaches,SKILL_0106,1.0
+quality assurance arrangements,SKILL_0106,1.0
+quality assurance methodology,SKILL_0106,1.0
+quality assurance plans,SKILL_0106,1.0
+quality assurance processes,SKILL_0106,1.0
+clean malware-infected computer,SKILL_0107,1.0
+clean virus-infected computer,SKILL_0107,1.0
+cleaning malware-infected computer,SKILL_0107,1.0
+cleaning virus-infected computer,SKILL_0107,1.0
+computer virus or malware removing from a computer,SKILL_0107,1.0
+remove malware from a computer,SKILL_0107,1.0
+remove virus from a computer,SKILL_0107,1.0
+removing computer virus or malware from a computer,SKILL_0107,1.0
+removing malware from a computer,SKILL_0107,1.0
+removing virus from a computer,SKILL_0107,1.0
+describe test findings: record test findings,SKILL_0108,1.0
+note test findings,SKILL_0108,1.0
+report a test finding,SKILL_0108,1.0
+summarise test findings,SKILL_0108,1.0
+automate disaster recovery strategies in cloud,SKILL_0109,1.0
+manage cloud incidents,SKILL_0109,1.0
+troubleshoot cloud incidents,SKILL_0109,1.0
+troubleshoot cloud issues,SKILL_0109,1.0
+troubleshoot issues in cloud systems,SKILL_0109,1.0
+gambling responsibly,SKILL_0110,1.0
+low-risk gambling,SKILL_0110,1.0
+responsible betting,SKILL_0110,1.0
+responsible gamble,SKILL_0110,1.0
+hazard manamagent,SKILL_0111,1.0
+risk administration,SKILL_0111,1.0
+risk assessment,SKILL_0111,1.0
+risk governance,SKILL_0111,1.0
+process safety engineering,SKILL_0112,1.0
+safety management,SKILL_0112,1.0
+safety science,SKILL_0112,1.0
+system safety engineering,SKILL_0112,1.0
+information security engineering,SKILL_0113,1.0
+network security engineering,SKILL_0113,1.0
+security management,SKILL_0113,1.0
+systems security engineering,SKILL_0113,1.0
+cyber/digital/IT/ICT security dangers,SKILL_0114,1.0
+cyber/digital/IT/ICT security risks,SKILL_0114,1.0
+cyber/digital/IT/ICT security threats,SKILL_0114,1.0
+physical security dangers,SKILL_0114,1.0
+physical security hazards,SKILL_0114,1.0
+physical security risks,SKILL_0114,1.0
+physical security threats,SKILL_0114,1.0
+security dangers,SKILL_0114,1.0
+security hazards,SKILL_0114,1.0
+security risks,SKILL_0114,1.0
+security threat,SKILL_0114,1.0
+threats to cyber/digital/IT/ICT security,SKILL_0114,1.0
+threats to physical security,SKILL_0114,1.0
+threats to security,SKILL_0114,1.0
+deliver cybersecurity training,SKILL_0115,1.0
+design cybersecurity training,SKILL_0115,1.0
+develop cybersecurity training,SKILL_0115,1.0
+software behaviour deviations,SKILL_0116,1.0
+software bugs,SKILL_0116,1.0
+software defects,SKILL_0116,1.0
+software performance deviations,SKILL_0116,1.0
+software performance incidents,SKILL_0116,1.0
+backup systems reliability,SKILL_0117,1.0
+disaster recovery best practice,SKILL_0117,1.0
+Electronic Communications Code,SKILL_0118,1.0
+Selenium,SKILL_0119,1.0
+test automation tools,SKILL_0119,1.0
+tools for test automation,SKILL_0119,1.0
+instruct employees,SKILL_0120,1.0
+teach employees,SKILL_0120,1.0
+train an employee,SKILL_0120,1.0
+training employees,SKILL_0120,1.0
+upskill employees,SKILL_0120,1.0
+define database user permissions,SKILL_0121,1.0
+define user roles for ICT system,SKILL_0121,1.0
+back-up and recovery tools using,SKILL_0122,1.0
+use back-up and recovery software,SKILL_0122,1.0
+use back-up software,SKILL_0122,1.0
+use back-up tools,SKILL_0122,1.0
+use recovery software,SKILL_0122,1.0
+use recovery tools,SKILL_0122,1.0
+using back-up and recovery software,SKILL_0122,1.0
+using back-up and recovery tools,SKILL_0122,1.0
+employ ICT tools for computer code creation,SKILL_0123,1.0
+employ programming languages for computer code creation,SKILL_0123,1.0
+use ICT tools for computer code creation,SKILL_0123,1.0
+use ICT tools for computer code development,SKILL_0123,1.0
+use ICT tools for computer code generation,SKILL_0123,1.0
+employ decision support systems,SKILL_0124,1.0
+use ICT systems for decision making,SKILL_0124,1.0
+utilise ICT systems for decision making,SKILL_0124,1.0
+utilize ICT systems for decision making,SKILL_0124,1.0
+utilize decision support system,SKILL_0124,1.0
+OWASP,SKILL_0125,1.0
+open web application security project,SKILL_0125,1.0
+Agile management software,SKILL_0126,1.0
+Assembly,SKILL_0127,1.0
+Assembly algorithms,SKILL_0127,1.0
+Assembly computer programming paradigms,SKILL_0127,1.0
+Assembly software development principles,SKILL_0127,1.0
+Assembly software development techniques,SKILL_0127,1.0
+C Sharp,SKILL_0128,1.0
+Common Lisp programming language,SKILL_0129,1.0
+Erlang programming language,SKILL_0130,1.0
+Groorvy software development,SKILL_0131,1.0
+Groovy programming language,SKILL_0131,1.0
+Groovy software techniques,SKILL_0131,1.0
+Apache Hadoop,SKILL_0132,1.0
+Haskell techniques,SKILL_0133,1.0
+Lightweight Directory Access Protocol,SKILL_0134,1.0
+Language Integrated Query,SKILL_0135,1.0
+Lisp algorithms,SKILL_0136,1.0
+Lisp coding techniques,SKILL_0136,1.0
+Lisp programming paradigms,SKILL_0136,1.0
+Lisp software development principles,SKILL_0136,1.0
+Lisp software development techniques,SKILL_0136,1.0
+MultiDimensional eXpressions,SKILL_0137,1.0
+MS Visual C++,SKILL_0138,1.0
+MSVC,SKILL_0138,1.0
+VC++,SKILL_0138,1.0
+Visual C++,SKILL_0138,1.0
+Couchbase Query Language,SKILL_0139,1.0
+Non-first Normal Form Query Language,SKILL_0139,1.0
+OpenEdge Advanced Business Language techniques,SKILL_0140,1.0
+Hypertext Preprocessor,SKILL_0141,1.0
+Personal Home Page,SKILL_0141,1.0
+PONIE,SKILL_0142,1.0
+Practical Extraction and Report Language,SKILL_0142,1.0
+Prolog,SKILL_0143,1.0
+R software,SKILL_0144,1.0
+Ruby,SKILL_0145,1.0
+SAS Data Management software,SKILL_0146,1.0
+SAS algorithm,SKILL_0147,1.0
+SAS algorithms,SKILL_0147,1.0
+SAS coding,SKILL_0147,1.0
+SAS principles for software development,SKILL_0147,1.0
+SAS programming language,SKILL_0147,1.0
+SAS techniques for software development,SKILL_0147,1.0
+SAS testing,SKILL_0147,1.0
+SPARQL Protocol and RDF Query Language,SKILL_0148,1.0
+Informix 4GL/SQL,SKILL_0149,1.0
+SEQUEL,SKILL_0149,1.0
+Subquery,SKILL_0149,1.0
+Smalltalk,SKILL_0150,1.0
+Smalltalk programming system,SKILL_0150,1.0
+Teradata,SKILL_0151,1.0
+Teradata Integrated Data Warehouse,SKILL_0151,1.0
+TypeScript programming language,SKILL_0152,1.0
+.NET,SKILL_0153,1.0
+VB,SKILL_0153,1.0
+VB.NET,SKILL_0153,1.0
+Visual Studio,SKILL_0153,1.0
+Visual Studio .NET,SKILL_0153,1.0
+XQuery language,SKILL_0154,1.0
+algorithm,SKILL_0155,1.0
+algorithmic,SKILL_0155,1.0
+formulae,SKILL_0155,1.0
+formulas,SKILL_0155,1.0
+analysing big data,SKILL_0156,1.0
+analyze big data,SKILL_0156,1.0
+big data analysing,SKILL_0156,1.0
+big data analysis,SKILL_0156,1.0
+investigate big data,SKILL_0156,1.0
+scrutinise big data,SKILL_0156,1.0
+search big data,SKILL_0156,1.0
+test big data,SKILL_0156,1.0
+analyse information in pipeline databases,SKILL_0157,1.0
+analyze pipeline database information,SKILL_0157,1.0
+assess information in pipeline databases,SKILL_0157,1.0
+assess pipeline database information,SKILL_0157,1.0
+conduct analysis on pipeline database information,SKILL_0157,1.0
+evaluate information in pipeline databases,SKILL_0157,1.0
+evaluate pipeline database information,SKILL_0157,1.0
+perform analysis on pipeline database information,SKILL_0157,1.0
+retrieve and analyse information from pipeline company database,SKILL_0157,1.0
+retrieve and assess information from pipeline company database,SKILL_0157,1.0
+follow the principles of ICT systems theory,SKILL_0158,1.0
+follow the theoretical principles for ICT systems,SKILL_0158,1.0
+implement principles for ICT systems,SKILL_0158,1.0
+implement theoretical notions for ICT systems,SKILL_0158,1.0
+implement theoretical principless for ICT systems,SKILL_0158,1.0
+combine face-to-face and online learning,SKILL_0159,1.0
+employ blended learning,SKILL_0159,1.0
+implement blended learning,SKILL_0159,1.0
+implement mixed learning approaches,SKILL_0159,1.0
+integrate blended learning,SKILL_0159,1.0
+apply for research grants,SKILL_0160,1.0
+draft research grants applications,SKILL_0160,1.0
+generate research funding,SKILL_0160,1.0
+identify research grants,SKILL_0160,1.0
+adhere to scientific research code of ethics,SKILL_0161,1.0
+follow scientific research code of conduct,SKILL_0161,1.0
+obey scientific research code of conduct,SKILL_0161,1.0
+apply JMP statistical analysis techniques,SKILL_0162,1.0
+apply minitab statistical analysis techniques,SKILL_0162,1.0
+apply numerical analysis to data,SKILL_0162,1.0
+ANN,SKILL_0163,1.0
+NN,SKILL_0163,1.0
+artificial neural nets,SKILL_0163,1.0
+neural nets,SKILL_0163,1.0
+neural networks,SKILL_0163,1.0
+build recommendation systems,SKILL_0164,1.0
+recommender engine,SKILL_0164,1.0
+recommender platform,SKILL_0164,1.0
+business data analytics,SKILL_0165,1.0
+BI,SKILL_0166,1.0
+business analytics,SKILL_0166,1.0
+business intelligence tools,SKILL_0166,1.0
+collect digital data,SKILL_0167,1.0
+gather digital data,SKILL_0167,1.0
+gather digital data; obtain digital data,SKILL_0167,1.0
+obtain digital data,SKILL_0167,1.0
+communicate publicly about scientific findings,SKILL_0168,1.0
+communicate scientific results to the public,SKILL_0168,1.0
+engage in public awareness of research,SKILL_0168,1.0
+support public understanding of science findings,SKILL_0168,1.0
+biological computing,SKILL_0169,1.0
+informatics,SKILL_0170,1.0
+informatics studies,SKILL_0170,1.0
+computer-based simulation,SKILL_0171,1.0
+simulation software ANSYS,SKILL_0171,1.0
+OCR,SKILL_0172,1.0
+cuda,SKILL_0172,1.0
+keras,SKILL_0172,1.0
+matlab,SKILL_0172,1.0
+openCV,SKILL_0172,1.0
+simpleCV,SKILL_0172,1.0
+tensorflow,SKILL_0172,1.0
+conduct interdisciplinary research,SKILL_0173,1.0
+use research findings across disciplines,SKILL_0173,1.0
+use research findings across functional boundaries,SKILL_0173,1.0
+work across disciplines,SKILL_0173,1.0
+work across functional boundaries,SKILL_0173,1.0
+manage data models,SKILL_0174,1.0
+create a data set,SKILL_0175,1.0
+creating data sets,SKILL_0175,1.0
+data set creation,SKILL_0175,1.0
+design data sets,SKILL_0175,1.0
+develop data sets,SKILL_0175,1.0
+establish data sets,SKILL_0175,1.0
+produce data sets,SKILL_0175,1.0
+use digital technologies for cognitive tasks,SKILL_0176,1.0
+use digital technologies for problem-solving in digital environments,SKILL_0176,1.0
+use digital technologies for process innovation,SKILL_0176,1.0
+use digital technologies for product innovation,SKILL_0176,1.0
+use digital technologies to resolve conceptual problems,SKILL_0176,1.0
+data anlysis,SKILL_0177,1.0
+data engineering methods,SKILL_0178,1.0
+principles of data ethics,SKILL_0179,1.0
+data scraping,SKILL_0180,1.0
+data science process,SKILL_0181,1.0
+science of data,SKILL_0181,1.0
+data presentation software,SKILL_0182,1.0
+data repository,SKILL_0183,1.0
+data warehouse solutions,SKILL_0183,1.0
+enterprise data storage,SKILL_0183,1.0
+deep learning methods,SKILL_0184,1.0
+deep learning principles,SKILL_0184,1.0
+deep neural networking,SKILL_0184,1.0
+set data quality benchmarks,SKILL_0185,1.0
+specify data quality criteria,SKILL_0185,1.0
+create data visualisation,SKILL_0186,1.0
+visualise data,SKILL_0186,1.0
+demonstrate complex understanding of a research area,SKILL_0187,1.0
+demonstrate complex understanding of a specific research area,SKILL_0187,1.0
+demonstrate deep knowledge of a research area,SKILL_0187,1.0
+demonstrate deep knowledge of a specific research area,SKILL_0187,1.0
+exhibit academic proficiency,SKILL_0187,1.0
+develop database scheme,SKILL_0188,1.0
+create creative ideas,SKILL_0189,1.0
+developing creative ideas,SKILL_0189,1.0
+generate creative ideas,SKILL_0189,1.0
+produce creative ideas,SKILL_0189,1.0
+build data processing applications,SKILL_0190,1.0
+create data processing applications,SKILL_0190,1.0
+design data processing applications,SKILL_0190,1.0
+design data processing software,SKILL_0190,1.0
+develop data processing software,SKILL_0190,1.0
+cultivate a professional circle in academia,SKILL_0191,1.0
+establish connections with researchers and scientists,SKILL_0191,1.0
+foster relationships with researchers and scientists,SKILL_0191,1.0
+create statistical software,SKILL_0192,1.0
+define statistical software,SKILL_0192,1.0
+developing statistical software,SKILL_0192,1.0
+prepare statistical software,SKILL_0192,1.0
+write statistical software,SKILL_0192,1.0
+digital research curation,SKILL_0193,1.0
+data processing,SKILL_0194,1.0
+electronic data processing,SKILL_0194,1.0
+paperless data processing,SKILL_0194,1.0
+processing of data digitally,SKILL_0194,1.0
+disclose findings of scientific research,SKILL_0195,1.0
+disclose scientific results,SKILL_0195,1.0
+disseminate findings of scientific research,SKILL_0195,1.0
+disseminate results of scientific research,SKILL_0195,1.0
+disseminate scientific results,SKILL_0195,1.0
+documentation types of product life cycle,SKILL_0196,1.0
+external documentation types,SKILL_0196,1.0
+internal documentation types,SKILL_0196,1.0
+internal documentation types of product life cycle,SKILL_0196,1.0
+technical documentation types,SKILL_0196,1.0
+create technical documentation,SKILL_0197,1.0
+create technical documentation and academic writings,SKILL_0197,1.0
+write scientific and academic papers,SKILL_0197,1.0
+write technical documentation,SKILL_0197,1.0
+empirical data analysis,SKILL_0198,1.0
+develop data processes,SKILL_0199,1.0
+implement data processes,SKILL_0199,1.0
+assess research methodology,SKILL_0200,1.0
+assess research results,SKILL_0200,1.0
+perform scholarly peer review,SKILL_0200,1.0
+collect data samples,SKILL_0201,1.0
+handle data samples for statistical purposes,SKILL_0201,1.0
+manage data samples,SKILL_0201,1.0
+health care analytics,SKILL_0202,1.0
+health care data analytics,SKILL_0202,1.0
+health data analytics,SKILL_0202,1.0
+healthcare data analytics,SKILL_0202,1.0
+image detection,SKILL_0203,1.0
+image interpretation,SKILL_0203,1.0
+visual detection,SKILL_0203,1.0
+visual recognition,SKILL_0203,1.0
+verify data,SKILL_0204,1.0
+implement data warehousing solutions,SKILL_0205,1.0
+boost the contribution of science to shaping policies and society,SKILL_0206,1.0
+enhance the impact of science influence on policy and society,SKILL_0206,1.0
+enhance the influence of science on governance and communities,SKILL_0206,1.0
+influence decision making based on scientific evidence,SKILL_0206,1.0
+data architecture,SKILL_0207,1.0
+information system design,SKILL_0207,1.0
+design of information structures,SKILL_0208,1.0
+information classification,SKILL_0208,1.0
+consumer data privacy,SKILL_0209,1.0
+data access control,SKILL_0209,1.0
+data confidentiality,SKILL_0209,1.0
+information extraction techniques,SKILL_0210,1.0
+data infrastructure,SKILL_0211,1.0
+data structuring methods,SKILL_0211,1.0
+types of data infrastructure,SKILL_0211,1.0
+combine ICT data,SKILL_0212,1.0
+account for gender characteristics in scientific research,SKILL_0213,1.0
+promote inclusion in research,SKILL_0213,1.0
+give feedback in a professional setting,SKILL_0214,1.0
+interact appropriately in research and professional spheres,SKILL_0214,1.0
+interact considerately in research and professional spheres,SKILL_0214,1.0
+receive feedback in a professional setting,SKILL_0214,1.0
+show collegiality in research and professional environments,SKILL_0214,1.0
+examine current data,SKILL_0215,1.0
+take decisions based on data,SKILL_0216,1.0
+define enterprise data architecture,SKILL_0217,1.0
+lead ICT data classification responsabilities,SKILL_0218,1.0
+organise ICT data classification responsibilities,SKILL_0218,1.0
+administer data,SKILL_0219,1.0
+data administration,SKILL_0219,1.0
+data resource management,SKILL_0219,1.0
+manage data lifecycle,SKILL_0219,1.0
+operate data quality tools,SKILL_0219,1.0
+oversee data collection methods,SKILL_0220,1.0
+ensure corrected data storing,SKILL_0221,1.0
+ensure data availability,SKILL_0221,1.0
+ensure data reusability,SKILL_0221,1.0
+support data reuse in research,SKILL_0221,1.0
+administer copyrights,SKILL_0222,1.0
+administer intellectual property rights,SKILL_0222,1.0
+manage copyrights,SKILL_0222,1.0
+handle open publications,SKILL_0223,1.0
+handle open-source content,SKILL_0223,1.0
+handle open-source publications,SKILL_0223,1.0
+manage open-source content,SKILL_0223,1.0
+manage open-source publications,SKILL_0223,1.0
+conduct personal professional development,SKILL_0224,1.0
+continuously develop own practice,SKILL_0224,1.0
+continuously develop your own practices,SKILL_0224,1.0
+develop own practice,SKILL_0224,1.0
+develop own practice continuously,SKILL_0224,1.0
+develop own practices continuously,SKILL_0224,1.0
+identify priority areas for professional development,SKILL_0224,1.0
+manage personal lifelong learning,SKILL_0224,1.0
+research identify and resource your continuing professional development,SKILL_0224,1.0
+research own continuing professional development,SKILL_0224,1.0
+undertake responsibility on continuous professional development,SKILL_0224,1.0
+gather data,SKILL_0225,1.0
+handle numerical data,SKILL_0225,1.0
+interpret data,SKILL_0225,1.0
+manage data quantitatively,SKILL_0225,1.0
+managing quantitative data,SKILL_0225,1.0
+organise data,SKILL_0225,1.0
+present data,SKILL_0225,1.0
+process data,SKILL_0225,1.0
+administer research data,SKILL_0226,1.0
+handle research data,SKILL_0226,1.0
+oversee scientific data,SKILL_0226,1.0
+marketing data analytics,SKILL_0227,1.0
+mathematical computation,SKILL_0228,1.0
+mathematical representation,SKILL_0228,1.0
+mathematical simulation,SKILL_0228,1.0
+guide individuals,SKILL_0229,1.0
+guide people,SKILL_0229,1.0
+help individuals,SKILL_0229,1.0
+help people,SKILL_0229,1.0
+support individuals,SKILL_0229,1.0
+support people,SKILL_0229,1.0
+multidisciplinary research methods,SKILL_0230,1.0
+normalize data,SKILL_0231,1.0
+perform data pre-processing,SKILL_0231,1.0
+prepare data,SKILL_0231,1.0
+Cube databases,SKILL_0232,1.0
+OLAP,SKILL_0232,1.0
+OLAP databases,SKILL_0232,1.0
+know open-source coding practices,SKILL_0233,1.0
+know open-source licensing schemes,SKILL_0233,1.0
+know open-source software coding practices,SKILL_0233,1.0
+know open-source software licensing schemes,SKILL_0233,1.0
+manage open-source software,SKILL_0233,1.0
+operations analysis,SKILL_0234,1.0
+operations research,SKILL_0234,1.0
+complete data cleansing,SKILL_0235,1.0
+data cleansing performance,SKILL_0235,1.0
+implement data cleansing,SKILL_0235,1.0
+perform a data cleanse,SKILL_0235,1.0
+performing data cleansing,SKILL_0235,1.0
+undertake data cleansing,SKILL_0235,1.0
+mine data,SKILL_0236,1.0
+use model data,SKILL_0236,1.0
+Kohonen self-organizing map,SKILL_0237,1.0
+data feature engineering,SKILL_0237,1.0
+data feature extraction,SKILL_0237,1.0
+data feature selection,SKILL_0237,1.0
+multidimensional scaling,SKILL_0237,1.0
+t-SNE,SKILL_0237,1.0
+t-distributed stochastic neighbor embedding,SKILL_0237,1.0
+conduct project management,SKILL_0238,1.0
+do project management,SKILL_0238,1.0
+manage projects,SKILL_0238,1.0
+perform management of projects,SKILL_0238,1.0
+perform projects management,SKILL_0238,1.0
+performing project management,SKILL_0238,1.0
+carry out scientific research,SKILL_0239,1.0
+conduct scientific research,SKILL_0239,1.0
+engage in scientific research,SKILL_0239,1.0
+performing scientific research,SKILL_0239,1.0
+artificial intelligence in process,SKILL_0240,1.0
+principles of AI,SKILL_0240,1.0
+analyse data,SKILL_0241,1.0
+convert data,SKILL_0241,1.0
+data processing,SKILL_0241,1.0
+handle data,SKILL_0241,1.0
+measure data,SKILL_0241,1.0
+processing data,SKILL_0241,1.0
+processing of data,SKILL_0241,1.0
+refine data,SKILL_0241,1.0
+boost open innovation in research,SKILL_0242,1.0
+encourage open innovation in research,SKILL_0242,1.0
+foster collaborative innovation in research,SKILL_0242,1.0
+promote integrated collaboration in research,SKILL_0242,1.0
+stimulate collaborative innovation in research,SKILL_0242,1.0
+encourage civic engagement in research,SKILL_0243,1.0
+engage citizens in scientific and research activities,SKILL_0243,1.0
+engage public in research,SKILL_0243,1.0
+foster public involvement in scientific research,SKILL_0243,1.0
+promote citizens participation in research,SKILL_0243,1.0
+ensure connection between research and industry,SKILL_0244,1.0
+valorise research findings in industry,SKILL_0244,1.0
+valorise research findings in the public sector,SKILL_0244,1.0
+publish academic studies,SKILL_0245,1.0
+publish doctoral research,SKILL_0245,1.0
+publish research,SKILL_0245,1.0
+publishes academic research,SKILL_0245,1.0
+publishing academic research,SKILL_0245,1.0
+quantitative data analysis,SKILL_0246,1.0
+research design methods,SKILL_0247,1.0
+computational science,SKILL_0248,1.0
+scientific computation,SKILL_0248,1.0
+scientific publications,SKILL_0249,1.0
+social network analysis methods,SKILL_0250,1.0
+communicate in multiple languages,SKILL_0251,1.0
+speak a different language,SKILL_0251,1.0
+speak foreign languages,SKILL_0251,1.0
+energy state estimation,SKILL_0252,1.0
+state estimation and prediction,SKILL_0252,1.0
+state inference,SKILL_0252,1.0
+statistical modeling,SKILL_0253,1.0
+administrative data,SKILL_0254,1.0
+big data,SKILL_0254,1.0
+data analysis,SKILL_0254,1.0
+data collection,SKILL_0254,1.0
+data work,SKILL_0254,1.0
+experimental data,SKILL_0254,1.0
+metadata,SKILL_0254,1.0
+organisation of data,SKILL_0254,1.0
+statistical analysis,SKILL_0254,1.0
+stats,SKILL_0254,1.0
+survey data,SKILL_0254,1.0
+use of data,SKILL_0254,1.0
+use of data in performance of work,SKILL_0254,1.0
+use of statistics,SKILL_0254,1.0
+use of statistics in performance of work,SKILL_0254,1.0
+archive digital data and systems,SKILL_0255,1.0
+back up data,SKILL_0255,1.0
+backup digital data and systems,SKILL_0255,1.0
+cache digital data and systems,SKILL_0255,1.0
+restore data,SKILL_0255,1.0
+store digital data and system,SKILL_0255,1.0
+store systems and digital data,SKILL_0255,1.0
+storing digital data and systems,SKILL_0255,1.0
+use data and systems archiving procedures,SKILL_0255,1.0
+use data and systems archiving tools,SKILL_0255,1.0
+critically summarise information,SKILL_0256,1.0
+interpret complex information,SKILL_0256,1.0
+summarise information,SKILL_0256,1.0
+synthesise complex information,SKILL_0256,1.0
+write synthesis essays,SKILL_0256,1.0
+task algorithm development,SKILL_0257,1.0
+instruct in educational or vocational settings,SKILL_0258,1.0
+provide instruction in academic or vocational domains,SKILL_0258,1.0
+teach students in academic or vocational contexts,SKILL_0258,1.0
+carry out abstraction of concepts,SKILL_0259,1.0
+conceptualise abstract ideas,SKILL_0259,1.0
+conceptualise reality,SKILL_0259,1.0
+thinking in abstract concepts,SKILL_0259,1.0
+thinking in abstractions,SKILL_0259,1.0
+types of unstructured data,SKILL_0260,1.0
+apply data processing technique,SKILL_0261,1.0
+gather and analyse data,SKILL_0261,1.0
+make use of data processing techniques,SKILL_0261,1.0
+use a data processing technique,SKILL_0261,1.0
+utilize data processing techniques,SKILL_0261,1.0
+Ability Office Spreadsheet,SKILL_0262,1.0
+Accel Spreadsheet,SKILL_0262,1.0
+Calligra Sheets,SKILL_0262,1.0
+CellPro,SKILL_0262,1.0
+Corel Calculate,SKILL_0262,1.0
+DhtmlxSpreadsheet,SKILL_0262,1.0
+Dolphinity Planner,SKILL_0262,1.0
+Gnumeric,SKILL_0262,1.0
+Google Sheets,SKILL_0262,1.0
+Household Budget Worksheet,SKILL_0262,1.0
+IBM Lotus Symphony Spreadsheets,SKILL_0262,1.0
+Kingsoft Spreadsheet,SKILL_0262,1.0
+LibreOffice Calc,SKILL_0262,1.0
+Lotus 1-2-3,SKILL_0262,1.0
+Lotus Improv,SKILL_0262,1.0
+MS Excel,SKILL_0262,1.0
+Microsoft Office Excel,SKILL_0262,1.0
+Myrtle,SKILL_0262,1.0
+OOo4Kids Calc,SKILL_0262,1.0
+OxygenOffice Professional Calc,SKILL_0262,1.0
+PlanMaker,SKILL_0262,1.0
+QT Calc Express,SKILL_0262,1.0
+Quantrix Modeler,SKILL_0262,1.0
+ResolverOne,SKILL_0262,1.0
+Sheetster,SKILL_0262,1.0
+Simple Spreadsheet,SKILL_0262,1.0
+Sphygmic Software Spreadsheet,SKILL_0262,1.0
+ThinkFree Office Calc,SKILL_0262,1.0
+Zoho Sheet,SKILL_0262,1.0
+design spreadsheets,SKILL_0262,1.0
+use spreadsheets program,SKILL_0262,1.0
+wikiCalc,SKILL_0262,1.0
+carry out machine learning,SKILL_0263,1.0
+perform machine learning,SKILL_0263,1.0
+use machine learning,SKILL_0263,1.0
+utilize machine learning,SKILL_0263,1.0
+Infovis,SKILL_0264,1.0
+Infoviz,SKILL_0264,1.0
+information visualisation,SKILL_0264,1.0
+information visualization,SKILL_0264,1.0
+visualization interface,SKILL_0264,1.0
+draft scientific papers,SKILL_0265,1.0
+draw up scientific papers,SKILL_0265,1.0
+scientific paper writing,SKILL_0265,1.0
+AJAX software,SKILL_0266,1.0
+AJAX techniques,SKILL_0266,1.0
+AJAX technology,SKILL_0266,1.0
+APL programming paradigms,SKILL_0267,1.0
+ASP.NET framework,SKILL_0268,1.0
+Agile Development Environment,SKILL_0269,1.0
+Agile Software Development Practices,SKILL_0269,1.0
+Agile development framework,SKILL_0269,1.0
+Agile frameworks,SKILL_0269,1.0
+Agile scrum development framework,SKILL_0269,1.0
+Agile software development,SKILL_0269,1.0
+Agile software development methods,SKILL_0269,1.0
+Agile software environment,SKILL_0269,1.0
+Tomcat,SKILL_0270,1.0
+BlackBerry System,SKILL_0271,1.0
+Cisco Systems,SKILL_0272,1.0
+Network Magic,SKILL_0272,1.0
+CoffeeScript algorithms,SKILL_0273,1.0
+CoffeeScript coding techniques,SKILL_0273,1.0
+CoffeeScript programming paradigms,SKILL_0273,1.0
+CoffeeScript software development principles,SKILL_0273,1.0
+CoffeeScript software development techniques,SKILL_0273,1.0
+DevOps based software development,SKILL_0274,1.0
+DevOps development,SKILL_0274,1.0
+DevOps methodology,SKILL_0274,1.0
+ICT network line limitations,SKILL_0275,1.0
+ICT network wire limitations,SKILL_0275,1.0
+ICT network processes,SKILL_0276,1.0
+ICT network routing processes,SKILL_0276,1.0
+ICT network routing techniques,SKILL_0276,1.0
+ICT network techniques,SKILL_0276,1.0
+Jenkins,SKILL_0277,1.0
+Jenkins CI,SKILL_0277,1.0
+Jenkins Continuous Integration server,SKILL_0277,1.0
+MATLAB algorithms,SKILL_0278,1.0
+MATLAB coding techniques,SKILL_0278,1.0
+MATLAB programming paradigms,SKILL_0278,1.0
+MATLAB software development principles,SKILL_0278,1.0
+MATLAB software development techniques,SKILL_0278,1.0
+ML,SKILL_0279,1.0
+ML development principles,SKILL_0279,1.0
+ML systems,SKILL_0279,1.0
+Objective C,SKILL_0280,1.0
+SAP ERP,SKILL_0281,1.0
+SAP ERP 6.0: Enhancement Packages,SKILL_0281,1.0
+SAP R/1,SKILL_0281,1.0
+SAP R/2,SKILL_0281,1.0
+SAP R/3,SKILL_0281,1.0
+SAP R/3 Enterprise Central Component,SKILL_0281,1.0
+SAP R/3 Enterprise Edition,SKILL_0281,1.0
+SAP S/4 HANA,SKILL_0281,1.0
+Swift,SKILL_0282,1.0
+Swift algorithms,SKILL_0282,1.0
+Swift programming paradigms,SKILL_0282,1.0
+Swift software development principles,SKILL_0282,1.0
+Swift software development techniques,SKILL_0282,1.0
+adhere to an organisational guideline,SKILL_0283,1.0
+adhere to an organisations guidelines,SKILL_0283,1.0
+adhere to organizational guidelines,SKILL_0283,1.0
+adhering to organisational guidelines,SKILL_0283,1.0
+comply to organisational guidelines,SKILL_0283,1.0
+heed organisational guidelines,SKILL_0283,1.0
+obey organisational guidelines,SKILL_0283,1.0
+observe organisational guidelines,SKILL_0283,1.0
+adjust ICT network capacity,SKILL_0284,1.0
+administer network and system,SKILL_0285,1.0
+administer system,SKILL_0285,1.0
+operate system,SKILL_0285,1.0
+analyze network bandwidth requirements,SKILL_0286,1.0
+assess network bandwidth requirements,SKILL_0286,1.0
+measure network bandwidth requirements,SKILL_0286,1.0
+analyse performance characteristics of ICT networks,SKILL_0287,1.0
+assess network setup and performance,SKILL_0287,1.0
+assess network structure,SKILL_0287,1.0
+evaluate network setup and efficiency,SKILL_0287,1.0
+examine network configuration and effectiveness,SKILL_0287,1.0
+administer ICT system usage policies,SKILL_0288,1.0
+follow ethical standards for ICT system usage,SKILL_0288,1.0
+follow written laws for ICT system usage,SKILL_0288,1.0
+handle ICT system usage policies,SKILL_0288,1.0
+implement ICT system usage policies,SKILL_0288,1.0
+adhere to organisational system guidelines,SKILL_0289,1.0
+enforce organisational system policies,SKILL_0289,1.0
+implement system regulations,SKILL_0289,1.0
+collude with engineers,SKILL_0290,1.0
+collude with servicing operatives,SKILL_0290,1.0
+cooperate with engineers,SKILL_0290,1.0
+cooperate with servicing operatives,SKILL_0290,1.0
+engage with engineers,SKILL_0290,1.0
+engage with servicing operatives,SKILL_0290,1.0
+interface with engineers,SKILL_0290,1.0
+interface with servicing operatives,SKILL_0290,1.0
+come up with solutions to problems,SKILL_0291,1.0
+conceive solutions to problems,SKILL_0291,1.0
+create solution to problems,SKILL_0291,1.0
+create solutions,SKILL_0291,1.0
+creating solutions to problems,SKILL_0291,1.0
+devise solutions to problems,SKILL_0291,1.0
+formulate solutions to problems,SKILL_0291,1.0
+define ICT network architecture framework,SKILL_0292,1.0
+establish ICT network design policies,SKILL_0292,1.0
+specify ICT network design principles,SKILL_0292,1.0
+set firewall rules,SKILL_0293,1.0
+specify access control policies,SKILL_0293,1.0
+develop technological improvement strategies,SKILL_0294,1.0
+design ICT hardware placement in buildings,SKILL_0295,1.0
+plan ICT hardware placement in buildings,SKILL_0295,1.0
+specify ICT hardware placement,SKILL_0295,1.0
+specify ICT hardware placement in buildings,SKILL_0295,1.0
+design LAN,SKILL_0296,1.0
+design WAN,SKILL_0296,1.0
+design local area network,SKILL_0296,1.0
+design wide area network,SKILL_0296,1.0
+do cloud features refactoring,SKILL_0297,1.0
+optimise cloud features,SKILL_0297,1.0
+optimise cloud services,SKILL_0297,1.0
+perform cloud refactoring,SKILL_0297,1.0
+refactor cloud services,SKILL_0297,1.0
+follow a company standard,SKILL_0298,1.0
+follow company codes,SKILL_0298,1.0
+follow company measures,SKILL_0298,1.0
+follow company requirements,SKILL_0298,1.0
+follow company rules,SKILL_0298,1.0
+follow the company standards,SKILL_0298,1.0
+following company standards,SKILL_0298,1.0
+act in accordance with work procedures,SKILL_0299,1.0
+adhere to procedures at work,SKILL_0299,1.0
+adhere to work procedures,SKILL_0299,1.0
+comply with work procedures,SKILL_0299,1.0
+employ standard working practices,SKILL_0299,1.0
+ensure adherence to work procedures,SKILL_0299,1.0
+follow procedures at work,SKILL_0299,1.0
+observe standard working practices,SKILL_0299,1.0
+observe work procedures,SKILL_0299,1.0
+perform work in accordance with procedures,SKILL_0299,1.0
+work in accordance with procedures,SKILL_0299,1.0
+estimate future ICT network needs,SKILL_0300,1.0
+foresee future ICT network demands,SKILL_0300,1.0
+components for hardware systems,SKILL_0301,1.0
+components of hardware,SKILL_0301,1.0
+components of hardware systems,SKILL_0301,1.0
+hardware system components,SKILL_0301,1.0
+hardware system parts,SKILL_0301,1.0
+parts for hardware systems,SKILL_0301,1.0
+range of hardware components,SKILL_0301,1.0
+types of hardware components,SKILL_0301,1.0
+typology of hardware components,SKILL_0301,1.0
+identify a supplier,SKILL_0302,1.0
+identify the suppliers,SKILL_0302,1.0
+monitor suppliers on the market,SKILL_0302,1.0
+research for suppliers,SKILL_0302,1.0
+search for suppliers,SKILL_0302,1.0
+use network diagnostics tools,SKILL_0303,1.0
+disaster recovery,SKILL_0304,1.0
+recover ICT system,SKILL_0304,1.0
+company policy compliance,SKILL_0305,1.0
+governance information compliance,SKILL_0305,1.0
+information compliance governance,SKILL_0305,1.0
+set up electronic communication equipment,SKILL_0306,1.0
+install amplifiers and repeaters,SKILL_0307,1.0
+collaborate with managers,SKILL_0308,1.0
+cooperate with managers,SKILL_0308,1.0
+liaise with a manager,SKILL_0308,1.0
+liaising with managers,SKILL_0308,1.0
+work together with managers,SKILL_0308,1.0
+work with managers,SKILL_0308,1.0
+apply system monitoring techniques,SKILL_0309,1.0
+monitor and optimise system performance,SKILL_0309,1.0
+keep information network hardware in good condition,SKILL_0310,1.0
+keep up information network hardware,SKILL_0310,1.0
+maintain network hardware,SKILL_0310,1.0
+maintaining information network hardware,SKILL_0310,1.0
+oversee information network hardware,SKILL_0310,1.0
+apply Internet Protocol Configuration,SKILL_0311,1.0
+maintain IP configuration,SKILL_0311,1.0
+maintain TCP configuration,SKILL_0311,1.0
+maintain TCP/IP configuration,SKILL_0311,1.0
+ICT system upgrade,SKILL_0312,1.0
+maintain a private e-mail service platform,SKILL_0313,1.0
+oversee testing of hardware,SKILL_0314,1.0
+oversee testing of software,SKILL_0314,1.0
+network architecture,SKILL_0315,1.0
+network management system components,SKILL_0316,1.0
+AS400,SKILL_0317,1.0
+Novell,SKILL_0317,1.0
+OS architecture,SKILL_0317,1.0
+VMS,SKILL_0317,1.0
+WIN/NT,SKILL_0317,1.0
+corporate policies,SKILL_0318,1.0
+corporate regulations,SKILL_0318,1.0
+institutional policies,SKILL_0318,1.0
+organisational guidelines,SKILL_0318,1.0
+organisational standards,SKILL_0318,1.0
+cloud migration planning,SKILL_0319,1.0
+plan refactoring,SKILL_0319,1.0
+prepare plan for migration to cloud,SKILL_0319,1.0
+ICT service models,SKILL_0320,1.0
+SaaS,SKILL_0320,1.0
+SaaS model,SKILL_0320,1.0
+Software as a service,SKILL_0320,1.0
+service oriented models,SKILL_0320,1.0
+service-oriented modeling,SKILL_0320,1.0
+implementation of solutions,SKILL_0321,1.0
+software solution deployment,SKILL_0321,1.0
+provide guidance on the use,SKILL_0322,1.0
+staff support,SKILL_0322,1.0
+user assistance,SKILL_0322,1.0
+systems fundamentals,SKILL_0323,1.0
+operate ICT hardware,SKILL_0324,1.0
+utilise ICT hardware,SKILL_0324,1.0
+operate precision tools,SKILL_0325,1.0
+operating precision tools,SKILL_0325,1.0
+precision tool operating,SKILL_0325,1.0
+precision tool using,SKILL_0325,1.0
+precision tool working,SKILL_0325,1.0
+precision tools operating,SKILL_0325,1.0
+precision tools using,SKILL_0325,1.0
+using precision tools,SKILL_0325,1.0
+work with precision tools,SKILL_0325,1.0
+working with precision tools,SKILL_0325,1.0
+ABAP Programming Techniques,SKILL_0326,1.0
+ABAP programming techniques,SKILL_0326,1.0
+ABAP software development,SKILL_0326,1.0
+ABAP software techniques,SKILL_0326,1.0
+COBOL applications,SKILL_0327,1.0
+COBOL programming language,SKILL_0327,1.0
+COBOL software,SKILL_0327,1.0
+accessibility standards and guidelines,SKILL_0328,1.0
+assistive technology standards,SKILL_0328,1.0
+digital accessibility standards,SKILL_0328,1.0
+ICT hardware characteristics,SKILL_0329,1.0
+ICT hardware needs,SKILL_0329,1.0
+ICT hardware requirements,SKILL_0329,1.0
+ICT hardware specification,SKILL_0329,1.0
+ICT hardware stipulations,SKILL_0329,1.0
+an ICT hardware specification,SKILL_0329,1.0
+specifications for ICT hardware,SKILL_0329,1.0
+ICT network simulation methods,SKILL_0330,1.0
+ICT network simulation systems,SKILL_0330,1.0
+ICT network simulation tools,SKILL_0330,1.0
+ICT quality control,SKILL_0331,1.0
+ICT application specifications,SKILL_0332,1.0
+ICT programme specifications,SKILL_0332,1.0
+ICT software specification,SKILL_0332,1.0
+ICT software specifying,SKILL_0332,1.0
+ICT system specifications,SKILL_0332,1.0
+specify use of ICT software,SKILL_0332,1.0
+Pascal,SKILL_0333,1.0
+process-based project management methodology,SKILL_0334,1.0
+Scala Programming Language,SKILL_0335,1.0
+Scratch,SKILL_0336,1.0
+VBScript algorithms,SKILL_0337,1.0
+VBScript coding techniques,SKILL_0337,1.0
+VBScript for web-based scripting,SKILL_0337,1.0
+VBScript programming paradigms,SKILL_0337,1.0
+VBScript scripting techniques,SKILL_0337,1.0
+adapt game development to the market,SKILL_0338,1.0
+adapt gaming developments to the market,SKILL_0338,1.0
+adjust new game developments to the market,SKILL_0338,1.0
+implement new game innovations on the market,SKILL_0338,1.0
+software usability,SKILL_0339,1.0
+apply psychological elements to gaming,SKILL_0340,1.0
+apply psychology to gaming,SKILL_0340,1.0
+use gaming psychology,SKILL_0340,1.0
+analyse how users interact with ICT applications,SKILL_0341,1.0
+attend game testing,SKILL_0342,1.0
+attend tests for gaming,SKILL_0342,1.0
+be present for online game testing,SKILL_0342,1.0
+participate in live gaming tests,SKILL_0342,1.0
+assure continuous preparedness for audits,SKILL_0343,1.0
+ensure continuous preparation for audits,SKILL_0343,1.0
+ensure continuous preparedness for an audit,SKILL_0343,1.0
+ensure continuous preparedness for audits,SKILL_0343,1.0
+establish continuous preparedness for audits,SKILL_0343,1.0
+maintain continuous preparedness for audits,SKILL_0343,1.0
+secure continuous preparedness for audits,SKILL_0343,1.0
+behavioral research,SKILL_0344,1.0
+psychology of behavior,SKILL_0344,1.0
+study of human behavior,SKILL_0344,1.0
+human cognitive psychology,SKILL_0345,1.0
+perform code reviews,SKILL_0346,1.0
+administer research interviews,SKILL_0347,1.0
+conduct interview based research,SKILL_0347,1.0
+create software for game testing,SKILL_0348,1.0
+create software to test games,SKILL_0348,1.0
+design testing software for games,SKILL_0348,1.0
+develop game testing software,SKILL_0348,1.0
+database quality evaluation,SKILL_0349,1.0
+database quality standard,SKILL_0349,1.0
+databases quality evaluation,SKILL_0349,1.0
+databases quality standards,SKILL_0349,1.0
+evaluation of database quality,SKILL_0349,1.0
+quality standard for databases,SKILL_0349,1.0
+quality standards for databases,SKILL_0349,1.0
+design software testing,SKILL_0350,1.0
+build automated software tests,SKILL_0351,1.0
+design automated software tests,SKILL_0351,1.0
+generate automated software tests,SKILL_0351,1.0
+develop norms for information management,SKILL_0352,1.0
+develop standards for information,SKILL_0352,1.0
+develop standards for information management,SKILL_0352,1.0
+set information standards,SKILL_0352,1.0
+set norms for information management,SKILL_0352,1.0
+settle information standards,SKILL_0352,1.0
+adapt implementation strategy,SKILL_0353,1.0
+come up with strategy to solve problems,SKILL_0353,1.0
+create implementation strategy,SKILL_0353,1.0
+create strategy to solve problems,SKILL_0353,1.0
+decide priorities,SKILL_0353,1.0
+design strategy to solve problems,SKILL_0353,1.0
+develop objectives,SKILL_0353,1.0
+develop problem solving strategy,SKILL_0353,1.0
+develop strategies to solve problems,SKILL_0353,1.0
+develop strategy to solve problem,SKILL_0353,1.0
+developing strategy to solve problems,SKILL_0353,1.0
+devise action plan,SKILL_0353,1.0
+devise strategy,SKILL_0353,1.0
+identify goals,SKILL_0353,1.0
+identify tasks,SKILL_0353,1.0
+set goals,SKILL_0353,1.0
+set targets,SKILL_0353,1.0
+strategic thinking,SKILL_0353,1.0
+carry out ICT user research,SKILL_0354,1.0
+test interface between software components,SKILL_0355,1.0
+games regulating principles,SKILL_0356,1.0
+games regulations,SKILL_0356,1.0
+rules of the game,SKILL_0356,1.0
+arrange live presentation,SKILL_0357,1.0
+convey live presentation,SKILL_0357,1.0
+deliver live presentation,SKILL_0357,1.0
+give a live presentation,SKILL_0357,1.0
+give live presentations,SKILL_0357,1.0
+giving live presentations,SKILL_0357,1.0
+HCI,SKILL_0358,1.0
+administer strategic planning,SKILL_0359,1.0
+execute strategic planning,SKILL_0359,1.0
+implementing a strategic plan,SKILL_0359,1.0
+implementing strategic planning,SKILL_0359,1.0
+introduce strategic planning,SKILL_0359,1.0
+strategic planning implementation,SKILL_0359,1.0
+utilise strategic planning,SKILL_0359,1.0
+IOMS,SKILL_0360,1.0
+Lean Six Sigma,SKILL_0361,1.0
+lean project management approach,SKILL_0361,1.0
+lean project methodology,SKILL_0361,1.0
+assign and schedule tasks,SKILL_0362,1.0
+manage task scheduling,SKILL_0362,1.0
+manage tasking,SKILL_0362,1.0
+organise tasks,SKILL_0362,1.0
+organize tasks,SKILL_0362,1.0
+plan tasks,SKILL_0362,1.0
+schedule tasks,SKILL_0362,1.0
+task management,SKILL_0362,1.0
+task planning,SKILL_0362,1.0
+task scheduling,SKILL_0362,1.0
+calculation,SKILL_0363,1.0
+field of mathematics,SKILL_0363,1.0
+mathematical subjects,SKILL_0363,1.0
+maths,SKILL_0363,1.0
+numeracy,SKILL_0363,1.0
+quantitative data,SKILL_0363,1.0
+solid modeling,SKILL_0363,1.0
+study of mathematics,SKILL_0363,1.0
+perform software usability testing,SKILL_0364,1.0
+usability evaluation,SKILL_0364,1.0
+a multimedia system,SKILL_0365,1.0
+multimedia arrangement,SKILL_0365,1.0
+multimedia organisation,SKILL_0365,1.0
+multimedia scheme,SKILL_0365,1.0
+multimedia structure,SKILL_0365,1.0
+multimedia system,SKILL_0365,1.0
+administer quality control,SKILL_0366,1.0
+control quality control,SKILL_0366,1.0
+manage quality control,SKILL_0366,1.0
+oversee quality controls,SKILL_0366,1.0
+overseeing quality control,SKILL_0366,1.0
+oversight of quality control,SKILL_0366,1.0
+supervise quality control,SKILL_0366,1.0
+conduct internal quality audits,SKILL_0367,1.0
+conduct quality systems audit,SKILL_0367,1.0
+perform compliane audits,SKILL_0367,1.0
+perform external quality audits,SKILL_0367,1.0
+adapt service according to circumstances,SKILL_0368,1.0
+be flexible,SKILL_0368,1.0
+execute services in a flexible manner,SKILL_0368,1.0
+perform flexible services,SKILL_0368,1.0
+perform services flexibly,SKILL_0368,1.0
+perform software crash and recovery testing,SKILL_0369,1.0
+perform unit testing,SKILL_0370,1.0
+oversee software testing plans,SKILL_0371,1.0
+probable correctness theory,SKILL_0372,1.0
+probable theory,SKILL_0372,1.0
+theory of probability,SKILL_0372,1.0
+theory of probable occurrence of events,SKILL_0372,1.0
+provide software test procedures documentation,SKILL_0373,1.0
+provide software testing procedures,SKILL_0373,1.0
+quality standards for products,SKILL_0374,1.0
+analyse customer software issues,SKILL_0375,1.0
+analyse customer software problems,SKILL_0375,1.0
+replicate customer software problems,SKILL_0375,1.0
+simulate customer software issues,SKILL_0375,1.0
+simulate customer software problems,SKILL_0375,1.0
+denounce gaming incidents,SKILL_0376,1.0
+inform on gambling incidents,SKILL_0376,1.0
+report incidents on gaming,SKILL_0376,1.0
+reporting incidents on gaming,SKILL_0376,1.0
+assistive technology for reading,SKILL_0377,1.0
+text-to-speech software,SKILL_0377,1.0
+develop QA framework,SKILL_0378,1.0
+develop QC framework,SKILL_0378,1.0
+develop quality assurance framework,SKILL_0378,1.0
+develop quality control framework,SKILL_0378,1.0
+set QA objectives,SKILL_0378,1.0
+set QA/QC objectives,SKILL_0378,1.0
+set QC objectives,SKILL_0378,1.0
+set quality control objectives,SKILL_0378,1.0
+software measurement metrics,SKILL_0379,1.0
+find a solution to problems in gambling through information technology,SKILL_0380,1.0
+solve gambling problems through digital means,SKILL_0380,1.0
+solving problems in gambling through digital means,SKILL_0380,1.0
+work out gambling problems through digital means,SKILL_0380,1.0
+statistical analysing of system software,SKILL_0381,1.0
+statistical analysis of software systems,SKILL_0381,1.0
+statistical analysis of system software,SKILL_0381,1.0
+statistical analysis system application,SKILL_0381,1.0
+statistical analysis system operating system,SKILL_0381,1.0
+statistical analysis system programme,SKILL_0381,1.0
+discern pattern in behaviour,SKILL_0382,1.0
+discern patterns in behavior,SKILL_0382,1.0
+discern patterns in behaviour,SKILL_0382,1.0
+test for behavioral pattern,SKILL_0382,1.0
+test for behavioral patterns,SKILL_0382,1.0
+test for behavioural pattern,SKILL_0382,1.0
+diagnose emotional patterns,SKILL_0383,1.0
+discern patterns in emotions,SKILL_0383,1.0
+emotional pattern test,SKILL_0383,1.0
+emotional-patterns test,SKILL_0383,1.0
+emotional-patterns-test,SKILL_0383,1.0
+test for patterns in emotions,SKILL_0383,1.0
+ensure software accessibility,SKILL_0384,1.0
+complete key performance indicators,SKILL_0385,1.0
+implement key performance indicators,SKILL_0385,1.0
+track a key performance indicator,SKILL_0385,1.0
+tracking a key performance indicator,SKILL_0385,1.0
+tracking key performance indicators,SKILL_0385,1.0
+undertake key performance indicators,SKILL_0385,1.0
+trading application,SKILL_0386,1.0
+trading software solution,SKILL_0386,1.0
+usability testing,SKILL_0387,1.0
+determine the duration of a touchpoint,SKILL_0388,1.0
+determine the frequency of a touchpoint,SKILL_0388,1.0
+examine touchpoints with a brand,SKILL_0388,1.0
+examine touchpoints with a product,SKILL_0388,1.0
+examine touchpoints with a service,SKILL_0388,1.0
+ICT testing tools,SKILL_0389,1.0
+software debugging tools,SKILL_0389,1.0
+management of IT related projects,SKILL_0390,1.0
+Agile,SKILL_0391,1.0
+Benefits realization management,SKILL_0391,1.0
+Code and fix development,SKILL_0391,1.0
+Critical chain project management,SKILL_0391,1.0
+Extreme project management,SKILL_0391,1.0
+Scrum,SKILL_0391,1.0
+agile,SKILL_0391,1.0
+prince2,SKILL_0391,1.0
+project management framework,SKILL_0391,1.0
+project management software,SKILL_0391,1.0
+software development methodologies,SKILL_0391,1.0
+structured methodology,SKILL_0391,1.0
+system integration,SKILL_0392,1.0
+network programming,SKILL_0393,1.0
+server side programming,SKILL_0393,1.0
+analysis of user requirement in ICT systems,SKILL_0394,1.0
+analysis of user requirements in ICT systems,SKILL_0394,1.0
+Information appliances,SKILL_0395,1.0
+IoT,SKILL_0395,1.0
+Pervasive systems,SKILL_0395,1.0
+Ubiquitous computing,SKILL_0395,1.0
+smart devices,SKILL_0395,1.0
+Java,SKILL_0396,1.0
+Java 2,SKILL_0396,1.0
+Java 2 enterprise edition,SKILL_0396,1.0
+CSJS,SKILL_0397,1.0
+Client-side JavaScript,SKILL_0397,1.0
+Escript,SKILL_0397,1.0
+Live Script,SKILL_0397,1.0
+Mocha,SKILL_0397,1.0
+Server-side JavaScript,SKILL_0397,1.0
+Joomla software,SKILL_0399,1.0
+Python,SKILL_0400,1.0
+Python 3K,SKILL_0400,1.0
+Python coding,SKILL_0400,1.0
+Python dev,SKILL_0400,1.0
+Python programming,SKILL_0400,1.0
+WebCMS software systems,SKILL_0401,1.0
+W3C standards,SKILL_0402,1.0
+coordinate software with architectural structures,SKILL_0403,1.0
+harmonise software with system architectures,SKILL_0403,1.0
+integrate software into system frameworks,SKILL_0403,1.0
+assess business operations,SKILL_0404,1.0
+evaluate business processes,SKILL_0404,1.0
+monitor business processes,SKILL_0404,1.0
+study the contribution of work processes to business goals,SKILL_0404,1.0
+analyse customer product risks,SKILL_0405,1.0
+analyze business requirements,SKILL_0405,1.0
+business requirements analysis,SKILL_0405,1.0
+analyse dApps,SKILL_0406,1.0
+analyse software or system specifications,SKILL_0407,1.0
+assess software specifications,SKILL_0407,1.0
+assess software systems,SKILL_0407,1.0
+evaluate software design specification,SKILL_0407,1.0
+examine software requirements,SKILL_0407,1.0
+apply data protection,SKILL_0408,1.0
+comply with data protection regulations,SKILL_0408,1.0
+data protection regulations,SKILL_0408,1.0
+data security,SKILL_0408,1.0
+ensure CIA,SKILL_0408,1.0
+ensure confidentiality principles,SKILL_0408,1.0
+information security policy,SKILL_0408,1.0
+protect data,SKILL_0408,1.0
+protect information,SKILL_0408,1.0
+secure data,SKILL_0408,1.0
+automation of cloud tasks,SKILL_0409,1.0
+evaluate cloud automation alternatives,SKILL_0409,1.0
+optimise cloud workflows,SKILL_0409,1.0
+stabilise database resources,SKILL_0410,1.0
+blockchain technology,SKILL_0411,1.0
+areas of blockchain application,SKILL_0412,1.0
+blockchain application fields,SKILL_0412,1.0
+blockchain functions,SKILL_0413,1.0
+blockchain security,SKILL_0414,1.0
+security controls for blockchain applications,SKILL_0414,1.0
+blockchain structure,SKILL_0415,1.0
+blockchain,SKILL_0416,1.0
+blockchain concepts,SKILL_0416,1.0
+CaaS,SKILL_0417,1.0
+POS,SKILL_0417,1.0
+POW,SKILL_0417,1.0
+blockchain consensus protocols,SKILL_0417,1.0
+consensus as a service,SKILL_0417,1.0
+consensus building mechanisms,SKILL_0417,1.0
+dPOS,SKILL_0417,1.0
+delegated proof of stake,SKILL_0417,1.0
+distributed ledger consensus protocols,SKILL_0417,1.0
+proof of authority,SKILL_0417,1.0
+proof of stake,SKILL_0417,1.0
+proof of work,SKILL_0417,1.0
+design patterns of blockchain,SKILL_0418,1.0
+blockchain technology history,SKILL_0419,1.0
+history of blockchain,SKILL_0419,1.0
+principles of mining in blockchain,SKILL_0420,1.0
+hybrid blockchain,SKILL_0421,1.0
+permissioned blockchain,SKILL_0421,1.0
+permissionless blockchain,SKILL_0421,1.0
+private blockchain,SKILL_0421,1.0
+public blockchain,SKILL_0421,1.0
+blockchain ecosystems,SKILL_0422,1.0
+blockchain infrastructures,SKILL_0422,1.0
+blockchain terms,SKILL_0423,1.0
+terminology of blockchain,SKILL_0423,1.0
+models for blockchain-based business,SKILL_0424,1.0
+legal guidance for blockchain,SKILL_0425,1.0
+legal regulations for blockchain,SKILL_0425,1.0
+regulatory framework for blockchain,SKILL_0425,1.0
+assemble business relationships,SKILL_0426,1.0
+build a business relationship,SKILL_0426,1.0
+building business relationships,SKILL_0426,1.0
+construct business relationships,SKILL_0426,1.0
+devise business relationships,SKILL_0426,1.0
+produce business relationships,SKILL_0426,1.0
+set up business relationships,SKILL_0426,1.0
+BPMN,SKILL_0427,1.0
+business process modeling,SKILL_0427,1.0
+process modelling,SKILL_0427,1.0
+business requirements identification,SKILL_0428,1.0
+cloud computing monitoring and reporting,SKILL_0429,1.0
+cloud monitoring,SKILL_0429,1.0
+cloud reporting,SKILL_0429,1.0
+cloud compliance,SKILL_0430,1.0
+cloud safety,SKILL_0430,1.0
+cloud safety and compliance,SKILL_0430,1.0
+cloud security,SKILL_0430,1.0
+cloud computing,SKILL_0431,1.0
+edge computing,SKILL_0431,1.0
+collaborate with designer,SKILL_0432,1.0
+collaborating with designers,SKILL_0432,1.0
+cooperate with designers,SKILL_0432,1.0
+network with designers,SKILL_0432,1.0
+team up with designers,SKILL_0432,1.0
+work together with designers,SKILL_0432,1.0
+analyse business objectives and customer interests,SKILL_0433,1.0
+create content for web elements,SKILL_0434,1.0
+write description for web elements,SKILL_0434,1.0
+computer hardware development,SKILL_0435,1.0
+computer software development,SKILL_0435,1.0
+discipline of computer engineering,SKILL_0435,1.0
+engineering of computers,SKILL_0435,1.0
+field of computer engineering,SKILL_0435,1.0
+integration of hardware and software,SKILL_0435,1.0
+science of computer engineering,SKILL_0435,1.0
+software design,SKILL_0435,1.0
+ALGOL,SKILL_0436,1.0
+AWK,SKILL_0436,1.0
+ActionScript,SKILL_0436,1.0
+Ada,SKILL_0436,1.0
+AngularJS,SKILL_0436,1.0
+AppleScript,SKILL_0436,1.0
+AspectJ,SKILL_0436,1.0
+BCPL,SKILL_0436,1.0
+BizTalk,SKILL_0436,1.0
+C shell,SKILL_0436,1.0
+COMAL,SKILL_0436,1.0
+Caml,SKILL_0436,1.0
+Ceylon,SKILL_0436,1.0
+ColdFusion,SKILL_0436,1.0
+Curl,SKILL_0436,1.0
+DIBOL,SKILL_0436,1.0
+Dylan,SKILL_0436,1.0
+Emacs Lisp,SKILL_0436,1.0
+Euphoria,SKILL_0436,1.0
+Fantom,SKILL_0436,1.0
+Fortran,SKILL_0436,1.0
+GCC,SKILL_0436,1.0
+Gosu,SKILL_0436,1.0
+Hack,SKILL_0436,1.0
+HyperTalk,SKILL_0436,1.0
+IDL,SKILL_0436,1.0
+INTERCAL,SKILL_0436,1.0
+Io,SKILL_0436,1.0
+KnockoutJS,SKILL_0436,1.0
+Korn-shell,SKILL_0436,1.0
+LabVIEW,SKILL_0436,1.0
+Lua,SKILL_0436,1.0
+MSVC++,SKILL_0436,1.0
+OCaml,SKILL_0436,1.0
+Object Pascal,SKILL_0436,1.0
+OpenCV,SKILL_0436,1.0
+PL/I,SKILL_0436,1.0
+PostScript,SKILL_0436,1.0
+PowerShell,SKILL_0436,1.0
+REXX,SKILL_0436,1.0
+Rebol,SKILL_0436,1.0
+STL,SKILL_0436,1.0
+Seed7,SKILL_0436,1.0
+Squirrel-script,SKILL_0436,1.0
+Subversion,SKILL_0436,1.0
+TACL,SKILL_0436,1.0
+Tcl,SKILL_0436,1.0
+Turing,SKILL_0436,1.0
+Visual Basic,SKILL_0436,1.0
+Visual Basic .NET,SKILL_0436,1.0
+X10,SKILL_0436,1.0
+Z shell,SKILL_0436,1.0
+bash,SKILL_0436,1.0
+cT,SKILL_0436,1.0
+occam,SKILL_0436,1.0
+content production processes,SKILL_0437,1.0
+content production techniques,SKILL_0437,1.0
+build flow diagram,SKILL_0438,1.0
+build flowchart,SKILL_0438,1.0
+compose flow chart,SKILL_0438,1.0
+compose flow diagram,SKILL_0438,1.0
+design flow chart,SKILL_0438,1.0
+design flow diagram,SKILL_0438,1.0
+develop flow chart,SKILL_0438,1.0
+develop flow diagram,SKILL_0438,1.0
+generate flow chart,SKILL_0438,1.0
+generate flow diagram,SKILL_0438,1.0
+create application design,SKILL_0439,1.0
+develop website wireframe,SKILL_0440,1.0
+set up website wireframe,SKILL_0440,1.0
+Adeptia Integration Server,SKILL_0441,1.0
+Centerprise Data Integrator,SKILL_0441,1.0
+CloverETL,SKILL_0441,1.0
+Cognos Data Manager,SKILL_0441,1.0
+Data Migrator,SKILL_0441,1.0
+ETL,SKILL_0441,1.0
+Elixir Repertoire for Data ETL,SKILL_0441,1.0
+IBM Infosphere WarehoEdition,SKILL_0441,1.0
+Open Text Integration Center,SKILL_0441,1.0
+Pervasive Data Integrator,SKILL_0441,1.0
+PowerCenter Informatica,SKILL_0441,1.0
+Relational Junction ETL Manager,SKILL_0441,1.0
+Sagent Data Flow,SKILL_0441,1.0
+Syncsort DMX,SKILL_0441,1.0
+Talend Studio for Data Integration,SKILL_0441,1.0
+data modelling,SKILL_0442,1.0
+analyse data quality,SKILL_0443,1.0
+data quality analysis,SKILL_0443,1.0
+file hosting service,SKILL_0444,1.0
+Microcontrollers,SKILL_0445,1.0
+Adabas,SKILL_0446,1.0
+Adabas D,SKILL_0446,1.0
+Adaptive Server Anywhere,SKILL_0446,1.0
+Adaptive Server Enterprise,SKILL_0446,1.0
+Advantage Database Server,SKILL_0446,1.0
+Cloudscape,SKILL_0446,1.0
+DB engines,SKILL_0446,1.0
+DB2 Everyplace,SKILL_0446,1.0
+DBMS,SKILL_0446,1.0
+Datacom,SKILL_0446,1.0
+Db.linux,SKILL_0446,1.0
+Db.star,SKILL_0446,1.0
+IDMS,SKILL_0446,1.0
+IMS DB,SKILL_0446,1.0
+Informix Dynamic Server 2000,SKILL_0446,1.0
+Informix Extended Parallel Server,SKILL_0446,1.0
+Ingres ii,SKILL_0446,1.0
+Interbase,SKILL_0446,1.0
+Jasmine ii,SKILL_0446,1.0
+Model 204,SKILL_0446,1.0
+NonStop SQL,SKILL_0446,1.0
+Objectivity DB,SKILL_0446,1.0
+Oracle 8I,SKILL_0446,1.0
+Oracle Lite,SKILL_0446,1.0
+POET Object Server Suite,SKILL_0446,1.0
+Peoplesoft,SKILL_0446,1.0
+Pervasive.SQL 2000,SKILL_0446,1.0
+Pervasive.SQL Workgroup,SKILL_0446,1.0
+PointBase Embedded,SKILL_0446,1.0
+PointBase Mobile,SKILL_0446,1.0
+PointBase Network Server,SKILL_0446,1.0
+Quadbase SQL Server,SKILL_0446,1.0
+R:Base,SKILL_0446,1.0
+Raima Database Manager,SKILL_0446,1.0
+Rdb,SKILL_0446,1.0
+SQL,SKILL_0446,1.0
+SQLBase,SKILL_0446,1.0
+SUPRA,SKILL_0446,1.0
+Sybase,SKILL_0446,1.0
+TimesTen,SKILL_0446,1.0
+UniData,SKILL_0446,1.0
+UniSQL,SKILL_0446,1.0
+Velocis,SKILL_0446,1.0
+Versant,SKILL_0446,1.0
+YARD-SQL,SKILL_0446,1.0
+database systems,SKILL_0446,1.0
+analyse testing results for incorrect software output,SKILL_0447,1.0
+fix computer code for software,SKILL_0447,1.0
+locate defects causing unexpected software output,SKILL_0447,1.0
+repair computer code for software,SKILL_0447,1.0
+DiDs,SKILL_0448,1.0
+decentralized applications on blockchain infrastructure,SKILL_0449,1.0
+decentralized software characteristics,SKILL_0449,1.0
+decentralized software frameworks,SKILL_0449,1.0
+define application architecture,SKILL_0450,1.0
+define programme architecture,SKILL_0450,1.0
+gather technical requirements,SKILL_0451,1.0
+jot down technical specifications in a list,SKILL_0451,1.0
+make a list of technical aspects,SKILL_0451,1.0
+write technical specifications,SKILL_0451,1.0
+write up a list of technical specifications,SKILL_0451,1.0
+write up a technical specifications' list,SKILL_0451,1.0
+write up technical specifications in a list,SKILL_0451,1.0
+cloud deployment,SKILL_0452,1.0
+deployment and provisioning,SKILL_0452,1.0
+provision cloud resources,SKILL_0452,1.0
+design API,SKILL_0453,1.0
+create cloud architecture,SKILL_0454,1.0
+design multi-tier cloud architecture,SKILL_0454,1.0
+engineer cloud architecture,SKILL_0454,1.0
+create cloud network,SKILL_0455,1.0
+implement cloud network,SKILL_0455,1.0
+apply design principles for cloud data architecture,SKILL_0456,1.0
+apply design principles for cloud database design,SKILL_0456,1.0
+design automated cloud databases,SKILL_0456,1.0
+design cloud data architecture,SKILL_0456,1.0
+develop cloud database design,SKILL_0456,1.0
+design access strategies for complex organisations,SKILL_0457,1.0
+design an access strategy for complex organisations,SKILL_0457,1.0
+design cloud environment for complex organisations,SKILL_0457,1.0
+design cross-account authentication for complex organisations,SKILL_0457,1.0
+implement cloud environment for complex organisations,SKILL_0457,1.0
+apply graphic design techniques,SKILL_0458,1.0
+create graphic material,SKILL_0458,1.0
+design ICT system,SKILL_0459,1.0
+design-to-cost process,SKILL_0460,1.0
+process design,SKILL_0460,1.0
+design of a blockchain-based system,SKILL_0461,1.0
+design process for blockchain application architecture,SKILL_0461,1.0
+design process for blockchain technology,SKILL_0461,1.0
+design user interface specifications,SKILL_0462,1.0
+design user interfaces,SKILL_0462,1.0
+build ICT device driver,SKILL_0463,1.0
+design ICT device driver,SKILL_0463,1.0
+create automated transfer of ICT information,SKILL_0464,1.0
+design automated migration methods,SKILL_0464,1.0
+design automated transfer of ICT information,SKILL_0464,1.0
+develop automated transfer of ICT information,SKILL_0464,1.0
+generate automated transfer of ICT information,SKILL_0464,1.0
+build innovative blockchain architectures,SKILL_0465,1.0
+comply documentation with standards,SKILL_0467,1.0
+develop software mockup,SKILL_0468,1.0
+develop software throw-away simulation,SKILL_0468,1.0
+code with cloud services,SKILL_0469,1.0
+develop cloud applications,SKILL_0469,1.0
+write code with cloud services,SKILL_0469,1.0
+IAM,SKILL_0470,1.0
+digital identity methods,SKILL_0470,1.0
+digital information systems,SKILL_0471,1.0
+consensus protocols of distributed ledger technologies,SKILL_0472,1.0
+security in distributed ledger technology,SKILL_0473,1.0
+principles of distributed ledger technology,SKILL_0474,1.0
+DNS,SKILL_0475,1.0
+DNS server,SKILL_0475,1.0
+create design sketches,SKILL_0476,1.0
+embedded software,SKILL_0477,1.0
+embedded systems software architectures,SKILL_0477,1.0
+engineering analysis principles,SKILL_0478,1.0
+engineering application principles,SKILL_0478,1.0
+engineering fieldwork principles,SKILL_0478,1.0
+engineering principle,SKILL_0478,1.0
+engineering research principles,SKILL_0478,1.0
+engineering studies principles,SKILL_0478,1.0
+engineering work principles,SKILL_0478,1.0
+build customer rapport,SKILL_0479,1.0
+create customer rapport,SKILL_0479,1.0
+establish a customer rapport,SKILL_0479,1.0
+establishing a customer rapport,SKILL_0479,1.0
+establishing customer rapport,SKILL_0479,1.0
+institute customer rapport,SKILL_0479,1.0
+start customer rapport,SKILL_0479,1.0
+time estimation of work,SKILL_0480,1.0
+evaluate blockchain applications infrastructure,SKILL_0481,1.0
+apply analytical mathematical methods,SKILL_0482,1.0
+conduct feasibility assessment,SKILL_0483,1.0
+conduct feasibility studies,SKILL_0483,1.0
+perform feasibility analysis,SKILL_0483,1.0
+perform feasibility study on solar absorption cooling,SKILL_0483,1.0
+perform feasibility study on solar heating,SKILL_0483,1.0
+undertake feasibility studies,SKILL_0483,1.0
+analyse the implications of blockchain for governance,SKILL_0484,1.0
+explain practical implications of blockchain,SKILL_0484,1.0
+explain distributed ledger technologies properties,SKILL_0485,1.0
+conflict resolution theory,SKILL_0486,1.0
+game theory for blockchain,SKILL_0486,1.0
+interactive decision theory,SKILL_0486,1.0
+rational choice theory,SKILL_0486,1.0
+ACD Canvas,SKILL_0487,1.0
+Ability Photopaint,SKILL_0487,1.0
+Adobe Photoshop Elements,SKILL_0487,1.0
+Apache OpenOffice Draw,SKILL_0487,1.0
+ArcSoft PhotoImpression,SKILL_0487,1.0
+ArtRage,SKILL_0487,1.0
+Autodesk SketchBook Pro,SKILL_0487,1.0
+Balsamiq,SKILL_0487,1.0
+Chasys Draw IES,SKILL_0487,1.0
+CinePaint,SKILL_0487,1.0
+CodedColor,SKILL_0487,1.0
+Color It!,SKILL_0487,1.0
+Corel Painter Essentials,SKILL_0487,1.0
+Corel Photo-Paint,SKILL_0487,1.0
+Darktable,SKILL_0487,1.0
+DigiKam,SKILL_0487,1.0
+Embroidermodder,SKILL_0487,1.0
+Erdas Imagine,SKILL_0487,1.0
+F-Spot,SKILL_0487,1.0
+FastStone Image Viewer,SKILL_0487,1.0
+Fatpaint,SKILL_0487,1.0
+Fotografix,SKILL_0487,1.0
+G'MIC,SKILL_0487,1.0
+GIMPshop,SKILL_0487,1.0
+GimPhoto,SKILL_0487,1.0
+GrafX2,SKILL_0487,1.0
+GraphicConverter,SKILL_0487,1.0
+GraphicsMagick,SKILL_0487,1.0
+ImageMagick,SKILL_0487,1.0
+Inkscape,SKILL_0487,1.0
+IrfanView,SKILL_0487,1.0
+Iridient Developer,SKILL_0487,1.0
+KolourPaint,SKILL_0487,1.0
+LView Pro,SKILL_0487,1.0
+LazPaint,SKILL_0487,1.0
+LibreOffice Draw,SKILL_0487,1.0
+LightZone,SKILL_0487,1.0
+Macromedia FreeHand,SKILL_0487,1.0
+NeoPaint,SKILL_0487,1.0
+OmniGraffle,SKILL_0487,1.0
+PMview,SKILL_0487,1.0
+Paint.NET,SKILL_0487,1.0
+Phatch,SKILL_0487,1.0
+Photo Mechanic,SKILL_0487,1.0
+PhotoPerfect,SKILL_0487,1.0
+PhotoScape,SKILL_0487,1.0
+Photogenics,SKILL_0487,1.0
+PicMonkey,SKILL_0487,1.0
+Picasa,SKILL_0487,1.0
+Pictor Paint,SKILL_0487,1.0
+PixBuilder Photo Editor,SKILL_0487,1.0
+Pixelmator,SKILL_0487,1.0
+Pixia,SKILL_0487,1.0
+Pixlr.com,SKILL_0487,1.0
+Project Dogwaffle,SKILL_0487,1.0
+QFX,SKILL_0487,1.0
+RawTherapee,SKILL_0487,1.0
+Rawstudio,SKILL_0487,1.0
+SAI,SKILL_0487,1.0
+SVG-edit,SKILL_0487,1.0
+Serif DrawPlus,SKILL_0487,1.0
+Serif Photoplus,SKILL_0487,1.0
+Shotwell,SKILL_0487,1.0
+Sodipodi,SKILL_0487,1.0
+Swift 3D,SKILL_0487,1.0
+TVPaint,SKILL_0487,1.0
+Tux Paint,SKILL_0487,1.0
+UFRaw,SKILL_0487,1.0
+Ulead PhotoImpact,SKILL_0487,1.0
+Unified Color HDR PhotoStudio,SKILL_0487,1.0
+XPaint,SKILL_0487,1.0
+Xara Photo & Graphic Designer,SKILL_0487,1.0
+Xara Xtreme LX,SKILL_0487,1.0
+XnView,SKILL_0487,1.0
+Zoner Photo Studio,SKILL_0487,1.0
+cosmigo Pro Motion,SKILL_0487,1.0
+sK1,SKILL_0487,1.0
+vector graphics editor,SKILL_0487,1.0
+ICT user needs identification techniques,SKILL_0488,1.0
+analyse blockchain-based business innovation,SKILL_0489,1.0
+use blockchain to drive innovation,SKILL_0489,1.0
+categorise customer requirements,SKILL_0490,1.0
+gather and define user requirements,SKILL_0490,1.0
+write research applications,SKILL_0490,1.0
+cloud security and compliance,SKILL_0491,1.0
+design and develop front-end website,SKILL_0492,1.0
+provide front-end website design,SKILL_0492,1.0
+apply smart contracts,SKILL_0493,1.0
+continuing professional development in industrial tools and software,SKILL_0494,1.0
+industrial application of software,SKILL_0494,1.0
+manufacturing software,SKILL_0494,1.0
+scheduling software,SKILL_0494,1.0
+software for engineering applications,SKILL_0494,1.0
+software for manufacturing,SKILL_0494,1.0
+software for production processes,SKILL_0494,1.0
+software used in industrial,SKILL_0494,1.0
+Anjuta,SKILL_0495,1.0
+Borland C++ Builder,SKILL_0495,1.0
+Code::Blocks,SKILL_0495,1.0
+CodeForge,SKILL_0495,1.0
+CodeLite,SKILL_0495,1.0
+Dev-C++,SKILL_0495,1.0
+DialogBlocks,SKILL_0495,1.0
+IDE,SKILL_0495,1.0
+MinGW Developer Studio,SKILL_0495,1.0
+NetBeans,SKILL_0495,1.0
+Philasmicos Entwickler Studio,SKILL_0495,1.0
+SPE,SKILL_0495,1.0
+Zeus IDE,SKILL_0495,1.0
+wxHatch,SKILL_0495,1.0
+communicate with users to gather requirements,SKILL_0496,1.0
+clarify technical requirements,SKILL_0497,1.0
+decipher technical requirements,SKILL_0497,1.0
+explain technical requirements,SKILL_0497,1.0
+interpret technical requirement,SKILL_0497,1.0
+interpretation of technical requirements,SKILL_0497,1.0
+interpreting technical requirements,SKILL_0497,1.0
+solve technical requirements,SKILL_0497,1.0
+interpret technical information,SKILL_0498,1.0
+keep up with the latest information systems,SKILL_0499,1.0
+international regulations for the development and use of ICT products,SKILL_0500,1.0
+international regulations for the use of ICT products,SKILL_0500,1.0
+legal requirements for the design of ICT products,SKILL_0500,1.0
+legal requirements for the development and use of ICT products,SKILL_0500,1.0
+legal requirements for the development of ICT products,SKILL_0500,1.0
+analyse legacy implication,SKILL_0501,1.0
+lead ICT projects,SKILL_0502,1.0
+formalise knowledge in ICT-system,SKILL_0503,1.0
+manage information and knowledge,SKILL_0503,1.0
+manage knowledge,SKILL_0503,1.0
+model ontologies,SKILL_0503,1.0
+cloud storage and data management,SKILL_0504,1.0
+create cloud data retention,SKILL_0504,1.0
+implement cloud data protection,SKILL_0504,1.0
+manage cloud data encryption,SKILL_0504,1.0
+manage cloud data retention,SKILL_0504,1.0
+drift existing data,SKILL_0505,1.0
+Firefox OS,SKILL_0506,1.0
+Sailfish OS,SKILL_0506,1.0
+Tizen,SKILL_0506,1.0
+Ubuntu Touch OS,SKILL_0506,1.0
+cell phone operating systems,SKILL_0506,1.0
+knowledge of object-oriented modelling,SKILL_0507,1.0
+object-oriented modeling,SKILL_0507,1.0
+object-oriented paradigm,SKILL_0507,1.0
+explain blockchain-based identity management system,SKILL_0508,1.0
+coordinate development of applications,SKILL_0509,1.0
+coordinate development of software,SKILL_0509,1.0
+manage the development of a software,SKILL_0509,1.0
+monitor development of software,SKILL_0509,1.0
+oversee development of applications,SKILL_0509,1.0
+backup ICT system,SKILL_0510,1.0
+backup data,SKILL_0510,1.0
+fundamentals of programme management,SKILL_0511,1.0
+fundamentals of project management,SKILL_0511,1.0
+management of programmes,SKILL_0511,1.0
+management of projects,SKILL_0511,1.0
+principles of programme management,SKILL_0511,1.0
+principles of project management,SKILL_0511,1.0
+programme management,SKILL_0511,1.0
+programme management activities,SKILL_0511,1.0
+project management activities,SKILL_0511,1.0
+propose technical solutions to business problems,SKILL_0512,1.0
+create cost benefit analysis reports,SKILL_0513,1.0
+generate cost benefit analysis reports,SKILL_0513,1.0
+produce cost benefit analysis reports,SKILL_0513,1.0
+provide cost benefit analysis report,SKILL_0513,1.0
+provide cost-benefit analysis reports,SKILL_0513,1.0
+provide reports on cost benefit analysis,SKILL_0513,1.0
+providing cost benefit analysis reports,SKILL_0513,1.0
+.QL,SKILL_0514,1.0
+CQLF,SKILL_0514,1.0
+Concept-Oriented,SKILL_0514,1.0
+DMX,SKILL_0514,1.0
+Datalog,SKILL_0514,1.0
+F-logic,SKILL_0514,1.0
+FQL,SKILL_0514,1.0
+Gellish,SKILL_0514,1.0
+HTSQL,SKILL_0514,1.0
+ISBL,SKILL_0514,1.0
+MQL,SKILL_0514,1.0
+OCL,SKILL_0514,1.0
+OPath,SKILL_0514,1.0
+OQL,SKILL_0514,1.0
+OttoQL,SKILL_0514,1.0
+Poliqarp,SKILL_0514,1.0
+QUEL,SKILL_0514,1.0
+RDQL,SKILL_0514,1.0
+ReQL,SKILL_0514,1.0
+SPL,SKILL_0514,1.0
+SuprTool,SKILL_0514,1.0
+TMQL,SKILL_0514,1.0
+XPath,SKILL_0514,1.0
+XSPARQL,SKILL_0514,1.0
+YQL,SKILL_0514,1.0
+detect blockchain technology application domains,SKILL_0515,1.0
+identify blockchain technology application domains,SKILL_0515,1.0
+identify risks in blockchain technology,SKILL_0516,1.0
+predict risks in blockchain technology,SKILL_0516,1.0
+use data reporting,SKILL_0517,1.0
+RDF query language,SKILL_0518,1.0
+SPARQL,SKILL_0518,1.0
+smart contract software,SKILL_0519,1.0
+programming languages for smart contract,SKILL_0520,1.0
+best practices for software user interface tasks,SKILL_0521,1.0
+software UI design best practices,SKILL_0521,1.0
+software user interface design patterns,SKILL_0521,1.0
+solutions for software UI tasks,SKILL_0521,1.0
+solutions for software user interface tasks,SKILL_0521,1.0
+software architecture frameworks,SKILL_0522,1.0
+software architecture patterns,SKILL_0522,1.0
+software design approaches,SKILL_0524,1.0
+software design techniques,SKILL_0524,1.0
+software engineering frameworks,SKILL_0525,1.0
+diagnose system problems,SKILL_0526,1.0
+manage system problem,SKILL_0526,1.0
+troubleshoot system,SKILL_0526,1.0
+CSS,SKILL_0527,1.0
+Document Style Semantics and Specification Language,SKILL_0527,1.0
+Extensible Stylesheet Language,SKILL_0527,1.0
+Formatted Output Specification Instance,SKILL_0527,1.0
+SMIL Timesheets,SKILL_0527,1.0
+cascading style sheets,SKILL_0527,1.0
+system architecture design,SKILL_0528,1.0
+application development life-cycle,SKILL_0529,1.0
+mechanical drawings,SKILL_0530,1.0
+scientific drawings,SKILL_0530,1.0
+specialised drawings,SKILL_0530,1.0
+technical drawing,SKILL_0530,1.0
+check ICT query output,SKILL_0531,1.0
+check ICT query performance,SKILL_0531,1.0
+Bcfg2,SKILL_0532,1.0
+CFEngine,SKILL_0532,1.0
+ISconf,SKILL_0532,1.0
+Local ConFiGuration system,SKILL_0532,1.0
+NOC,SKILL_0532,1.0
+NixOS,SKILL_0532,1.0
+OCS Inventory NG with GLPI,SKILL_0532,1.0
+Open pc server integration,SKILL_0532,1.0
+PIKT,SKILL_0532,1.0
+Quattor,SKILL_0532,1.0
+Radmind,SKILL_0532,1.0
+Rudder,SKILL_0532,1.0
+Rundeck,SKILL_0532,1.0
+SmartFrog,SKILL_0532,1.0
+Synctool,SKILL_0532,1.0
+cdist,SKILL_0532,1.0
+git,SKILL_0532,1.0
+revision control,SKILL_0532,1.0
+software tools for version control,SKILL_0532,1.0
+source control,SKILL_0532,1.0
+tools for software version control,SKILL_0532,1.0
+develop visual design based on target audience,SKILL_0533,1.0
+develop visual design concepts based on target audience,SKILL_0533,1.0
+develop visual design concepts from given specifications,SKILL_0533,1.0
+develop visual design from given specifications,SKILL_0533,1.0
+translate requirement concepts into visual design,SKILL_0533,1.0
+standard modelling language,SKILL_0534,1.0
+uml,SKILL_0534,1.0
+unified modeling language,SKILL_0534,1.0
+application-specific interface operating,SKILL_0535,1.0
+application-specific interface using,SKILL_0535,1.0
+operate an application-specific interface,SKILL_0535,1.0
+operate an interface specific to the application,SKILL_0535,1.0
+operating an application-specific interface,SKILL_0535,1.0
+operating an interface specific to the application,SKILL_0535,1.0
+use an interface specific to the application,SKILL_0535,1.0
+using an application-specific interface,SKILL_0535,1.0
+using an interface specific to the application,SKILL_0535,1.0
+able to use using databases,SKILL_0536,1.0
+apply databases,SKILL_0536,1.0
+make use of databases,SKILL_0536,1.0
+use Dbs,SKILL_0536,1.0
+use data bases,SKILL_0536,1.0
+use database,SKILL_0536,1.0
+use database management systems,SKILL_0536,1.0
+use database software,SKILL_0536,1.0
+utilise databases,SKILL_0536,1.0
+apply specific communication channels,SKILL_0537,1.0
+handle specific communication channels,SKILL_0537,1.0
+operate specific communication channels,SKILL_0537,1.0
+use of different communication channels,SKILL_0537,1.0
+using different communication channels,SKILL_0537,1.0
+utilise specific communication channels,SKILL_0537,1.0
+able to use e-services,SKILL_0538,1.0
+apply e-services,SKILL_0538,1.0
+engage in citizenship through digital technologies,SKILL_0538,1.0
+make use of e-services,SKILL_0538,1.0
+use electronic services,SKILL_0538,1.0
+use online payment solutions,SKILL_0538,1.0
+utilise e-services,SKILL_0538,1.0
+use HTML,SKILL_0539,1.0
+use Html,SKILL_0539,1.0
+use XHTML,SKILL_0539,1.0
+use html,SKILL_0539,1.0
+use mark-up languages,SKILL_0539,1.0
+apply approaches for user-centered design,SKILL_0540,1.0
+apply methodologies for user centered design,SKILL_0540,1.0
+employ techniques for user-oriented design,SKILL_0540,1.0
+utilise user-centered design methodologies,SKILL_0540,1.0
+use programming design patterns,SKILL_0541,1.0
+utilise software design patterns,SKILL_0541,1.0
+utilise software libraries,SKILL_0542,1.0
+use CASE tools,SKILL_0543,1.0
+utilise CASE tools,SKILL_0543,1.0
+utilise CASE tools for software design,SKILL_0543,1.0
+utilize CASE tools for software design,SKILL_0543,1.0
+utilize computer-aided software engineering tools,SKILL_0543,1.0
+digital collaboration tools,SKILL_0544,1.0
+online collaborative tools,SKILL_0544,1.0
+markup programming,SKILL_0545,1.0
+web services systems,SKILL_0546,1.0
+provide database documentation,SKILL_0547,1.0
+accept constructive criticism,SKILL_0548,1.0
+accept critics,SKILL_0548,1.0
+accept feedback,SKILL_0548,1.0
+handle feedback,SKILL_0548,1.0
+tolerate critics,SKILL_0548,1.0
+welcome criticism,SKILL_0548,1.0
+welcome feedback,SKILL_0548,1.0
+adapt to changes,SKILL_0549,1.0
+adapting to change,SKILL_0549,1.0
+adjust to change,SKILL_0549,1.0
+assimilate to change,SKILL_0549,1.0
+be flexible,SKILL_0549,1.0
+be open to change,SKILL_0549,1.0
+conform to change,SKILL_0549,1.0
+demonstrate flexibility,SKILL_0549,1.0
+openness to change,SKILL_0549,1.0
+revise plans to deal with changes,SKILL_0549,1.0
+show willingness to change,SKILL_0549,1.0
+address audiences,SKILL_0550,1.0
+addressing an audience,SKILL_0550,1.0
+deliver a speech,SKILL_0550,1.0
+give a lecture to an audience,SKILL_0550,1.0
+give a talk to an audience,SKILL_0550,1.0
+present ideas,SKILL_0550,1.0
+speak to an audience,SKILL_0550,1.0
+demonstrate physical resilience,SKILL_0551,1.0
+tolerate unfavourable temperatures,SKILL_0551,1.0
+work under adverse weather conditions,SKILL_0551,1.0
+adopt a sustainable eating habit,SKILL_0552,1.0
+concretely support biodiversity and animal welfare,SKILL_0552,1.0
+implement environmental choices in your own eating habit,SKILL_0552,1.0
+promoting organic and biological food consumption,SKILL_0552,1.0
+take animal welfare into account when buying food products,SKILL_0552,1.0
+take sustainability issues into account in consumption choices,SKILL_0552,1.0
+avoid plastic,SKILL_0553,1.0
+avoid single-use items,SKILL_0553,1.0
+follow environmentally-sustainable work practices,SKILL_0553,1.0
+follow recycling collection schedules,SKILL_0553,1.0
+minimise waste production in households,SKILL_0553,1.0
+practice a minimalist lifestyle,SKILL_0553,1.0
+reduce energy usage,SKILL_0553,1.0
+reduce water or energy consumption,SKILL_0553,1.0
+reuse materials,SKILL_0553,1.0
+reuse products,SKILL_0553,1.0
+share physical resources,SKILL_0553,1.0
+handle your own waste,SKILL_0554,1.0
+prefer public to private transport,SKILL_0554,1.0
+prevent pollution,SKILL_0554,1.0
+reduce noise,SKILL_0554,1.0
+use public transportation,SKILL_0554,1.0
+advise colleagues,SKILL_0555,1.0
+advise customers,SKILL_0555,1.0
+counsel others,SKILL_0555,1.0
+counselling,SKILL_0555,1.0
+give advice,SKILL_0555,1.0
+give constructive feedback,SKILL_0555,1.0
+giving advice to others,SKILL_0555,1.0
+guide others,SKILL_0555,1.0
+make recommendations to others,SKILL_0555,1.0
+mentor individuals,SKILL_0555,1.0
+mentor others,SKILL_0555,1.0
+offer suggestions to others,SKILL_0555,1.0
+provide advisory services,SKILL_0555,1.0
+use basic coding skills,SKILL_0556,1.0
+use basic programming language skills,SKILL_0556,1.0
+use query languages,SKILL_0556,1.0
+implement digital security measures,SKILL_0557,1.0
+protect ICT devices,SKILL_0557,1.0
+protect digital devices,SKILL_0557,1.0
+protect personal data,SKILL_0557,1.0
+remove viruses and malware from a computer,SKILL_0557,1.0
+up-date online security measures,SKILL_0557,1.0
+use anti-virus software,SKILL_0557,1.0
+attend to cleanliness,SKILL_0558,1.0
+attend to hygiene,SKILL_0558,1.0
+care for hygiene,SKILL_0558,1.0
+conform to hygienic work practices,SKILL_0558,1.0
+follow hygienic work practices,SKILL_0558,1.0
+identify hygiene risks,SKILL_0558,1.0
+look after hygiene,SKILL_0558,1.0
+act according to ethical and religious values,SKILL_0559,1.0
+apply philosophical school of thoughts,SKILL_0559,1.0
+assess the consequences and impact of ideas,SKILL_0559,1.0
+evaluate the moral and ethical consequences of actions,SKILL_0559,1.0
+follow ethical values and religious believes,SKILL_0559,1.0
+carry out measurements,SKILL_0560,1.0
+demonstrate scientific literacy,SKILL_0560,1.0
+demonstrate technical abilities,SKILL_0560,1.0
+take on new technology,SKILL_0560,1.0
+demonstrate interest in politics,SKILL_0561,1.0
+demonstrate knowledge of European history,SKILL_0561,1.0
+demonstrate social knowledge,SKILL_0561,1.0
+understand the role of social movements in society,SKILL_0561,1.0
+appreciate artistic expressions,SKILL_0562,1.0
+appreciate cultural heritage,SKILL_0562,1.0
+demonstrate cultural awareness,SKILL_0562,1.0
+have a feeling for aesthetics,SKILL_0562,1.0
+adopt a constructive approach,SKILL_0563,1.0
+keep a positive attitude,SKILL_0563,1.0
+maintain a positive attitude,SKILL_0563,1.0
+show sense of humour,SKILL_0563,1.0
+act responsibly,SKILL_0564,1.0
+be ready to take on responsibility,SKILL_0564,1.0
+be ready to take responsibilities,SKILL_0564,1.0
+be responsible,SKILL_0564,1.0
+demonstrate a conscientious attitude,SKILL_0564,1.0
+demonstrate responsibility,SKILL_0564,1.0
+prove sense of responsibility,SKILL_0564,1.0
+show responsible behaviour,SKILL_0564,1.0
+showing responsibility,SKILL_0564,1.0
+attend to accuracy,SKILL_0565,1.0
+attend to details,SKILL_0565,1.0
+attend to precision,SKILL_0565,1.0
+attending to details,SKILL_0565,1.0
+deal with details,SKILL_0565,1.0
+manage details,SKILL_0565,1.0
+sort out details,SKILL_0565,1.0
+to work precisely,SKILL_0565,1.0
+work carefully,SKILL_0565,1.0
+work in a proper manner,SKILL_0565,1.0
+work meticulously,SKILL_0565,1.0
+building effective relationships,SKILL_0566,1.0
+create networks,SKILL_0566,1.0
+establish contacts,SKILL_0566,1.0
+liaise with others,SKILL_0566,1.0
+maintain contact with others,SKILL_0566,1.0
+maintain networks,SKILL_0566,1.0
+make contacts,SKILL_0566,1.0
+show ability to network,SKILL_0566,1.0
+arrange team building,SKILL_0567,1.0
+build teams,SKILL_0567,1.0
+design team building,SKILL_0567,1.0
+organise a team,SKILL_0567,1.0
+plan team building,SKILL_0567,1.0
+project team building,SKILL_0567,1.0
+estimate the probability of an outcome or fact,SKILL_0568,1.0
+make estimations,SKILL_0568,1.0
+work with probabilities,SKILL_0568,1.0
+carry out work-related calculation,SKILL_0569,1.0
+use numbers,SKILL_0569,1.0
+adhere to legislation or policies,SKILL_0570,1.0
+comply with legislative provisions,SKILL_0570,1.0
+follow directions and procedures,SKILL_0570,1.0
+work in a thoughtful manner,SKILL_0570,1.0
+look for information on the Internet,SKILL_0571,1.0
+search for information online,SKILL_0571,1.0
+use search engine,SKILL_0571,1.0
+accept challenges,SKILL_0572,1.0
+cope with pressures,SKILL_0572,1.0
+coping with pressure,SKILL_0572,1.0
+deal with pressure,SKILL_0572,1.0
+handle pressure,SKILL_0572,1.0
+manage pressure,SKILL_0572,1.0
+perform under pressure,SKILL_0572,1.0
+show mental resilience,SKILL_0572,1.0
+stay cool under pressure,SKILL_0572,1.0
+work under pressure,SKILL_0572,1.0
+deal with uncertainties,SKILL_0573,1.0
+dealing with uncertainty,SKILL_0573,1.0
+handle ambiguity,SKILL_0573,1.0
+handle uncertainty,SKILL_0573,1.0
+manage uncertainty,SKILL_0573,1.0
+create content in digital form,SKILL_0574,1.0
+edit digital content,SKILL_0574,1.0
+produce digital content,SKILL_0574,1.0
+assess information,SKILL_0575,1.0
+check facts,SKILL_0575,1.0
+detect bias,SKILL_0575,1.0
+evaluate information,SKILL_0575,1.0
+understand the role of media in democratic societies,SKILL_0575,1.0
+verify information,SKILL_0575,1.0
+verify the source of information,SKILL_0575,1.0
+weigh information,SKILL_0575,1.0
+delegate activities,SKILL_0576,1.0
+delegate activities to others,SKILL_0576,1.0
+delegate tasks,SKILL_0576,1.0
+distribute activities,SKILL_0576,1.0
+distribute tasks,SKILL_0576,1.0
+share duties,SKILL_0576,1.0
+share tasks,SKILL_0576,1.0
+apply ergonomics,SKILL_0577,1.0
+follow work-place safety regulations,SKILL_0577,1.0
+know the effects of drugs and alcohol on individuals,SKILL_0577,1.0
+manage health risk,SKILL_0577,1.0
+meet health and safety requirements,SKILL_0577,1.0
+work safely with hazardous material,SKILL_0577,1.0
+be curious,SKILL_0578,1.0
+demonstrate interest,SKILL_0578,1.0
+demonstrating curiosity,SKILL_0578,1.0
+display curiosity,SKILL_0578,1.0
+exhibit curiosity,SKILL_0578,1.0
+show curiosity,SKILL_0578,1.0
+show interest,SKILL_0578,1.0
+adapt to cultural differences,SKILL_0579,1.0
+consider different cultural backgrounds,SKILL_0579,1.0
+demonstrate cross-cultural competence,SKILL_0579,1.0
+display intercultural competence,SKILL_0579,1.0
+exhibit intercultural competence,SKILL_0579,1.0
+respect different cultural backgrounds,SKILL_0579,1.0
+show cultural competence,SKILL_0579,1.0
+show intercultural competence,SKILL_0579,1.0
+use culturally appropriate body language,SKILL_0579,1.0
+back company plan,SKILL_0580,1.0
+champion company plan,SKILL_0580,1.0
+follow organisation's vision,SKILL_0580,1.0
+show loyalty,SKILL_0580,1.0
+support company mission,SKILL_0580,1.0
+support company plan,SKILL_0580,1.0
+support plans of the company,SKILL_0580,1.0
+be honest,SKILL_0581,1.0
+be trustworthy,SKILL_0581,1.0
+establish trust,SKILL_0581,1.0
+show credibility,SKILL_0581,1.0
+direct own learning,SKILL_0582,1.0
+display willingness to learn,SKILL_0582,1.0
+exhibit willingness to learn,SKILL_0582,1.0
+show self-knowledge,SKILL_0582,1.0
+show willingness to learn,SKILL_0582,1.0
+work towards own potential,SKILL_0582,1.0
+advocate sustainability,SKILL_0583,1.0
+encourage others to respect the environment,SKILL_0583,1.0
+inform about sustainability,SKILL_0583,1.0
+promote environmental friendly behaviours,SKILL_0583,1.0
+promote sustainability,SKILL_0583,1.0
+adopt an ecological attitude,SKILL_0584,1.0
+adopt an environmental friendly attitude,SKILL_0584,1.0
+apply ethical and sustainable thinking,SKILL_0584,1.0
+consider the impact of your actions on the environment,SKILL_0584,1.0
+demonstrate sensitivity for environmental issues,SKILL_0584,1.0
+be aware of legal rights,SKILL_0585,1.0
+demonstrate interest in current events,SKILL_0585,1.0
+exercise constitutional rights,SKILL_0585,1.0
+exercise legal rights,SKILL_0585,1.0
+participate in democratic decision-making,SKILL_0585,1.0
+assess the impact of your professional development,SKILL_0586,1.0
+be able to engage in self-reflection,SKILL_0586,1.0
+conduct self-assessment,SKILL_0586,1.0
+do self-assessment,SKILL_0586,1.0
+estimate the impact of your professional development,SKILL_0586,1.0
+evaluate professional development impact,SKILL_0586,1.0
+evaluate the impact of your professional development,SKILL_0586,1.0
+examine the impact of your professional development,SKILL_0586,1.0
+gauge the impact of your professional development,SKILL_0586,1.0
+monitor the impact of your professional development,SKILL_0586,1.0
+perform self-assessment,SKILL_0586,1.0
+perform self-evaluation,SKILL_0586,1.0
+reflect on practice,SKILL_0586,1.0
+self-assess,SKILL_0586,1.0
+self-evaluate,SKILL_0586,1.0
+demonstrate sense of rhythm,SKILL_0587,1.0
+engage in artistic self-expression,SKILL_0587,1.0
+express ideas experiences and emotions creatively,SKILL_0587,1.0
+play instruments,SKILL_0587,1.0
+detect problems,SKILL_0588,1.0
+diagnose problems,SKILL_0588,1.0
+signal problems,SKILL_0588,1.0
+demonstrate ability to improvise,SKILL_0589,1.0
+show talent for improvisation,SKILL_0589,1.0
+educate others,SKILL_0590,1.0
+instruct colleagues,SKILL_0590,1.0
+instructing others,SKILL_0590,1.0
+teach others,SKILL_0590,1.0
+train others,SKILL_0590,1.0
+apply mathematical reasoning,SKILL_0591,1.0
+apply numeracy skills,SKILL_0591,1.0
+apply numerical reasoning,SKILL_0591,1.0
+demonstrate an understanding of numbers,SKILL_0591,1.0
+enjoy working with numbers,SKILL_0591,1.0
+being open minded,SKILL_0592,1.0
+demonstrate freedom from prejudice,SKILL_0592,1.0
+show acceptance of others,SKILL_0592,1.0
+take on new ideas and experiences,SKILL_0592,1.0
+direct others,SKILL_0593,1.0
+exert a goal-oriented leadership role,SKILL_0593,1.0
+exert a goal-oriented leadership role towards colleagues,SKILL_0593,1.0
+exert a leadership role towards colleagues,SKILL_0593,1.0
+exert a result-oriented leadership role,SKILL_0593,1.0
+exert a result-oriented leadership role towards colleagues,SKILL_0593,1.0
+exert result-oriented leadership,SKILL_0593,1.0
+give direction,SKILL_0593,1.0
+guide others,SKILL_0593,1.0
+lead colleagues,SKILL_0593,1.0
+leading others,SKILL_0593,1.0
+make use of goal-driven leadership abilities,SKILL_0593,1.0
+make use of leadership abilities for team coordination,SKILL_0593,1.0
+make use of result-oriented leadership abilities,SKILL_0593,1.0
+manage people,SKILL_0593,1.0
+show an exemplary leading role in an organisation,SKILL_0593,1.0
+show leadership attitude,SKILL_0593,1.0
+supervise others,SKILL_0593,1.0
+take on a leadership role,SKILL_0593,1.0
+focus for prolonged periods,SKILL_0594,1.0
+keep concentration for long periods,SKILL_0594,1.0
+keep focused for extended periods,SKILL_0594,1.0
+maintain concentration for extended periods,SKILL_0594,1.0
+maintain focus for long periods of time,SKILL_0594,1.0
+preserve concentration for long periods,SKILL_0594,1.0
+stay concentrated for long periods,SKILL_0594,1.0
+stay focused for extended periods of time,SKILL_0594,1.0
+work in a focused manner,SKILL_0594,1.0
+adopt an healthy lifestyle,SKILL_0595,1.0
+apply preventive healthy behaviours,SKILL_0595,1.0
+care about your fitness,SKILL_0595,1.0
+keep yourself in good conditions,SKILL_0595,1.0
+balance working time and personal life,SKILL_0596,1.0
+maintain work-life balance,SKILL_0596,1.0
+protect the psychological wellbeing,SKILL_0596,1.0
+pursue mental wellbeing,SKILL_0596,1.0
+safely use digital technologies,SKILL_0596,1.0
+apply preventive care measures to avoid physical or psychological harm,SKILL_0597,1.0
+find the right healthcare service,SKILL_0597,1.0
+manage appropriate medications,SKILL_0597,1.0
+make choices,SKILL_0598,1.0
+make decision,SKILL_0598,1.0
+making decisions,SKILL_0598,1.0
+take decisions,SKILL_0598,1.0
+seek for appropriate care,SKILL_0599,1.0
+utilise hearing aids,SKILL_0599,1.0
+utilise seeing aids,SKILL_0599,1.0
+utilise walking aids,SKILL_0599,1.0
+protecting privacy and identity on the Internet,SKILL_0600,1.0
+compare deals and offers when acquiring products or services,SKILL_0601,1.0
+exercise consumer rights,SKILL_0601,1.0
+manage personal budget for financial needs,SKILL_0601,1.0
+manage personal finances,SKILL_0601,1.0
+select appropriate insurance products,SKILL_0601,1.0
+undertake effective financial planning,SKILL_0601,1.0
+use financial advices and guidance services with a critical mindset,SKILL_0601,1.0
+use investments and credit to achieve long term goals,SKILL_0601,1.0
+control impulses,SKILL_0602,1.0
+cope well with setbacks,SKILL_0602,1.0
+cope with frustration,SKILL_0602,1.0
+deal with frustration,SKILL_0602,1.0
+foster hope,SKILL_0602,1.0
+handle frustration,SKILL_0602,1.0
+manage disappointments,SKILL_0602,1.0
+manage emotions,SKILL_0602,1.0
+manage own emotions,SKILL_0602,1.0
+managing frustration,SKILL_0602,1.0
+recognise own potential,SKILL_0602,1.0
+recover from setbacks,SKILL_0602,1.0
+regulate moods,SKILL_0602,1.0
+show capacity to deal with stress,SKILL_0602,1.0
+manage career goals,SKILL_0603,1.0
+manage life goals,SKILL_0603,1.0
+plan your career,SKILL_0603,1.0
+apply quality standards,SKILL_0604,1.0
+attend to quality,SKILL_0604,1.0
+managing quality,SKILL_0604,1.0
+monitor quality,SKILL_0604,1.0
+oversee quality,SKILL_0604,1.0
+work to agreed standards,SKILL_0604,1.0
+adhere to schedules,SKILL_0605,1.0
+coordinate actions,SKILL_0605,1.0
+define milestones,SKILL_0605,1.0
+draw up time line,SKILL_0605,1.0
+manage schedule,SKILL_0605,1.0
+managing time,SKILL_0605,1.0
+meet deadlines,SKILL_0605,1.0
+plan deadlines,SKILL_0605,1.0
+plan time,SKILL_0605,1.0
+prioritise actions,SKILL_0605,1.0
+prioritise tasks,SKILL_0605,1.0
+set priorities,SKILL_0605,1.0
+work out time line,SKILL_0605,1.0
+achieve goals,SKILL_0606,1.0
+demonstrate commitment,SKILL_0606,1.0
+demonstrate conscientiousness,SKILL_0606,1.0
+demonstrate loyalty,SKILL_0606,1.0
+demonstrate punctuality,SKILL_0606,1.0
+demonstrate reliability,SKILL_0606,1.0
+demonstrate steady effort,SKILL_0606,1.0
+keep promises,SKILL_0606,1.0
+meet commitment,SKILL_0606,1.0
+meet targets,SKILL_0606,1.0
+meeting commitments,SKILL_0606,1.0
+show commitment,SKILL_0606,1.0
+show conscientiousness,SKILL_0606,1.0
+show reliability,SKILL_0606,1.0
+show responsibility,SKILL_0606,1.0
+work to deadlines,SKILL_0606,1.0
+commit information to memory,SKILL_0607,1.0
+learn information by heart,SKILL_0607,1.0
+memorise facts,SKILL_0607,1.0
+memorise info,SKILL_0607,1.0
+memorise procedures,SKILL_0607,1.0
+memorising information,SKILL_0607,1.0
+mnemonics principles,SKILL_0607,1.0
+remember information,SKILL_0607,1.0
+apply moderation techniques,SKILL_0608,1.0
+carry out moderation,SKILL_0608,1.0
+guide a discussion,SKILL_0608,1.0
+lead discussions,SKILL_0608,1.0
+moderate conferences,SKILL_0608,1.0
+moderate workshops,SKILL_0608,1.0
+oversee a discussion,SKILL_0608,1.0
+empower others,SKILL_0609,1.0
+encourage others,SKILL_0609,1.0
+energise others,SKILL_0609,1.0
+inspire others,SKILL_0609,1.0
+motivate staff and colleages,SKILL_0609,1.0
+motivating others,SKILL_0609,1.0
+stimulate action,SKILL_0609,1.0
+lift things,SKILL_0610,1.0
+load and unload good and materials,SKILL_0610,1.0
+move and lift objects,SKILL_0610,1.0
+perform physical activities,SKILL_0610,1.0
+store goods,SKILL_0610,1.0
+bargaining,SKILL_0611,1.0
+defuse conflict,SKILL_0611,1.0
+influence decision-making processes,SKILL_0611,1.0
+manage complaints,SKILL_0611,1.0
+negotiating compromise,SKILL_0611,1.0
+resolve conflict,SKILL_0611,1.0
+seek agreement,SKILL_0611,1.0
+apply ICT peripherals,SKILL_0612,1.0
+carry out practical tasks with smart devices,SKILL_0612,1.0
+use ICT hardware,SKILL_0612,1.0
+use ICT peripherals,SKILL_0612,1.0
+use digital devices,SKILL_0612,1.0
+use hardware,SKILL_0612,1.0
+use hardware components,SKILL_0612,1.0
+use keyboard,SKILL_0612,1.0
+use mouse,SKILL_0612,1.0
+use smart ICT devices,SKILL_0612,1.0
+work with computer hardware and peripherals,SKILL_0612,1.0
+demonstrate organizational skills,SKILL_0613,1.0
+have organisational skills,SKILL_0613,1.0
+organise resources,SKILL_0613,1.0
+record information,SKILL_0613,1.0
+structure information,SKILL_0613,1.0
+take in information,SKILL_0613,1.0
+be involved in civic activities,SKILL_0614,1.0
+demonstrate active citisenship,SKILL_0614,1.0
+do neighbouring activity,SKILL_0614,1.0
+perform community work,SKILL_0614,1.0
+complete planning,SKILL_0615,1.0
+implement planning,SKILL_0615,1.0
+performance planning,SKILL_0615,1.0
+plan activities,SKILL_0615,1.0
+planning performance,SKILL_0615,1.0
+undertake planning,SKILL_0615,1.0
+apply spatial reasoning,SKILL_0616,1.0
+demonstrate spatial intelligence,SKILL_0616,1.0
+display three-dimensional imagination,SKILL_0616,1.0
+exhibit three-dimensional imagination,SKILL_0616,1.0
+manage shape and space,SKILL_0616,1.0
+show three-dimensional imagination,SKILL_0616,1.0
+utilise spatial orientation,SKILL_0616,1.0
+work with form and space,SKILL_0616,1.0
+work with shape and space,SKILL_0616,1.0
+work with shapes and spaces,SKILL_0616,1.0
+be able to close sales regularly and confidently,SKILL_0617,1.0
+convince others,SKILL_0617,1.0
+enjoys selling,SKILL_0617,1.0
+influence decisions,SKILL_0617,1.0
+influence others,SKILL_0617,1.0
+persuade others,SKILL_0617,1.0
+present products,SKILL_0617,1.0
+confront discriminations,SKILL_0618,1.0
+demonstrate an understanding of European common values,SKILL_0618,1.0
+fight discrimination,SKILL_0618,1.0
+implement equality policies,SKILL_0618,1.0
+mainstream gender,SKILL_0618,1.0
+promote a culture of piece and non violence,SKILL_0618,1.0
+support democracy,SKILL_0618,1.0
+support gender equality,SKILL_0618,1.0
+support gender mainstreaming,SKILL_0618,1.0
+intervene promptly in case of need,SKILL_0619,1.0
+provide first aid,SKILL_0619,1.0
+react adequately in case of accidents,SKILL_0619,1.0
+safeguard one's person health,SKILL_0619,1.0
+be reactive,SKILL_0620,1.0
+demonstrate agility,SKILL_0620,1.0
+show responsivness,SKILL_0620,1.0
+communicate facts,SKILL_0621,1.0
+detail the facts,SKILL_0621,1.0
+give an account of the facts,SKILL_0621,1.0
+report facts or ideas,SKILL_0621,1.0
+reporting facts,SKILL_0621,1.0
+write minutes,SKILL_0621,1.0
+act as mediator,SKILL_0622,1.0
+be able to create consensus,SKILL_0622,1.0
+be able to find compromises,SKILL_0622,1.0
+demonstrate willingness to compromise,SKILL_0622,1.0
+handle tense situation,SKILL_0622,1.0
+handle tense situations,SKILL_0622,1.0
+manage conflicts,SKILL_0622,1.0
+mediate in collisions,SKILL_0622,1.0
+mediate in conflicts,SKILL_0622,1.0
+mediate in debates,SKILL_0622,1.0
+mediate in tense debate,SKILL_0622,1.0
+mediate tense situations,SKILL_0622,1.0
+be discrete,SKILL_0623,1.0
+comply with confidentiality obligations,SKILL_0623,1.0
+ensure absolute discretion,SKILL_0623,1.0
+ensure privacy,SKILL_0623,1.0
+handle sensitive information,SKILL_0623,1.0
+keep secret information,SKILL_0623,1.0
+protect privacy,SKILL_0623,1.0
+demonstrate knowledge of the multi-cultural dimension of European societies,SKILL_0624,1.0
+show sensitivity towards different worldviews,SKILL_0624,1.0
+support cultural diversity,SKILL_0624,1.0
+take account of the diversity of cultural values and norms,SKILL_0624,1.0
+take national cultural identity in consideration,SKILL_0624,1.0
+demonstrate commitment,SKILL_0625,1.0
+demonstrate enthusiasm,SKILL_0625,1.0
+demonstrate motivation,SKILL_0625,1.0
+enjoy one's profession,SKILL_0625,1.0
+enjoy working,SKILL_0625,1.0
+have commitment,SKILL_0625,1.0
+show motivation,SKILL_0625,1.0
+show willingness to perform,SKILL_0625,1.0
+show willingness to work,SKILL_0625,1.0
+behave confidently,SKILL_0626,1.0
+confidence showing,SKILL_0626,1.0
+demonstrate confidence,SKILL_0626,1.0
+display confidence,SKILL_0626,1.0
+exhibit confidence,SKILL_0626,1.0
+reveal confidence,SKILL_0626,1.0
+show of confidence,SKILL_0626,1.0
+showing confidence,SKILL_0626,1.0
+demonstrate a focussed approach,SKILL_0627,1.0
+demonstrate enthusiasm,SKILL_0627,1.0
+demonstrate positive attitude,SKILL_0627,1.0
+demonstrate positive disposition,SKILL_0627,1.0
+demonstrate positive thinking,SKILL_0627,1.0
+exhibit enthusiasm,SKILL_0627,1.0
+have clear goals,SKILL_0627,1.0
+make an effort,SKILL_0627,1.0
+show positive disposition,SKILL_0627,1.0
+strive for results,SKILL_0627,1.0
+strive for success,SKILL_0627,1.0
+be empathic,SKILL_0628,1.0
+communicate an empathic response,SKILL_0628,1.0
+concern for others,SKILL_0628,1.0
+demonstrate concern for others,SKILL_0628,1.0
+demonstrate consideration,SKILL_0628,1.0
+display consideration,SKILL_0628,1.0
+exhibit consideration,SKILL_0628,1.0
+show concern for others,SKILL_0628,1.0
+show courtesy,SKILL_0628,1.0
+show good manners,SKILL_0628,1.0
+showing empathy,SKILL_0628,1.0
+treat people fairly,SKILL_0628,1.0
+demonstrate entrepreneurial spirit,SKILL_0629,1.0
+demonstrate entrepreneurship,SKILL_0629,1.0
+demonstrate willingness to take risks,SKILL_0629,1.0
+display entrepreneurial spirit,SKILL_0629,1.0
+exhibit entrepreneurial spirit,SKILL_0629,1.0
+identify opportunities,SKILL_0629,1.0
+pursue opportunities,SKILL_0629,1.0
+reveal entrepreneurial spirit,SKILL_0629,1.0
+show an entrepreneurial spirit,SKILL_0629,1.0
+showing an entrepreneurial spirit,SKILL_0629,1.0
+showing entrepreneurial spirit,SKILL_0629,1.0
+be a driving force,SKILL_0630,1.0
+demonstrate sense of initiative,SKILL_0630,1.0
+give impetus,SKILL_0630,1.0
+initiate action,SKILL_0630,1.0
+show active initiative,SKILL_0630,1.0
+show sense of initiative,SKILL_0630,1.0
+take the initiative,SKILL_0630,1.0
+act intuitevely,SKILL_0631,1.0
+apply problem solving,SKILL_0631,1.0
+come up with strategy to solve problems,SKILL_0631,1.0
+create solutions to problems,SKILL_0631,1.0
+create strategies to solve problems,SKILL_0631,1.0
+demonstrate problem solving skills,SKILL_0631,1.0
+develop strategies to solve problems,SKILL_0631,1.0
+develop strategy to solve problems,SKILL_0631,1.0
+manage problems,SKILL_0631,1.0
+resolve problems,SKILL_0631,1.0
+analytical thinking,SKILL_0632,1.0
+apply logical thinking,SKILL_0632,1.0
+apply structural analysis,SKILL_0632,1.0
+apply structured thinking,SKILL_0632,1.0
+develop an analytical approach,SKILL_0632,1.0
+think in an analytical way,SKILL_0632,1.0
+think logically,SKILL_0632,1.0
+use logical reasoning,SKILL_0632,1.0
+anticipate needs,SKILL_0633,1.0
+brainstorming,SKILL_0633,1.0
+find new ideas,SKILL_0633,1.0
+innovative thinking,SKILL_0633,1.0
+seek out questions,SKILL_0633,1.0
+show originality,SKILL_0633,1.0
+think in a creative way,SKILL_0633,1.0
+thinking creatively,SKILL_0633,1.0
+use imagination,SKILL_0633,1.0
+visualise completed project,SKILL_0633,1.0
+visualise completed work,SKILL_0633,1.0
+work conceptually,SKILL_0633,1.0
+apply critical thinking,SKILL_0634,1.0
+assess facts,SKILL_0634,1.0
+assess information,SKILL_0634,1.0
+assess opinions,SKILL_0634,1.0
+assess processes,SKILL_0634,1.0
+check facts,SKILL_0634,1.0
+consider alternative views,SKILL_0634,1.0
+critically evaluate information and its sources,SKILL_0634,1.0
+detect bias,SKILL_0634,1.0
+distinguish fact from opinion,SKILL_0634,1.0
+evaluate facts,SKILL_0634,1.0
+evaluate important information,SKILL_0634,1.0
+evaluate information and its sources,SKILL_0634,1.0
+evaluate opinions,SKILL_0634,1.0
+evaluate truth,SKILL_0634,1.0
+evaluating information,SKILL_0634,1.0
+review information,SKILL_0634,1.0
+verify information,SKILL_0634,1.0
+weigh information,SKILL_0634,1.0
+apply conceptual thinking,SKILL_0635,1.0
+apply systemic thinking,SKILL_0635,1.0
+demonstrate holistic thinking,SKILL_0635,1.0
+identify interrelationships,SKILL_0635,1.0
+identify key issues in complex situations,SKILL_0635,1.0
+recognise connections,SKILL_0635,1.0
+understand complex processes,SKILL_0635,1.0
+understand complexity,SKILL_0635,1.0
+apply forward-thinking,SKILL_0636,1.0
+apply innovative thinking,SKILL_0636,1.0
+be innovative,SKILL_0636,1.0
+demonstrate pioneering spirit,SKILL_0636,1.0
+shape the future,SKILL_0636,1.0
+show innovativeness,SKILL_0636,1.0
+think ahead,SKILL_0636,1.0
+react quickly,SKILL_0637,1.0
+show a good level of perception,SKILL_0637,1.0
+understand quickly,SKILL_0637,1.0
+communicate in digital environments,SKILL_0638,1.0
+communicate on-line,SKILL_0638,1.0
+communicate online,SKILL_0638,1.0
+interact through ICT,SKILL_0638,1.0
+use e-mail software and services,SKILL_0638,1.0
+carry out manual activities,SKILL_0639,1.0
+demonstrate technical acumen,SKILL_0639,1.0
+use hand tools,SKILL_0639,1.0
+use precision instrumentation,SKILL_0639,1.0
+do your job efficiently,SKILL_0640,1.0
+efficiently work,SKILL_0640,1.0
+labor efficiently,SKILL_0640,1.0
+work in an economical way,SKILL_0640,1.0
+working efficiently,SKILL_0640,1.0
+collaborate on tasks,SKILL_0641,1.0
+cooperate with colleagues,SKILL_0641,1.0
+foster social networks,SKILL_0641,1.0
+handle team dynamics,SKILL_0641,1.0
+support colleagues,SKILL_0641,1.0
+team-working,SKILL_0641,1.0
+work in groups,SKILL_0641,1.0
+work in squads,SKILL_0641,1.0
+working in teams,SKILL_0641,1.0
+ability to work autonomously,SKILL_0642,1.0
+act independently,SKILL_0642,1.0
+independently working,SKILL_0642,1.0
+like to work independently,SKILL_0642,1.0
+work autonomously,SKILL_0642,1.0
+work in a self-reliant manner,SKILL_0642,1.0
+work on your own,SKILL_0642,1.0
+work without supervision,SKILL_0642,1.0
+working independently,SKILL_0642,1.0
