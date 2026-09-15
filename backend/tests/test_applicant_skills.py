@@ -25,6 +25,7 @@ from app.main import app
 from app.api.deps import get_db
 from app.models.user import Role
 from app.models.applicant_skill import ApplicantSkill
+from app.models.canonical_skill import CanonicalSkill
 
 # ---------------------------------------------------------------------------
 # Isolated test database engine (does NOT share state with other test files)
@@ -112,6 +113,27 @@ def _register_and_login(client: TestClient, email: str, password: str, role: str
 
 def _auth(token: str) -> dict:
     return {"Authorization": f"Bearer {token}"}
+
+
+def _seed_canonical_skill(
+    skill_id: str = "SKILL_0001",
+    taxonomy_version: str = "ESCO v1.2.1",
+) -> None:
+    db: Session = _SkillsTestingSessionLocal()
+    try:
+        db.add(
+            CanonicalSkill(
+                skill_id=skill_id,
+                canonical_name="Python",
+                normalized_name="python",
+                category="technical",
+                source="ESCO",
+                taxonomy_version=taxonomy_version,
+            )
+        )
+        db.commit()
+    finally:
+        db.close()
 
 
 # ---------------------------------------------------------------------------
@@ -320,6 +342,8 @@ class TestSkillsCRUD:
         assert body["user_id"] is not None
         assert "created_at" in body
         assert "updated_at" in body
+        assert body["skill_id"] is None
+        assert body["taxonomy_version"] is None
 
     def test_list_skills_200(self, client: TestClient, token: str):
         resp = client.get("/api/v1/skills", headers=_auth(token))
@@ -507,3 +531,77 @@ class TestSkillsValidation:
         )
         assert resp.status_code == 201, resp.text
         assert resp.json()["years_experience"] == 0
+
+
+class TestTaxonomyAwareSkills:
+    @pytest.fixture(scope="class")
+    def token(self, client: TestClient) -> str:
+        return _register_and_login(
+            client, "taxonomy_applicant@test.com", "password123", "applicant"
+        )
+
+    @pytest.fixture(scope="class", autouse=True)
+    def canonical_skill(self):
+        _seed_canonical_skill()
+
+    def test_valid_canonical_skill_reference(self, client: TestClient, token: str):
+        resp = client.post(
+            "/api/v1/skills",
+            json={
+                "skill_name": "Python",
+                "skill_id": "SKILL_0001",
+                "taxonomy_version": "ESCO v1.2.1",
+            },
+            headers=_auth(token),
+        )
+        assert resp.status_code == 201, resp.text
+        assert resp.json()["skill_id"] == "SKILL_0001"
+        assert resp.json()["taxonomy_version"] == "ESCO v1.2.1"
+
+    def test_invalid_skill_id_is_rejected(self, client: TestClient, token: str):
+        resp = client.post(
+            "/api/v1/skills",
+            json={
+                "skill_name": "Unknown",
+                "skill_id": "SKILL_0642",
+                "taxonomy_version": "ESCO v1.2.1",
+            },
+            headers=_auth(token),
+        )
+        assert resp.status_code == 400, resp.text
+
+    def test_taxonomy_reference_requires_matching_version(
+        self, client: TestClient, token: str
+    ):
+        resp = client.post(
+            "/api/v1/skills",
+            json={
+                "skill_name": "Python",
+                "skill_id": "SKILL_0001",
+                "taxonomy_version": "ESCO v1.0.0",
+            },
+            headers=_auth(token),
+        )
+        assert resp.status_code == 400, resp.text
+
+    def test_taxonomy_fields_must_be_provided_together(
+        self, client: TestClient, token: str
+    ):
+        resp = client.post(
+            "/api/v1/skills",
+            json={"skill_name": "Python", "skill_id": "SKILL_0001"},
+            headers=_auth(token),
+        )
+        assert resp.status_code == 422, resp.text
+
+    def test_existing_free_text_skill_remains_supported(
+        self, client: TestClient, token: str
+    ):
+        resp = client.post(
+            "/api/v1/skills",
+            json={"skill_name": "Legacy Free Text"},
+            headers=_auth(token),
+        )
+        assert resp.status_code == 201, resp.text
+        assert resp.json()["skill_id"] is None
+        assert resp.json()["taxonomy_version"] is None

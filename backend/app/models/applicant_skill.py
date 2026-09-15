@@ -23,6 +23,21 @@ class ApplicantSkill(Base):
         index=True,
     )
 
+    skill_id: Mapped[str | None] = mapped_column(
+        ForeignKey(
+            "canonical_skills.skill_id",
+            ondelete="RESTRICT",
+            name="fk_applicant_skills_skill_id_canonical_skills",
+        ),
+        nullable=True,
+        index=True,
+    )
+
+    taxonomy_version: Mapped[str | None] = mapped_column(
+        String(32),
+        nullable=True,
+    )
+
     skill_name: Mapped[str] = mapped_column(
         String(100),
         nullable=False,
@@ -55,4 +70,8 @@ class ApplicantSkill(Base):
 
     user: Mapped["User"] = relationship(  # type: ignore[name-defined]  # noqa: F821
         back_populates="applicant_skills",
+    )
+
+    canonical_skill: Mapped["CanonicalSkill | None"] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        foreign_keys=[skill_id],
     )
