@@ -1,0 +1,643 @@
+skill_id,canonical_name,normalized_name,category,source,taxonomy_version,confidence,indian_alignment,nsqf_alignment,status,esco_uri
+SKILL_0001,C++,c++,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f
+SKILL_0002,GDPR,gdpr,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d3e9b00a-0891-4fa8-836d-8240ec3d2758
+SKILL_0003,ICT encryption,ict encryption,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d32db06e-bd06-4415-a7ab-1b0ee68caa9a
+SKILL_0004,ICT infrastructure,ict infrastructure,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d0c6d77e-cb25-4770-bf77-2073fc5f7523
+SKILL_0005,ICT network security risks,ict network security risks,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2ddb1226-1117-4eb4-ae65-3a2f5a5a3c80
+SKILL_0006,ICT networking hardware,ict networking hardware,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f9e788df-d68a-4f92-92c7-80e135fc35ff
+SKILL_0007,ICT performance analysis methods,ict performance analysis methods,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ed39edd3-44d0-4a16-9796-bfb99f92baf3
+SKILL_0008,ICT process quality models,ict process quality models,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fafe0b9d-dbd9-46bd-b770-26299539ce66
+SKILL_0009,ICT recovery techniques,ict recovery techniques,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c9e96450-421d-48af-9ee6-d9c50e29afc2
+SKILL_0010,ICT safety,ict safety,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/426ceaba-6867-481c-bb6b-aee3933da7d2
+SKILL_0011,ICT security legislation,ict security legislation,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7814e88f-c133-4c3b-b27f-857afa145d42
+SKILL_0012,ICT security standards,ict security standards,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3ff589b7-68df-4ea5-ae41-b395bdb2378f
+SKILL_0013,address problems critically,address problems critically,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b9f16465-56a9-426b-a047-0f9f1f95ec92
+SKILL_0014,advice on security risk management,advice on security risk management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e71c6cee-7247-49f4-829a-141c880ae938
+SKILL_0015,analyse ICT system,analyse ict system,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7adb8473-bcc6-4ff8-9850-76d945d40092
+SKILL_0016,apply company policies,apply company policies,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0a43729f-2a79-4dae-9faa-95520daae79f
+SKILL_0017,apply conflict management,apply conflict management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0ee94af1-b445-4973-9c3f-459fab250342
+SKILL_0018,assess ICT knowledge,assess ict knowledge,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0dc7aa1b-b5af-4f4b-81ce-ee22ed8b6926
+SKILL_0019,assessment of risks and threats,assessment of risks and threats,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7f27f1ff-2e17-4b69-990e-c23334478313
+SKILL_0020,attack vectors,attack vectors,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/501537a7-9d63-491d-ae02-09f04767ff1e
+SKILL_0021,attend to ICT systems quality,attend to ict systems quality,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7f0b1a66-ebaf-4c8a-b606-4c1844eb692e
+SKILL_0022,audit techniques,audit techniques,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6a536b36-c5c7-4d10-bf67-a4fb0f8549b2
+SKILL_0023,building systems monitoring technology,building systems monitoring technology,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0e8d16c9-e2db-4862-ac06-1567f01ef806
+SKILL_0024,collect cyber defence data,collect cyber defence data,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fcbb3a90-cdde-49ff-9ecc-8e2c0a6dfca2
+SKILL_0025,communicate with stakeholders,communicate with stakeholders,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/477173ca-5fc2-406b-9122-95d92811f284
+SKILL_0026,comply with legal regulations,comply with legal regulations,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3d3ee5c3-4286-457f-9f76-1704011f7e11
+SKILL_0027,computer forensics,computer forensics,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/118a9b27-1c5a-4214-b685-1a4d9e6365ea
+SKILL_0028,cooperate with colleagues,cooperate with colleagues,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c
+SKILL_0029,create incident reports,create incident reports,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/24310a7b-5db1-4917-a705-4835630227ca
+SKILL_0030,cyber attack counter-measures,cyber attack counter-measures,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5898d99a-62a4-4e10-a2e3-0d815ce44248
+SKILL_0031,cyber security,cyber security,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44
+SKILL_0032,data protection,data protection,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5
+SKILL_0033,decision support systems,decision support systems,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3ce1fe19-7f9e-4070-941d-651673a5693b
+SKILL_0034,define security policies,define security policies,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/37bc4dc0-1233-4008-98db-1116d0c1cfcc
+SKILL_0035,develop information security strategy,develop information security strategy,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3579208e-49b3-4ce4-98e7-20e41b1ce8d4
+SKILL_0036,educate on data confidentiality,educate on data confidentiality,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6aef2baa-5fa7-4c16-bd28-3e070ec4e4df
+SKILL_0037,engage with stakeholders,engage with stakeholders,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/99c4c69a-025c-464f-adda-874c7f107a31
+SKILL_0038,ensure adherence to organisational ICT standards,ensure adherence to organisational ict standards,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b8271c8a-cba6-4baa-80f5-6361af3f07e3
+SKILL_0039,ensure compliance with legal requirements,ensure compliance with legal requirements,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1dae8445-12e5-423a-bb26-824010e299b9
+SKILL_0040,ensure compliance with policies,ensure compliance with policies,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bda0d115-f315-453e-99dc-f8b0e5862db3
+SKILL_0041,ensure cross-department cooperation,ensure cross-department cooperation,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b216d9a2-7d4e-4312-8d05-e375f4ab44d8
+SKILL_0042,ensure information privacy,ensure information privacy,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/71717c33-dd63-4acf-b052-a5fd5d9fc490
+SKILL_0043,ensure information security,ensure information security,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6833e58b-eceb-4599-9375-1b7e6ec64087
+SKILL_0044,ensure proper document management,ensure proper document management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c241f5a5-e23f-47bf-ad24-d83ea0010166
+SKILL_0045,establish an ICT security prevention plan,establish an ict security prevention plan,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/114c9698-c999-4369-8498-81bf641fe871
+SKILL_0046,establish an Information Security Management System,establish an information security management system,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4918ec9a-0204-4935-8b09-b0112370daa8
+SKILL_0047,ethical hacking principles,ethical hacking principles,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0ffdb6ac-03b5-4f1c-bfcc-3d9cb874fdf9
+SKILL_0048,ethics,ethics,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cef5c0f8-1e40-4c09-b6a7-aa7811849e5d
+SKILL_0049,execute ICT audits,execute ict audits,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7e1f9657-ab4e-407c-842f-b846197060e3
+SKILL_0050,execute software tests,execute software tests,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a
+SKILL_0051,follow ethical code of conduct of gambling,follow ethical code of conduct of gambling,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/45205440-fa65-44e0-a719-e89278dd723a
+SKILL_0052,forecast organisational risks,forecast organisational risks,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1c08d63d-1c5e-4b9b-ad3e-f7ba7debb2d1
+SKILL_0053,gambling games,gambling games,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d857c918-6907-4047-bbde-9a217b4474a3
+SKILL_0054,handle customer complaints,handle customer complaints,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/28d715e3-3e5b-4fb6-8dd2-4be4919c8587
+SKILL_0055,handle cybersecurity incidents,handle cybersecurity incidents,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8181aa4c-42bc-4036-a3d2-5cb6bbb34239
+SKILL_0056,handle game complaints,handle game complaints,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c3022b4a-936e-4e8e-8531-7f5902679d4f
+SKILL_0057,identify ICT security risks,identify ict security risks,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fe1c2b32-7fe9-4668-affa-07ff658a68cf
+SKILL_0058,identify ICT system weaknesses,identify ict system weaknesses,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/dad7e408-162f-46a4-8567-db560e19e2fc
+SKILL_0059,implement ICT risk management,implement ict risk management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/69cfc5ed-6569-4aca-a4cc-fd782ba51d9c
+SKILL_0060,implement ICT security policies,implement ict security policies,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/14d1e367-3efe-4ec5-86ae-eca48710ee4e
+SKILL_0061,implement a firewall,implement a firewall,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e5b5053e-0ef6-4c4e-a3f2-42f955f4322c
+SKILL_0062,implement a virtual private network,implement a virtual private network,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/acf0a78c-f4e3-4bd9-a5cc-9cf4791b3b95
+SKILL_0063,implement anti-virus software,implement anti-virus software,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bb2b4485-2bad-402f-8517-44bf7d9afff4
+SKILL_0064,implement corporate governance,implement corporate governance,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f2c63b7a-ed6c-4890-9f8c-7685d172624c
+SKILL_0065,implement spam protection,implement spam protection,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c2cbbccf-4ffd-4626-86e7-505b39c872a0
+SKILL_0066,incidents and accidents recording,incidents and accidents recording,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e8f80ec5-c423-4eb2-9f0f-805d22f844ae
+SKILL_0067,information security strategy,information security strategy,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/11eebd42-44ab-401d-8a2c-bdb9fc9beb50
+SKILL_0068,integrate system components,integrate system components,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ed8de897-adbe-4f0e-b4d2-534953e64c72
+SKILL_0069,internal risk management policy,internal risk management policy,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0daaf096-1639-461c-bf1a-bbeea77e6b67
+SKILL_0070,internet governance,internet governance,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5063a99f-975b-4a7c-85e3-69ecb375b4d3
+SKILL_0071,keep up-to-date with regulations,keep up-to-date with regulations,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f698f8df-b473-40aa-a5c9-033cd892467a
+SKILL_0072,lead a team,lead a team,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1f1d2ff8-c4c1-45cc-9812-6a7ee84a73cb
+SKILL_0073,lead disaster recovery exercises,lead disaster recovery exercises,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ddb65832-91a7-4157-9488-719a0e2ad87b
+SKILL_0074,legal standards in gambling,legal standards in gambling,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/63095511-1841-4483-8224-f31a30bcdb85
+SKILL_0075,levels of software testing,levels of software testing,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/85f46538-ae70-498a-bfbc-b8ddafe96c7d
+SKILL_0076,maintain ICT identity management,maintain ict identity management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ab49f767-296b-47d5-af56-0b4a69515b03
+SKILL_0077,maintain database security,maintain database security,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ec85cc63-4e24-4631-bf92-8789db2605c0
+SKILL_0078,maintain plan for continuity of operations,maintain plan for continuity of operations,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/909a28ce-d4b6-4567-9b74-d111f1ed9633
+SKILL_0079,manage ICT virtualisation environments,manage ict virtualisation environments,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ae4f0cc6-e0b9-47f5-bdca-2fc2e6316dce
+SKILL_0080,manage IT security compliances,manage it security compliances,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/06358891-8424-43c5-891e-d40f226bef40
+SKILL_0081,manage alarm system,manage alarm system,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/18ab25a5-ce2d-4cd5-b7b0-3890f595f77d
+SKILL_0082,manage closed-circuit television system,manage closed-circuit television system,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b0288eea-74b3-460a-8ac5-edc4ba70b75c
+SKILL_0083,manage database,manage database,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/29fb0fb5-dfc4-4098-ac9b-3a712000f48f
+SKILL_0084,manage disaster recovery plans,manage disaster recovery plans,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/64852ade-6ae1-4760-ba4a-976bf07ca255
+SKILL_0085,manage gambling operation,manage gambling operation,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5d1f71c1-fe52-4ade-b43d-5fc85ee16ad3
+SKILL_0086,manage keys for data protection,manage keys for data protection,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e5beeff8-7c98-490a-ae2c-16fbb6a87305
+SKILL_0087,manage staff,manage staff,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/339ac029-066a-4985-9f9d-b3d7c8fea0bb
+SKILL_0088,manage system security,manage system security,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2a3a96a3-709e-4d60-81f6-d247d6933f13
+SKILL_0089,mobile device management,mobile device management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cf532795-a1fd-43bd-8407-6e43f877e6e3
+SKILL_0090,monitor developments in field of expertise,monitor developments in field of expertise,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/23ac233d-84ad-4517-b0f5-8ca19ba2614e
+SKILL_0091,monitor system performance,monitor system performance,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9190d87f-9792-42e0-bb7f-64294a656bcd
+SKILL_0092,monitor technology trends,monitor technology trends,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7a17d7ce-01a2-4746-bbcc-22ffe22fa16e
+SKILL_0093,network standards,network standards,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d78dedfc-21d2-45fd-ba05-e56b7a8865e6
+SKILL_0094,online gambling,online gambling,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/54b4a91f-9db8-4b67-a20d-9b6ceb9c2315
+SKILL_0095,operational tactics for emergency responses,operational tactics for emergency responses,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4e5687e3-3d3a-4f5e-b76a-93da0124d453
+SKILL_0096,optimise choice of ICT solution,optimise choice of ict solution,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3cfa46e9-b7da-44ac-b09e-9596dffe0425
+SKILL_0097,organisational resilience,organisational resilience,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/79f24a62-7718-46e1-9b41-37be0560a5ca
+SKILL_0098,penetration testing tool,penetration testing tool,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/de586dcf-d7e5-4340-bf5b-d59026f1b436
+SKILL_0099,perform ICT security testing,perform ict security testing,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f4a85869-1855-45d5-a43c-7ee8cd451996
+SKILL_0100,perform ICT troubleshooting,perform ict troubleshooting,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/744442ac-c157-4350-8be0-ce454df4f5c5
+SKILL_0101,perform risk analysis,perform risk analysis,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1dd23dba-dd00-45ab-abf4-642902538317
+SKILL_0102,procurement of ICT network equipment,procurement of ict network equipment,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/32428b21-514b-42c2-81b5-244a7804ea74
+SKILL_0103,protect ICT devices,protect ict devices,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/df329d70-87b0-466b-a214-3431f36e2a5e
+SKILL_0104,protect personal data and privacy,protect personal data and privacy,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/33a82b83-c838-4889-ae62-fae1317481eb
+SKILL_0105,provide ICT consulting advice,provide ict consulting advice,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/283cbcd3-7101-4dbb-be37-56f3625515b1
+SKILL_0106,quality assurance methodologies,quality assurance methodologies,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c7cc6dc5-d56b-4323-8e5c-47c4022f615f
+SKILL_0107,remove computer virus or malware from a computer,remove computer virus or malware from a computer,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8359bd04-d2cb-4757-af1f-39a921df9efe
+SKILL_0108,report test findings,report test findings,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/561c2525-5bd8-4d86-8f45-820f4be7db93
+SKILL_0109,respond to incidents in cloud,respond to incidents in cloud,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/440d5784-52a5-4729-8b04-29f978bd896d
+SKILL_0110,responsible gambling,responsible gambling,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8f15b22d-930e-4842-80dc-5cab28ac71fc
+SKILL_0111,risk management,risk management,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6eff134b-e34f-4d6e-a6e8-5e47cf2228d0
+SKILL_0112,safety engineering,safety engineering,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/47d491a9-f7c0-4b13-a10f-983d3aa0113e
+SKILL_0113,security engineering,security engineering,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6f1edc19-191f-4ba5-a048-ee69aff05bab
+SKILL_0114,security threats,security threats,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5acf6408-e084-4202-9442-ffcf0119811c
+SKILL_0115,set up cybersecurity training programmes,set up cybersecurity training programmes,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/54d774a3-de3b-4425-b0d7-c03bc99a0937
+SKILL_0116,software anomalies,software anomalies,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/438ff259-d086-4004-acda-1ec3e1631bc6
+SKILL_0117,system backup best practice,system backup best practice,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/47ca0da1-cae5-4395-ae6b-fd97b9ff48d3
+SKILL_0118,telecom regulations,telecom regulations,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7f2afce6-e98b-4bbe-8441-d52b45e28ab8
+SKILL_0119,tools for ICT test automation,tools for ict test automation,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7557f0f4-b8bc-4ac0-b91e-222ab1ba744f
+SKILL_0120,train employees,train employees,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e54ff029-1ce9-447d-a5b2-eb7283a23e6e
+SKILL_0121,use access control software,use access control software,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5da73370-f6b9-417d-a94c-09bf01f84aa2
+SKILL_0122,use back-up and recovery tools,use back-up and recovery tools,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/82de2df7-0d6c-42b1-94ac-b3e9a029e917
+SKILL_0123,use scripting programming,use scripting programming,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5ef0c719-5bcb-49f8-b8eb-824388225333
+SKILL_0124,utilise decision support system,utilise decision support system,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/df0612db-366c-4ff5-b106-40b9e385195c
+SKILL_0125,web application security threats,web application security threats,IT/Software - Cybersecurity,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/902fb91c-3113-4004-9b4f-79aa86b638b7
+SKILL_0126,Agile project management,agile project management,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0a9acb6b-1139-4be9-b431-3a80a959f2f4
+SKILL_0127,Assembly (computer programming),assembly (computer programming),IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/47b9bbcf-356c-4782-83a4-7f5a1b2b51a3
+SKILL_0128,C#,c#,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4c016b68-4116-468c-9dc6-42710c239e4a
+SKILL_0129,Common Lisp,common lisp,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0cd6dcf1-5778-42a5-b685-4d01ae4a4871
+SKILL_0130,Erlang,erlang,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/034c29fa-c3ba-45ea-b8f3-bf8e3705e386
+SKILL_0131,Groovy,groovy,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/52cf3037-ab53-4806-85ed-7fd21ea7f6a1
+SKILL_0132,Hadoop,hadoop,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e46291c7-52b9-4174-bd59-178884861038
+SKILL_0133,Haskell,haskell,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/000f1d3d-220f-4789-9c0a-cc742521fb02
+SKILL_0134,LDAP,ldap,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a57a54b6-2f2e-43e4-9621-b52f4a63cb08
+SKILL_0135,LINQ,linq,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c7d24594-0c11-4b27-9039-fe0bb903da8e
+SKILL_0136,Lisp,lisp,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0de61385-de6d-4146-ba32-1cc1bc102220
+SKILL_0137,MDX,mdx,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1b7c716e-af95-4cda-a42f-6479c8b139f5
+SKILL_0138,Microsoft Visual C++,microsoft visual c++,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8369ede5-4200-4a44-be2e-bc60ef959259
+SKILL_0139,N1QL,n1ql,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f597f772-24d3-4cec-813c-cf5a7027c794
+SKILL_0140,OpenEdge Advanced Business Language,openedge advanced business language,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/300d432b-f457-4cd3-9cb1-1858c7d14954
+SKILL_0141,PHP,php,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4350c38d-0fe9-4ca7-bab9-40ed7f72b04f
+SKILL_0142,Perl,perl,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/401eb8d8-6daa-4f8b-90ad-60afc71eb4f8
+SKILL_0143,Prolog (computer programming),prolog (computer programming),IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2bde42ae-e776-41c1-9ded-b07b30bfe985
+SKILL_0144,R,r,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/51586df8-1c46-4b47-8583-773cb63bf00b
+SKILL_0145,Ruby (computer programming),ruby (computer programming),IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0ccdfe98-f845-4598-84a1-3dca66e9d9a3
+SKILL_0146,SAS Data Management,sas data management,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e5a6e1e0-1b07-4432-83ba-77d593b2cb47
+SKILL_0147,SAS language,sas language,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/04f1b938-d4d4-4cb1-a863-982af76b9d93
+SKILL_0148,SPARQL,sparql,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5da8018b-ae85-4cde-ad93-0394369018f3
+SKILL_0149,SQL,sql,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742
+SKILL_0150,Smalltalk (computer programming),smalltalk (computer programming),IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/42ed3bfb-1a01-4c8b-9758-fc6438865734
+SKILL_0151,Teradata Database,teradata database,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d9eaf831-9348-4330-a83e-b7c099cdc8f6
+SKILL_0152,TypeScript,typescript,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/867137fb-ff1b-4ca3-99f3-cb6969aa2c68
+SKILL_0153,Visual Basic,visual basic,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413
+SKILL_0154,XQuery,xquery,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3f4dab51-572b-4e2c-85ef-3b4c3f7094e1
+SKILL_0155,algorithms,algorithms,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38
+SKILL_0156,analyse big data,analyse big data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/47a49cd6-097d-457a-9f7b-c290c14930d5
+SKILL_0157,analyse pipeline database information,analyse pipeline database information,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/484d048c-a5d1-46a5-b57f-45b69c0ac552
+SKILL_0158,apply ICT systems theory,apply ict systems theory,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cbe2c304-1e7d-489a-97d9-a7d3e37a9db6
+SKILL_0159,apply blended learning,apply blended learning,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b363bb5f-2c79-40af-94da-33e06f9dee9f
+SKILL_0160,apply for research funding,apply for research funding,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5f0082ab-2131-49b5-94d6-a1821daf57d6
+SKILL_0161,apply research ethics and scientific integrity principles in research activities,apply research ethics and scientific integrity principles in research activities,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/833289fa-3646-4010-9d9e-93ba8c9ef2d8
+SKILL_0162,apply statistical analysis techniques,apply statistical analysis techniques,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c
+SKILL_0163,artificial neural networks,artificial neural networks,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5608d5a0-6d5e-43b7-be37-616501729bb4
+SKILL_0164,build recommender systems,build recommender systems,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/505e4ef3-7ce4-437d-b7b4-5c608f71c258
+SKILL_0165,business analytics,business analytics,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/98a1dec3-8138-4f46-a596-5e2a83b884b9
+SKILL_0166,business intelligence,business intelligence,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c
+SKILL_0167,collect ICT data,collect ict data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/79e29b8b-47d1-470d-b7b1-32506bfe7d9a
+SKILL_0168,communicate with a non-scientific audience,communicate with a non-scientific audience,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ff64e9fc-36dd-4035-872a-83aa41dc1ad9
+SKILL_0169,computational biology,computational biology,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e464363b-8346-421d-9035-52118b76d8c8
+SKILL_0170,computer science,computer science,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787
+SKILL_0171,computer simulation,computer simulation,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0823ccef-813f-4f22-afef-ac0d68615e8f
+SKILL_0172,computer vision,computer vision,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7b0d5000-00da-4864-b776-6de49a87a669
+SKILL_0173,conduct research across disciplines,conduct research across disciplines,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f7b071bf-4882-4cfc-ae0a-7e0e0ab94c61
+SKILL_0174,create data models,create data models,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fbafa41f-cd05-4109-a649-8b44d306d779
+SKILL_0175,create data sets,create data sets,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/906323f4-00c4-4c3b-ab5a-8af77be3456e
+SKILL_0176,creatively use digital technologies,creatively use digital technologies,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1a4cc54f-1e53-442b-a6d2-1682dc8ef8f9
+SKILL_0177,data analytics,data analytics,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/97bd1c21-66b2-4b7e-ad0f-e3cda590e378
+SKILL_0178,data engineering,data engineering,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/48db96bf-3314-45c6-bad8-fdb6e20e5639
+SKILL_0179,data ethics,data ethics,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e9575f7f-053a-439e-8074-f93df3334e92
+SKILL_0180,data mining,data mining,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/25f0ea33-b4a2-4f31-b7b4-7d20e827b180
+SKILL_0181,data science,data science,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/edebd83d-35f6-4ed5-a940-6c203d178c01
+SKILL_0182,data visualisation software,data visualisation software,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/65e58886-bd1e-4c5b-8ca5-8d9b353c8aa1
+SKILL_0183,data warehouse,data warehouse,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3ec2e4d6-7000-4905-bf1a-c5b1679416de
+SKILL_0184,deep learning,deep learning,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ecc4552a-92c5-4222-b18d-faf5ac841080
+SKILL_0185,define data quality criteria,define data quality criteria,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/54c9c155-9293-4329-8ed2-2e76e8b519d4
+SKILL_0186,deliver visual presentation of data,deliver visual presentation of data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c3e36d05-8ae8-447f-bb2b-6f9409f85389
+SKILL_0187,demonstrate disciplinary expertise,demonstrate disciplinary expertise,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4134622c-c3fb-4a41-beb6-6d58ba5107db
+SKILL_0188,design database scheme,design database scheme,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6c08403c-a5bb-4868-b8c2-b7d039c0e511
+SKILL_0189,develop creative ideas,develop creative ideas,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8c4c49d4-9708-433f-8ca7-bf2c5211ee49
+SKILL_0190,develop data processing applications,develop data processing applications,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f9670490-8aa4-4540-b121-d440a8294aab
+SKILL_0191,develop professional network with researchers and scientists,develop professional network with researchers and scientists,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cc61f9e5-d4fc-470e-8606-1ce865ff8386
+SKILL_0192,develop statistical software,develop statistical software,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bb165899-d95f-4433-95f2-173fefd716d2
+SKILL_0193,digital curation,digital curation,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8f6ed69b-29d0-4c01-81ba-f05920a185f3
+SKILL_0194,digital data processing,digital data processing,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/629685b8-5f9e-4522-8cff-b3e2c4ec625a
+SKILL_0195,disseminate results to the scientific community,disseminate results to the scientific community,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2b1e2927-3542-48da-9063-02925e7562c1
+SKILL_0196,documentation types,documentation types,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/327d15c8-29ff-4ad4-a4fe-6536d777a45f
+SKILL_0197,draft scientific or academic papers and technical documentation,draft scientific or academic papers and technical documentation,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/00b9a3aa-7070-4bb5-8020-f228a97cf42f
+SKILL_0198,empirical analysis,empirical analysis,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f6ac6241-adb2-4ce2-b35f-09832cbb11ea
+SKILL_0199,establish data processes,establish data processes,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2daec0e6-f0c1-43e8-8178-aedba99130ec
+SKILL_0200,evaluate research activities,evaluate research activities,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/39f67488-cfd3-4370-8d7e-da98163102d9
+SKILL_0201,handle data samples,handle data samples,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4a193795-fa63-414e-9f2e-bfdb3924571e
+SKILL_0202,healthcare analytics,healthcare analytics,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a1eef0f4-133f-464a-a8f1-68fe3e8cc1b4
+SKILL_0203,image recognition,image recognition,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/45f1ae17-c20d-40fc-9307-7d33b6ca9213
+SKILL_0204,implement data quality processes,implement data quality processes,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/713fb616-118e-40bc-9366-4a69879a49d5
+SKILL_0205,implement data warehousing techniques,implement data warehousing techniques,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fd6d2981-3d4a-4ce2-9741-cfc98c5b74bd
+SKILL_0206,increase the impact of science on policy and society,increase the impact of science on policy and society,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4d39b27a-b34f-4c89-8d46-df844d42f728
+SKILL_0207,information architecture,information architecture,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1bba98a7-92b9-450b-9235-e0c905f8f3c4
+SKILL_0208,information categorisation,information categorisation,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/93aaf65c-5aad-4e6f-a7ba-ce9bf7c0e6e6
+SKILL_0209,information confidentiality,information confidentiality,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a56dec32-05ef-45de-a256-ee6741f356db
+SKILL_0210,information extraction,information extraction,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/696e3b5b-8b61-45af-ae4c-3ab700f197ec
+SKILL_0211,information structure,information structure,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/03ff0d53-573a-47a0-a0ad-1995815a4339
+SKILL_0212,integrate ICT data,integrate ict data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/46ec0033-3c71-415e-bcff-b065675ba2dc
+SKILL_0213,integrate gender dimension in research,integrate gender dimension in research,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cd50d616-1f8b-481e-983f-68d2674ff82d
+SKILL_0214,interact professionally in research and professional environments,interact professionally in research and professional environments,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/20a8fe89-d4eb-4698-8521-8881c13377e0
+SKILL_0215,interpret current data,interpret current data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1e77e42a-181f-4b48-8e74-201ce50ffc29
+SKILL_0216,make data-driven decisions,make data-driven decisions,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/be20d05c-f6b4-4580-9fcf-f00f4baab562
+SKILL_0217,manage ICT data architecture,manage ict data architecture,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4d85b881-e490-4b4c-897a-2faa4ef53956
+SKILL_0218,manage ICT data classification,manage ict data classification,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/03a74eee-2dc6-4147-8667-5cdeb65f122d
+SKILL_0219,manage data,manage data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9ff9db9d-d14b-426e-83f3-e7449af6c79f
+SKILL_0220,manage data collection systems,manage data collection systems,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a80fb090-63f4-4b05-83a5-2f090deb7757
+SKILL_0221,manage findable accessible interoperable and reusable data,manage findable accessible interoperable and reusable data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4f5c1208-62fd-4e5a-a51e-306c06947e11
+SKILL_0222,manage intellectual property rights,manage intellectual property rights,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/518dc04d-092d-4fa1-bd82-88b7a9278ef7
+SKILL_0223,manage open publications,manage open publications,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/da930e2f-6047-4616-a598-bba8ecef3039
+SKILL_0224,manage personal professional development,manage personal professional development,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a8d24a95-47b3-4f88-92e7-06600bcd3612
+SKILL_0225,manage quantitative data,manage quantitative data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/57231a22-4da7-49c8-97b8-75672feadf1e
+SKILL_0226,manage research data,manage research data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/08b04e53-ed25-41a2-9f90-0b9cd939ba3d
+SKILL_0227,marketing analytics,marketing analytics,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/11c56452-fcec-4b00-9695-cca4728e5048
+SKILL_0228,mathematical modelling,mathematical modelling,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0760bfac-9a03-427a-ad84-ccd33a2f2ae8
+SKILL_0229,mentor individuals,mentor individuals,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a584a638-a2c0-4b3c-bdf3-a64f87225be9
+SKILL_0230,multidisciplinary research,multidisciplinary research,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9fc400ac-8ed2-4aff-915f-aa4f2609ec7b
+SKILL_0231,normalise data,normalise data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/07889c08-7220-47c8-96f7-6068fbea00dc
+SKILL_0232,online analytical processing,online analytical processing,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b0a3bb25-a02f-43ed-ab1f-994fa66a424a
+SKILL_0233,operate open source software,operate open source software,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2b34764d-637c-48f5-aa70-31e15c965db6
+SKILL_0234,operational research,operational research,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/726abd5a-d23c-44b9-abb0-f22bbe95f1d3
+SKILL_0235,perform data cleansing,perform data cleansing,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/50b100ea-74fd-4706-99db-3e4ca55e51b8
+SKILL_0236,perform data mining,perform data mining,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4216e465-7baa-4884-a241-54b197bb9278
+SKILL_0237,perform dimensionality reduction,perform dimensionality reduction,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3e2ab38a-4519-4bef-b762-a8bf4836a775
+SKILL_0238,perform project management,perform project management,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cd5efa8c-e44d-4cbc-91c6-796018dbed68
+SKILL_0239,perform scientific research,perform scientific research,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4fabca9a-7435-4f33-b1da-3cdb00340fdc
+SKILL_0240,principles of artificial intelligence,principles of artificial intelligence,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2
+SKILL_0241,process data,process data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f2d57f41-43b4-4f5b-8100-3df5c21eda50
+SKILL_0242,promote open innovation in research,promote open innovation in research,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/872a1632-f1db-4feb-bb27-0a6a359b7591
+SKILL_0243,promote the participation of citizens in scientific and research activities,promote the participation of citizens in scientific and research activities,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fa642fc3-5cc5-41cf-8926-6617a8b976a7
+SKILL_0244,promote the transfer of knowledge,promote the transfer of knowledge,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/988f4ac3-a37c-4b0a-a40f-4e0e56b5919e
+SKILL_0245,publish academic research,publish academic research,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/979cf728-896f-4f2c-8fa8-2698ca0d4930
+SKILL_0246,quantitative analysis,quantitative analysis,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6360a934-cc87-4954-9656-b32db20592e3
+SKILL_0247,research design,research design,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7159e587-c7cb-4ec0-a662-03e1dee2cccb
+SKILL_0248,scientific computing,scientific computing,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5b26f08b-88bc-45f0-b901-530d7786466b
+SKILL_0249,scientific literature,scientific literature,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/74e49482-75e8-4637-bdb1-fff868d02f7a
+SKILL_0250,social network analysis,social network analysis,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/33e584f9-ff7a-4979-bfc0-5a3a374a145a
+SKILL_0251,speak different languages,speak different languages,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2de4572a-4724-4f76-afc2-72a568a264ac
+SKILL_0252,state estimation,state estimation,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d38871eb-b988-495e-8fca-345677b597a8
+SKILL_0253,statistical modeling techniques,statistical modeling techniques,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/68ef0e4d-5542-4e64-84f4-752cce5a3c22
+SKILL_0254,statistics,statistics,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833
+SKILL_0255,store digital data and systems,store digital data and systems,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/611ed16b-99bf-4840-9cab-f55d1d286e0a
+SKILL_0256,synthesise information,synthesise information,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f715be1d-5fc4-49d3-82a5-0b8090d12849
+SKILL_0257,task algorithmisation,task algorithmisation,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7482a123-e801-48de-9733-262125671410
+SKILL_0258,teach in academic or vocational contexts,teach in academic or vocational contexts,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4cd85845-f31c-4306-994d-e12d45114d83
+SKILL_0259,think abstractly,think abstractly,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9a58cd26-58eb-4a1c-b1b6-64037fe9cfa1
+SKILL_0260,unstructured data,unstructured data,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c5e8abde-d2ba-4e8e-a65e-720b71180666
+SKILL_0261,use data processing techniques,use data processing techniques,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1b70a55d-b8a4-49fc-96c6-15ab4cff2522
+SKILL_0262,use spreadsheets software,use spreadsheets software,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1973c966-f236-40c9-b2d4-5d71a89019be
+SKILL_0263,utilise machine learning,utilise machine learning,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433
+SKILL_0264,visual presentation techniques,visual presentation techniques,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/348b74cd-49ce-4844-8bdf-ec188b497213
+SKILL_0265,write scientific publications,write scientific publications,IT/Software - Data & AI,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c3c2420c-ce9a-4371-8eed-1db479c3a562
+SKILL_0266,AJAX,ajax,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b4dc6e4f-dc7d-445f-8ce2-d7b9d225e282
+SKILL_0267,APL,apl,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/58d7a289-dafd-4363-833f-d1dc4140885e
+SKILL_0268,ASP.NET,asp.net,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/56a7f561-1d55-43c9-9cd7-36a0a9bc6c50
+SKILL_0269,Agile development,agile development,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/dba46f87-0831-49cd-a1c7-340a653c0221
+SKILL_0270,Apache Tomcat,apache tomcat,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0fb753a1-2ef2-4429-84d2-ecb2b24daf7a
+SKILL_0271,BlackBerry,blackberry,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ba04b19b-0b18-4d5c-b799-4db31a98e58d
+SKILL_0272,Cisco,cisco,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/709ef32a-7435-48e2-8fa2-16e389ecab8a
+SKILL_0273,CoffeeScript,coffeescript,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/993b1e23-f2de-4bd8-b33f-f86dde1c8e9d
+SKILL_0274,DevOps,devops,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4
+SKILL_0275,ICT network cable limitations,ict network cable limitations,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d6e3395b-5ab6-4fba-969a-3df634e904c5
+SKILL_0276,ICT network routing,ict network routing,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0da6cab1-0ee9-4391-a299-f71fbf21db56
+SKILL_0277,Jenkins (tools for software configuration management),jenkins (tools for software configuration management),IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f47a1998-0beb-43be-9f46-380aa4d183da
+SKILL_0278,MATLAB,matlab,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c3a03c5a-c260-4c26-9b9a-873abb396f4d
+SKILL_0279,ML (computer programming),ml (computer programming),IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0
+SKILL_0280,Objective-C,objective-c,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9973a5a2-7822-4161-99e9-95c781eb63f8
+SKILL_0281,SAP R3,sap r3,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bb99af26-71ff-4dca-bde7-1eb1f6194426
+SKILL_0282,Swift (computer programming),swift (computer programming),IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/be80acfc-b6f2-4411-9b8d-b19d9cd2556a
+SKILL_0283,adhere to organisational guidelines,adhere to organisational guidelines,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/aa238394-8126-4ada-be2f-9dfe065cf314
+SKILL_0284,adjust ICT system capacity,adjust ict system capacity,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b1604a2d-c26a-427d-bda9-b8073a319fe9
+SKILL_0285,administer ICT system,administer ict system,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0868eef3-2213-4572-9343-74931345a7d3
+SKILL_0286,analyse network bandwidth requirements,analyse network bandwidth requirements,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/da042121-959d-451b-b4d0-3bbf07c1bc67
+SKILL_0287,analyse network configuration and performance,analyse network configuration and performance,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/545c80e8-7ab2-42fe-af64-242211e94709
+SKILL_0288,apply ICT system usage policies,apply ict system usage policies,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9707091a-323b-4240-877a-5999a19286f0
+SKILL_0289,apply system organisational policies,apply system organisational policies,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/07e47d58-dd0e-4302-9e68-70a188e89065
+SKILL_0290,collaborate with engineers,collaborate with engineers,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/94b2c46e-6338-4a1d-950a-d44eef018c53
+SKILL_0291,create solutions to problems,create solutions to problems,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/03b9b491-fc9b-4868-914a-bf7cd47b5041
+SKILL_0292,define ICT network design policies,define ict network design policies,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bb562019-5222-45db-a16c-730edbb1d27c
+SKILL_0293,define firewall rules,define firewall rules,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/054f26ab-cfdc-4077-883c-1c4c9e9b310a
+SKILL_0294,define technology strategy,define technology strategy,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/248894d1-42dc-474f-af6e-2da52ac0c679
+SKILL_0295,design ICT hardware placement,design ict hardware placement,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3fb8b724-1d52-4d11-b8b8-1776f558d1f0
+SKILL_0296,design computer network,design computer network,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2164e860-7f20-48bc-b98c-5d9f8a561550
+SKILL_0297,do cloud refactoring,do cloud refactoring,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/38716afc-a93b-44ab-96cc-2ecf67edcf32
+SKILL_0298,follow company standards,follow company standards,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f5f5b244-6cea-4fbc-8a50-8f712791bc09
+SKILL_0299,follow work procedures,follow work procedures,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a23659b1-a8bc-4331-a58d-eef263ca6a14
+SKILL_0300,forecast future ICT network needs,forecast future ict network needs,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8fa840f7-e66a-4370-8e6d-7d554260c31c
+SKILL_0301,hardware components,hardware components,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4b51e76e-9e8a-455f-a289-5b48246345c4
+SKILL_0302,identify suppliers,identify suppliers,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/11747665-0e98-4f27-bd0d-536862cd5746
+SKILL_0303,implement ICT network diagnostic tools,implement ict network diagnostic tools,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bf7ea00f-db77-4a95-9b9f-2d12b6d9fcb4
+SKILL_0304,implement ICT recovery system,implement ict recovery system,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fc2f1d4f-a46f-471e-a618-cbd4d0496a53
+SKILL_0305,information governance compliance,information governance compliance,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9a0d0abc-010d-440b-8242-7e31510471ba
+SKILL_0306,install electronic communication equipment,install electronic communication equipment,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/861cc783-6d4c-442e-9081-3a6e389be454
+SKILL_0307,install signal repeaters,install signal repeaters,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f0ff6f10-cbb4-44c0-acd5-ed17046b1396
+SKILL_0308,liaise with managers,liaise with managers,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f14ff4b7-be1e-4b55-b39b-520005f8a97e
+SKILL_0309,maintain ICT system,maintain ict system,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fbbcb9ab-4b95-4e57-a756-30d08b7da7a5
+SKILL_0310,maintain information network hardware,maintain information network hardware,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/19c0e68e-6e6c-4698-85dc-ef66a9de2c37
+SKILL_0311,maintain internet protocol configuration,maintain internet protocol configuration,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b9aad733-959a-4178-984f-53e4bd05b420
+SKILL_0312,manage changes in ICT system,manage changes in ict system,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1e7ed56a-6d6b-422f-962e-38543d150755
+SKILL_0313,manage email hosting service,manage email hosting service,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f8f1f725-0105-41fa-9887-4df9e7a7af1e
+SKILL_0314,manage system testing,manage system testing,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ce354460-500e-4eaa-8e95-8f243fcea3db
+SKILL_0315,network engineering,network engineering,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/02058de6-4b98-449f-8a45-8588b0eb2446
+SKILL_0316,network management system tools,network management system tools,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0ab03c6c-281b-48f4-83e0-10eeb27a1bae
+SKILL_0317,operating systems,operating systems,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f9a6f35b-01a7-40c9-8b61-b6ee46f97272
+SKILL_0318,organisational policies,organisational policies,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3a5231a0-8c30-48ee-b671-08e2debd4441
+SKILL_0319,plan migration to cloud,plan migration to cloud,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0a52bed5-fd29-45fb-aba6-e32bccfda1c1
+SKILL_0320,service-oriented modelling,service-oriented modelling,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/83218cac-3599-417e-93d2-26013cdccd98
+SKILL_0321,solution deployment,solution deployment,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1d86f05e-e9cc-40ce-99d8-2b21cc71b16b
+SKILL_0322,support ICT system users,support ict system users,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/db36f7f1-5900-45bd-9ffb-f2b19c4362ac
+SKILL_0323,systems theory,systems theory,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cdd8b6b2-2fd9-453c-8d62-8a1dc6efcd49
+SKILL_0324,use ICT hardware,use ict hardware,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6474fc36-67ae-436b-9d39-c14402c6a89b
+SKILL_0325,use precision tools,use precision tools,IT/Software - IT Infrastructure & Networks,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a99c6783-50c0-4f7a-99df-bf93429ef6dc
+SKILL_0326,ABAP,abap,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/eb0e5615-1575-4a86-a1a2-7d39595033c5
+SKILL_0327,COBOL,cobol,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/def007fa-5fed-4a5f-91a2-b0d7e3db1be1
+SKILL_0328,ICT accessibility standards,ict accessibility standards,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3e23db60-0c3d-498a-a6ac-ffbed0ecb033
+SKILL_0329,ICT hardware specifications,ict hardware specifications,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3497ebe1-d417-4105-a68f-f7bbcac7ee5f
+SKILL_0330,ICT network simulation,ict network simulation,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f6424ebb-8401-446b-9f7e-10d7c854da02
+SKILL_0331,ICT quality policy,ict quality policy,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3be6b84a-fa78-42b9-a8df-150cdb40b9d7
+SKILL_0332,ICT software specifications,ict software specifications,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9ce670ec-318c-4a91-9179-03437db728dc
+SKILL_0333,Pascal (computer programming),pascal (computer programming),IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e8b89eb6-51e8-4c3a-babb-88b2e110376b
+SKILL_0334,Process-based management,process-based management,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d5a59ca8-2e91-472e-8571-d12ce4478679
+SKILL_0335,Scala,scala,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ffddfc7c-a9dd-449f-9e96-882dc447c8b6
+SKILL_0336,Scratch (computer programming),scratch (computer programming),IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d56fc2b5-4b0a-4e7e-9bde-a33736f6ff18
+SKILL_0337,VBScript,vbscript,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88
+SKILL_0338,adapt developed game to the market,adapt developed game to the market,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ea876ec3-4382-478c-b8b3-600c6b23ae85
+SKILL_0339,application usability,application usability,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c4b626c1-e71c-44ec-9f88-042766f37fcc
+SKILL_0340,apply gaming psychology,apply gaming psychology,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6f2a4a5c-2f6e-49ab-8441-cd600d1f20ae
+SKILL_0341,assess users' interaction with ICT applications,assess users' interaction with ict applications,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/465e7c78-cd26-4503-a5ca-40009e807705
+SKILL_0342,attend gaming tests,attend gaming tests,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5489b6f6-ec0f-4536-a9e2-072ee8ec03b2
+SKILL_0343,attend to detail in preparation for audits,attend to detail in preparation for audits,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/26baf34d-6721-4bac-b7eb-add0bc566a82
+SKILL_0344,behavioural science,behavioural science,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/269b8734-fa1d-4c6f-a843-523fa3bbae6e
+SKILL_0345,cognitive psychology,cognitive psychology,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2618f336-8e71-4666-83b5-f368edb0906d
+SKILL_0346,conduct ICT code review,conduct ict code review,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9d1b08b3-ba1e-41f6-a466-1ac1e62eb5f0
+SKILL_0347,conduct research interview,conduct research interview,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/896563fc-6255-4419-89c2-ffed30159ad6
+SKILL_0348,create game testing software,create game testing software,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/446d29ed-9eaa-4798-bb91-5f196651ad0a
+SKILL_0349,database quality standards,database quality standards,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b5c7e0dc-dda3-4790-a7d1-d6d8023b3089
+SKILL_0350,develop ICT test suite,develop ict test suite,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7253d98c-4a6d-4e37-8b6c-accca9f4b639
+SKILL_0351,develop automated software tests,develop automated software tests,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6a322874-e32f-4cd8-9683-badce67a7f73
+SKILL_0352,develop information standards,develop information standards,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1b3fc0e0-c6f9-45fc-9c6e-14bbba662979
+SKILL_0353,develop strategy to solve problems,develop strategy to solve problems,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7a8fb784-67fa-41e9-a75c-6b491d91f800
+SKILL_0354,execute ICT user research activities,execute ict user research activities,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a4c2aa71-086f-4a46-b481-2619673c9dfe
+SKILL_0355,execute integration testing,execute integration testing,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ea412de3-9d7a-4943-8d8c-c6d3c7495d0e
+SKILL_0356,games rules,games rules,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8b2f716d-4ee3-41ca-97de-62ef56f80591
+SKILL_0357,give live presentation,give live presentation,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c55caed2-de9e-4a25-819e-a0b0e83fba1b
+SKILL_0358,human-computer interaction,human-computer interaction,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9136cbf1-7916-4f1c-bc9a-0318ee1d6016
+SKILL_0359,implement strategic planning,implement strategic planning,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f7b5d916-52f0-4865-b6a6-e1a3b711cb5e
+SKILL_0360,inter-organisational middleware system,inter-organisational middleware system,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/46e93774-7c6a-4dc5-bae9-be97cc461093
+SKILL_0361,lean project management,lean project management,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/da6393d5-a53c-4863-abc7-51f36281d74e
+SKILL_0362,manage schedule of tasks,manage schedule of tasks,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0e1fe34b-f4e7-4642-8c8b-5a05ac3438e5
+SKILL_0363,mathematics,mathematics,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2
+SKILL_0364,measure software usability,measure software usability,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/be0ff6d8-5e61-4021-9c89-e40cf0b75cc6
+SKILL_0365,multimedia systems,multimedia systems,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a59708e3-e654-4e37-8b8a-741c3b756eee
+SKILL_0366,oversee quality control,oversee quality control,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5d34adde-0b78-42b4-9d3d-69e9388d8398
+SKILL_0367,perform quality audits,perform quality audits,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d83cba15-8511-4d07-b89a-9fde0d1d8241
+SKILL_0368,perform services in a flexible manner,perform services in a flexible manner,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ebfe7b18-1fad-463f-9509-8ef1a5736045
+SKILL_0369,perform software recovery testing,perform software recovery testing,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ff25cbf0-6978-4c4c-887e-d4b185410d74
+SKILL_0370,perform software unit testing,perform software unit testing,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7961413f-61d0-4722-9cd9-20a050a29899
+SKILL_0371,plan software testing,plan software testing,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5d74614d-32c8-4ca4-9818-6980e52424b1
+SKILL_0372,probability theory,probability theory,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b758675a-b03b-4e4b-897c-57ca14b1a3d0
+SKILL_0373,provide software testing documentation,provide software testing documentation,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/78a74fd1-efc6-49dc-adb1-1b0fbe35c22c
+SKILL_0374,quality standards,quality standards,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e
+SKILL_0375,replicate customer software issues,replicate customer software issues,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/eb3aa8c1-fb14-47b4-a352-b7975abd2480
+SKILL_0376,report gaming incidents,report gaming incidents,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7253896a-fa39-4064-8b2c-0db4bd9b823e
+SKILL_0377,screen reader,screen reader,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1774bd31-8893-44cf-9498-7e3d95508419
+SKILL_0378,set quality assurance objectives,set quality assurance objectives,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/22b8039c-c890-4610-9228-5527e3b98f12
+SKILL_0379,software metrics,software metrics,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fb7aee4d-f6c6-4a87-8e9d-8e542b3771f8
+SKILL_0380,solve problems in gambling through digital means,solve problems in gambling through digital means,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1f1bef0f-2484-4136-a5bf-6ed80346a671
+SKILL_0381,statistical analysis system software,statistical analysis system software,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ad59afe4-6f8a-4bc4-acfd-0f228277508a
+SKILL_0382,test for behavioural patterns,test for behavioural patterns,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7bdcdadb-146c-475f-8cff-921c6fd5f858
+SKILL_0383,test for emotional patterns,test for emotional patterns,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3d3db1e7-b041-495e-8a93-deeacded8a2f
+SKILL_0384,test system accessibility for users with special needs,test system accessibility for users with special needs,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/be64bb4c-84ac-4c83-8cc7-fc8593e15136
+SKILL_0385,track key performance indicators,track key performance indicators,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8dcbcabe-09f7-4d11-940d-125af57bbc40
+SKILL_0386,trading software,trading software,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ba1b0441-a6b8-4e57-8ccc-871012f63e42
+SKILL_0387,usability engineering,usability engineering,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/95ee5e38-5c1e-4cd2-a21d-6921390025a9
+SKILL_0388,use experience map,use experience map,IT/Software - QA & Testing,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0737ad0a-75ac-4696-988b-565820577ac0
+SKILL_0389,ICT debugging tools,ict debugging tools,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6014921e-1d25-4039-adc2-04852d61880e
+SKILL_0390,ICT project management,ict project management,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/94dd823c-148e-4614-a6e8-99249b16357d
+SKILL_0391,ICT project management methodologies,ict project management methodologies,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bec4359e-cb92-468f-a997-8fb28e32fba9
+SKILL_0392,ICT system integration,ict system integration,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6fa1c2c0-a012-4ca0-9642-e01569ba322c
+SKILL_0393,ICT system programming,ict system programming,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b105ec9b-0857-41d6-8d07-a83e58b73d90
+SKILL_0394,ICT system user requirements,ict system user requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ca73ac82-867a-4afa-9732-834aebe896ff
+SKILL_0395,Internet of Things,internet of things,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51
+SKILL_0396,Java (computer programming),java (computer programming),IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389
+SKILL_0397,JavaScript,javascript,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7
+SKILL_0398,JavaScript Framework,javascript framework,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067
+SKILL_0399,Joomla,joomla,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d2adb565-a865-424d-aeb5-9fbcbf2afe2a
+SKILL_0400,Python (computer programming),python (computer programming),IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d
+SKILL_0401,WebCMS,webcms,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5c66ce3a-658d-43b1-9d8d-0f39be6c0f2e
+SKILL_0402,World Wide Web Consortium standards,world wide web consortium standards,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8696aff0-18c0-4ba6-a4d0-9a21861b3e5e
+SKILL_0403,align software with system architectures,align software with system architectures,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2857540c-180b-4208-9127-e94a01871966
+SKILL_0404,analyse business processes,analyse business processes,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/56042303-972b-41be-9310-58467599ff7e
+SKILL_0405,analyse business requirements,analyse business requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17
+SKILL_0406,analyse decentralised applications,analyse decentralised applications,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0e5affa0-705e-4b19-94e8-19e902e0287d
+SKILL_0407,analyse software specifications,analyse software specifications,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998
+SKILL_0408,apply information security policies,apply information security policies,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/86d2e2ea-1ba2-4aa6-b465-8a1f9abc81b8
+SKILL_0409,automate cloud tasks,automate cloud tasks,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ce8ae6ca-61d8-4174-b457-641de96cbff4
+SKILL_0410,balance database resources,balance database resources,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9ba8fd27-275d-4bad-8c48-f668aa99a578
+SKILL_0411,blockchain,blockchain,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/afa14e38-5973-4cce-a077-f796c1ced2cc
+SKILL_0412,blockchain application areas,blockchain application areas,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/668c3fd4-8443-4f27-bc1e-2d96205186b5
+SKILL_0413,blockchain applications,blockchain applications,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5ce5236e-93e2-4899-8971-fff526f85a01
+SKILL_0414,blockchain applications security principles,blockchain applications security principles,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/98a57799-0146-4849-a1d2-41021c4b7b8f
+SKILL_0415,blockchain architecture,blockchain architecture,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/296f6b56-de45-4aac-aa96-43e4a4864724
+SKILL_0416,blockchain components,blockchain components,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/14062e1c-6540-4cb6-b343-ad419e3d10ac
+SKILL_0417,blockchain consensus mechanisms,blockchain consensus mechanisms,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f7e051fc-8f7b-45b3-8911-8ffb9b951f4a
+SKILL_0418,blockchain design patterns,blockchain design patterns,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c4ba511c-dc24-44bc-8bc5-10b2d4a191fb
+SKILL_0419,blockchain history,blockchain history,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b4057ecb-06d6-45db-a352-ce73e3fd991d
+SKILL_0420,blockchain mining principles,blockchain mining principles,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fc94266b-322d-4f1d-87a0-03f999e72344
+SKILL_0421,blockchain openness,blockchain openness,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3c2e6f38-42c1-46ec-b782-5854b2db330d
+SKILL_0422,blockchain platforms,blockchain platforms,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9035afc4-5317-455d-ab60-f32e2ecc6bfc
+SKILL_0423,blockchain terminology,blockchain terminology,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8bbdb795-0deb-478f-91e4-5238867ed8ba
+SKILL_0424,blockchain-based business models,blockchain-based business models,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d686f015-5568-4288-9135-74936cd7b655
+SKILL_0425,blockchain-based services regulation,blockchain-based services regulation,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7c939ef4-adb2-4c0c-aa27-9cc1aefd7c81
+SKILL_0426,build business relationships,build business relationships,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/dc72ad0a-c5dc-4abd-bc0d-ca43e82162e1
+SKILL_0427,business process modelling,business process modelling,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb
+SKILL_0428,business requirements techniques,business requirements techniques,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0ee94c0a-3716-494a-95a2-dcbab9e58be2
+SKILL_0429,cloud monitoring and reporting,cloud monitoring and reporting,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8efa6a7a-6556-4cb8-908d-59d3b5c58d2f
+SKILL_0430,cloud security and compliance,cloud security and compliance,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1c2978b8-bb0d-4249-9c23-877571a4dffa
+SKILL_0431,cloud technologies,cloud technologies,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0
+SKILL_0432,collaborate with designers,collaborate with designers,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d52382fe-f236-421f-95fe-34fe69d48dbd
+SKILL_0433,collect customer feedback on applications,collect customer feedback on applications,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/71746a0b-e58d-4dc4-ad03-bd84082eae21
+SKILL_0434,compose description for web elements,compose description for web elements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e8d9ce55-7bc3-4f09-8412-0a393d4b5b96
+SKILL_0435,computer engineering,computer engineering,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef
+SKILL_0436,computer programming,computer programming,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97
+SKILL_0437,content development processes,content development processes,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e74f4f21-8d45-412c-b5c3-652e6167ee32
+SKILL_0438,create flowchart diagram,create flowchart diagram,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3
+SKILL_0439,create software design,create software design,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3bddfd7c-ab6d-40c2-883d-5e97fb7640ba
+SKILL_0440,create website wireframe,create website wireframe,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f0f5bb34-71df-4715-9c9e-03567b76ec8f
+SKILL_0441,"data extraction, transformation and loading tools","data extraction, transformation and loading tools",IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9d0d89be-bffa-4393-b6f6-8d05bea49051
+SKILL_0442,data models,data models,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5
+SKILL_0443,data quality assessment,data quality assessment,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cc7370dd-69fa-4c67-a96f-d4d135d38700
+SKILL_0444,data storage,data storage,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a7f0fbe0-c546-4f30-8e41-34a58c64567e
+SKILL_0445,database development tools,database development tools,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9ef0f3a0-9ce2-4ef1-a987-0366b5cb2dbe
+SKILL_0446,database management systems,database management systems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f
+SKILL_0447,debug software,debug software,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2522a6ce-3202-4ac8-9f5b-b9cb5a3a83a1
+SKILL_0448,decentralised identifiers,decentralised identifiers,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4570a262-b51f-46a1-a834-13ff67bee1c8
+SKILL_0449,decentralized application frameworks,decentralized application frameworks,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/251b5528-693c-4ef9-a7f6-9924bb8d7ef8
+SKILL_0450,define software architecture,define software architecture,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f7e2eb04-3e50-4561-bce1-7e51a1fec308
+SKILL_0451,define technical requirements,define technical requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2
+SKILL_0452,deploy cloud resource,deploy cloud resource,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6195c5f7-a4fb-425d-a3dd-c4467c4471a3
+SKILL_0453,design application interfaces,design application interfaces,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968
+SKILL_0454,design cloud architecture,design cloud architecture,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/11430d93-c835-48ed-8e70-285fa69c9ae6
+SKILL_0455,design cloud networks,design cloud networks,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4da4587a-fd0b-4ca2-886c-c42a1562d432
+SKILL_0456,design database in the cloud,design database in the cloud,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7e796b51-49d7-4e73-95af-2e7323763f15
+SKILL_0457,design for organisational complexity,design for organisational complexity,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/dfff95c6-9758-4c04-a228-7eaa88dec6cd
+SKILL_0458,design graphics,design graphics,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f058bf62-70d1-4f5e-be2a-8b26fac24a96
+SKILL_0459,design information system,design information system,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a47d194d-0ffd-4aaa-b695-fbbe0255000e
+SKILL_0460,design process,design process,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2c28fc20-8a60-4311-8899-5ef8729c05b3
+SKILL_0461,design process for blockchain-based systems,design process for blockchain-based systems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8f32e02a-9290-47ab-ad28-6567bfc2f17a
+SKILL_0462,design user interface,design user interface,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e
+SKILL_0463,develop ICT device driver,develop ict device driver,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/85616cc4-98bf-4355-9cf1-72ff11752848
+SKILL_0464,develop automated migration methods,develop automated migration methods,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0b0335f3-0aa1-491e-895e-81fc8774a300
+SKILL_0465,develop blockchain innovative architectures,develop blockchain innovative architectures,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/01d269d9-b058-4d6c-82a0-3779af9a124b
+SKILL_0466,develop digital content,develop digital content,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5fd5c985-eaaa-47aa-8314-62359c54505a
+SKILL_0467,develop documentation in accordance with legal requirements,develop documentation in accordance with legal requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/695c3249-18e7-4435-bdb8-54a16011159d
+SKILL_0468,develop software prototype,develop software prototype,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/797a4416-0b8d-44f3-8fcd-eb10bd0be6b4
+SKILL_0469,develop with cloud services,develop with cloud services,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6b643893-0a1f-4f6c-83a1-e7eef75849b9
+SKILL_0470,digital identity management,digital identity management,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/33efa504-2f26-424d-b662-cee77e6e9c93
+SKILL_0471,digital systems,digital systems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/397da142-ab35-48fe-b154-7c38f447adfb
+SKILL_0472,distributed ledger technologies consensus protocols,distributed ledger technologies consensus protocols,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ee46e1d3-a52c-4113-aab9-38dbc907085d
+SKILL_0473,distributed ledger technologies vulnerabilities,distributed ledger technologies vulnerabilities,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cdaf66a1-eaf3-4fef-af6e-2e9bbe2c326c
+SKILL_0474,distributed ledger technology,distributed ledger technology,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3be79ccc-a455-49b9-8c65-55c50071ba5b
+SKILL_0475,domain name service,domain name service,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/071233c4-ad2b-4f50-b79f-768d2231163e
+SKILL_0476,draw design sketches,draw design sketches,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fc4fcb4b-993f-4f2c-b158-c2171ec18ed8
+SKILL_0477,embedded systems,embedded systems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d
+SKILL_0478,engineering principles,engineering principles,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/209a5498-3449-4689-8ed9-bd08cab4fd78
+SKILL_0479,establish customer rapport,establish customer rapport,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cd990eab-c6a9-4c11-b17d-b12a98f6573b
+SKILL_0480,estimate duration of work,estimate duration of work,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e207163b-7963-4c3e-9494-7a4bb000211b
+SKILL_0481,evaluate blockchain architectures,evaluate blockchain architectures,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4ef13dee-380d-4b76-9034-c4995045303f
+SKILL_0482,execute analytical mathematical calculations,execute analytical mathematical calculations,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/31c69100-b612-4a61-8db5-fd314318854c
+SKILL_0483,execute feasibility study,execute feasibility study,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d74df140-eb69-43e2-bac9-1cafc824d702
+SKILL_0484,explain blockchain implications,explain blockchain implications,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3a09d732-08b9-4c90-8fd3-34e2d69ce084
+SKILL_0485,explain distributed ledger technologies principles,explain distributed ledger technologies principles,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ce2dcc4b-d0a4-4aa4-b84a-a08da3c31d7d
+SKILL_0486,game theory,game theory,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8b0f73ff-d36b-4196-bb83-464c3a6ef07d
+SKILL_0487,graphics editor software,graphics editor software,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a71577b2-7550-4222-88ee-dcbd2d881516
+SKILL_0488,identify ICT user needs,identify ict user needs,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ddfe79e2-c2e3-4ba7-9bdf-3820b4f75b54
+SKILL_0489,identify blockchain innovation opportunities,identify blockchain innovation opportunities,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1f0fbd17-56b7-45cd-b841-e7d9e2a5a14e
+SKILL_0490,identify customer requirements,identify customer requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0e0c9c11-b39e-43cf-ba95-2fe646f5de64
+SKILL_0491,implement cloud security and compliance,implement cloud security and compliance,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c13fb093-5ffb-491a-b8b7-fa2d42a57e2e
+SKILL_0492,implement front-end website design,implement front-end website design,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c4b1f326-224a-420a-b8b3-814a8f13b6cb
+SKILL_0493,implement smart contracts,implement smart contracts,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/89d574b8-f0ea-4ae8-9008-f575e37e9f11
+SKILL_0494,industrial software,industrial software,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/41ec47dd-08b3-464a-9c45-c706f3e74467
+SKILL_0495,integrated development environment software,integrated development environment software,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/925463a7-d51f-4d5b-9f79-4d28cf30acde
+SKILL_0496,interact with users to gather requirements,interact with users to gather requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a8797f21-1af0-4c5e-98ca-bf1442929363
+SKILL_0497,interpret technical requirements,interpret technical requirements,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/be48353d-25c7-4f86-bea9-7b9e248fbc6e
+SKILL_0498,interpret technical texts,interpret technical texts,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/85c11255-469f-41bd-a6d1-382bc4a87783
+SKILL_0499,keep up with the latest information systems solutions,keep up with the latest information systems solutions,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/20c920d4-7ff7-4676-ba61-3f04490d9416
+SKILL_0500,legal requirements of ICT products,legal requirements of ict products,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a846cb9e-c152-41e7-bd34-45e7ff941e3b
+SKILL_0501,manage ICT legacy implication,manage ict legacy implication,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/861313ba-3a1a-4d33-842a-1b8e45e2415b
+SKILL_0502,manage ICT project,manage ict project,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/3c76296d-4bbd-44ba-8eaa-95bf275f79b7
+SKILL_0503,manage business knowledge,manage business knowledge,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/41bf7ede-fc84-4a57-8c89-b548d11b0ba1
+SKILL_0504,manage cloud data and storage,manage cloud data and storage,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d3286405-49f8-4e8a-8046-a4376b4e7963
+SKILL_0505,migrate existing data,migrate existing data,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/020918ef-4b55-47c1-8430-ab7b8f6a7377
+SKILL_0506,mobile operating systems,mobile operating systems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/976455eb-5bbe-4493-ae64-ed16c3b009ea
+SKILL_0507,object-oriented modelling,object-oriented modelling,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5be3d306-6cf1-4b49-aa1d-01651dd4ba4c
+SKILL_0508,outline blockchain-based identity management,outline blockchain-based identity management,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/af6ea157-8c10-4c5b-8015-0e184946127a
+SKILL_0509,oversee development of software,oversee development of software,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/83b33952-3872-46ec-9a2e-b28f91303a7e
+SKILL_0510,perform backups,perform backups,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/cf3e976d-2c3e-495c-a874-f9e8a66d3b48
+SKILL_0511,project management,project management,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388
+SKILL_0512,propose ICT solutions to business problems,propose ict solutions to business problems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/07e51c60-763a-4335-b4ec-70a15f66d328
+SKILL_0513,provide cost benefit analysis reports,provide cost benefit analysis reports,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/48b68726-0fd6-4e03-a5eb-82236516ee7a
+SKILL_0514,query languages,query languages,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9cf681c7-89ec-470c-b651-7fe03786f586
+SKILL_0515,recognise blockchain application areas,recognise blockchain application areas,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/44847349-e7ff-4bdb-82b9-6a18140efcaf
+SKILL_0516,recognise blockchain risks,recognise blockchain risks,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d2309723-3472-46d2-865a-db81db2269b6
+SKILL_0517,report analysis results,report analysis results,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c544a9f3-5945-4b54-afed-de0697852817
+SKILL_0518,resource description framework query language,resource description framework query language,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/99207709-d076-4cce-ba38-e90d3bb28806
+SKILL_0519,smart contract,smart contract,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/670f8eea-f25b-4c3f-97ef-a4729d4c63d6
+SKILL_0520,smart contract programming languages,smart contract programming languages,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/495ce586-09d7-4cec-83d7-2821be6590c4
+SKILL_0521,software UI design patterns,software ui design patterns,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1019423b-3368-4f83-b24f-19e5fa23e816
+SKILL_0522,software architecture models,software architecture models,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2450c3b3-e78e-435b-b84d-e05d984e71dc
+SKILL_0523,software components libraries,software components libraries,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/484df271-bb52-49f1-8f50-f19624bf4df2
+SKILL_0524,software design methodologies,software design methodologies,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8ff015a0-98ea-4d80-a23e-1f68110a919e
+SKILL_0525,software frameworks,software frameworks,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/24c200e5-be20-4370-a137-ab53797f3a17
+SKILL_0526,solve ICT system problems,solve ict system problems,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c
+SKILL_0527,style sheet languages,style sheet languages,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c2999f0c-eb37-4cdf-b9b0-82107b628794
+SKILL_0528,system design,system design,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fae27053-8924-4bfd-b565-c9fe502044c9
+SKILL_0529,systems development life-cycle,systems development life-cycle,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/09f2f811-a3fb-4de3-a70f-6420a6935575
+SKILL_0530,technical drawings,technical drawings,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532
+SKILL_0531,test ICT queries,test ict queries,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e2fb1ee4-fbf9-4690-b677-3e6ff7cfdc48
+SKILL_0532,tools for software configuration management,tools for software configuration management,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f
+SKILL_0533,translate requirements into visual design,translate requirements into visual design,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2d6d4784-0992-48e7-b100-22d7229b3f0a
+SKILL_0534,unified modelling language,unified modelling language,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7193cb6d-8334-494f-86e5-21e6d03a47c3
+SKILL_0535,use an application-specific interface,use an application-specific interface,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/04fe962b-4017-4eb7-9139-7d69b6922bc9
+SKILL_0536,use databases,use databases,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4463a721-69f3-413d-8321-43e3af13a4f1
+SKILL_0537,use different communication channels,use different communication channels,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/415abd43-e8e5-4643-b5da-5f11307af57a
+SKILL_0538,use e-services,use e-services,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/16a00c69-9c74-4c37-96d7-6301d285e5ce
+SKILL_0539,use markup languages,use markup languages,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0af062de-eb43-41e9-9b96-249e2cd22d26
+SKILL_0540,use methodologies for user-centered design,use methodologies for user-centered design,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7364cc39-b9c0-449f-9416-57723e2fd9c4
+SKILL_0541,use software design patterns,use software design patterns,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17
+SKILL_0542,use software libraries,use software libraries,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df
+SKILL_0543,utilise computer-aided software engineering tools,utilise computer-aided software engineering tools,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/172020d1-e151-445b-8173-e2a5fb16fe51
+SKILL_0544,web based collaborative platforms,web based collaborative platforms,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/93e65de1-923c-437e-aa5b-e6002967ce71
+SKILL_0545,web programming,web programming,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28
+SKILL_0546,web services,web services,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c
+SKILL_0547,write database documentation,write database documentation,IT/Software - Software Development,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/64db87c7-2360-4e20-88d3-d222402e477c
+SKILL_0548,accept criticism and guidance,accept criticism and guidance,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/05aa7c09-46e7-433f-a81b-92841f4551e7
+SKILL_0549,adapt to change,adapt to change,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/49de9958-2aa4-4eef-a89d-fe5d5bcd28c4
+SKILL_0550,address an audience,address an audience,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/609a8ac1-9d29-4237-9886-596dbbe7ca8a
+SKILL_0551,adjust to physical demands,adjust to physical demands,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/13b4a3d2-abdf-4442-8e52-d7464a58ecbc
+SKILL_0552,adopt ways to foster biodiversity and animal welfare,adopt ways to foster biodiversity and animal welfare,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0171653e-c8e9-4c24-bb86-a4b6fe038f25
+SKILL_0553,adopt ways to reduce negative impact of consumption,adopt ways to reduce negative impact of consumption,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4c3ab565-747c-4db3-8c47-79e8d6f98cf4
+SKILL_0554,adopt ways to reduce pollution,adopt ways to reduce pollution,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0d75a128-bd88-4c1b-b70d-8e963aeb490c
+SKILL_0555,advise others,advise others,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/045f71e6-0699-4169-8a54-9c6b96f3174d
+SKILL_0556,apply basic programming skills,apply basic programming skills,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bf4d884f-c848-402a-b130-69c266b04164
+SKILL_0557,apply digital security measures,apply digital security measures,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f4346299-e22a-4686-8e61-2c9b0cd51c7d
+SKILL_0558,apply hygiene standards,apply hygiene standards,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d9449998-c1f5-478c-a103-2255398cf0b6
+SKILL_0559,"apply knowledge of philosophy, ethics and religion","apply knowledge of philosophy, ethics and religion",Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/0b709c64-a57a-4976-86bd-34d2cf34fa4f
+SKILL_0560,"apply knowledge of science, technology and engineering","apply knowledge of science, technology and engineering",Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5c3ab99d-a3f1-4620-9602-d12d2151a03d
+SKILL_0561,apply knowledge of social sciences and humanities,apply knowledge of social sciences and humanities,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/deb3c1bc-d48a-42e6-b0cc-cb238534ec28
+SKILL_0562,appreciate diverse cultural and artistic expression,appreciate diverse cultural and artistic expression,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/98a999db-72d5-4657-a0b0-2f850afd4368
+SKILL_0563,approach challenges positively,approach challenges positively,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/469748ce-051a-407e-9099-0c9415ac2705
+SKILL_0564,assume responsibility,assume responsibility,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/199f7919-5114-41b6-b6a5-41e0e4896ec1
+SKILL_0565,attend to detail,attend to detail,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/83e6510b-ffeb-4aec-959c-4265fd0ff7b7
+SKILL_0566,build networks,build networks,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bf983f2a-e941-4646-811d-cc81060cb53f
+SKILL_0567,build team spirit,build team spirit,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3
+SKILL_0568,calculate probabilities,calculate probabilities,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1dabb413-18e8-48ed-a963-44978e67ad32
+SKILL_0569,carry out calculations,carry out calculations,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/19ba11f3-9c99-41fd-a7c9-f77e6a026186
+SKILL_0570,comply with regulations,comply with regulations,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b618584f-6bdf-4d8f-89a7-f28c2c95afc2
+SKILL_0571,conduct web searches,conduct web searches,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ba93b71b-c433-4a01-8246-ed2daa85a9a2
+SKILL_0572,cope with stress,cope with stress,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7a147904-22b3-498a-b4d9-7bceeb86b45d
+SKILL_0573,cope with uncertainty,cope with uncertainty,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5cd1930c-278d-4929-b413-27352f5b3687
+SKILL_0574,create digital content,create digital content,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d822b4b2-26c7-4bd9-970d-229c6504f615
+SKILL_0575,critically evaluate information and its sources,critically evaluate information and its sources,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/db33c0f3-43ee-4ba3-ba47-9269ac837697
+SKILL_0576,delegate responsibilities,delegate responsibilities,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b00e948c-19be-4951-8cff-60f88f1046e9
+SKILL_0577,demonstrate awareness of health risks,demonstrate awareness of health risks,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c4180af3-befd-4bd8-9a65-6a496f9d9f15
+SKILL_0578,demonstrate curiosity,demonstrate curiosity,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/429062f1-a958-43ea-83dd-4e1af078c156
+SKILL_0579,demonstrate intercultural competence,demonstrate intercultural competence,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c10d5d87-36cf-42f5-8a12-e560fb5f4af8
+SKILL_0580,demonstrate loyalty,demonstrate loyalty,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/72d1fa5d-1b7f-48e7-84e3-6e779841ddf1
+SKILL_0581,demonstrate trustworthiness,demonstrate trustworthiness,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bcf002ce-90f8-42e5-ac1b-5dba208639b0
+SKILL_0582,demonstrate willingness to learn,demonstrate willingness to learn,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9bf266a6-188b-4d17-a22f-2f266d76832b
+SKILL_0583,engage others in environment friendly behaviours,engage others in environment friendly behaviours,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7f321b88-3d16-4e30-8163-5494ca8ce978
+SKILL_0584,evaluate environmental impact of personal behaviour,evaluate environmental impact of personal behaviour,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/2aaad52d-599e-4e77-a681-bbc236825821
+SKILL_0585,exercise rights and responsibilities,exercise rights and responsibilities,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/f4bcdb75-df28-441d-a52b-9730904f36a1
+SKILL_0586,exercise self-reflection,exercise self-reflection,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/409a0245-0e6c-4aac-ba16-0920ecb76a8d
+SKILL_0587,express yourself creatively,express yourself creatively,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/93350886-a21b-4e61-a1b1-319a325c0f90
+SKILL_0588,identify problems,identify problems,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a628d2d1-f40a-4c37-a357-2801726f2996
+SKILL_0589,improvise,improvise,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b40584aa-7c63-4eed-9422-a9798fb95fdc
+SKILL_0590,instruct others,instruct others,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/699e7c26-6502-4e78-a823-3656ff5a5b8b
+SKILL_0591,interpret mathematical information,interpret mathematical information,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6fc6f757-6baa-49fe-9a82-6ba6a52f2e13
+SKILL_0592,keep an open mind,keep an open mind,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fd89f784-88dc-4d35-abd7-86aa073cab12
+SKILL_0593,lead others,lead others,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/75d8e5d9-bef3-418b-9011-01bff9f27207
+SKILL_0594,maintain concentration for long periods,maintain concentration for long periods,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9cfd2219-553c-4d67-81e5-951e87c65135
+SKILL_0595,maintain physical fitness,maintain physical fitness,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/a68bdf1e-b325-4880-b456-192c2891931a
+SKILL_0596,maintain psychological well-being,maintain psychological well-being,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4c772721-9280-49cb-9988-b6ea3d36b06d
+SKILL_0597,make an informed use of the health-care system,make an informed use of the health-care system,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/88b0c49e-7c2e-4ccc-aca3-fbd4bbc2081c
+SKILL_0598,make decisions,make decisions,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d62d2b4c-a6f8-439e-8a1b-4f29ab5f2c47
+SKILL_0599,manage chronic health conditions,manage chronic health conditions,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/dcc99418-d896-4b3b-8596-658093a17a8f
+SKILL_0600,manage digital identity,manage digital identity,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bc0b0b5d-f6be-405a-b224-b6902a4dbe97
+SKILL_0601,manage financial and material resources,manage financial and material resources,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1ddc021d-d818-4731-904f-842d7491f419
+SKILL_0602,manage frustration,manage frustration,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1d1fedcb-4995-44ac-90f5-f31a157ce512
+SKILL_0603,manage personal progression,manage personal progression,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/468135b7-5757-48c3-9509-fde0e13ec5be
+SKILL_0604,manage quality,manage quality,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/35ebe444-9ece-4fbc-a55d-e99ea37267ae
+SKILL_0605,manage time,manage time,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d9013e0e-e937-43d5-ab71-0e917ee882b8
+SKILL_0606,meet commitments,meet commitments,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/113b4428-0a31-4199-8496-070af7854b91
+SKILL_0607,memorise information,memorise information,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/fa46a48d-9cb9-422d-afab-1047654dbcdd
+SKILL_0608,moderate a discussion,moderate a discussion,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5b46f572-7ced-4efd-b270-a81a164d521c
+SKILL_0609,motivate others,motivate others,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e2d44a9b-f28c-489e-9861-b654b5ded507
+SKILL_0610,move objects,move objects,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b6bdf202-524f-475d-b813-2aa9af005c37
+SKILL_0611,negotiate compromises,negotiate compromises,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7954861c-86d4-4529-afbb-2c23dab9ac74
+SKILL_0612,operate digital hardware,operate digital hardware,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6b2f8802-0cbf-436e-a37f-ca55ede41bbc
+SKILL_0613,"organise information, objects and resources","organise information, objects and resources",Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/6b305973-8993-475f-bd8a-daf037c61401
+SKILL_0614,participate actively in civic life,participate actively in civic life,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7d9bace0-63d0-4848-ac87-350a98082c12
+SKILL_0615,plan,plan,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e49f4158-9d4c-425d-bf32-dfe89b19840a
+SKILL_0616,process spatial information,process spatial information,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5c526c52-4f0a-4647-8c51-c91568acebb1
+SKILL_0617,"promote ideas, products, services","promote ideas, products, services",Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/df5e3d02-9f0f-44ee-91c2-85c62f161868
+SKILL_0618,promote the principles of democracy and rule of law,promote the principles of democracy and rule of law,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/896a5e0c-7ac9-4e59-a9bf-17fdca6b1c37
+SKILL_0619,protect the health of others,protect the health of others,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4cde32b5-fc2f-4257-a8b9-5b15a67ee3e5
+SKILL_0620,react to physical changes or hazards,react to physical changes or hazards,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/ef7562b2-f176-4d7c-a0b2-27ae8cce0b7d
+SKILL_0621,report facts,report facts,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/be6ab363-3de1-427f-a8ef-85d5b0250822
+SKILL_0622,resolve conflicts,resolve conflicts,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/96de2e86-e287-41f2-88ab-15a2343afc6f
+SKILL_0623,respect confidentiality obligations,respect confidentiality obligations,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/e37d64dc-0f05-4ee8-b065-bf76f70d8f5c
+SKILL_0624,respect the diversity of cultural values and norms,respect the diversity of cultural values and norms,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/5ca953f7-541d-4f67-bc55-7721348366cf
+SKILL_0625,show commitment,show commitment,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/1fce1197-3a5b-45b7-8797-575cd3b57a01
+SKILL_0626,show confidence,show confidence,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/669b75d8-671c-4a1c-8e0b-6466c513c27d
+SKILL_0627,show determination,show determination,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/19a64e91-bfe3-4c48-9225-3bb1229b12f0
+SKILL_0628,show empathy,show empathy,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/77b636e8-fab3-41a8-8022-1e0a354059dc
+SKILL_0629,show entrepreneurial spirit,show entrepreneurial spirit,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/bdcf429c-5ccf-4c3d-bb61-4c987573a35e
+SKILL_0630,show initiative,show initiative,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/001115fb-569f-4ee6-8381-c6807ef2527f
+SKILL_0631,solve problems,solve problems,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/adc6dc11-3376-467b-96c5-9b0a21edc869
+SKILL_0632,think analytically,think analytically,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/4707da90-9cfc-46ca-8de0-38a0b7bfb137
+SKILL_0633,think creatively,think creatively,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41
+SKILL_0634,think critically,think critically,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7dd94ad3-13d6-43fe-8b94-51fcbf67ced9
+SKILL_0635,think holistically,think holistically,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/d56e2c2f-3e01-4b76-a7bb-ecb6d430172f
+SKILL_0636,think innovatively,think innovatively,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c2a0c52c-0b4b-4180-a918-92650ea3b458
+SKILL_0637,think quickly,think quickly,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/20012caa-b63c-4cb9-b2b8-01a1cfdfc1d1
+SKILL_0638,use communication and collaboration software,use communication and collaboration software,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/b080a008-a35d-4bd0-92e9-edf3773bb2b7
+SKILL_0639,"use equipment, tools or technology with precision","use equipment, tools or technology with precision",Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/9c0f93f7-2592-4d4d-9673-fd640502345f
+SKILL_0640,work efficiently,work efficiently,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/7a93e22f-54d8-4bf0-9213-d711f6601b49
+SKILL_0641,work in teams,work in teams,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/60c78287-22eb-4103-9c8c-28deaa460da0
+SKILL_0642,work independently,work independently,Transversal,ESCO,v1.2.1,1.0,,,active,http://data.europa.eu/esco/skill/c29aa9d2-4da8-4bdd-831c-8d4a2fb51730
