@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: list[str] = ["http://localhost:5173"]
     TAXONOMY_VERSION: str = "v1.2.1"
     RESUME_STORAGE_DIR: str = "storage/resumes"
+    PROCESSED_DATA_DIR: str = "datasets/processed"
 
     DATABASE_URL: str
 

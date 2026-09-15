@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.auth import router as auth_router
 from app.api.deps import get_current_user, require_roles
 from app.api.gaps import router as gaps_router
+from app.api.government import router as government_router
 from app.api.jobs import router as jobs_router
 from app.api.job_skills import router as job_skills_router
 from app.api.meta import router as meta_router
@@ -44,6 +45,7 @@ app.include_router(meta_router, prefix="/api/v1")
 app.include_router(matching_router, prefix="/api/v1")
 app.include_router(taxonomy_router, prefix="/api/v1")
 app.include_router(gaps_router, prefix="/api/v1")
+app.include_router(government_router, prefix="/api/v1")
 app.include_router(shortlists_router, prefix="/api/v1")
 
 
