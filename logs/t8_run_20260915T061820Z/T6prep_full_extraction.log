@@ -1,0 +1,12 @@
+Extracting skills from 17732 active jobs.csv rows (all districts)
+[WARN] 33 phrase(s) map to more than one skill_id - dropped from matching entirely (not guessed): [('cooperate with colleagues', {'SKILL_0641', 'SKILL_0028'}), ('online gambling', {'SKILL_0094', 'SKILL_0053'}), ('protect ICT devices', {'SKILL_0103', 'SKILL_0557'}), ('SPARQL', {'SKILL_0148', 'SKILL_0518'}), ('SQL', {'SKILL_0149', 'SKILL_0446'})] ...
+Extraction done in 12.9s -> 53593 raw mentions from 17726 distinct jobs
+matched_via
+alias         31973
+exact         21520
+unresolved       63
+embedding        37
+
+Wrote 53530 resolved (job_id, skill_id) mention rows -> job_skill_resolved.csv
+Distinct jobs with >=1 resolved skill: 13207 / 17726 (74.5%)
+Total time: 13.7s

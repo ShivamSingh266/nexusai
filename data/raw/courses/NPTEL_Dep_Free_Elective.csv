@@ -1,0 +1,121 @@
+S.No,Course Name,SME Name,Institute,Current Duration in weeks,No. of credits,NPTEL URL,Comments,Available for Jan - April 2026,Direct Swayam Link,Category,NPTEL_ID,Available for July-Dec2025
+1,Introduction to Parallel Programming in OpenMP,Prof. Yogish Sabharwal,IITD,8,2,https://nptel.ac.in/courses/106102163/,1 credit for the student who completed this course from Jan 2021 to Dec 2021 and 2 credits who completed this course from 2022,No,No,BP,106102163,No
+2,AI: Constraint Satisfaction,Prof. Deepak Khemani,IITM,8,2,https://nptel.ac.in/courses/106106158/,-,Yes,No,BD,106106158,No
+3,Cloud computing,Prof. Soumya Kanti Ghosh,IIT KGP,12,3,https://nptel.ac.in/courses/106/105/106105167,-,Yes,https://onlinecourses.nptel.ac.in/noc25_cs107/preview,BP,106105167,Yes
+4,Data Mining,Prof. Pabitra Mitra,IIT KGP,8,2,https://nptel.ac.in/courses/106/105/106105174/,-,Yes,No,BD,106105174,No
+5,Human Computer Interactions,Prof. Ponnurangam Kumaraguru,IIITD,8,2,https://nptel.ac.in/courses/106/106/106106177/,-,No,No,BD,106106177,No
+6,Introduction To Haskell Programming,Prof. S. P Suresh,CMI,8,2,https://nptel.ac.in/courses/106/106/106106137/,-,Yes,No,BP,106106137,No
+7,"Introduction to Programming in C
+(Can be credited if completed before Sep 2023)",Prof. Satyadev Nandakumar,IITK,8,2,https://nptel.ac.in/courses/106/104/106104128/,-,No,No,BP,106104128,No
+8,Introduction to R Software,Prof. Shalabh,IITK,8,2,https://nptel.ac.in/courses/111104100/,-,No,No,BP,111104100,No
+9,Object Oriented Analysis and Design,Prof. Partha Pratim Das,IIT KGP,8,2,https://nptel.ac.in/courses/106/105/106105153/,-,No,No,BP,106105153,No
+10,Programming in C++,Prof. Partha Pratim Das,IIT KGP,12,3,https://nptel.ac.in/courses/106105234,-,Yes,No,BP,106105234,No
+11,Theory of Computation,Prof. Raghunath Tewari,IITK,8,2,https://nptel.ac.in/courses/106/104/106104148/,Can be credited if completed on or before Dec 2025,No,https://onlinecourses.nptel.ac.in/noc25_cs121/preview,BP,106104148,Yes
+12,AI:Knowledge Representation and Reasoning,Prof. Deepak Khemani,IITM,12,3,https://nptel.ac.in/courses/106106140/,-,Yes,No,BP,106106140,No
+13,Computer Networks and Internet Protocol,"Prof. Soumya Kanti Ghosh
+Prof. Sandip Chakraborty",IIT KGP,12,3,https://nptel.ac.in/courses/106/105/106105183/,-,Yes,No,BD,106105183,No
+14,"Deep Learning for Computer Vision*
+(Can be credited if completed before Dec 2023)",Prof. Vineeth N Balasubramanian,IITH,12,3,https://nptel.ac.in/courses/106/106/106106224/,-,No,No,BD,106106224,No
+15,Introduction to internet of things,Prof. Sudip Misra,IIT KGP,12,3,https://nptel.ac.in/courses/106/105/106105166/,-,Yes,https://onlinecourses.nptel.ac.in/noc25_cs147/preview,BP,106105166,Yes
+16,Natural Language Processing (Can be credited if completed before Dec 2023),Prof. Pawan Goyal,IITKGP,12,3,https://nptel.ac.in/courses/106/105/106105158/,-,Yes,No,BD,106105158,No
+17,Social Networks,"Prof. Sudarshan Iyengar, Prof. Yayati Gupta",IIT Ropar,12,3,https://nptel.ac.in/courses/106/106/106106169/,-,Yes,https://onlinecourses.nptel.ac.in/noc25_cs102/preview,BP,106106169,Yes
+18,Multi-Core Computer Architecture,Prof. John Jose,IITG,12,3,https://nptel.ac.in/courses/106103184,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs134/preview,BP,106103184,Yes
+19,Secure Computation: Part II,Prof Ashish Choudhary,IIITB,12,3,https://nptel.ac.in/courses/106108237,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs128/preview,BP,106108237,Yes
+20,Cyber Security and Privacy,Prof. Saji K Mathew,IITM,12,3,https://nptel.ac.in/courses/106106248,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs116/preview,BP,106106248,Yes
+21,Design & Implementation Of Human-Computer Interfaces,Prof. Samit Bhattacharya,IITG,12,3,https://nptel.ac.in/courses/106103237,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs135/preview,BP,106103237,Yes
+22,Distributed Systems,Prof. Rajiv Misra,IIT Patna,8,2,https://nptel.ac.in/courses/106106168,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs130/preview,BP,106106168,Yes
+23,Statistical Learning For Reliability Analysis,Prof. Monalisa Sarma,IITKGP,12,3,https://nptel.ac.in/courses/106105239,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs139/preview,BD,106105239,Yes
+24,Software Conceptual Design,"Prof. Sridhar Iyer
+Prof. Prajish Prasad
+Prof. T. G. Lakshmi",IITB,4,1,https://nptel.ac.in/courses/106101235,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs82/preview,BP,106101235,Yes
+25,Computational Complexity,Prof. Subrahmanyam Kalyanasundaram,IIT Hyderabad,12,3,https://nptel.ac.in/courses/106106229,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs115/preview,BP,106106229,Yes
+26,Data Structure And Algorithms Using Java,Prof. Debasis Samanta,IITKGP,12,3,https://nptel.ac.in/courses/106105225,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs148/preview,BP,106105225,Yes
+27,Getting Started With Competitive Programming,Prof. Neeldhara Misra,IIT Gandhinagar,12,3,https://nptel.ac.in/courses/106106231,Added in January 2024. Can only be credited starting January 2024,Yes,https://onlinecourses.nptel.ac.in/noc25_cs97/preview,BP,106106231,Yes
+28,Applied Accelerated Artificial Intelligence,"Prof. Satyajit Das
+Prof. Satyadhyan Chickerur
+Prof. Bharatkumar Sharma
+Prof. Adesuyi Tosin","IIT Palakkad
+KLE Technological University
+NVIDIA",12,3,https://nptel.ac.in/courses/106106238,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs98/preview,BD,106106238,Yes
+29,Hardware Modeling Using Verilog,Prof. Indranil Sengupta,IITKGP,8,2,https://nptel.ac.in/courses/106105165,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs155/preview,BP,106105165,Yes
+30,Demystifying Networking,"Prof. Sridhar Iyer
+Prof. Ashutosh Raina",IITB,4,1,https://nptel.ac.in/courses/106101209,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs125/preview,BP,106101209,Yes
+31,Discrete Mathematics,"Prof. Sudarshan Iyengar
+Prof. Anil Shukla",IIT Ropar,12,3,https://nptel.ac.in/courses/106106183,Added in January 2024. Can only be credited starting January 2024,Yes,https://onlinecourses.nptel.ac.in/noc25_cs105/preview,BP,106106183,Yes
+32,C-Based VLSI Design,Prof. Chandan Karfa,IITG,12,3,https://nptel.ac.in/courses/106103229,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs132/preview,BP,106103229,Yes
+33,Advanced Distributed Systems,Prof. Smruti Ranjan Sarangi,IITD,12,3,https://nptel.ac.in/courses/106102237,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs84/preview,BP,106102237,Yes
+34,Social Network Analysis,Prof. Tanmoy Chakraborty,IITD,12,3,https://nptel.ac.in/courses/106106239,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs100/preview,BD,106106239,Yes
+35,Computer Graphics,Prof. Samit Bhattacharya,IITG,8,2,https://nptel.ac.in/courses/106103224,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs133/preview,BP,106103224,Yes
+36,Google Cloud Computing Foundations,Prof. Soumya Kanti Ghosh,IIT KGP & Google,8,2,https://nptel.ac.in/courses/106105223,Added in January 2024. Can only be credited starting January 2024,No,No,BP,106105223,No
+37,C Programming And Assembly Language,Prof. Janakiraman Viraraghavan,IITM,4,1,https://nptel.ac.in/courses/106106210,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs114/preview,BP,106106210,Yes
+38,Parameterized Algorithms,"Prof. Neeldhara Misra
+Prof. Saket Saurabh","IIT Gandhinagar
+IMSC",12,3,https://nptel.ac.in/courses/106106230,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs96/preview,BP,106106230,Yes
+39,Ethical Hacking,Prof. Indranil Sengupta,IITKGP,12,3,https://nptel.ac.in/courses/106105217,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs142/preview,BP,106105217,Yes
+40,Introduction To Game Theory And Mechanism Design,Prof. Swaprava Nath,IITB,12,3,https://nptel.ac.in/courses/106101237,Added in January 2024. Can only be credited starting January 2024,No,No,BD,106101237,No
+41,Discrete Mathematics - IIITB,Prof Ashish Choudhary,IIITB,12,3,https://nptel.ac.in/courses/106108227,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs127/preview,BP,106108227,Yes
+42,Introduction To Computer And Network Performance Analysis Using Queuing Systems,Prof. Varsha Apte,IITB,4,1,https://nptel.ac.in/courses/106101238,Added in January 2024. Can only be credited starting January 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs126/preview,BP,106101238,Yes
+43,Modern Algebra,Prof. Manindra Agrawal,IITK,8,2,https://nptel.ac.in/courses/106104149,Added in January 2024. Can only be credited starting January 2024,No,No,SE,106104149,No
+44,Randomized Methods in Complexity,Prof. Nitin Saxena,IITK,12,3,https://nptel.ac.in/courses/106104228,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs122/preview,BD,106104228,Yes
+45,Multi-Core Computer Architecture,Prof. John Jose,IITG,12,3,https://nptel.ac.in/courses/106103183,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs134/preview,BP,106103183,Yes
+46,Introduction to Quantum Computing: Quantum Algorithms and Qiskit,"Prof. Prabha Mandayam
+Prof. Anupama Ray
+Prof. Sheshashayee Raghunathan",IBM and IITM,4,1,https://nptel.ac.in/courses/106106232,Added in May 2024. Can only be credited starting May 2024,Yes,https://onlinecourses.nptel.ac.in/noc25_cs95/preview,BP,106106232,Yes
+47,Distributed Optimization and Machine Learning,Prof. Mayank Baranwal,IITB,12,3,https://nptel.ac.in/courses/106101466,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_cs86/preview,BD,106101466,Yes
+48,Introduction to Abstract Group Theory,Prof. Krishna Hanumanthu,CMI,8,2,https://nptel.ac.in/courses/111106113,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_ma64/preview,BP,111106113,Yes
+49,Regression Analysis,Prof. Soumen Maity,IISER Pune,12,3,https://nptel.ac.in/courses/111105042,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_ma65/preview,BD,111105042,Yes
+50,Complex Analysis,Prof. Pranav Haridas,Kerala School of Mathematics,12,3,https://nptel.ac.in/courses/111106141,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_ma66/preview,BP,111106141,Yes
+51,Algebra - I,"Prof. S. Viswanath
+Prof. Amritanshu Prasad",IMSc,12,3,https://nptel.ac.in/courses/111106137,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_ma67/preview,BD,111106137,Yes
+52,Concentration Inequalities,"Prof. Aditya Gopalan
+Prof. Himanshu tyagi",IISc,8,2,https://nptel.ac.in/courses/108108181,Added in May 2024. Can only be credited starting May 2024,No,No,BD,108108181,No
+53,Foundations of R Software,Prof. Shalabh,IITK,12,3,https://nptel.ac.in/courses/111104160,Added in May 2024. Can only be credited starting May 2024,No,https://onlinecourses.nptel.ac.in/noc25_ma99/preview,BD,111104160,Yes
+54,Advanced Computer Networks,"Prof. Neminath Hubballi
+Prof. Sameer Kulkarni","IIT Indore
+ IIT Gandhi Nagar",12,3,https://nptel.ac.in/courses/106106243,Added in Jan2025,Yes,No,BP,106106243,No
+55,Advanced Graph Theory,Prof. Rajiv Misra,IIT Patna,8,2,https://nptel.ac.in/courses/106104170,Added in Jan2025,No,No,BP,106104170,No
+56,Affective Computing,"Prof. Jainendra Shukla
+Prof. Abhinav Dhall",IIIT Delhi,12,3,https://nptel.ac.in/courses/106106244,Added in Jan2025,Yes,No,BD,106106244,No
+57,Blockchain and its Applications,"Prof. Sandip Chakraborty
+Prof. Shamik Sural",IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105235,Added in Jan2025,Yes,No,BD,106105235,No
+58,Business Intelligence & Analytics,Prof. Saji K Mathew,IIT Madras,12,3,https://nptel.ac.in/courses/106106361,Added in Jan2025,Yes,No,BD,106106361,No
+59,Cloud Computing and Distributed Systems,Prof. Rajiv Misra,IIT Patna,8,2,https://nptel.ac.in/courses/106104182,Added in Jan2025,Yes,No,BP,106104182,No
+60,Compiler Design,Prof. Santanu Chattopadhyay,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105190,Added in Jan2025,Yes,No,BP,106105190,No
+61,Cryptography and Network Security,Prof. Sourav Mukhopadhyay,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105162,Added in Jan2025,Yes,No,BP,106105162,No
+62,Design and Engineering of Computer Systems,Prof. Mythili Vutukuru,IIT Bombay,8,2,https://nptel.ac.in/courses/106101234,Added in Jan2025,No,No,BP,106101234,No
+63,Digital Design with Verilog,"Prof. Chandan Karfa, 
+Prof. Aryabartta Sahu",IIT Guwahati,12,3,https://nptel.ac.in/courses/106103358,Added in Jan2025,Yes,No,BP,106103358,No
+64,Edge Computing,Prof. Rajiv Misra,IIT Patna,8,2,https://nptel.ac.in/courses/106104449,Added in Jan2025,Yes,No,BP,106104449,No
+65,Embedded System Design with ARM,"Prof. Indranil Sengupta
+Prof .Kamalika Dutta",IIT Kharagpur,8,2,https://nptel.ac.in/courses/106105193,Added in Jan2025,Yes,No,BP,106105193,No
+66,Embedded Systems Design,Prof. Anupam Basu,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105159,Added in Jan2025,Yes,No,BP,106105159,No
+67,Foundations of Cyber Physical Systems,Prof. Soumyajit Dey,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105241,Added in Jan2025,Yes,No,BP,106105241,No
+68,GPU Architectures and Programming,Prof. Soumyajit Dey,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105220,Added in Jan2025,Yes,No,BP,106105220,No
+69,Information Security - 5 - Secure Systems Engineering,Prof. Chester Robeiro,IIT Madras,8,2,https://nptel.ac.in/courses/106106199,Added in Jan2025,Yes,No,BP,106106199,No
+70,Introduction to Embedded System Design,"Prof. Dhananjay V. Gadre
+Prof. Badri N Subudhi",IIT Delhi,12,3,https://nptel.ac.in/courses/108102169,Added in Jan2025,Yes,No,BP,108102169,No
+71,Introduction To Soft Computing,Prof. Debasis Samanta,IIT Kharagpur,8,2,https://nptel.ac.in/courses/106105173,Added in Jan2025,Yes,No,BP,106105173,No
+72,Parallel Computer Architecture,Prof. Hemangee K. Kapoor,IIT Guwahati,12,3,https://nptel.ac.in/courses/106103359,Added in Jan2025,Yes,No,BP,106103359,No
+73,Quantum Algorithms and Cryptography,Prof. Shweta Agrawal,IIT Madras,12,3,https://nptel.ac.in/courses/106106241,Added in Jan2025,No,No,BP,106106241,No
+74,Systems and Usable Security,Prof. Neminath Hubballi,IIT Indore,4,1,https://nptel.ac.in/courses/106106234,Added in Jan2025,Yes,No,BP,106106234,No
+75,Theory of Computation,Prof. Subrahmanyam Kalyanasundaram,IIT Hyderabad,12,3,https://nptel.ac.in/courses/106106242,Added in Jan2025,Yes,https://onlinecourses.nptel.ac.in/noc25_cs121/preview,BP,106106242,Yes
+76,User-centric Computing For Human-Computer Interaction,Prof. Samit Bhattacharya,IIT Guwahati,8,2,https://nptel.ac.in/courses/106103220,Added in Jan2025,Yes,No,BP,106103220,No
+77,VLSI Physical Design,Prof. Indranil Sengupta,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105161,Added in Jan2025,Yes,No,BP,106105161,No
+78,Wireless Ad Hoc and Sensor Networks,Prof. Sudip Misra,IIT Kharagpur,8,2,https://nptel.ac.in/courses/106105160,Added in Jan2025,Yes,No,BP,106105160,No
+79,Foundation of Cloud IoT Edge ML,Prof. Rajiv Misra,IIT Patna,8,2,https://nptel.ac.in/courses/106104242,Added in Jan2025,No,No,BD,106104242,No
+80,Linear programming and its applications to computer science,Prof. Rajat Mittal,IIT Kanpur,8,2,https://nptel.ac.in/courses/106104356,Added in Jan2025,No,No,BD,106104356,No
+81,Artificial Intelligence for Economics,"Prof. Adway Mitra
+Prof. Dripto Bakshi
+Prof. Palash Dey",IIT Kharagpur,8,2,https://nptel.ac.in/courses/106105470,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs152/preview,BD,106105470,Yes
+82,Practical Cyber Security for Cyber Security Practitioners,Prof. Sandeep K. Shukla,IIT Kanpur,12,3,https://nptel.ac.in/courses/106104467,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs120/preview,BP,106104467,Yes
+83,Introduction to Graph Algorithms,Prof. C Pandu Rangan,IISc Bangalore,8,2,https://nptel.ac.in/courses/106108468,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs124/preview,BD,106108468,Yes
+84,Big Data Computing,Prof. Rajiv Misra,IIT Patna,8,2,https://nptel.ac.in/courses/106104189,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs131/preview,BD,106104189,Yes
+85,Introduction To Algorithms and Analysis,Prof. Sourav Mukhopadhyay,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105164,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs150/preview,BP,106105164,Yes
+86,Approximation Algorithm,Prof. Palash Dey,IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105471,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs153/preview,BP,106105471,Yes
+87,Responsible & Safe AI Systems,"Prof. Ponnurangam Kumaraguru
+Prof. Balaraman Ravindran 
+Prof. Arun Rajkumar",IIIT Hyderabad and IIT Madras,12,3,https://nptel.ac.in/courses/106106472,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs118/preview,BD,106106472,Yes
+88,Real-Time Systems,"Prof. Rajib Mall
+ Prof. Durga Prasad Mohapatra",IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105229,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs156/preview,BP,106105229,Yes
+89,Software Project Management,"Prof. Rajib Mall
+Prof. Durga Prasad Mohapatra",IIT Kharagpur,12,3,https://nptel.ac.in/courses/106105218,Added in May2025,No,https://onlinecourses.nptel.ac.in/noc25_cs109/preview,BP,106105218,No

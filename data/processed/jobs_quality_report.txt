@@ -1,0 +1,83 @@
+Loaded 97929 rows from indian-job-market-dataset-2025.xlsx
+
+=== DATE CLASSIFICATION (full raw dataset, before any filtering) ===
+  posting_time_type: {'past': 97358, 'future_start': 571}
+
+=== STEP 1: VALIDATION ===
+  missing title: 0
+  missing/blank location: 0
+  missing BOTH salary and experience entirely, EXCLUDING future_start rows (those 571 rows are exempt - see note above): 0
+  dropped: 0 | remaining: 97929
+
+=== STEP 2: SECTOR/SCOPE FILTER ===
+  total validated rows: 97929
+sector
+OUT_OF_SCOPE                                  69310
+IT/Software - Software Development            12237
+IT/Software - Data & AI                        7635
+IT/Software - QA & Testing                     3148
+AMBIGUOUS                                      2904
+IT/Software - IT Infrastructure & Networks     1530
+IT/Software - Cybersecurity                    1165
+
+  IT/Software (confidently assigned): 25715 (26.3%)
+  Out of scope: 69310 (70.8%)
+  Ambiguous (needs manual review): 2904 (3.0%)
+
+=== STEP 3: COLUMN STANDARDIZATION ===
+  25715 rows standardized; salary 'Not disclosed' (0/0) -> null for 21663 rows
+  mode distribution: {'Onsite': 21942, 'Hybrid': 3021, 'Remote': 752}
+
+=== STEP 4: DATE NORMALIZATION (posting_time_type: past vs future_start) ===
+  posting_time_type distribution (IT/Software subset): {'past': 25628, 'future_start': 87}
+  posted_date resolved for 25628 'past' rows; anticipated_start window resolved for 87 'future_start' rows
+
+=== STEP 5: COMPANY NORMALIZATION ===
+  4778 distinct normalized company names from 4833 distinct raw spellings (232 rows had spelling auto-merged to the most common variant)
+  11 near-duplicate company pairs (similarity >= 0.9) written to companies_needs_review.csv for manual merge decision
+
+=== STEP 6: DISTRICT MAPPING ===
+  25715 postings exploded to 27824 rows across the location split
+  district coverage: {'OUT_OF_SCOPE': 21094, 'Pune': 4001, 'Mumbai City': 1888, 'Thane': 528, 'Mumbai Suburban': 123, 'Nagpur': 75, 'Nashik': 40, 'Aurangabad': 24, 'Palghar': 12, 'Kolhapur': 9, 'UNMAPPED': 6, 'Raigad': 6, 'Ahmednagar': 4, 'Sangli': 4, 'Satara': 3, 'Solapur': 2, 'Chandrapur': 2, 'Amravati': 1, 'Bhandara': 1, 'Jalna': 1}
+  6 distinct 'Maharashtra'-mentioning-but-unrecognized location tokens -> districts_unmapped.csv (not silently dropped into OUT_OF_SCOPE)
+
+=== STEP 7: DEDUPLICATION ===
+  duplicate rate (company+title+district, or identical description text): 36.3% (10092 of 27824 rows)
+  compare: exact full-row duplicates in the RAW source were only 247 rows (0.3%) - the much higher rate here is expected: it's catching the same job reposted under near-identical text, which raw dedup on jobId alone misses. This matches typical Naukri-scrape repost behavior.
+
+=== STEP 8: QUALITY REPORT ===
+  raw rows: 97929
+  after validation: 97929
+  IT/Software (confident): 25715  |  out-of-scope: 69310  |  ambiguous: 2904
+  final jobs.csv rows (post-explode): 27824
+  final ACTIVE (non-duplicate) rows: 17732
+  final Maharashtra, active, IT/Software rows (the number that matters for F2/F8): 3832
+
+  null rates (final jobs.csv):
+id                        0.0
+title                     0.0
+company                   0.0
+description               0.0
+district                  0.0
+sector                    0.0
+exp_min                   0.3
+exp_max                   0.3
+salary_min               83.7
+salary_max               83.7
+mode                      0.0
+source                    0.0
+posting_time_type         0.0
+posted_date               0.3
+anticipated_start_min    99.7
+anticipated_start_max    99.7
+status                    0.0
+
+  subcategory distribution (active MH rows only):
+sector
+IT/Software - Software Development            1595
+IT/Software - Data & AI                       1274
+IT/Software - QA & Testing                     468
+IT/Software - IT Infrastructure & Networks     249
+IT/Software - Cybersecurity                    246
+
+  district coverage % (share of active MH rows with a real, non-UNMAPPED district): 100.0%

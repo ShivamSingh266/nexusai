@@ -1,0 +1,53 @@
+=== (a) T3 mentions (closed-vocabulary extraction output) ===
+matched_via
+alias         1288
+exact          795
+unresolved       1
+Name: count, dtype: int64
+
+=== (b) Raw resume skill strings (06_skills.csv, n=800) ===
+matched_via
+unresolved    687
+embedding     111
+alias           2
+Name: count, dtype: int64
+UNKNOWN_SKILL rate: 85.9%
+
+Wrote 2884 resolution rows -> C:\Users\piyush\Desktop\M4\data\processed\t4_resolved_skills.csv
+
+=== Stratified sample for threshold tuning (spot-check these by hand) ===
+
+--- score [0.80, 1.01) : 28 candidates in this band ---
+  1.000  'Data restore'                                     -> 'store digital data and systems'
+  0.905  'Six sigma lean process'                           -> 'lean project management'
+  0.818  'IT Quality Assurance'                             -> 'quality assurance methodologies'
+  0.806  'Github/Git'                                       -> 'tools for software configuration management'
+  0.819  'User Access control'                              -> 'information confidentiality'
+
+--- score [0.65, 0.80) : 83 candidates in this band ---
+  0.701  'Business Requirements Documentation'              -> 'business requirements techniques'
+  0.791  'CSLA Architecture'                                -> 'information architecture'
+  0.743  'Compliance with Army regulations'                 -> 'comply with regulations'
+  0.737  'Oracle 9i/ 10g'                                   -> 'database management systems'
+  0.669  'Monitor performance of AWRDS application'         -> 'monitor system performance'
+
+--- score [0.50, 0.65) : 227 candidates in this band ---
+  0.610  'software release'                                 -> 'UNKNOWN_SKILL'
+  0.523  'Continuous testing and reporting'                 -> 'UNKNOWN_SKILL'
+  0.574  'CentOS/Ubuntu Administration'                     -> 'UNKNOWN_SKILL'
+  0.507  'Assist Network Engineers in repair and deployment of network infrastructure devices' -> 'UNKNOWN_SKILL'
+  0.564  'Benchmarking Studies'                             -> 'UNKNOWN_SKILL'
+
+--- score [0.35, 0.50) : 315 candidates in this band ---
+  0.470  'Delivered individual branded help centers using handlebars.js - https://support.clickpay.com/hc/en-us repo is available on Github for previous Help Center' -> 'UNKNOWN_SKILL'
+  0.450  'Server 2008 Migration'                            -> 'UNKNOWN_SKILL'
+  0.485  'Material and Equipment Coordination'              -> 'UNKNOWN_SKILL'
+  0.427  'interfaced with sales team and merchandise managers' -> 'UNKNOWN_SKILL'
+  0.457  'Managing Government Records Directive'            -> 'UNKNOWN_SKILL'
+
+--- score [0.00, 0.35) : 145 candidates in this band ---
+  0.285  'Soap/XML/WSDL'                                    -> 'UNKNOWN_SKILL'
+  0.199  'SVN 2.0'                                          -> 'UNKNOWN_SKILL'
+  0.333  'Designing and coding Oracle PL/SQL, SQL reports, procedures, and packages, optimization of code' -> 'UNKNOWN_SKILL'
+  0.292  'PC Rollout'                                       -> 'UNKNOWN_SKILL'
+  0.272  'Managing the bank accounts, monthly reconciliations, checks & invoicing' -> 'UNKNOWN_SKILL'

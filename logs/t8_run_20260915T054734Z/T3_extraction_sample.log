@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\piyush\Desktop\M4\scripts\t3_run_extraction.py", line 19, in <module>
+    from parsing import parse_document           # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\piyush\Desktop\M4\scripts\t3_extraction\parsing.py", line 30, in <module>
+    from bs4 import BeautifulSoup  # HTML stripping (job descriptions ship as HTML)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'bs4'

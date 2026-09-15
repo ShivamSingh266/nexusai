@@ -1,0 +1,66 @@
+=== LOAD ===
+Dep_Free_Elective: 89 rows | HS_MG: 293 rows
+Combined: 382 rows -> 362 after deduping repeat NPTEL_ID listings (same course offered in two term windows)
+
+=== STEP 1: SCOPE FILTER (direct skill-phrase match + keyword-list fallback, see script comments) ===
+subcategory
+OUT_OF_SCOPE                          315
+IT/Software - Data & AI                27
+IT/Software - Software Development     13
+IT/Software - Cybersecurity             5
+IT/Software - QA & Testing              1
+AMBIGUOUS                               1
+
+Surviving IT/Software courses: 46 / 362 (12.7%)
+  by source file: {'NPTEL_Dep_Free_Elective': 38, 'NPTEL_HS_MG': 8}
+  (keyword-list alone would have caught only 19 of these - direct skill-phrase matching against the full 642-skill pool recovers most of the rest; a residual, structural gap - VLSI, compiler design, hardware/digital design, pure theory courses - remains genuinely unscored because ESCO's labor-market skill taxonomy doesn't model CS-curriculum/hardware topics at all, not because of a matching weakness)
+  1 ambiguous (tied-sector) courses -> courses_ambiguous_review.csv
+
+=== STEP 2a: DIRECT TITLE MATCH ===
+  39 (course, skill) pairs from literal title/alias substring match
+  37 / 46 courses got >=1 direct match
+
+=== STEP 2b: CATEGORY-INFERRED (TF-IDF cluster match within course's subcategory) ===
+  floor=0.22, max 6/course, confidence capped at 0.55
+  256 (course, skill) pairs
+  courses with >=1 inferred tag: 46 / 46 (mean 5.6, median 6 tags/course where any exist)
+
+=== STEP 2c: SUPPLEMENTARY EXTRACTION (T3/T4 matcher, Course Name + SME Name + Comments) ===
+  REAL number, not assumed: 42 raw mentions across 46 IT/Software courses (0.91 mentions/course)
+  37 / 46 courses got >=1 extraction hit
+  Confirms the Task 3 finding: this is a weak supplementary signal on this dataset, not a primary method - used here for its 41 (course,skill) pairs on top of the other two methods, nothing more.
+
+=== COMBINED course_skills.csv ===
+  297 total (course, skill) pairs
+coverage_level
+category_inferred     256
+direct_title_match     39
+extraction              2
+
+=== OUTPUT ===
+  courses.csv: 46 rows
+  course_skills.csv: 297 rows
+  courses_no_skills.csv: 0 courses with ZERO tagged skills after all 3 methods (0.0%) - not force-tagged
+
+=== STEP 4: GAP ANALYSIS ===
+  194 skills have HIGH or MEDIUM demand_strength_tier somewhere in skill_demand_history.csv
+  127 of those (65.5%) have ZERO course coverage (gap_flag=TRUE)
+  67 have >=1 course teaching them
+
+  Highest-demand skills with a training gap (sample):
+  skill_id                                            skill_name demand_strength_tier  demand_score
+SKILL_0274                                                DevOps                 HIGH        0.6667
+SKILL_0397                                            JavaScript                 HIGH        0.1803
+SKILL_0277 Jenkins (tools for software configuration management)                 HIGH        0.1667
+SKILL_0111                                       risk management                 HIGH        0.1500
+SKILL_0119                         tools for ICT test automation                 HIGH        0.1316
+SKILL_0532           tools for software configuration management                 HIGH        0.1312
+SKILL_0153                                          Visual Basic                 HIGH        0.1282
+SKILL_0615                                                  plan                 HIGH        0.1196
+SKILL_0128                                                    C#                 HIGH        0.1026
+SKILL_0470                           digital identity management                 HIGH        0.1014
+SKILL_0441     data extraction, transformation and loading tools                 HIGH        0.1013
+SKILL_0272                                                 Cisco                 HIGH        0.1000
+SKILL_0125                      web application security threats                 HIGH        0.1000
+SKILL_0141                                                   PHP                 HIGH        0.0984
+SKILL_0178                                      data engineering                 HIGH        0.0827

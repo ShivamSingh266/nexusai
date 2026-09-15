@@ -1,0 +1,168 @@
+==============================================================================
+T7 SUPPLEMENT - 20 manually-sourced courses
+==============================================================================
+
+[ID NAMESPACE] courses.csv 'id' holds real external NPTEL catalogue numbers.
+Continuing that numeric sequence for non-NPTEL courses would mint IDs that look
+like genuine NPTEL IDs. Using a separate string namespace instead: MANUAL_0001..MANUAL_0020.
+This is a deliberate deviation from the literal 'continue the sequence' instruction.
+
+[OK] All 19 skill_terms across the 20 courses resolved cleanly against the current taxonomy.
+
+[courses.csv] 46 existing (source=NPTEL) + 20 new (source=manual_supplement_2026) = 66 total rows written.
+needs_manual_url=True: 20 rows (all 20 new ones - none of the existing 46 NPTEL rows were missing a source_url).
+subcategory=UNMAPPED: 1 of the 20 new rows (flagged, not forced).
+
+[course_skills.csv] 19 new rows added (coverage_level=manual_supplement, confidence=0.75) -> 316 total rows.
+
+[NOT TAGGED - reported per your instruction, not force-matched] 4 of the 20 courses got ZERO skill_id (their skill_category text had no clean match in the 642-skill taxonomy):
+  - MANUAL_0006  'IT Technical Support Executive'  (skill_category: 'IT Support')
+  - MANUAL_0008  'Software Product Developer'  (skill_category: 'Software Development')
+  - MANUAL_0009  'Application Developer – Web & Mobile'  (skill_category: 'Web & Mobile Development')
+  - MANUAL_0013  'Networking Basics'  (skill_category: 'Networking')
+
+[Per-course mapping detail]
+
+MANUAL_0001  AI DevOps Analyst  (NASSCOM)
+  skill_category as given : 'DevOps/AI'
+  subcategory assigned    : IT/Software - IT Infrastructure & Networks
+  skill_id(s) tagged      : ["SKILL_0274 ('DevOps', canonical_exact)"]
+  note                    : Matched on 'DevOps' only. The 'AI' half of the category label has no match: this 642-skill taxonomy has no 'artificial intelligence' skill at all (checked canonical names and aliases, exact and substring - none exists), so it is left untagged rather than guessed at.
+
+MANUAL_0002  AI – Data Engineering Analyst  (NASSCOM)
+  skill_category as given : 'Data Engineering'
+  subcategory assigned    : IT/Software - Data & AI
+  skill_id(s) tagged      : ["SKILL_0178 ('data engineering', canonical_exact)"]
+  note                    : Matched on 'Data Engineering'. Same 'AI' caveat as above - not tagged, no such skill exists in the taxonomy.
+
+MANUAL_0003  IoT Security Analyst  (NASSCOM)
+  skill_category as given : 'Cybersecurity/IoT'
+  subcategory assigned    : IT/Software - Cybersecurity
+  skill_id(s) tagged      : ["SKILL_0031 ('cyber security', alias_exact)", "SKILL_0395 ('Internet of Things', alias_exact)"]
+  note                    : Both halves matched cleanly: cyber security (via 'cybersecurity' alias) and Internet of Things (via 'IoT' alias). FLAG: the IoT skill's own taxonomy category is 'Software Development', not Cybersecurity - same kind of ESCO placement quirk as C#/PHP/Visual Basic sitting under 'Data & AI'. The course is filed under Cybersecurity (matches the role title and the explicit config keyword), the skill tag itself keeps its real category.
+
+MANUAL_0004  Network Security Engineer  (NASSCOM)
+  skill_category as given : 'Networking/Cybersecurity'
+  subcategory assigned    : IT/Software - Cybersecurity
+  skill_id(s) tagged      : ["SKILL_0113 ('security engineering', alias_exact)"]
+  note                    : Matched via alias 'network security engineering' -> security engineering. Bare 'networking'/'network' was deliberately NOT tagged - it substring-matches 10+ unrelated skills (and even the single-letter skill 'R', a false positive from naive substring matching) with no single clean winner.
+
+MANUAL_0005  Cloud Infrastructure Analyst  (NASSCOM)
+  skill_category as given : 'Cloud/IT Infrastructure'
+  subcategory assigned    : IT/Software - IT Infrastructure & Networks
+  skill_id(s) tagged      : ["SKILL_0431 ('cloud technologies', alias_exact)", "SKILL_0004 ('ICT infrastructure', canonical_exact)"]
+  note                    : Matched: cloud technologies (via 'cloud computing' alias) and ICT infrastructure (canonical exact). FLAG: both skills' own taxonomy categories are 'Software Development' and 'Cybersecurity' respectively, not IT Infrastructure & Networks - another instance of the same ESCO-placement quirk noted above. Subcategory follows the config's explicit keyword mapping (cloud computing / ICT infrastructure -> that sector), not the individual skills' own category field.
+
+MANUAL_0006  IT Technical Support Executive  (NASSCOM)
+  skill_category as given : 'IT Support'
+  subcategory assigned    : UNMAPPED
+  skill_id(s) tagged      : (none)
+  note                    : UNMAPPED, as you anticipated. 'IT support'/'technical support'/'customer support'/'helpdesk' have no canonical, alias, or substring match anywhere in the 642-skill taxonomy, and none of the 5 sector configs (occupation or skill keywords) mention IT support/service-desk work at all. Not forced into any of the 5 subcategories.
+
+MANUAL_0007  Web Developer  (NASSCOM)
+  skill_category as given : 'Web Development'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : ["SKILL_0492 ('implement front-end website design', canonical_exact)"]
+  note                    : Subcategory is a clean fit ('web developer' is an explicit occupation_keyword under Software Development). No skill exists for generic 'web development' or 'web design' (checked exact + substring - nothing). Tagged with 'implement front-end website design' as the closest real component skill - flagged as a partial/component match, not a literal 'web development' skill.
+
+MANUAL_0008  Software Product Developer  (NASSCOM)
+  skill_category as given : 'Software Development'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : (none)
+  note                    : Subcategory is a clean fit (occupation keyword). NO skill match: bare 'software development' only substring-hits compound aliases for unrelated skills (Assembly, Lisp, SAS, Agile development principles, etc.) - none of those is actually what this course teaches, so none is tagged. Reporting as unmapped at the skill level rather than guessing.
+
+MANUAL_0009  Application Developer – Web & Mobile  (Skill India/partner)
+  skill_category as given : 'Web & Mobile Development'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : (none)
+  note                    : Subcategory is a clean fit ('mobile application developer' + 'web developer' are both occupation_keywords under Software Development). NO skill match: no clean 'web development' or 'mobile development' skill exists (the only 'mobile' hits are 'mobile device management' and 'mobile operating systems', both about managing/running mobile devices, not building apps for them - tagging either would be a false positive, so left unmapped).
+
+MANUAL_0010  Python Programming  (Microsoft)
+  skill_category as given : 'Python'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : ["SKILL_0400 ('Python (computer programming)', alias_exact)"]
+  note                    : Clean exact match via the manual alias 'Python programming' -> Python (computer programming).
+
+MANUAL_0011  PRDV401: Introduction to JavaScript I  (Saylor University)
+  skill_category as given : 'JavaScript'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : ["SKILL_0397 ('JavaScript', canonical_exact)"]
+  note                    : Clean canonical exact match: JavaScript.
+
+MANUAL_0012  PRDV401: Introduction to JavaScript II  (Saylor University)
+  skill_category as given : 'JavaScript'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : ["SKILL_0397 ('JavaScript', canonical_exact)"]
+  note                    : Clean canonical exact match: JavaScript (same as Part I).
+
+MANUAL_0013  Networking Basics  (Cisco Networking Academy)
+  skill_category as given : 'Networking'
+  subcategory assigned    : IT/Software - IT Infrastructure & Networks
+  skill_id(s) tagged      : (none)
+  note                    : Subcategory is a clean fit (network administration/architecture are explicit skill_keywords for this sector). NO skill match at the skill_id level: bare 'networking' has no clean single-skill answer in this taxonomy (same false-positive-prone substring problem as course #4) - reporting unmapped rather than forcing 'ICT networking hardware' or similar onto a basics course.
+
+MANUAL_0014  Introduction to Cybersecurity  (Cisco Networking Academy)
+  skill_category as given : 'Cybersecurity'
+  subcategory assigned    : IT/Software - Cybersecurity
+  skill_id(s) tagged      : ["SKILL_0031 ('cyber security', alias_exact)"]
+  note                    : Clean alias exact match: cyber security.
+
+MANUAL_0015  Operating System Basics  (Cisco Networking Academy)
+  skill_category as given : 'Operating Systems'
+  subcategory assigned    : IT/Software - IT Infrastructure & Networks
+  skill_id(s) tagged      : ["SKILL_0317 ('operating systems', canonical_exact)"]
+  note                    : Clean canonical exact match: operating systems - this is one of the 19 must_include skills, and its category was one of the two we corrected in the T2 bug fix (was miscategorized under Cybersecurity before that fix, now correctly IT Infrastructure & Networks).
+
+MANUAL_0016  Data Analytics Essentials  (Cisco Networking Academy)
+  skill_category as given : 'Data Analytics'
+  subcategory assigned    : IT/Software - Data & AI
+  skill_id(s) tagged      : ["SKILL_0177 ('data analytics', canonical_exact)"]
+  note                    : Clean canonical exact match: data analytics.
+
+MANUAL_0017  Engaging Stakeholders for Success  (Cisco Networking Academy)
+  skill_category as given : 'Project/Stakeholder Management'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : ["SKILL_0037 ('engage with stakeholders', canonical_exact)", "SKILL_0511 ('project management', canonical_exact)"]
+  note                    : JUDGMENT CALL, flagged: matched both 'engage with stakeholders' and 'project management' - the two skills sit in different taxonomy categories (Cybersecurity and Software Development respectively, another ESCO-placement quirk). Subcategory assigned as Software Development since that is where 'project management' itself actually lives in this taxonomy; 'engage with stakeholders' keeps its own real category regardless.
+
+MANUAL_0018  Getting Started with Cisco Packet Tracer  (Cisco Networking Academy)
+  skill_category as given : 'Networking'
+  subcategory assigned    : IT/Software - IT Infrastructure & Networks
+  skill_id(s) tagged      : ["SKILL_0272 ('Cisco', canonical_exact)"]
+  note                    : DEVIATION FLAGGED: matched via the course NAME ('Cisco Packet Tracer'), not the generic 'Networking' skill_category text - Cisco is an exact, unambiguous, high-confidence match, materially better than leaving this unmapped like the other bare-'Networking' courses (#13). Doing this only because the course title itself names the tool directly, not as a general practice of reading course names.
+
+MANUAL_0019  Cybersecurity  (Tech Mahindra Foundation)
+  skill_category as given : 'Cybersecurity'
+  subcategory assigned    : IT/Software - Cybersecurity
+  skill_id(s) tagged      : ["SKILL_0031 ('cyber security', alias_exact)"]
+  note                    : Clean alias exact match: cyber security.
+
+MANUAL_0020  Project Management with Zoho  (Reliance Foundation Skilling Academy)
+  skill_category as given : 'Project Management'
+  subcategory assigned    : IT/Software - Software Development
+  skill_id(s) tagged      : ["SKILL_0511 ('project management', canonical_exact)"]
+  note                    : Clean canonical exact match: project management (this taxonomy places project management under Software Development, not a separate Transversal bucket).
+
+==============================================================================
+STEP 4: GAP ANALYSIS - BEFORE vs AFTER the 20 manual courses
+==============================================================================
+
+AFTER  (66 courses, 46 NPTEL + 20 manual_supplement):
+  194 HIGH/MEDIUM demand skills total
+  120 gapped (61.9%)
+  74 covered (38.1%)
+
+BEFORE (NPTEL-only baseline, from training_gap_PRE_SUPPLEMENT_BACKUP.csv): 127/194 gapped (65.5%)
+  -> 7 skill(s) moved from gapped to covered after adding the 20 manual courses (7/194 = 3.6 percentage points of the total HIGH/MEDIUM-demand skill space).
+
+[Named skills - explicit confirmation requested]
+  DevOps           (SKILL_0274 = 'DevOps'): demand=HIGH, course_count=1  ->  COVERED
+  Jenkins          (SKILL_0277 = 'Jenkins (tools for software configuration management)'): demand=HIGH, course_count=0  ->  STILL GAPPED
+  Cisco            (SKILL_0272 = 'Cisco'): demand=HIGH, course_count=1  ->  COVERED
+  JavaScript       (SKILL_0397 = 'JavaScript'): demand=HIGH, course_count=2  ->  COVERED
+  PHP              (SKILL_0141 = 'PHP'): demand=HIGH, course_count=0  ->  STILL GAPPED
+  C#               (SKILL_0128 = 'C#'): demand=HIGH, course_count=0  ->  STILL GAPPED
+  Visual Basic     (SKILL_0153 = 'Visual Basic'): demand=HIGH, course_count=0  ->  STILL GAPPED
+  risk management  (SKILL_0111 = 'risk management'): demand=HIGH, course_count=0  ->  STILL GAPPED
+
+Wrote courses.csv, course_skills.csv, training_gap.csv, manual_course_supplement_report.txt
