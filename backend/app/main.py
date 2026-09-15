@@ -7,6 +7,7 @@ from app.api.gaps import router as gaps_router
 from app.api.jobs import router as jobs_router
 from app.api.job_skills import router as job_skills_router
 from app.api.meta import router as meta_router
+from app.api.matching import router as matching_router
 from app.api.profile import router as profile_router
 from app.api.recruiter_company import router as recruiter_company_router
 from app.api.skills import router as skills_router
@@ -37,6 +38,7 @@ app.include_router(recruiter_company_router, prefix="/api/v1")
 app.include_router(jobs_router, prefix="/api/v1")
 app.include_router(job_skills_router, prefix="/api/v1")
 app.include_router(meta_router, prefix="/api/v1")
+app.include_router(matching_router, prefix="/api/v1")
 app.include_router(taxonomy_router, prefix="/api/v1")
 app.include_router(gaps_router, prefix="/api/v1")
 
