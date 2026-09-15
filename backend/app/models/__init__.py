@@ -4,6 +4,7 @@ from app.models.canonical_skill import CanonicalSkill, SkillAlias
 from app.models.company import Company
 from app.models.job import Job
 from app.models.job_skill import JobSkill
+from app.models.resume import Resume
 from app.models.user import Role, User
 
 __all__ = [
@@ -13,6 +14,7 @@ __all__ = [
     "Company",
     "Job",
     "JobSkill",
+    "Resume",
     "Role",
     "SkillAlias",
     "User",

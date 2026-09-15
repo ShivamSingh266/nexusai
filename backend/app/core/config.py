@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     BACKEND_CORS_ORIGINS: list[str] = ["http://localhost:5173"]
     TAXONOMY_VERSION: str = "v1.2.1"
+    RESUME_STORAGE_DIR: str = "storage/resumes"
 
     DATABASE_URL: str
 
