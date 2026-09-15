@@ -79,6 +79,22 @@ class Job(Base):
         nullable=True,
     )
 
+    source_job_id: Mapped[str | None] = mapped_column(
+        String(64),
+        nullable=True,
+        index=True,
+    )
+
+    source: Mapped[str | None] = mapped_column(
+        String(64),
+        nullable=True,
+    )
+
+    sector: Mapped[str | None] = mapped_column(
+        String(100),
+        nullable=True,
+    )
+
     employment_type: Mapped[str | None] = mapped_column(
         String(50),
         nullable=True,
