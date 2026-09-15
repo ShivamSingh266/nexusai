@@ -9,8 +9,14 @@ from app.api.deps import get_db, require_roles
 from app.core.gap import DEMAND_SOURCE_VERSION, SCORING_VERSION, analyze_gap
 from app.core.representations import SkillProfile, SkillProfileSkill
 from app.models.canonical_skill import CanonicalSkill
+from app.models.job import Job, JobStatus
+from app.models.job_skill import JobSkill
 from app.models.user import User
-from app.schemas.gap import GapAnalysisRequest, GapAnalysisResponse
+from app.schemas.gap import (
+    GapAnalysisRequest,
+    GapAnalysisResponse,
+    RequiredSkillRequest,
+)
 
 router = APIRouter(prefix="/gaps", tags=["Gap Analysis"])
 
@@ -35,6 +41,56 @@ def _validate_canonical_skills(references, taxonomy_version: str, db: Session) -
             )
 
 
+def _resolve_required_skills(
+    request: GapAnalysisRequest,
+    taxonomy_version: str,
+    db: Session,
+) -> list[RequiredSkillRequest]:
+    """Resolve a published internal job when no explicit target is supplied."""
+    if request.target.required_skills or request.target.job_id is None:
+        return request.target.required_skills
+
+    job = db.get(Job, request.target.job_id)
+    if job is None or job.status != JobStatus.published.value:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Job not found",
+        )
+
+    job_skills = (
+        db.query(JobSkill)
+        .filter(JobSkill.job_id == job.id)
+        .order_by(JobSkill.id)
+        .all()
+    )
+    if not job_skills:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Job has no canonical skills",
+        )
+
+    resolved: list[RequiredSkillRequest] = []
+    for job_skill in job_skills:
+        canonical_skill = db.get(CanonicalSkill, job_skill.skill_id)
+        if (
+            canonical_skill is None
+            or canonical_skill.taxonomy_version != job_skill.taxonomy_version
+            or job_skill.taxonomy_version != taxonomy_version
+        ):
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                detail=f"Taxonomy version mismatch for {job_skill.skill_id}",
+            )
+        resolved.append(
+            RequiredSkillRequest(
+                skill_id=job_skill.skill_id,
+                taxonomy_version=job_skill.taxonomy_version,
+                role_importance=float(job_skill.role_importance),
+            )
+        )
+    return resolved
+
+
 @router.post("/analyze", response_model=GapAnalysisResponse)
 def analyze_applicant_gap(
     request: GapAnalysisRequest,
@@ -57,7 +113,12 @@ def analyze_applicant_gap(
         )
 
     _validate_canonical_skills(candidate_references, request.candidate.taxonomy_version, db)
-    _validate_canonical_skills(request.target.required_skills, request.candidate.taxonomy_version, db)
+    required_skills = _resolve_required_skills(
+        request,
+        request.candidate.taxonomy_version,
+        db,
+    )
+    _validate_canonical_skills(required_skills, request.candidate.taxonomy_version, db)
 
     candidate = SkillProfile(
         subject_id=request.candidate.subject_id,
@@ -80,7 +141,7 @@ def analyze_applicant_gap(
         candidate=candidate,
         required_skills=tuple(
             (skill.skill_id, skill.role_importance)
-            for skill in request.target.required_skills
+            for skill in required_skills
         ),
         district_id=request.context.district_id,
         sector=request.context.sector,
