@@ -16,4 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: DATABASE_URL="sqlite:///:memory:" pytest tests/ -v
+      - run: pytest tests/ -v
+        env:
+          DATABASE_URL: sqlite:///:memory:
+          JWT_SECRET_KEY: test-only-secret-key
