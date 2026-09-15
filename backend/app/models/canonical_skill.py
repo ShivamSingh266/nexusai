@@ -3,8 +3,7 @@
 Architecture boundaries:
   - CanonicalSkill is the shared, M4-owned taxonomy entity.
   - SkillAlias provides alternate textual forms for a canonical skill.
-  - Neither ApplicantSkill nor Job reference these tables yet.
-    ApplicantSkill → CanonicalSkill FK and JobSkill are future tasks.
+    - ApplicantSkill and JobSkill reference this shared table by skill_id.
 
 Deletion behaviour:
   - SkillAlias.skill_id uses ON DELETE RESTRICT intentionally.
@@ -118,6 +117,11 @@ class CanonicalSkill(Base):
     aliases: Mapped[list["SkillAlias"]] = relationship(
         back_populates="canonical_skill",
         cascade="save-update, merge",
+        passive_deletes=True,
+    )
+
+    job_skills: Mapped[list["JobSkill"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        back_populates="canonical_skill",
         passive_deletes=True,
     )
 

@@ -1,16 +1,4 @@
-"""Job model.
-
-Architecture note:
-    The Job entity deliberately has NO skill-related fields.
-    A future JobSkill join table will link jobs to the canonical skills
-    taxonomy once Member 4's CanonicalSkill table is finalised:
-
-        Job (jobs)
-         └── JobSkill (job_skills)              [future]
-               └── canonical_skill_id → canonical_skills.id   [future]
-
-    Do NOT add skill_name, required_skills, or any skill references here.
-"""
+"""Job model and its relationship to canonical skill requirements."""
 from __future__ import annotations
 
 import enum
@@ -164,4 +152,10 @@ class Job(Base):
     # ------------------------------------------------------------------ #
     company: Mapped["Company"] = relationship(  # type: ignore[name-defined]  # noqa: F821
         back_populates="jobs",
+    )
+
+    job_skills: Mapped[list["JobSkill"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        back_populates="job",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
     )
