@@ -11,6 +11,7 @@ from app.api.matching import router as matching_router
 from app.api.profile import router as profile_router
 from app.api.roadmaps import router as roadmaps_router
 from app.api.recruiter_company import router as recruiter_company_router
+from app.api.shortlists import router as shortlists_router
 from app.api.skills import router as skills_router
 from app.api.taxonomy import router as taxonomy_router
 from app.core.config import settings
@@ -43,6 +44,7 @@ app.include_router(meta_router, prefix="/api/v1")
 app.include_router(matching_router, prefix="/api/v1")
 app.include_router(taxonomy_router, prefix="/api/v1")
 app.include_router(gaps_router, prefix="/api/v1")
+app.include_router(shortlists_router, prefix="/api/v1")
 
 
 @app.get("/health", tags=["System"])

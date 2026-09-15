@@ -175,3 +175,9 @@ class Job(Base):
         cascade="all, delete-orphan",
         passive_deletes=True,
     )
+
+    shortlists: Mapped[list["Shortlist"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        back_populates="job",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
