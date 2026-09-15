@@ -110,6 +110,11 @@ class User(Base):
         cascade="all, delete-orphan",
     )
 
+    roadmaps: Mapped[list["Roadmap"]] = relationship(
+        back_populates="applicant",
+        cascade="all, delete-orphan",
+    )
+
     company: Mapped["Company | None"] = relationship(
         back_populates="recruiters",
         foreign_keys=[company_id],

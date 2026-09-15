@@ -9,6 +9,7 @@ from app.api.job_skills import router as job_skills_router
 from app.api.meta import router as meta_router
 from app.api.matching import router as matching_router
 from app.api.profile import router as profile_router
+from app.api.roadmaps import router as roadmaps_router
 from app.api.recruiter_company import router as recruiter_company_router
 from app.api.skills import router as skills_router
 from app.api.taxonomy import router as taxonomy_router
@@ -33,6 +34,7 @@ app.add_middleware(
 
 app.include_router(auth_router, prefix="/api/v1")
 app.include_router(profile_router, prefix="/api/v1")
+app.include_router(roadmaps_router, prefix="/api/v1")
 app.include_router(skills_router, prefix="/api/v1")
 app.include_router(recruiter_company_router, prefix="/api/v1")
 app.include_router(jobs_router, prefix="/api/v1")

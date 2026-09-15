@@ -17,6 +17,7 @@ from app.models.company import Company  # noqa: F401
 from app.models.job import Job  # noqa: F401
 from app.models.job_skill import JobSkill  # noqa: F401
 from app.models.resume import Resume  # noqa: F401
+from app.models.roadmap import Roadmap, RoadmapItem  # noqa: F401
 
 
 config = context.config
