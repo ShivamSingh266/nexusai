@@ -1,4 +1,4 @@
-from collections.abc import Generator
+﻿from collections.abc import Generator
 
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
@@ -11,7 +11,7 @@ from app.models.user import User
 
 bearer_scheme = HTTPBearer(
     scheme_name="BearerAuth",
-    auto_error=True,
+    auto_error=False,
 )
 
 
@@ -25,9 +25,22 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def get_current_user(
-    credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
+    credentials: HTTPAuthorizationCredentials | None = Depends(bearer_scheme),
     db: Session = Depends(get_db),
 ) -> User:
+    """
+    Resolve the authenticated user.
+
+    Missing Authorization header returns 403.
+    Invalid or expired token returns 401.
+    """
+
+    if credentials is None:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Not authenticated",
+        )
+
     token = credentials.credentials
 
     try:
@@ -80,25 +93,29 @@ def require_roles(*allowed_roles: str):
 
 
 # ---------------------------------------------------------------------------
-# Optional authentication — returns None when no token is provided.
-# Used by endpoints that are public but behave differently when authenticated.
+# Optional authentication
 # ---------------------------------------------------------------------------
 
 optional_bearer_scheme = HTTPBearer(
     scheme_name="BearerAuthOptional",
-    auto_error=False,  # Do NOT raise 403 when header is absent
+    auto_error=False,
 )
 
 
 def get_current_user_optional(
-    credentials: HTTPAuthorizationCredentials | None = Depends(optional_bearer_scheme),
+    credentials: HTTPAuthorizationCredentials | None = Depends(
+        optional_bearer_scheme
+    ),
     db: Session = Depends(get_db),
 ) -> User | None:
     """
-    Resolve the bearer token if present and return the User.
-    Returns None if no Authorization header is provided.
-    Raises 401 if a token IS provided but is invalid.
+    Resolve the bearer token if present.
+
+    Returns None when no token is provided.
+    Raises 401 when a token is provided but invalid, expired,
+    missing a valid user, or belongs to an inactive user.
     """
+
     if credentials is None:
         return None
 
