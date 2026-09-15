@@ -1,0 +1,68 @@
+id,provider,name,subcategory,level,duration_weeks,credits,source_url,source,needs_manual_url
+106105167,NPTEL,Cloud computing,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/106/105/106105167,NPTEL,False
+106105174,NPTEL,Data Mining,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/106/105/106105174/,NPTEL,False
+106106137,NPTEL,Introduction To Haskell Programming,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/106/106/106106137/,NPTEL,False
+111104100,NPTEL,Introduction to R Software,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/111104100/,NPTEL,False
+106106224,NPTEL,"Deep Learning for Computer Vision*
+(Can be credited if completed before Dec 2023)",IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106/106/106106224/,NPTEL,False
+106105166,NPTEL,Introduction to internet of things,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/106/105/106105166/,NPTEL,False
+106105158,NPTEL,Natural Language Processing (Can be credited if completed before Dec 2023),IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106/105/106105158/,NPTEL,False
+106106248,NPTEL,Cyber Security and Privacy,IT/Software - Cybersecurity,,12,3,https://nptel.ac.in/courses/106106248,NPTEL,False
+106105225,NPTEL,Data Structure And Algorithms Using Java,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/106105225,NPTEL,False
+106106238,NPTEL,Applied Accelerated Artificial Intelligence,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106106238,NPTEL,False
+106106239,NPTEL,Social Network Analysis,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106106239,NPTEL,False
+106105223,NPTEL,Google Cloud Computing Foundations,IT/Software - Software Development,,8,2,https://nptel.ac.in/courses/106105223,NPTEL,False
+106106210,NPTEL,C Programming And Assembly Language,IT/Software - Data & AI,,4,1,https://nptel.ac.in/courses/106106210,NPTEL,False
+106106230,NPTEL,Parameterized Algorithms,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106106230,NPTEL,False
+106105217,NPTEL,Ethical Hacking,IT/Software - Cybersecurity,,12,3,https://nptel.ac.in/courses/106105217,NPTEL,False
+106101237,NPTEL,Introduction To Game Theory And Mechanism Design,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/106101237,NPTEL,False
+106106232,NPTEL,Introduction to Quantum Computing: Quantum Algorithms and Qiskit,IT/Software - Data & AI,,4,1,https://nptel.ac.in/courses/106106232,NPTEL,False
+106101466,NPTEL,Distributed Optimization and Machine Learning,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106101466,NPTEL,False
+111104160,NPTEL,Foundations of R Software,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/111104160,NPTEL,False
+106105235,NPTEL,Blockchain and its Applications,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/106105235,NPTEL,False
+106106361,NPTEL,Business Intelligence & Analytics,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106106361,NPTEL,False
+106104182,NPTEL,Cloud Computing and Distributed Systems,IT/Software - Software Development,,8,2,https://nptel.ac.in/courses/106104182,NPTEL,False
+106105162,NPTEL,Cryptography and Network Security,IT/Software - Cybersecurity,,12,3,https://nptel.ac.in/courses/106105162,NPTEL,False
+106104449,NPTEL,Edge Computing,IT/Software - Software Development,,8,2,https://nptel.ac.in/courses/106104449,NPTEL,False
+106105193,NPTEL,Embedded System Design with ARM,IT/Software - Software Development,,8,2,https://nptel.ac.in/courses/106105193,NPTEL,False
+106105159,NPTEL,Embedded Systems Design,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/106105159,NPTEL,False
+106106199,NPTEL,Information Security - 5 - Secure Systems Engineering,IT/Software - Cybersecurity,,8,2,https://nptel.ac.in/courses/106106199,NPTEL,False
+108102169,NPTEL,Introduction to Embedded System Design,IT/Software - Software Development,,12,3,https://nptel.ac.in/courses/108102169,NPTEL,False
+106106241,NPTEL,Quantum Algorithms and Cryptography,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106106241,NPTEL,False
+106103220,NPTEL,User-centric Computing For Human-Computer Interaction,IT/Software - QA & Testing,,8,2,https://nptel.ac.in/courses/106103220,NPTEL,False
+106104242,NPTEL,Foundation of Cloud IoT Edge ML,IT/Software - Software Development,,8,2,https://nptel.ac.in/courses/106104242,NPTEL,False
+106104356,NPTEL,Linear programming and its applications to computer science,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/106104356,NPTEL,False
+106105470,NPTEL,Artificial Intelligence for Economics,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/106105470,NPTEL,False
+106104467,NPTEL,Practical Cyber Security for Cyber Security Practitioners,IT/Software - Cybersecurity,,12,3,https://nptel.ac.in/courses/106104467,NPTEL,False
+106108468,NPTEL,Introduction to Graph Algorithms,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/106108468,NPTEL,False
+106104189,NPTEL,Big Data Computing,IT/Software - Data & AI,,8,2,https://nptel.ac.in/courses/106104189,NPTEL,False
+106105164,NPTEL,Introduction To Algorithms and Analysis,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106105164,NPTEL,False
+106105471,NPTEL,Approximation Algorithm,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/106105471,NPTEL,False
+109106137,NPTEL,Intellectual Property,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/109/106/109106137/,NPTEL,False
+110107129,NPTEL,Business Analytics & Text Mining Modeling using Python,IT/Software - Software Development,,8,2,https://nptel.ac.in/courses/110107129,NPTEL,False
+110104125,NPTEL,Data Analysis & Decision Making - III,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/110104125,NPTEL,False
+109102392,NPTEL,Science Communication: Research Productivity and Data Analytics using Open Source Software,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/109102392,NPTEL,False
+110104164,NPTEL,Artificial Intelligence (AI) for Investments,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/110104164,NPTEL,False
+110107092,NPTEL,Business analytics and data mining Modeling using R,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/110107092,NPTEL,False
+110104094,NPTEL,Data Analysis and Decision Making - I,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/110104094,NPTEL,False
+110105142,NPTEL,Marketing Analytics,IT/Software - Data & AI,,12,3,https://nptel.ac.in/courses/110105142,NPTEL,False
+MANUAL_0001,NASSCOM,AI DevOps Analyst,IT/Software - IT Infrastructure & Networks,,,,,manual_supplement_2026,True
+MANUAL_0002,NASSCOM,AI – Data Engineering Analyst,IT/Software - Data & AI,,,,,manual_supplement_2026,True
+MANUAL_0003,NASSCOM,IoT Security Analyst,IT/Software - Cybersecurity,,,,,manual_supplement_2026,True
+MANUAL_0004,NASSCOM,Network Security Engineer,IT/Software - Cybersecurity,,,,,manual_supplement_2026,True
+MANUAL_0005,NASSCOM,Cloud Infrastructure Analyst,IT/Software - IT Infrastructure & Networks,,,,,manual_supplement_2026,True
+MANUAL_0006,NASSCOM,IT Technical Support Executive,UNMAPPED,,,,,manual_supplement_2026,True
+MANUAL_0007,NASSCOM,Web Developer,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0008,NASSCOM,Software Product Developer,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0009,Skill India/partner,Application Developer – Web & Mobile,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0010,Microsoft,Python Programming,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0011,Saylor University,PRDV401: Introduction to JavaScript I,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0012,Saylor University,PRDV401: Introduction to JavaScript II,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0013,Cisco Networking Academy,Networking Basics,IT/Software - IT Infrastructure & Networks,,,,,manual_supplement_2026,True
+MANUAL_0014,Cisco Networking Academy,Introduction to Cybersecurity,IT/Software - Cybersecurity,,,,,manual_supplement_2026,True
+MANUAL_0015,Cisco Networking Academy,Operating System Basics,IT/Software - IT Infrastructure & Networks,,,,,manual_supplement_2026,True
+MANUAL_0016,Cisco Networking Academy,Data Analytics Essentials,IT/Software - Data & AI,,,,,manual_supplement_2026,True
+MANUAL_0017,Cisco Networking Academy,Engaging Stakeholders for Success,IT/Software - Software Development,,,,,manual_supplement_2026,True
+MANUAL_0018,Cisco Networking Academy,Getting Started with Cisco Packet Tracer,IT/Software - IT Infrastructure & Networks,,,,,manual_supplement_2026,True
+MANUAL_0019,Tech Mahindra Foundation,Cybersecurity,IT/Software - Cybersecurity,,,,,manual_supplement_2026,True
+MANUAL_0020,Reliance Foundation Skilling Academy,Project Management with Zoho,IT/Software - Software Development,,,,,manual_supplement_2026,True

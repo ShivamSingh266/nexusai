@@ -1,0 +1,1131 @@
+skill_id,district_id,sector,period,current_demand_count,anticipated_demand_count,demand_score,strength_tier,sample_size,recent_growth,source
+SKILL_0254,Amravati,IT/Software - Data & AI,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Amravati,IT/Software - Data & AI,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Aurangabad,IT/Software - QA & Testing,2025-09,2,0,0.2222,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Aurangabad,IT/Software - QA & Testing,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0588,Aurangabad,IT/Software - QA & Testing,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0598,Aurangabad,IT/Software - QA & Testing,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Aurangabad,IT/Software - Software Development,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Jalna,IT/Software - Data & AI,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0225,Kolhapur,IT/Software - Data & AI,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Kolhapur,IT/Software - Data & AI,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Kolhapur,IT/Software - Data & AI,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Kolhapur,IT/Software - QA & Testing,2025-09,2,0,1.0,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Kolhapur,IT/Software - QA & Testing,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Kolhapur,IT/Software - QA & Testing,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Kolhapur,IT/Software - QA & Testing,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Kolhapur,IT/Software - QA & Testing,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Kolhapur,IT/Software - QA & Testing,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Kolhapur,IT/Software - Software Development,2025-09,3,0,1.0,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Kolhapur,IT/Software - Software Development,2025-09,1,0,0.3333,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0427,Kolhapur,IT/Software - Software Development,2025-09,1,0,0.3333,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Mumbai City,IT/Software - Cybersecurity,2025-09,41,0,0.4457,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Mumbai City,IT/Software - Cybersecurity,2025-09,13,0,0.1413,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - Cybersecurity,2025-09,13,0,0.1413,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Mumbai City,IT/Software - Cybersecurity,2025-09,11,0,0.1196,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Mumbai City,IT/Software - Cybersecurity,2025-09,9,0,0.0978,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0098,Mumbai City,IT/Software - Cybersecurity,2025-09,8,0,0.087,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Mumbai City,IT/Software - Cybersecurity,2025-09,5,0,0.0543,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Mumbai City,IT/Software - Cybersecurity,2025-09,4,0,0.0435,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Mumbai City,IT/Software - Cybersecurity,2025-09,4,0,0.0435,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0002,Mumbai City,IT/Software - Cybersecurity,2025-09,3,0,0.0326,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Mumbai City,IT/Software - Cybersecurity,2025-09,3,0,0.0326,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0114,Mumbai City,IT/Software - Cybersecurity,2025-09,3,0,0.0326,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai City,IT/Software - Cybersecurity,2025-09,3,0,0.0326,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai City,IT/Software - Cybersecurity,2025-09,3,0,0.0326,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Mumbai City,IT/Software - Cybersecurity,2025-09,3,0,0.0326,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Mumbai City,IT/Software - Cybersecurity,2025-09,2,0,0.0217,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0020,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0082,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0204,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0209,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0308,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0578,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Mumbai City,IT/Software - Cybersecurity,2025-09,1,0,0.0109,MEDIUM,92,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai City,IT/Software - Data & AI,2025-09,119,0,0.2895,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - Data & AI,2025-09,56,0,0.1363,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - Data & AI,2025-09,53,0,0.129,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai City,IT/Software - Data & AI,2025-09,49,0,0.1192,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Mumbai City,IT/Software - Data & AI,2025-09,38,0,0.0925,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Mumbai City,IT/Software - Data & AI,2025-09,31,0,0.0754,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Mumbai City,IT/Software - Data & AI,2025-09,27,0,0.0657,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Mumbai City,IT/Software - Data & AI,2025-09,23,0,0.056,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Mumbai City,IT/Software - Data & AI,2025-09,23,0,0.056,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai City,IT/Software - Data & AI,2025-09,20,0,0.0487,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Mumbai City,IT/Software - Data & AI,2025-09,19,0,0.0462,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Mumbai City,IT/Software - Data & AI,2025-09,18,0,0.0438,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Mumbai City,IT/Software - Data & AI,2025-09,18,0,0.0438,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Mumbai City,IT/Software - Data & AI,2025-09,15,0,0.0365,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai City,IT/Software - Data & AI,2025-09,14,0,0.0341,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai City,IT/Software - Data & AI,2025-09,12,0,0.0292,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Mumbai City,IT/Software - Data & AI,2025-09,11,0,0.0268,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Mumbai City,IT/Software - Data & AI,2025-09,9,0,0.0219,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Mumbai City,IT/Software - Data & AI,2025-09,9,0,0.0219,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0132,Mumbai City,IT/Software - Data & AI,2025-09,8,0,0.0195,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Mumbai City,IT/Software - Data & AI,2025-09,8,0,0.0195,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Mumbai City,IT/Software - Data & AI,2025-09,8,0,0.0195,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Mumbai City,IT/Software - Data & AI,2025-09,8,0,0.0195,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Mumbai City,IT/Software - Data & AI,2025-09,7,0,0.017,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Mumbai City,IT/Software - Data & AI,2025-09,6,0,0.0146,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0234,Mumbai City,IT/Software - Data & AI,2025-09,6,0,0.0146,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai City,IT/Software - Data & AI,2025-09,6,0,0.0146,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Mumbai City,IT/Software - Data & AI,2025-09,6,0,0.0146,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0180,Mumbai City,IT/Software - Data & AI,2025-09,5,0,0.0122,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0184,Mumbai City,IT/Software - Data & AI,2025-09,5,0,0.0122,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Mumbai City,IT/Software - Data & AI,2025-09,5,0,0.0122,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Mumbai City,IT/Software - Data & AI,2025-09,5,0,0.0122,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Mumbai City,IT/Software - Data & AI,2025-09,5,0,0.0122,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0183,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0207,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0253,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Mumbai City,IT/Software - Data & AI,2025-09,4,0,0.0097,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0219,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0225,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0335,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Mumbai City,IT/Software - Data & AI,2025-09,3,0,0.0073,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0048,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0135,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0241,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0246,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0260,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0361,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0405,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0417,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0622,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0636,Mumbai City,IT/Software - Data & AI,2025-09,2,0,0.0049,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0012,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0042,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0087,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0106,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0112,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0113,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0126,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0142,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0151,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0174,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0211,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0248,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0278,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0281,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0321,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0385,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0427,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0444,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0528,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0578,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0590,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0598,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0609,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0617,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0634,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0637,Mumbai City,IT/Software - Data & AI,2025-09,1,0,0.0024,HIGH,411,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - Data & AI,2025-10,0,2,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Mumbai City,IT/Software - Data & AI,2025-10,0,2,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai City,IT/Software - Data & AI,2025-10,0,2,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Mumbai City,IT/Software - Data & AI,2025-10,0,2,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Mumbai City,IT/Software - Data & AI,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0184,Mumbai City,IT/Software - Data & AI,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - Data & AI,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Mumbai City,IT/Software - Data & AI,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,41,0,0.5942,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,8,0,0.1159,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,8,0,0.1159,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,7,0,0.1014,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,6,0,0.087,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,5,0,0.0725,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,4,0,0.058,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,4,0,0.058,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,4,0,0.058,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0315,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.0435,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.0435,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.0435,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.0435,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.029,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0091,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0114,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0207,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0429,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0444,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0578,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Mumbai City,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0145,MEDIUM,69,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - QA & Testing,2025-09,7,0,0.0693,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Mumbai City,IT/Software - QA & Testing,2025-09,7,0,0.0693,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Mumbai City,IT/Software - QA & Testing,2025-09,5,0,0.0495,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai City,IT/Software - QA & Testing,2025-09,5,0,0.0495,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0106,Mumbai City,IT/Software - QA & Testing,2025-09,4,0,0.0396,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Mumbai City,IT/Software - QA & Testing,2025-09,4,0,0.0396,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Mumbai City,IT/Software - QA & Testing,2025-09,3,0,0.0297,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0326,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0604,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Mumbai City,IT/Software - QA & Testing,2025-09,2,0,0.0198,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0238,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0280,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0281,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0405,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0460,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0478,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0598,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Mumbai City,IT/Software - QA & Testing,2025-09,1,0,0.0099,HIGH,101,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - QA & Testing,2025-10,0,1,,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Mumbai City,IT/Software - Software Development,2025-09,75,0,0.2193,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - Software Development,2025-09,63,1,0.1842,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai City,IT/Software - Software Development,2025-09,52,0,0.152,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - Software Development,2025-09,49,0,0.1433,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai City,IT/Software - Software Development,2025-09,38,0,0.1111,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai City,IT/Software - Software Development,2025-09,32,0,0.0936,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Mumbai City,IT/Software - Software Development,2025-09,25,0,0.0731,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai City,IT/Software - Software Development,2025-09,21,0,0.0614,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Mumbai City,IT/Software - Software Development,2025-09,20,0,0.0585,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Mumbai City,IT/Software - Software Development,2025-09,16,0,0.0468,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0141,Mumbai City,IT/Software - Software Development,2025-09,12,0,0.0351,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Mumbai City,IT/Software - Software Development,2025-09,11,0,0.0322,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Mumbai City,IT/Software - Software Development,2025-09,11,0,0.0322,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Mumbai City,IT/Software - Software Development,2025-09,11,0,0.0322,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Mumbai City,IT/Software - Software Development,2025-09,10,0,0.0292,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Mumbai City,IT/Software - Software Development,2025-09,10,0,0.0292,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Mumbai City,IT/Software - Software Development,2025-09,10,0,0.0292,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai City,IT/Software - Software Development,2025-09,10,0,0.0292,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Mumbai City,IT/Software - Software Development,2025-09,9,0,0.0263,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Mumbai City,IT/Software - Software Development,2025-09,7,0,0.0205,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Mumbai City,IT/Software - Software Development,2025-09,6,0,0.0175,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Mumbai City,IT/Software - Software Development,2025-09,5,1,0.0146,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Mumbai City,IT/Software - Software Development,2025-09,5,0,0.0146,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0528,Mumbai City,IT/Software - Software Development,2025-09,5,0,0.0146,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Mumbai City,IT/Software - Software Development,2025-09,5,0,0.0146,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Mumbai City,IT/Software - Software Development,2025-09,4,0,0.0117,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Mumbai City,IT/Software - Software Development,2025-09,4,0,0.0117,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Mumbai City,IT/Software - Software Development,2025-09,4,0,0.0117,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Mumbai City,IT/Software - Software Development,2025-09,4,0,0.0117,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Mumbai City,IT/Software - Software Development,2025-09,4,0,0.0117,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0145,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0266,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0335,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0346,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0534,Mumbai City,IT/Software - Software Development,2025-09,3,0,0.0088,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0114,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0126,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0132,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0211,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0444,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0478,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0549,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Mumbai City,IT/Software - Software Development,2025-09,2,0,0.0058,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0003,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0048,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0082,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0135,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0142,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0156,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0174,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0183,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0241,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0260,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0280,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0291,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0315,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0370,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0398,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0427,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0450,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0495,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0578,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0598,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0630,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Mumbai City,IT/Software - Software Development,2025-09,1,0,0.0029,HIGH,342,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0278,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai City,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,3,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,2,0,0.2857,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0362,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0549,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0641,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Mumbai Suburban,IT/Software - Cybersecurity,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai Suburban,IT/Software - Data & AI,2025-09,13,0,0.3333,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Mumbai Suburban,IT/Software - Data & AI,2025-09,5,0,0.1282,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Mumbai Suburban,IT/Software - Data & AI,2025-09,4,0,0.1026,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Mumbai Suburban,IT/Software - Data & AI,2025-09,4,0,0.1026,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai Suburban,IT/Software - Data & AI,2025-09,4,0,0.1026,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Mumbai Suburban,IT/Software - Data & AI,2025-09,3,0,0.0769,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Mumbai Suburban,IT/Software - Data & AI,2025-09,2,0,0.0513,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai Suburban,IT/Software - Data & AI,2025-09,2,0,0.0513,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Mumbai Suburban,IT/Software - Data & AI,2025-09,2,0,0.0513,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai Suburban,IT/Software - Data & AI,2025-09,2,0,0.0513,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Mumbai Suburban,IT/Software - Data & AI,2025-09,2,0,0.0513,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0219,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0528,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai Suburban,IT/Software - Data & AI,2025-09,1,0,0.0256,MEDIUM,39,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai Suburban,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.4,INSUFFICIENT,5,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai Suburban,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.2,INSUFFICIENT,5,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Mumbai Suburban,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.2,INSUFFICIENT,5,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Mumbai Suburban,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.2,INSUFFICIENT,5,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai Suburban,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.2,INSUFFICIENT,5,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Mumbai Suburban,IT/Software - IT Infrastructure & Networks,2025-09,0,1,,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Mumbai Suburban,IT/Software - QA & Testing,2025-09,1,0,0.1,LOW,10,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Mumbai Suburban,IT/Software - QA & Testing,2025-09,1,0,0.1,LOW,10,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Mumbai Suburban,IT/Software - Software Development,2025-09,5,0,0.2273,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Mumbai Suburban,IT/Software - Software Development,2025-09,5,0,0.2273,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Mumbai Suburban,IT/Software - Software Development,2025-09,4,0,0.1818,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0141,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Mumbai Suburban,IT/Software - Software Development,2025-09,2,0,0.0909,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0093,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0145,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0238,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0444,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0528,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0623,Mumbai Suburban,IT/Software - Software Development,2025-09,1,0,0.0455,LOW,22,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Nagpur,IT/Software - Cybersecurity,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Nagpur,IT/Software - Data & AI,2025-09,2,0,0.3333,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Nagpur,IT/Software - Data & AI,2025-09,1,0,0.1667,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Nagpur,IT/Software - Data & AI,2025-09,1,0,0.1667,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Nagpur,IT/Software - Data & AI,2025-09,1,0,0.1667,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Nagpur,IT/Software - Data & AI,2025-09,1,0,0.1667,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Nagpur,IT/Software - Data & AI,2025-09,1,0,0.1667,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Nagpur,IT/Software - Data & AI,2025-09,1,0,0.1667,INSUFFICIENT,6,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Nagpur,IT/Software - Data & AI,2025-10,0,2,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Nagpur,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.75,INSUFFICIENT,4,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Nagpur,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.25,INSUFFICIENT,4,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Nagpur,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.25,INSUFFICIENT,4,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Nagpur,IT/Software - QA & Testing,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Nagpur,IT/Software - Software Development,2025-09,5,0,0.2941,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Nagpur,IT/Software - Software Development,2025-09,4,0,0.2353,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Nagpur,IT/Software - Software Development,2025-09,3,0,0.1765,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Nagpur,IT/Software - Software Development,2025-09,2,0,0.1176,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Nagpur,IT/Software - Software Development,2025-09,2,0,0.1176,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Nagpur,IT/Software - Software Development,2025-09,2,0,0.1176,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0003,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0281,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0326,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Nagpur,IT/Software - Software Development,2025-09,1,0,0.0588,LOW,17,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Nashik,IT/Software - Data & AI,2025-09,2,0,0.2857,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Nashik,IT/Software - Data & AI,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Nashik,IT/Software - Data & AI,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Nashik,IT/Software - Data & AI,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Nashik,IT/Software - Data & AI,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Nashik,IT/Software - Data & AI,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Nashik,IT/Software - Data & AI,2025-09,1,0,0.1429,INSUFFICIENT,7,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Nashik,IT/Software - QA & Testing,2025-09,1,0,0.0909,LOW,11,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Nashik,IT/Software - Software Development,2025-09,3,0,0.3333,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0141,Nashik,IT/Software - Software Development,2025-09,2,0,0.2222,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Nashik,IT/Software - Software Development,2025-09,2,0,0.2222,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Nashik,IT/Software - Software Development,2025-09,1,0,0.1111,INSUFFICIENT,9,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Palghar,IT/Software - Data & AI,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Pune,IT/Software - Cybersecurity,2025-09,51,0,0.4857,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Pune,IT/Software - Cybersecurity,2025-09,26,0,0.2476,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Pune,IT/Software - Cybersecurity,2025-09,8,0,0.0762,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Pune,IT/Software - Cybersecurity,2025-09,7,0,0.0667,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0002,Pune,IT/Software - Cybersecurity,2025-09,5,0,0.0476,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Pune,IT/Software - Cybersecurity,2025-09,5,0,0.0476,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Pune,IT/Software - Cybersecurity,2025-09,5,0,0.0476,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Pune,IT/Software - Cybersecurity,2025-09,5,0,0.0476,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0114,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Pune,IT/Software - Cybersecurity,2025-09,4,0,0.0381,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0113,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Pune,IT/Software - Cybersecurity,2025-09,3,0,0.0286,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Pune,IT/Software - Cybersecurity,2025-09,2,0,0.019,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Pune,IT/Software - Cybersecurity,2025-09,2,0,0.019,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Pune,IT/Software - Cybersecurity,2025-09,2,0,0.019,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Pune,IT/Software - Cybersecurity,2025-09,2,0,0.019,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Pune,IT/Software - Cybersecurity,2025-09,2,0,0.019,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Pune,IT/Software - Cybersecurity,2025-09,2,0,0.019,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0003,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0027,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0067,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0082,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0091,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0098,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0142,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0145,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0219,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0346,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0362,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0429,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0471,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0514,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0528,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0549,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0588,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0606,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Pune,IT/Software - Cybersecurity,2025-09,1,0,0.0095,HIGH,105,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Pune,IT/Software - Data & AI,2025-09,147,1,0.2097,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Pune,IT/Software - Data & AI,2025-09,121,0,0.1726,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Pune,IT/Software - Data & AI,2025-09,94,0,0.1341,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Pune,IT/Software - Data & AI,2025-09,80,0,0.1141,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Pune,IT/Software - Data & AI,2025-09,76,0,0.1084,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Pune,IT/Software - Data & AI,2025-09,71,0,0.1013,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Pune,IT/Software - Data & AI,2025-09,58,0,0.0827,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Pune,IT/Software - Data & AI,2025-09,52,0,0.0742,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Pune,IT/Software - Data & AI,2025-09,44,0,0.0628,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Pune,IT/Software - Data & AI,2025-09,40,0,0.0571,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Pune,IT/Software - Data & AI,2025-09,38,0,0.0542,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Pune,IT/Software - Data & AI,2025-09,28,0,0.0399,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Pune,IT/Software - Data & AI,2025-09,26,0,0.0371,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Pune,IT/Software - Data & AI,2025-09,24,0,0.0342,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Pune,IT/Software - Data & AI,2025-09,23,0,0.0328,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Pune,IT/Software - Data & AI,2025-09,20,0,0.0285,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Pune,IT/Software - Data & AI,2025-09,20,0,0.0285,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0132,Pune,IT/Software - Data & AI,2025-09,19,0,0.0271,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Pune,IT/Software - Data & AI,2025-09,19,0,0.0271,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Pune,IT/Software - Data & AI,2025-09,19,0,0.0271,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Pune,IT/Software - Data & AI,2025-09,18,0,0.0257,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Pune,IT/Software - Data & AI,2025-09,17,0,0.0243,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Pune,IT/Software - Data & AI,2025-09,17,0,0.0243,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Pune,IT/Software - Data & AI,2025-09,15,0,0.0214,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0183,Pune,IT/Software - Data & AI,2025-09,15,0,0.0214,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0335,Pune,IT/Software - Data & AI,2025-09,15,0,0.0214,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Pune,IT/Software - Data & AI,2025-09,15,0,0.0214,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Pune,IT/Software - Data & AI,2025-09,12,0,0.0171,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Pune,IT/Software - Data & AI,2025-09,12,0,0.0171,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Pune,IT/Software - Data & AI,2025-09,12,0,0.0171,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Pune,IT/Software - Data & AI,2025-09,11,0,0.0157,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Pune,IT/Software - Data & AI,2025-09,11,0,0.0157,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Pune,IT/Software - Data & AI,2025-09,11,0,0.0157,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Pune,IT/Software - Data & AI,2025-09,11,0,0.0157,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Pune,IT/Software - Data & AI,2025-09,11,0,0.0157,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Pune,IT/Software - Data & AI,2025-09,10,0,0.0143,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Pune,IT/Software - Data & AI,2025-09,10,0,0.0143,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Pune,IT/Software - Data & AI,2025-09,10,0,0.0143,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0184,Pune,IT/Software - Data & AI,2025-09,9,0,0.0128,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0234,Pune,IT/Software - Data & AI,2025-09,8,0,0.0114,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Pune,IT/Software - Data & AI,2025-09,8,0,0.0114,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Pune,IT/Software - Data & AI,2025-09,7,0,0.01,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0207,Pune,IT/Software - Data & AI,2025-09,6,0,0.0086,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0260,Pune,IT/Software - Data & AI,2025-09,6,0,0.0086,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Pune,IT/Software - Data & AI,2025-09,6,0,0.0086,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Pune,IT/Software - Data & AI,2025-09,6,0,0.0086,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Pune,IT/Software - Data & AI,2025-09,6,0,0.0086,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Pune,IT/Software - Data & AI,2025-09,6,0,0.0086,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0002,Pune,IT/Software - Data & AI,2025-09,5,0,0.0071,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Pune,IT/Software - Data & AI,2025-09,5,0,0.0071,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0142,Pune,IT/Software - Data & AI,2025-09,5,0,0.0071,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0211,Pune,IT/Software - Data & AI,2025-09,5,0,0.0071,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Pune,IT/Software - Data & AI,2025-09,5,0,0.0071,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Pune,IT/Software - Data & AI,2025-09,5,0,0.0071,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0219,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0232,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0460,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Pune,IT/Software - Data & AI,2025-09,4,0,0.0057,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0151,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0281,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0326,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0361,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0405,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0444,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Pune,IT/Software - Data & AI,2025-09,3,0,0.0043,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0180,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0238,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0452,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0555,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0598,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0636,Pune,IT/Software - Data & AI,2025-09,2,0,0.0029,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0003,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0025,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0037,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0048,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0082,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0083,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0116,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0120,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0126,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0135,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0141,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0156,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0163,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0165,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0174,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0202,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0203,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0216,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0225,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0246,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0290,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0327,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0358,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0362,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0385,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0387,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0429,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0478,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0483,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0514,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0526,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0566,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0576,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0588,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0606,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0611,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0617,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0622,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0634,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0640,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0641,Pune,IT/Software - Data & AI,2025-09,1,0,0.0014,HIGH,701,,naukri:indian-job-market-dataset-2025
+SKILL_0623,Pune,IT/Software - Data & AI,2025-09,0,1,,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Pune,IT/Software - IT Infrastructure & Networks,2025-09,100,0,0.6667,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Pune,IT/Software - IT Infrastructure & Networks,2025-09,27,0,0.18,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Pune,IT/Software - IT Infrastructure & Networks,2025-09,25,0,0.1667,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Pune,IT/Software - IT Infrastructure & Networks,2025-09,23,0,0.1533,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Pune,IT/Software - IT Infrastructure & Networks,2025-09,22,0,0.1467,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Pune,IT/Software - IT Infrastructure & Networks,2025-09,17,0,0.1133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Pune,IT/Software - IT Infrastructure & Networks,2025-09,10,0,0.0667,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Pune,IT/Software - IT Infrastructure & Networks,2025-09,10,0,0.0667,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Pune,IT/Software - IT Infrastructure & Networks,2025-09,9,0,0.06,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Pune,IT/Software - IT Infrastructure & Networks,2025-09,7,0,0.0467,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Pune,IT/Software - IT Infrastructure & Networks,2025-09,5,0,0.0333,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Pune,IT/Software - IT Infrastructure & Networks,2025-09,5,0,0.0333,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Pune,IT/Software - IT Infrastructure & Networks,2025-09,5,0,0.0333,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Pune,IT/Software - IT Infrastructure & Networks,2025-09,4,0,0.0267,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Pune,IT/Software - IT Infrastructure & Networks,2025-09,4,0,0.0267,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0091,Pune,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.02,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Pune,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.02,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Pune,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.02,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Pune,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.02,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Pune,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.02,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0002,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0003,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0114,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0321,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Pune,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.0133,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0145,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0326,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0429,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0526,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0608,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Pune,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0067,HIGH,150,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Pune,IT/Software - QA & Testing,2025-09,28,0,0.1026,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Pune,IT/Software - QA & Testing,2025-09,16,0,0.0586,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Pune,IT/Software - QA & Testing,2025-09,15,0,0.0549,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Pune,IT/Software - QA & Testing,2025-09,14,0,0.0513,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Pune,IT/Software - QA & Testing,2025-09,12,0,0.044,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Pune,IT/Software - QA & Testing,2025-09,12,0,0.044,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Pune,IT/Software - QA & Testing,2025-09,8,0,0.0293,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Pune,IT/Software - QA & Testing,2025-09,7,0,0.0256,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Pune,IT/Software - QA & Testing,2025-09,7,0,0.0256,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Pune,IT/Software - QA & Testing,2025-09,6,0,0.022,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Pune,IT/Software - QA & Testing,2025-09,5,0,0.0183,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Pune,IT/Software - QA & Testing,2025-09,5,0,0.0183,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0326,Pune,IT/Software - QA & Testing,2025-09,5,0,0.0183,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Pune,IT/Software - QA & Testing,2025-09,5,0,0.0183,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Pune,IT/Software - QA & Testing,2025-09,5,0,0.0183,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Pune,IT/Software - QA & Testing,2025-09,5,0,0.0183,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Pune,IT/Software - QA & Testing,2025-09,4,0,0.0147,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Pune,IT/Software - QA & Testing,2025-09,4,0,0.0147,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Pune,IT/Software - QA & Testing,2025-09,4,0,0.0147,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Pune,IT/Software - QA & Testing,2025-09,3,0,0.011,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Pune,IT/Software - QA & Testing,2025-09,3,0,0.011,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Pune,IT/Software - QA & Testing,2025-09,3,0,0.011,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Pune,IT/Software - QA & Testing,2025-09,3,0,0.011,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Pune,IT/Software - QA & Testing,2025-09,3,0,0.011,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0327,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0417,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0604,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0634,Pune,IT/Software - QA & Testing,2025-09,2,0,0.0073,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0050,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0054,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0087,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0091,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0106,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0116,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0238,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0278,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0281,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0291,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0370,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0385,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0530,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0572,Pune,IT/Software - QA & Testing,2025-09,1,0,0.0037,HIGH,273,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Pune,IT/Software - Software Development,2025-09,410,0,0.3635,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Pune,IT/Software - Software Development,2025-09,284,0,0.2518,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Pune,IT/Software - Software Development,2025-09,186,0,0.1649,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Pune,IT/Software - Software Development,2025-09,182,0,0.1613,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Pune,IT/Software - Software Development,2025-09,153,1,0.1356,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Pune,IT/Software - Software Development,2025-09,148,0,0.1312,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Pune,IT/Software - Software Development,2025-09,97,0,0.086,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Pune,IT/Software - Software Development,2025-09,79,1,0.07,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Pune,IT/Software - Software Development,2025-09,67,0,0.0594,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Pune,IT/Software - Software Development,2025-09,65,0,0.0576,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Pune,IT/Software - Software Development,2025-09,55,0,0.0488,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Pune,IT/Software - Software Development,2025-09,55,0,0.0488,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Pune,IT/Software - Software Development,2025-09,51,0,0.0452,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Pune,IT/Software - Software Development,2025-09,49,0,0.0434,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Pune,IT/Software - Software Development,2025-09,48,0,0.0426,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Pune,IT/Software - Software Development,2025-09,47,0,0.0417,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Pune,IT/Software - Software Development,2025-09,43,0,0.0381,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Pune,IT/Software - Software Development,2025-09,38,0,0.0337,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Pune,IT/Software - Software Development,2025-09,32,0,0.0284,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Pune,IT/Software - Software Development,2025-09,29,0,0.0257,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Pune,IT/Software - Software Development,2025-09,28,0,0.0248,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Pune,IT/Software - Software Development,2025-09,27,0,0.0239,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Pune,IT/Software - Software Development,2025-09,27,0,0.0239,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Pune,IT/Software - Software Development,2025-09,27,0,0.0239,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0141,Pune,IT/Software - Software Development,2025-09,24,0,0.0213,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Pune,IT/Software - Software Development,2025-09,22,0,0.0195,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Pune,IT/Software - Software Development,2025-09,20,0,0.0177,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Pune,IT/Software - Software Development,2025-09,19,0,0.0168,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0431,Pune,IT/Software - Software Development,2025-09,19,0,0.0168,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0495,Pune,IT/Software - Software Development,2025-09,19,0,0.0168,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Pune,IT/Software - Software Development,2025-09,16,0,0.0142,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Pune,IT/Software - Software Development,2025-09,14,0,0.0124,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0335,Pune,IT/Software - Software Development,2025-09,14,0,0.0124,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0145,Pune,IT/Software - Software Development,2025-09,13,0,0.0115,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Pune,IT/Software - Software Development,2025-09,13,0,0.0115,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Pune,IT/Software - Software Development,2025-09,13,0,0.0115,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Pune,IT/Software - Software Development,2025-09,12,0,0.0106,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Pune,IT/Software - Software Development,2025-09,12,0,0.0106,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Pune,IT/Software - Software Development,2025-09,11,0,0.0098,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Pune,IT/Software - Software Development,2025-09,11,0,0.0098,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Pune,IT/Software - Software Development,2025-09,11,0,0.0098,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0528,Pune,IT/Software - Software Development,2025-09,11,0,0.0098,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0282,Pune,IT/Software - Software Development,2025-09,10,0,0.0089,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Pune,IT/Software - Software Development,2025-09,10,0,0.0089,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Pune,IT/Software - Software Development,2025-09,10,0,0.0089,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0470,Pune,IT/Software - Software Development,2025-09,9,0,0.008,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0028,Pune,IT/Software - Software Development,2025-09,8,0,0.0071,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Pune,IT/Software - Software Development,2025-09,8,0,0.0071,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0142,Pune,IT/Software - Software Development,2025-09,8,0,0.0071,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Pune,IT/Software - Software Development,2025-09,8,0,0.0071,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Pune,IT/Software - Software Development,2025-09,7,0,0.0062,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Pune,IT/Software - Software Development,2025-09,7,0,0.0062,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Pune,IT/Software - Software Development,2025-09,7,0,0.0062,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0326,Pune,IT/Software - Software Development,2025-09,7,0,0.0062,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0132,Pune,IT/Software - Software Development,2025-09,6,0,0.0053,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Pune,IT/Software - Software Development,2025-09,6,0,0.0053,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Pune,IT/Software - Software Development,2025-09,6,0,0.0053,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0452,Pune,IT/Software - Software Development,2025-09,6,0,0.0053,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Pune,IT/Software - Software Development,2025-09,5,0,0.0044,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Pune,IT/Software - Software Development,2025-09,5,0,0.0044,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0219,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0266,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0278,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0280,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0346,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0427,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Pune,IT/Software - Software Development,2025-09,4,0,0.0035,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0003,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0126,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0241,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0327,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0353,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0398,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0405,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0432,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0444,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0445,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0478,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0514,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0534,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0549,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0555,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0633,Pune,IT/Software - Software Development,2025-09,3,0,0.0027,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0002,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0087,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0093,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0116,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0183,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0304,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0321,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0358,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0475,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0598,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0608,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0617,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0636,Pune,IT/Software - Software Development,2025-09,2,0,0.0018,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0008,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0030,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0037,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0048,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0050,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0102,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0106,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0114,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0135,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0151,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0163,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0174,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0197,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0211,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0238,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0246,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0260,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0281,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0337,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0370,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0379,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0447,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0453,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0460,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0588,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0622,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0630,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0634,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0641,Pune,IT/Software - Software Development,2025-09,1,0,0.0009,HIGH,1128,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Pune,IT/Software - Software Development,2025-10,0,2,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Pune,IT/Software - Software Development,2025-10,0,1,,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Raigad,IT/Software - QA & Testing,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0227,Sangli,IT/Software - Data & AI,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Sangli,IT/Software - Software Development,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Sangli,IT/Software - Software Development,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Sangli,IT/Software - Software Development,2025-09,1,0,1.0,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Satara,IT/Software - Software Development,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Satara,IT/Software - Software Development,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Satara,IT/Software - Software Development,2025-09,1,0,0.5,INSUFFICIENT,2,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Thane,IT/Software - Cybersecurity,2025-09,23,1,0.575,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Thane,IT/Software - Cybersecurity,2025-09,12,0,0.3,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Thane,IT/Software - Cybersecurity,2025-09,6,0,0.15,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0125,Thane,IT/Software - Cybersecurity,2025-09,4,0,0.1,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0272,Thane,IT/Software - Cybersecurity,2025-09,4,0,0.1,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0098,Thane,IT/Software - Cybersecurity,2025-09,3,0,0.075,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Thane,IT/Software - Cybersecurity,2025-09,3,0,0.075,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0408,Thane,IT/Software - Cybersecurity,2025-09,3,0,0.075,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Thane,IT/Software - Cybersecurity,2025-09,2,1,0.05,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0048,Thane,IT/Software - Cybersecurity,2025-09,2,0,0.05,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0238,Thane,IT/Software - Cybersecurity,2025-09,2,0,0.05,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Thane,IT/Software - Cybersecurity,2025-09,2,0,0.05,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Thane,IT/Software - Cybersecurity,2025-09,2,0,0.05,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0012,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0020,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0072,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0082,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0113,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0336,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0362,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0395,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0417,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0430,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0549,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Thane,IT/Software - Cybersecurity,2025-09,1,0,0.025,MEDIUM,40,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Thane,IT/Software - Cybersecurity,2025-09,0,1,,INSUFFICIENT,1,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Thane,IT/Software - Data & AI,2025-09,31,0,0.3229,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0166,Thane,IT/Software - Data & AI,2025-09,10,0,0.1042,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Thane,IT/Software - Data & AI,2025-09,9,0,0.0938,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Thane,IT/Software - Data & AI,2025-09,8,0,0.0833,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0144,Thane,IT/Software - Data & AI,2025-09,7,0,0.0729,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Thane,IT/Software - Data & AI,2025-09,7,0,0.0729,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Thane,IT/Software - Data & AI,2025-09,6,0,0.0625,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Thane,IT/Software - Data & AI,2025-09,4,0,0.0417,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Thane,IT/Software - Data & AI,2025-09,4,0,0.0417,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0228,Thane,IT/Software - Data & AI,2025-09,3,0,0.0312,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0262,Thane,IT/Software - Data & AI,2025-09,3,0,0.0312,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Thane,IT/Software - Data & AI,2025-09,3,0,0.0312,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0363,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0442,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0605,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0629,Thane,IT/Software - Data & AI,2025-09,2,0,0.0208,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0043,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0135,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0152,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0155,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0172,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0177,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0180,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0183,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0219,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0234,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0241,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0248,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0253,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0555,Thane,IT/Software - Data & AI,2025-09,1,0,0.0104,MEDIUM,96,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Thane,IT/Software - IT Infrastructure & Networks,2025-09,11,0,0.5789,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Thane,IT/Software - IT Infrastructure & Networks,2025-09,3,0,0.1579,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Thane,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.1053,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Thane,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.1053,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Thane,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.1053,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Thane,IT/Software - IT Infrastructure & Networks,2025-09,2,0,0.1053,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0178,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0181,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0279,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0441,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Thane,IT/Software - IT Infrastructure & Networks,2025-09,1,0,0.0526,LOW,19,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Thane,IT/Software - QA & Testing,2025-09,5,0,0.1316,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Thane,IT/Software - QA & Testing,2025-09,4,0,0.1053,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Thane,IT/Software - QA & Testing,2025-09,3,0,0.0789,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0615,Thane,IT/Software - QA & Testing,2025-09,3,0,0.0789,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Thane,IT/Software - QA & Testing,2025-09,2,0,0.0526,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Thane,IT/Software - QA & Testing,2025-09,2,0,0.0526,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Thane,IT/Software - QA & Testing,2025-09,2,0,0.0526,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0082,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0106,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0111,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0277,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0317,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0374,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Thane,IT/Software - QA & Testing,2025-09,1,0,0.0263,MEDIUM,38,,naukri:indian-job-market-dataset-2025
+SKILL_0396,Thane,IT/Software - Software Development,2025-09,19,0,0.3115,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0397,Thane,IT/Software - Software Development,2025-09,11,0,0.1803,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0400,Thane,IT/Software - Software Development,2025-09,11,0,0.1803,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0170,Thane,IT/Software - Software Development,2025-09,8,0,0.1311,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0532,Thane,IT/Software - Software Development,2025-09,8,0,0.1311,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0141,Thane,IT/Software - Software Development,2025-09,6,0,0.0984,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0153,Thane,IT/Software - Software Development,2025-09,5,0,0.082,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0274,Thane,IT/Software - Software Development,2025-09,5,0,0.082,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0391,Thane,IT/Software - Software Development,2025-09,5,0,0.082,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0527,Thane,IT/Software - Software Development,2025-09,5,0,0.082,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0128,Thane,IT/Software - Software Development,2025-09,4,0,0.0656,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0546,Thane,IT/Software - Software Development,2025-09,4,0,0.0656,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0564,Thane,IT/Software - Software Development,2025-09,4,0,0.0656,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0269,Thane,IT/Software - Software Development,2025-09,3,0,0.0492,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0435,Thane,IT/Software - Software Development,2025-09,3,0,0.0492,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0436,Thane,IT/Software - Software Development,2025-09,3,0,0.0492,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0477,Thane,IT/Software - Software Development,2025-09,3,0,0.0492,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0001,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0145,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0266,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0268,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0320,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0511,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0642,Thane,IT/Software - Software Development,2025-09,2,0,0.0328,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0031,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0032,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0119,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0127,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0131,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0134,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0211,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0254,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0270,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0392,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0446,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0631,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025
+SKILL_0632,Thane,IT/Software - Software Development,2025-09,1,0,0.0164,MEDIUM,61,,naukri:indian-job-market-dataset-2025

@@ -1,0 +1,170 @@
+{
+  "run_id": "20260915T061820Z",
+  "reset": false,
+  "from_stage": null,
+  "total_elapsed_seconds": 142.86,
+  "stages": [
+    {
+      "stage": "T2a_taxonomy",
+      "elapsed_seconds": 12.48,
+      "returncode": 0
+    },
+    {
+      "stage": "T2b_aliases",
+      "elapsed_seconds": 1.04,
+      "returncode": 0
+    },
+    {
+      "stage": "T3_extraction_sample",
+      "elapsed_seconds": 21.8,
+      "returncode": 0
+    },
+    {
+      "stage": "T4_normalization",
+      "elapsed_seconds": 8.69,
+      "returncode": 0
+    },
+    {
+      "stage": "T5_job_ingestion",
+      "elapsed_seconds": 39.26,
+      "returncode": 0
+    },
+    {
+      "stage": "T6prep_full_extraction",
+      "elapsed_seconds": 16.5,
+      "returncode": 0
+    },
+    {
+      "stage": "T6_demand_aggregation",
+      "elapsed_seconds": 1.29,
+      "returncode": 0
+    },
+    {
+      "stage": "T7_course_alignment",
+      "elapsed_seconds": 39.91,
+      "returncode": 0
+    },
+    {
+      "stage": "T7supp_manual_courses",
+      "elapsed_seconds": 0.89,
+      "returncode": 0
+    }
+  ],
+  "files": {
+    "ambiguous_phrases_dropped.csv": {
+      "bytes": 1532,
+      "sha256": "bb824884936500291b42ce38407c023d36e2502c4c966a74aa91e00c050af6d7",
+      "rows": 33
+    },
+    "companies_needs_review.csv": {
+      "bytes": 803,
+      "sha256": "7b3e587499b3359781733f0a2ce29972441c16784dacb932d3ec5858376b0722",
+      "rows": 11
+    },
+    "course_alignment_report.txt": {
+      "bytes": 4231,
+      "sha256": "a99b5344383c94d173b6634634c583b5d5d6ebc30a8c0c2c8faba9da9573dbb8",
+      "rows": null
+    },
+    "course_skills.csv": {
+      "bytes": 14554,
+      "sha256": "1f089291788119a55142bd6bc79629b76a5cdb4313a5b71b63f77d71f0ddc757",
+      "rows": 316
+    },
+    "courses.csv": {
+      "bytes": 9001,
+      "sha256": "530b0b81c2f5783b9a391d93de74ebc77af8d87e41a0f29d40ae0041916b4562",
+      "rows": 66
+    },
+    "courses_ambiguous_review.csv": {
+      "bytes": 76,
+      "sha256": "f3e25b66637f91a5b97191e7298909c5d959846604f8ea097e151e6312d8726c",
+      "rows": 1
+    },
+    "courses_no_skills.csv": {
+      "bytes": 70,
+      "sha256": "cc8be8551e723c4a1b518cdaccd3425a096af1dc3aba9696b43a09559488cf3a",
+      "rows": 0
+    },
+    "demand_strength_summary.txt": {
+      "bytes": 2082,
+      "sha256": "8c3f0c25163ce47b504346a90b0c64e2abfa57e149fc765f31a50718d48ae6c3",
+      "rows": null
+    },
+    "districts_unmapped.csv": {
+      "bytes": 322,
+      "sha256": "c299f90aa98fb4885d61e1be18c273bf83efe928be9eda70a75d2dbbd6da350a",
+      "rows": 6
+    },
+    "job_skill_resolved.csv": {
+      "bytes": 1862578,
+      "sha256": "8825f8adb253690712da60dbba569856fce75fae296114d325419554d547750f",
+      "rows": 53530
+    },
+    "jobs.csv": {
+      "bytes": 29992695,
+      "sha256": "6048cb4b2dcbd616695fa9ed350be6847170059d2e65e0da079c70b3c78dfab3",
+      "rows": 27824
+    },
+    "jobs_ambiguous_review.csv": {
+      "bytes": 477319,
+      "sha256": "eb97e5d0bb564ec9a435cd9ac7521533b9ae367b7442f346cc4e5f28540955e3",
+      "rows": 2904
+    },
+    "jobs_out_of_scope.csv": {
+      "bytes": 13031311,
+      "sha256": "73e7b5b60dfb4f253aa565944712e4425a69ed76d4fa52a3cc9891f7f90cb941",
+      "rows": 69310
+    },
+    "jobs_quality_report.txt": {
+      "bytes": 4085,
+      "sha256": "876b77e36efbb58255cd70f0214c3f4450eecdf6146e34091f4d0d5d8b34f4f7",
+      "rows": null
+    },
+    "manual_course_supplement_report.txt": {
+      "bytes": 13742,
+      "sha256": "1c2b070925e1d30038a3662667d0cf50a137da116730a2e7d18d47b3c5832890",
+      "rows": null
+    },
+    "skill_aliases.csv": {
+      "bytes": 121625,
+      "sha256": "0f43684dc5ef6a39b26eef44567acae11ca95cf9b367bce56346ba63312091a7",
+      "rows": 2887
+    },
+    "skill_demand_history.csv": {
+      "bytes": 133940,
+      "sha256": "4133d57efd45ba012772ad2f50a0a778351f83d20dbfab908c680e5eea9d1c91",
+      "rows": 1130
+    },
+    "skills.csv": {
+      "bytes": 120761,
+      "sha256": "2295b13728b1f1c30b3b65e6246a38757d4f7d36fa546a45073f058a9b164228",
+      "rows": 642
+    },
+    "skills_needs_review.csv": {
+      "bytes": 238644,
+      "sha256": "1e6746255ed74e6df52a6af8e82c7a405fdfa5b272e152e0edb377dada450026",
+      "rows": 1011
+    },
+    "t3_mentions_sample.json": {
+      "bytes": 505787,
+      "sha256": "6ef0a8ea4a89dfdf7e9521d0ecd97510ac1cf00de6d4696f3dd0a2f0e9f79aaf",
+      "rows": null
+    },
+    "t4_resolved_skills.csv": {
+      "bytes": 208816,
+      "sha256": "b31cff950fb52b01ad488d2f16d8f7858ad91b210b69a3c60a0d22525e014b12",
+      "rows": 2884
+    },
+    "training_gap.csv": {
+      "bytes": 4795,
+      "sha256": "39f028a373650c5a43f7cb5425944903be3d664931e28be3b24ca143e0d5ea51",
+      "rows": 194
+    },
+    "transversal_candidates.csv": {
+      "bytes": 9353,
+      "sha256": "e22efe4878d4efcef4ffb76efb81adba8874f6d2d8e800ef8b65db6a9ed3156b",
+      "rows": 95
+    }
+  }
+}
