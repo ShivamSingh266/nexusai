@@ -1,0 +1,5 @@
+[INFO] Dropped 23 blocked generic alias occurrence(s) (see blocked_aliases in config).
+skill_aliases.csv: 2887 rows -> C:\Users\piyush\Desktop\M4\data\processed\skill_aliases.csv
+  from source altLabels: 2884
+  manual examples:       3
+  636/642 retained skills have >=1 alias

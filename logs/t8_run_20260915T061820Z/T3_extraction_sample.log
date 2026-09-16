@@ -1,0 +1,29 @@
+[WARN] 33 phrase(s) map to more than one skill_id - dropped from matching entirely (not guessed): [('cooperate with colleagues', {'SKILL_0028', 'SKILL_0641'}), ('online gambling', {'SKILL_0094', 'SKILL_0053'}), ('protect ICT devices', {'SKILL_0557', 'SKILL_0103'}), ('SPARQL', {'SKILL_0148', 'SKILL_0518'}), ('SQL', {'SKILL_0446', 'SKILL_0149'})] ...
+  full list -> C:\Users\piyush\Desktop\M4\data\processed\ambiguous_phrases_dropped.csv
+Matcher loaded: 3463 phrase patterns (from 642 skills)
+
+Wrote 2084 mention records -> C:\Users\piyush\Desktop\M4\data\processed\t3_mentions_sample.json
+
+--- RESUME (abilities + experience titles) (n=300) ---
+  mentions/record: mean=5.15  median=2  max=78
+  records with ZERO mentions: 17%
+  median text length (chars): 468
+
+--- JOB (tagsAndSkills + jobDescription) (n=300) ---
+  mentions/record: mean=1.58  median=0  max=22
+  records with ZERO mentions: 51%
+  median text length (chars): 383
+
+--- COURSE (Course Name + SME Name) (n=382) ---
+  mentions/record: mean=0.17  median=0  max=2
+  records with ZERO mentions: 84%
+  median text length (chars): 56
+
+--- COURSE (Course Name ONLY, no SME Name) (n=382) ---
+  mentions/record: mean=0.16  median=0  max=2
+  records with ZERO mentions: 86%
+  median text length (chars): 32
+
+resume: 94/642 taxonomy skills (15%) seen at least once across the sample
+job: 87/642 taxonomy skills (14%) seen at least once across the sample
+course: 30/642 taxonomy skills (5%) seen at least once across the sample

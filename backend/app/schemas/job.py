@@ -89,6 +89,9 @@ class JobUpdate(BaseModel):
 class JobResponse(JobBase):
     id: int
     company_id: int
+    source_job_id: str | None = None
+    source: str | None = None
+    sector: str | None = None
     status: JobStatusLiteral
     created_at: datetime
     updated_at: datetime

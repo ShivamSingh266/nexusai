@@ -1,46 +1,26 @@
-from __future__ import annotations
+"""API contracts for deterministic candidate/job matching."""
 
-from pydantic import BaseModel, Field
+from datetime import datetime
 
-
-class MatchingSkill(BaseModel):
-    skill_id: str = Field(..., min_length=1)
-    proficiency: float = Field(..., ge=0.0, le=1.0)
-    proficiency_level: str = Field(..., min_length=1)
-    min_proficiency: float = Field(default=0.0, ge=0.0, le=1.0)
-    importance: float = Field(default=1.0, ge=0.0)
-    evidence: list[str] = Field(default_factory=list)
+from pydantic import BaseModel
 
 
-class MatchingProfile(BaseModel):
-    owner_id: str = Field(..., min_length=1)
-    kind: str = Field(..., pattern="^(candidate|job|role)$")
-    skills: list[MatchingSkill] = Field(default_factory=list)
-    experience_years: float | None = Field(default=None, ge=0.0)
-    education_level: float | None = Field(default=None, ge=0.0, le=1.0)
-    location: str | None = None
-    work_mode: str | None = None
-    text: str = ""
+class MatchingResultResponse(BaseModel):
+    candidate_id: int
+    job_id: int
+    score: float
+    component_scores: dict[str, float]
+    available_components: list[str]
+    omitted_components: list[str]
+    taxonomy_version: str
+    explanation: str
+    warnings: list[str]
 
 
-class MatchRequest(BaseModel):
-    candidate: MatchingProfile
-    target: MatchingProfile
-
-
-class MatchExplanationResponse(BaseModel):
-    skill_score: float
-    semantic_score: float
-    experience_score: float | None
-    education_score: float | None
-    location_mode_score: float | None
-    weights: dict[str, float]
-    final_score: float
-
-
-class MatchResponse(BaseModel):
-    matched_skills: list[str]
-    missing_skills: list[str]
-    explanation: MatchExplanationResponse
-    final_score: float
-    scoring_version: str
+class MatchingResponse(BaseModel):
+    data: list[MatchingResultResponse]
+    meta: dict[str, str]
+    model_version: str | None
+    source_version: str
+    generated_at: datetime
+    warnings: list[str]

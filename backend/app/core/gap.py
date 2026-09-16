@@ -1,185 +1,143 @@
-"""
-Member 5 - Day 2: Skill Gap Engine.
-
-Compares a candidate profile against a target profile and ranks missing
-skills using the required baseline:
-
-    priority =
-        normalized_demand
-        * trend_multiplier
-        * gap_severity
-        * role_importance
-
-Canonical skill IDs are supplied by the shared taxonomy pipeline.
-This module does not create or regenerate skill IDs.
-"""
-
-from __future__ import annotations
+"""Deterministic canonical-skill gap analysis."""
 
 from dataclasses import dataclass
-from typing import Iterable
+from pathlib import Path
 
 from app.core.representations import SkillProfile
+
+DEMAND_SOURCE_VERSION = "naukri:indian-job-market-dataset-2025"
+SCORING_VERSION = "gap-v1"
+NEUTRAL_TREND_MULTIPLIER = 1.0
 
 
 @dataclass(frozen=True)
 class DemandSignal:
-    """Demand information for one canonical skill."""
-
-    demand: float = 1.0
-    trend_multiplier: float = 1.0
+    normalized_demand: float
+    trend_multiplier: float | None
 
 
 @dataclass(frozen=True)
-class SkillGap:
-    """One missing/insufficient skill for a candidate."""
-
+class MatchedSkill:
     skill_id: str
-    severity: float
-    demand: float
-    trend_multiplier: float
-    role_importance: float
-    priority: float
+    taxonomy_version: str
+    coverage: float
     explanation: str
 
 
-def _clamp(value: float, minimum: float = 0.0, maximum: float = 1.0) -> float:
-    return max(minimum, min(value, maximum))
+@dataclass(frozen=True)
+class MissingSkill:
+    skill_id: str
+    taxonomy_version: str
+    priority: float | None
+    normalized_demand: float | None
+    trend_multiplier: float
+    gap_severity: float
+    role_importance: float
+    explanation: str
 
 
-def calculate_gap_severity(
-    candidate_proficiency: float | None,
-    required_proficiency: float,
-) -> float:
-    """
-    Calculate how severe a skill gap is.
-
-    If the candidate has no usable proficiency, severity is 1.0.
-
-    Otherwise:
-
-        severity = 1 - (candidate / required)
-
-    capped to 0..1.
-
-    A candidate meeting or exceeding the requirement has severity 0.
-    """
-    if required_proficiency < 0.0 or required_proficiency > 1.0:
-        raise ValueError("required_proficiency must be between 0 and 1.")
-
-    if candidate_proficiency is None:
-        return 1.0
-
-    if candidate_proficiency < 0.0 or candidate_proficiency > 1.0:
-        raise ValueError("candidate_proficiency must be between 0 and 1.")
-
-    if required_proficiency == 0.0:
-        return 0.0
-
-    return _clamp(1.0 - (candidate_proficiency / required_proficiency))
+def _processed_demand_path() -> Path:
+    return Path(__file__).resolve().parents[3] / "datasets" / "processed" / "skill_demand_history.csv"
 
 
-def calculate_gap_priority(
+def load_demand_signals(
     *,
-    demand: float,
-    trend_multiplier: float,
-    severity: float,
-    role_importance: float,
-) -> float:
-    """
-    Apply the frozen Member 5 gap-priority formula.
-    """
-    values = {
-        "demand": demand,
-        "trend_multiplier": trend_multiplier,
-        "severity": severity,
-        "role_importance": role_importance,
-    }
+    skill_ids: set[str],
+    district_id: str | None,
+    sector: str | None,
+) -> dict[str, DemandSignal]:
+    """Load the best applicable non-null demand signal from the CSV."""
+    import csv
 
-    for name, value in values.items():
-        if value < 0.0:
-            raise ValueError(f"{name} cannot be negative.")
+    signals: dict[str, DemandSignal] = {}
+    with _processed_demand_path().open(newline="", encoding="utf-8") as demand_file:
+        for row in csv.DictReader(demand_file):
+            skill_id = row["skill_id"]
+            if skill_id not in skill_ids:
+                continue
+            if district_id is not None and row["district_id"] != district_id:
+                continue
+            if sector is not None and row["sector"] != sector:
+                continue
+            if not row["demand_score"].strip():
+                continue
 
-    return demand * trend_multiplier * severity * role_importance
+            demand_score = float(row["demand_score"])
+            recent_growth = row["recent_growth"].strip()
+            trend = 1.0 + float(recent_growth) if recent_growth else None
+            current = signals.get(skill_id)
+            if current is None or demand_score > current.normalized_demand:
+                signals[skill_id] = DemandSignal(demand_score, trend)
+    return signals
 
 
 def analyze_gap(
+    *,
     candidate: SkillProfile,
-    target: SkillProfile,
-    demand_signals: dict[str, DemandSignal] | None = None,
-) -> list[SkillGap]:
-    """
-    Compare candidate skills with target requirements.
+    required_skills: tuple[tuple[str, float], ...],
+    district_id: str | None,
+    sector: str | None,
+) -> tuple[list[MatchedSkill], list[MissingSkill], list[str]]:
+    """Compare canonical candidate skills with target skills."""
+    candidate_ids = {skill.skill_id for skill in candidate.skills}
+    demand = load_demand_signals(
+        skill_ids={skill_id for skill_id, _ in required_skills},
+        district_id=district_id,
+        sector=sector,
+    )
+    matched: list[MatchedSkill] = []
+    missing: list[MissingSkill] = []
+    warnings: list[str] = []
+    fallback_used = False
+    unavailable_demand = False
 
-    A skill is included in the result only when it is missing or the
-    candidate's proficiency is below the target's minimum proficiency.
-
-    Existing taxonomy overlap remains authoritative: this function works
-    on canonical skill IDs and does not perform text-to-skill resolution.
-    """
-    if candidate.kind != "candidate":
-        raise ValueError("candidate profile must have kind='candidate'.")
-
-    if target.kind not in {"job", "role"}:
-        raise ValueError("target profile must have kind='job' or kind='role'.")
-
-    demand_signals = demand_signals or {}
-
-    gaps: list[SkillGap] = []
-
-    for skill_id, required in target.skills.items():
-        actual = candidate.skills.get(skill_id)
-
-        actual_proficiency = actual.proficiency if actual else None
-        required_proficiency = required.min_proficiency
-
-        # Explicit overlap first: meeting the required level means no gap.
-        if (
-            actual_proficiency is not None
-            and actual_proficiency >= required_proficiency
-        ):
+    for skill_id, role_importance in required_skills:
+        if skill_id in candidate_ids:
+            matched.append(
+                MatchedSkill(
+                    skill_id=skill_id,
+                    taxonomy_version=candidate.taxonomy_version,
+                    coverage=1.0,
+                    explanation="Candidate contains the required canonical skill.",
+                )
+            )
             continue
 
-        severity = calculate_gap_severity(
-            actual_proficiency,
-            required_proficiency,
+        signal = demand.get(skill_id)
+        normalized_demand = signal.normalized_demand if signal else None
+        if normalized_demand is None:
+            unavailable_demand = True
+        trend = signal.trend_multiplier if signal and signal.trend_multiplier is not None else None
+        if trend is None:
+            trend = NEUTRAL_TREND_MULTIPLIER
+            fallback_used = True
+
+        gap_severity = 1.0
+        priority = (
+            normalized_demand * trend * gap_severity * role_importance
+            if normalized_demand is not None
+            else None
         )
-
-        signal = demand_signals.get(skill_id, DemandSignal())
-
-        priority = calculate_gap_priority(
-            demand=signal.demand,
-            trend_multiplier=signal.trend_multiplier,
-            severity=severity,
-            role_importance=required.importance,
-        )
-
-        if actual is None:
-            explanation = (
-                f"Skill {skill_id} is missing from the candidate profile. "
-                f"Required proficiency is {required_proficiency:.2f}."
-            )
-        else:
-            explanation = (
-                f"Skill {skill_id} is below the required proficiency: "
-                f"candidate={actual_proficiency:.2f}, "
-                f"required={required_proficiency:.2f}."
-            )
-
-        gaps.append(
-            SkillGap(
+        missing.append(
+            MissingSkill(
                 skill_id=skill_id,
-                severity=severity,
-                demand=signal.demand,
-                trend_multiplier=signal.trend_multiplier,
-                role_importance=required.importance,
+                taxonomy_version=candidate.taxonomy_version,
                 priority=priority,
-                explanation=explanation,
+                normalized_demand=normalized_demand,
+                trend_multiplier=trend,
+                gap_severity=gap_severity,
+                role_importance=role_importance,
+                explanation=(
+                    "Required canonical skill is absent from the candidate profile."
+                    if normalized_demand is not None
+                    else "Required skill is absent, but no applicable demand value exists."
+                ),
             )
         )
 
-    # Deterministic ranking:
-    # higher priority first, then skill ID for stable output.
-    gaps.sort(key=lambda gap: (-gap.priority, gap.skill_id))
-
-    return gaps
+    if fallback_used:
+        warnings.append("Trend unavailable; neutral trend multiplier 1.0 was used.")
+    if unavailable_demand:
+        warnings.append("Demand unavailable for one or more skills; priority was not fabricated.")
+    missing.sort(key=lambda item: (item.priority is None, -(item.priority or 0), item.skill_id))
+    return matched, missing, warnings

@@ -1,0 +1,81 @@
+{
+  "taxonomy_version": "v1.2.1",
+  "min_per_sector": 60,
+  "max_per_sector": 160,
+  "total_min": 550,
+  "total_max": 900,
+  "include_transversal": true,
+  "transversal_skills": null,
+
+  "files": {
+    "skills": "skills_en.csv",
+    "occupation_skill_relations": "occupationSkillRelations_en.csv",
+    "transversal": "transversalSkillsCollection_en.csv"
+  },
+
+  "sectors": {
+    "IT/Software - Software Development": {
+      "occupation_keywords": ["software developer", "software architect", "software analyst",
+                               "software manager", "ICT application developer", "ICT system developer",
+                               "web developer", "web designer", "mobile application developer",
+                               "database developer", "user interface developer", "embedded systems software developer",
+                               "blockchain developer"],
+      "skill_keywords": ["python", "java", "javascript", "c++", "c#", "php", "ruby", "swift", "kotlin",
+                          "software development", "object-oriented programming", "version control", "git"]
+    },
+    "IT/Software - Data & AI": {
+      "occupation_keywords": ["data analyst", "data engineer", "data scientist",
+                               "artificial intelligence engineer"],
+      "skill_keywords": ["machine learning", "data science", "data analysis", "data engineering",
+                          "sql", "big data", "data mining", "artificial intelligence", "deep learning",
+                          "natural language processing", "data visualisation", "statistics"]
+    },
+    "IT/Software - Cybersecurity": {
+      "occupation_keywords": ["ICT security administrator", "ICT security technician",
+                               "chief ICT security officer", "cyber incident responder",
+                               "cybersecurity risk manager", "embedded systems security engineer",
+                               "information security"],
+      "skill_keywords": ["cybersecurity", "information security", "network security", "encryption",
+                          "penetration testing", "vulnerability", "cryptography",
+                          "identity and access management", "incident response"]
+    },
+    "IT/Software - IT Infrastructure & Networks": {
+      "occupation_keywords": ["ICT network administrator", "ICT network architect", "ICT network engineer",
+                               "ICT network technician", "ICT system administrator", "cloud DevOps engineer",
+                               "cloud architect", "cloud engineer", "cloud identity manager"],
+      "skill_keywords": ["network administration", "cloud computing", "network architecture",
+                          "system administration", "devops", "virtualisation", "ICT infrastructure"]
+    },
+    "IT/Software - QA & Testing": {
+      "occupation_keywords": ["ICT accessibility tester", "ICT integration tester", "ICT system tester",
+                               "ICT test analyst", "ICT usability tester", "software tester",
+                               "ICT quality assurance manager", "quality assurance engineer"],
+      "skill_keywords": ["software testing", "quality assurance", "test automation", "manual testing",
+                          "debugging", "software quality"]
+    }
+  },
+
+  "must_include": {
+    "IT/Software - Software Development": ["Python (computer programming)", "Java (computer programming)", "JavaScript",
+                                            "implement front-end website design"],
+    "IT/Software - Data & AI": ["SQL", "create data models", "create data sets", "quantitative analysis",
+                                "statistical modeling techniques"],
+    "IT/Software - Cybersecurity": ["implement a firewall", "implement a virtual private network",
+                                     "manage keys for data protection", "implement anti-virus software",
+                                     "execute ICT audits"],
+    "IT/Software - IT Infrastructure & Networks": ["operating systems", "analyse network bandwidth requirements"],
+    "IT/Software - QA & Testing": ["develop automated software tests", "conduct ICT code review",
+                                    "perform quality audits"]
+  },
+
+  "manual_aliases": {
+    "Python (computer programming)": ["Python programming", "Python dev", "Python coding"]
+  },
+
+  "blocked_aliases": [
+    "design", "experiment", "innovate", "invent", "lead", "choose", "decide",
+    "schedule", "report", "climb", "draw", "paint", "sing", "dance", "persist",
+    "cooperate", "curiosity", "delegate", "tutoring", "lecture", "bargain",
+    "persuade", "negotiate"
+  ]
+}

@@ -5,6 +5,10 @@ class Settings(BaseSettings):
     APP_NAME: str = "NexusAI API"
     APP_VERSION: str = "1.0.0"
     ENVIRONMENT: str = "development"
+    BACKEND_CORS_ORIGINS: list[str] = ["http://localhost:5173"]
+    TAXONOMY_VERSION: str = "v1.2.1"
+    RESUME_STORAGE_DIR: str = "storage/resumes"
+    PROCESSED_DATA_DIR: str = "datasets/processed"
 
     DATABASE_URL: str
 

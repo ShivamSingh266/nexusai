@@ -1,0 +1,25 @@
+[INFO] 21 duplicate conceptUri row(s) in the skills file - keeping most recently modified copy of each.
+[INFO] IT/Software - Software Development: 384 unique candidates matched, capped to 160 (224 pushed to skills_needs_review.csv for manual promotion).
+[INFO] IT/Software - Data & AI: 215 unique candidates matched, capped to 160 (55 pushed to skills_needs_review.csv for manual promotion).
+[INFO] IT/Software - Cybersecurity: 258 unique candidates matched, capped to 160 (98 pushed to skills_needs_review.csv for manual promotion).
+[INFO] IT/Software - IT Infrastructure & Networks: 240 unique candidates matched, capped to 160 (80 pushed to skills_needs_review.csv for manual promotion).
+[INFO] IT/Software - QA & Testing: 183 unique candidates matched, capped to 160 (23 pushed to skills_needs_review.csv for manual promotion).
+[MUST-INCLUDE FIX] 'create data models': was categorized 'IT/Software - Software Development', forced to declared sector 'IT/Software - Data & AI'
+[MUST-INCLUDE FIX] 'operating systems': was categorized 'IT/Software - Cybersecurity', forced to declared sector 'IT/Software - IT Infrastructure & Networks'
+[MUST-INCLUDE FIX] 2 must_include skill(s) had their category corrected to match their config declaration.
+
+[ID STABILITY] 0 skill_id(s) carried forward unchanged from the previous skills.csv, 642 newly minted (next available: SKILL_0642)
+
+skills.csv: 642 rows -> C:\Users\piyush\Desktop\M4\data\processed\skills.csv (547 sector skills + 95 transversal)
+category
+IT/Software - Software Development            159
+IT/Software - Data & AI                       140
+IT/Software - Cybersecurity                   125
+Transversal                                    95
+IT/Software - QA & Testing                     63
+IT/Software - IT Infrastructure & Networks     60
+Name: count, dtype: int64
+
+[WARN] sector total 547 is BELOW target range 550-900.
+
+skills_needs_review.csv: 1011 flagged rows -> C:\Users\piyush\Desktop\M4\data\processed\skills_needs_review.csv

@@ -1,171 +1,146 @@
+from __future__ import annotations
+
 import pytest
 
-from app.core.gap import DemandSignal
-from app.core.representations import SkillEntry, SkillProfile
 from app.core.what_if import career_what_if
+from app.core.representations import SkillProfile, SkillProfileSkill
+from app.models.job import Job
+from app.models.job_skill import JobSkill
 
 
-def make_candidate() -> SkillProfile:
-    candidate = SkillProfile(
-        owner_id="candidate-1",
-        kind="candidate",
-        experience_years=3,
-        education_level=0.8,
+def make_candidate(
+    skill_ids: tuple[str, ...] = ("SKILL_0001",),
+) -> SkillProfile:
+    return SkillProfile(
+        subject_id=1,
+        subject_type="applicant",
+        taxonomy_version="v1.2.1",
+        skills=tuple(
+            SkillProfileSkill(
+                skill_id=skill_id,
+                taxonomy_version="v1.2.1",
+                proficiency_level="expert",
+            )
+            for skill_id in skill_ids
+        ),
+        experience_years=3.0,
+        education="Computer Science",
+        location="Pune",
+    )
+
+
+def make_job() -> Job:
+    job = Job(
+        id=1,
+        company_id=1,
+        title="What-If Test Job",
+        status="published",
+        experience_min=2.0,
+        experience_max=5.0,
+        education_requirement="Computer Science",
         location="Pune",
         work_mode="remote",
-        text="Python SQL",
     )
 
-    candidate.add_skill(
-        SkillEntry(
+    job.job_skills = [
+        JobSkill(
+            id=1,
+            job_id=1,
             skill_id="SKILL_0001",
-            proficiency=1.0,
-            proficiency_level="expert",
-        )
-    )
-
-    return candidate
-
-
-def make_job() -> SkillProfile:
-    job = SkillProfile(
-        owner_id="job-1",
-        kind="job",
-        experience_years=3,
-        education_level=0.8,
-        location="Pune",
-        work_mode="remote",
-        text="Python SQL machine learning",
-    )
-
-    job.add_skill(
-        SkillEntry(
-            skill_id="SKILL_0001",
-            proficiency=0.5,
-            proficiency_level="intermediate",
-            min_proficiency=0.5,
-        )
-    )
-
-    job.add_skill(
-        SkillEntry(
+            taxonomy_version="v1.2.1",
+            role_importance=1.0,
+        ),
+        JobSkill(
+            id=2,
+            job_id=1,
             skill_id="SKILL_0002",
-            proficiency=0.5,
-            proficiency_level="intermediate",
-            min_proficiency=0.5,
-        )
-    )
+            taxonomy_version="v1.2.1",
+            role_importance=1.0,
+        ),
+    ]
 
     return job
 
 
-def test_what_if_reduces_gaps_when_added_skill_is_relevant() -> None:
-    candidate = make_candidate()
-    job = make_job()
-
-    added = {
-        "SKILL_0002": SkillEntry(
-            skill_id="SKILL_0002",
-            proficiency=1.0,
-            proficiency_level="expert",
-        )
-    }
-
-    result = career_what_if(candidate, job, added)
-
-    assert result.baseline_gaps
-    assert result.hypothetical_gaps == []
-    assert result.gap_count_change == -1
-
-
-def test_what_if_improves_match_score() -> None:
-    candidate = make_candidate()
-    job = make_job()
-
-    added = {
-        "SKILL_0002": SkillEntry(
-            skill_id="SKILL_0002",
-            proficiency=1.0,
-            proficiency_level="expert",
-        )
-    }
-
-    result = career_what_if(candidate, job, added)
-
-    assert result.hypothetical_match.final_score > result.baseline_match.final_score
-    assert result.match_score_change > 0.0
-
-
-def test_what_if_does_not_mutate_original_candidate() -> None:
-    candidate = make_candidate()
-    job = make_job()
-
-    added = {
-        "SKILL_0002": SkillEntry(
-            skill_id="SKILL_0002",
-            proficiency=1.0,
-            proficiency_level="expert",
-        )
-    }
-
-    career_what_if(candidate, job, added)
-
-    assert "SKILL_0002" not in candidate.skills
-
-
-def test_what_if_returns_scoring_versions() -> None:
+def test_what_if_reduces_skill_gaps() -> None:
     result = career_what_if(
         make_candidate(),
         make_job(),
         {
-            "SKILL_0002": SkillEntry(
+            "SKILL_0002": SkillProfileSkill(
                 skill_id="SKILL_0002",
-                proficiency=1.0,
+                taxonomy_version="v1.2.1",
                 proficiency_level="expert",
             )
         },
+    )
+
+    assert len(result.baseline_gaps) == 1
+    assert len(result.hypothetical_gaps) == 0
+    assert result.gap_count_change == -1
+
+
+def test_what_if_improves_match_score() -> None:
+    result = career_what_if(
+        make_candidate(),
+        make_job(),
+        {
+            "SKILL_0002": SkillProfileSkill(
+                skill_id="SKILL_0002",
+                taxonomy_version="v1.2.1",
+                proficiency_level="expert",
+            )
+        },
+    )
+
+    assert (
+        result.hypothetical_match.final_score
+        > result.baseline_match.final_score
+    )
+    assert result.match_score_change > 0.0
+
+
+def test_what_if_does_not_mutate_candidate() -> None:
+    candidate = make_candidate()
+
+    career_what_if(
+        candidate,
+        make_job(),
+        {
+            "SKILL_0002": SkillProfileSkill(
+                skill_id="SKILL_0002",
+                taxonomy_version="v1.2.1",
+                proficiency_level="expert",
+            )
+        },
+    )
+
+    assert [skill.skill_id for skill in candidate.skills] == [
+        "SKILL_0001"
+    ]
+
+
+def test_what_if_keeps_scoring_version() -> None:
+    result = career_what_if(
+        make_candidate(),
+        make_job(),
+        {},
     )
 
     assert result.baseline_match.scoring_version
     assert result.hypothetical_match.scoring_version
 
 
-def test_what_if_preserves_demand_based_gap_priority() -> None:
-    candidate = make_candidate()
-    job = make_job()
-
-    demand_signals = {
-        "SKILL_0002": DemandSignal(
-            demand=2.0,
-            trend_multiplier=1.5,
-        )
-    }
-
+def test_what_if_with_no_new_skill_keeps_score() -> None:
     result = career_what_if(
-        candidate,
-        job,
-        {},
-        demand_signals,
-    )
-
-    assert len(result.baseline_gaps) == 1
-    assert result.baseline_gaps[0].priority == pytest.approx(
-        2.0 * 1.5 * 1.0 * 1.0
-    )
-
-
-def test_empty_what_if_keeps_scores_unchanged() -> None:
-    candidate = make_candidate()
-    job = make_job()
-
-    result = career_what_if(
-        candidate,
-        job,
+        make_candidate(),
+        make_job(),
         {},
     )
 
     assert result.match_score_change == pytest.approx(0.0)
     assert result.gap_count_change == 0
-    assert result.baseline_match.final_score == pytest.approx(
-        result.hypothetical_match.final_score
+    assert (
+        result.baseline_match.final_score
+        == pytest.approx(result.hypothetical_match.final_score)
     )

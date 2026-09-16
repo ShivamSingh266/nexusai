@@ -2,14 +2,13 @@ from __future__ import annotations
 
 from sqlalchemy.orm import Session
 
-from app.core.representations import (
-    SkillEntry,
-    SkillProfile,
-    normalize_proficiency,
-)
+from app.core.representations import SkillProfile, SkillProfileSkill
 from app.core.taxonomy_resolver import resolve_canonical_skill_id
 from app.models.applicant_profile import ApplicantProfile
 from app.models.applicant_skill import ApplicantSkill
+
+
+DEFAULT_TAXONOMY_VERSION = "v1.2.1"
 
 
 def build_applicant_skill_profile(
@@ -18,47 +17,60 @@ def build_applicant_skill_profile(
     db: Session,
 ) -> tuple[SkillProfile, list[str]]:
     """
-    Convert existing applicant database records into the Member 5
-    canonical SkillProfile representation.
+    Convert persisted applicant records into the shared SkillProfile.
 
-    Returns:
-        (profile, unresolved_skill_names)
-
-    Unresolved skill names are reported rather than silently invented.
+    Existing canonical ApplicantSkill.skill_id is preferred.
+    Name resolution is used only when skill_id is absent.
     """
-    profile = SkillProfile(
-        owner_id=str(applicant_profile.user_id),
-        kind="candidate",
-        experience_years=applicant_profile.experience_years,
-        location=applicant_profile.location,
-        text=applicant_profile.bio or "",
+    unresolved: list[str] = []
+    skills: list[SkillProfileSkill] = []
+
+    taxonomy_versions = {
+        skill.taxonomy_version
+        for skill in applicant_skills
+        if skill.skill_id and skill.taxonomy_version
+    }
+
+    taxonomy_version = (
+        sorted(taxonomy_versions)[0]
+        if taxonomy_versions
+        else DEFAULT_TAXONOMY_VERSION
     )
 
-    unresolved: list[str] = []
-
     for applicant_skill in applicant_skills:
-        canonical_id = resolve_canonical_skill_id(
-            applicant_skill.skill_name,
-            db,
-        )
+        skill_id = applicant_skill.skill_id
 
-        if canonical_id is None:
+        if skill_id is None:
+            skill_id = resolve_canonical_skill_id(
+                applicant_skill.skill_name,
+                db,
+            )
+
+        if skill_id is None:
             unresolved.append(applicant_skill.skill_name)
             continue
 
-        proficiency_level = normalize_proficiency(
-            applicant_skill.proficiency_level
+        skills.append(
+            SkillProfileSkill(
+                skill_id=skill_id,
+                taxonomy_version=(
+                    applicant_skill.taxonomy_version
+                    or taxonomy_version
+                ),
+                proficiency_level=applicant_skill.proficiency_level,
+                years_experience=applicant_skill.years_experience,
+            )
         )
 
-        entry = SkillEntry(
-            skill_id=canonical_id,
-            proficiency=proficiency_level,
-            proficiency_level=applicant_skill.proficiency_level,
-            evidence=(
-                f"ApplicantSkill:{applicant_skill.id}",
-            ),
-        )
-
-        profile.add_skill(entry)
-
-    return profile, sorted(set(unresolved))
+    return (
+        SkillProfile(
+            subject_id=applicant_profile.user_id,
+            subject_type="applicant",
+            taxonomy_version=taxonomy_version,
+            skills=tuple(skills),
+            location=applicant_profile.location,
+            education=applicant_profile.education,
+            experience_years=applicant_profile.experience_years,
+        ),
+        sorted(set(unresolved)),
+    )

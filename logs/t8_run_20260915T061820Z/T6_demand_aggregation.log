@@ -1,0 +1,62 @@
+Maharashtra active postings: 3832 total | 3812 'past' (real posting-age) | 20 'future_start' (hiring intent)
+Current-demand join: 7590 (job,skill,district,sector,month) rows from 2782 distinct jobs
+Anticipated-demand join: 46 (job,skill,district,sector,month) rows from 16 distinct jobs
+
+Distinct CURRENT (posting) months: 1 (['2025-09'])
+Distinct ANTICIPATED (start) months: 2 (['2025-09', '2025-10'])
+recent_growth non-null rows: 0 / 1130
+Answer to 'is the date spread wide enough now': NO - even with future-start noise removed,
+the remaining 'past' posting dates still span only 11 days, all inside a single calendar
+month (2025-09). recent_growth is mechanically null for every row here, same conclusion as
+before the fix - the fix corrected WHAT gets called a 'posting date', it didn't create
+history that doesn't exist. demand_score + strength_tier remain the entire current-demand
+story; anticipated_demand_count is a new, separate, small but real story on its own.
+
+Wrote 1130 rows -> skill_demand_history.csv
+
+=== STRENGTH TIER SUMMARY (skill x sector x month rows, by district) ===
+strength_tier    HIGH  MEDIUM  LOW  INSUFFICIENT  TOTAL
+district_id                                            
+Pune              465       0    0            10    475
+Mumbai City       244      77    0            20    341
+Thane               0     132   20             1    153
+Mumbai Suburban     0      24   33            18     75
+Nagpur              0       0   18            13     31
+Nashik              0       0    9            17     26
+Kolhapur            0       0    0            12     12
+Aurangabad          0       0    0             5      5
+Sangli              0       0    0             4      4
+Satara              0       0    0             3      3
+Amravati            0       0    0             2      2
+Jalna               0       0    0             1      1
+Palghar             0       0    0             1      1
+Raigad              0       0    0             1      1
+
+=== OVERALL ===
+  HIGH: 709 rows (62.7%)
+  MEDIUM: 233 rows (20.6%)
+  LOW: 80 rows (7.1%)
+  INSUFFICIENT: 108 rows (9.6%)
+
+=== ANTICIPATED DEMAND (forward-looking hiring intent - new in this correction) ===
+  40 skill x district x sector x month rows carry any anticipated_demand_count (from 20 anticipated-start MH postings total)
+
+  anticipated_demand_count summed by district:
+district_id
+Mumbai City        26
+Pune               14
+Thane               3
+Nagpur              2
+Mumbai Suburban     1
+
+  anticipated_demand_count summed by sector:
+sector
+IT/Software - Software Development            25
+IT/Software - Data & AI                       16
+IT/Software - Cybersecurity                    3
+IT/Software - IT Infrastructure & Networks     1
+IT/Software - QA & Testing                     1
+
+  strength_tier of these rows: {'INSUFFICIENT': 33, 'HIGH': 5, 'MEDIUM': 2} - expected to be almost entirely INSUFFICIENT given only 20 anticipated-start postings exist in the whole MH IT/Software dataset. Real, non-zero signal - just don't overstate its confidence.
+
+Wrote demand_strength_summary.txt

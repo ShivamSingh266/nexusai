@@ -1,160 +1,161 @@
+from __future__ import annotations
+
 import pytest
 
-from app.core.matcher import SCORING_VERSION, match_profiles
-from app.core.representations import SkillEntry, SkillProfile
+from app.core.matching import MATCHING_VERSION, match_candidate_to_job
+from app.core.representations import SkillProfile, SkillProfileSkill
+from app.models.job import Job
+from app.models.job_skill import JobSkill
 
 
-def make_candidate() -> SkillProfile:
-    profile = SkillProfile(
-        owner_id="candidate-1",
-        kind="candidate",
-        experience_years=4,
-        education_level=0.8,
+def make_candidate(
+    skill_ids: tuple[str, ...] = ("SKILL_0001",),
+) -> SkillProfile:
+    return SkillProfile(
+        subject_id=1,
+        subject_type="applicant",
+        taxonomy_version="v1.2.1",
+        skills=tuple(
+            SkillProfileSkill(
+                skill_id=skill_id,
+                taxonomy_version="v1.2.1",
+                proficiency_level="expert",
+            )
+            for skill_id in skill_ids
+        ),
+        experience_years=4.0,
+        education="B.Tech Computer Science",
         location="Pune",
-        work_mode="remote",
-        text="Python SQL data engineering",
     )
 
-    profile.add_skill(
-        SkillEntry(
-            skill_id="SKILL_0001",
-            proficiency=0.9,
-            proficiency_level="expert",
-        )
-    )
 
-    profile.add_skill(
-        SkillEntry(
-            skill_id="SKILL_0002",
-            proficiency=0.7,
-            proficiency_level="advanced",
-        )
-    )
-
-    return profile
-
-
-def make_job() -> SkillProfile:
-    profile = SkillProfile(
-        owner_id="job-1",
-        kind="job",
-        experience_years=3,
-        education_level=0.8,
+def make_job() -> Job:
+    job = Job(
+        id=1,
+        company_id=1,
+        title="Matching Engineer",
+        status="published",
+        experience_min=3.0,
+        experience_max=5.0,
+        education_requirement="Computer Science",
         location="Pune",
-        work_mode="remote",
-        text="Python SQL data engineering",
+        work_mode="onsite",
     )
 
-    profile.add_skill(
-        SkillEntry(
+    job.job_skills = [
+        JobSkill(
+            id=1,
+            job_id=1,
             skill_id="SKILL_0001",
-            proficiency=0.5,
-            proficiency_level="intermediate",
-            min_proficiency=0.5,
-        )
-    )
-
-    profile.add_skill(
-        SkillEntry(
+            taxonomy_version="v1.2.1",
+            role_importance=1.0,
+        ),
+        JobSkill(
+            id=2,
+            job_id=1,
             skill_id="SKILL_0002",
-            proficiency=0.5,
-            proficiency_level="intermediate",
-            min_proficiency=0.5,
-        )
+            taxonomy_version="v1.2.1",
+            role_importance=1.0,
+        ),
+    ]
+
+    return job
+
+
+def test_match_returns_required_components() -> None:
+    result = match_candidate_to_job(
+        make_candidate(),
+        make_job(),
     )
 
-    profile.add_skill(
-        SkillEntry(
-            skill_id="SKILL_0003",
-            proficiency=0.5,
-            proficiency_level="intermediate",
-            min_proficiency=0.5,
-        )
+    assert result.component_scores["skill_coverage"] == pytest.approx(0.5)
+    assert result.component_scores["experience"] == pytest.approx(1.0)
+    assert result.component_scores["education"] == pytest.approx(1.0)
+    assert result.component_scores["location_work_mode"] == pytest.approx(1.0)
+
+
+def test_match_renormalizes_missing_optional_components() -> None:
+    candidate = SkillProfile(
+        subject_id=1,
+        subject_type="applicant",
+        taxonomy_version="v1.2.1",
+        skills=(
+            SkillProfileSkill(
+                skill_id="SKILL_0001",
+                taxonomy_version="v1.2.1",
+            ),
+        ),
     )
 
-    return profile
+    job = Job(
+        id=1,
+        company_id=1,
+        title="Skills Only",
+        status="published",
+    )
 
+    job.job_skills = [
+        JobSkill(
+            id=1,
+            job_id=1,
+            skill_id="SKILL_0001",
+            taxonomy_version="v1.2.1",
+            role_importance=1.0,
+        ),
+    ]
 
-def test_match_returns_matched_and_missing_skills() -> None:
-    result = match_profiles(make_candidate(), make_job())
+    result = match_candidate_to_job(candidate, job)
 
-    assert result.matched_skills == ["SKILL_0001", "SKILL_0002"]
-    assert result.missing_skills == ["SKILL_0003"]
-
-
-def test_all_score_components_are_returned() -> None:
-    result = match_profiles(make_candidate(), make_job())
-
-    assert result.explanation.skill_score == pytest.approx(2 / 3)
-    assert result.explanation.semantic_score == pytest.approx(1.0)
-    assert result.explanation.experience_score == pytest.approx(1.0)
-    assert result.explanation.education_score == pytest.approx(1.0)
-    assert result.explanation.location_mode_score == pytest.approx(1.0)
-
-
-def test_required_weights_are_present() -> None:
-    result = match_profiles(make_candidate(), make_job())
-
-    assert result.explanation.weights == {
-        "skill": 0.60,
-        "semantic": 0.20,
-        "experience": 0.10,
-        "education": 0.05,
-        "location_mode": 0.05,
+    assert result.available_components == ("skill_coverage",)
+    assert set(result.omitted_components) == {
+        "semantic_similarity",
+        "experience",
+        "education",
+        "location_work_mode",
     }
+    assert result.score == pytest.approx(1.0)
 
 
-def test_final_score_uses_weighted_contract() -> None:
-    result = match_profiles(make_candidate(), make_job())
-
-    expected = (
-        (2 / 3) * 0.60
-        + 1.0 * 0.20
-        + 1.0 * 0.10
-        + 1.0 * 0.05
-        + 1.0 * 0.05
+def test_matching_version_is_returned() -> None:
+    result = match_candidate_to_job(
+        make_candidate(),
+        make_job(),
     )
 
-    assert result.final_score == pytest.approx(expected)
-    assert result.explanation.final_score == pytest.approx(expected)
+    assert MATCHING_VERSION == "matching-v1"
+    assert result.explanation
+    assert result.warnings is not None
 
 
-def test_missing_optional_components_are_renormalized() -> None:
+def test_taxonomy_mismatch_raises() -> None:
     candidate = make_candidate()
-    target = make_job()
 
-    candidate.experience_years = None
-    candidate.education_level = None
-    candidate.location = None
-    candidate.work_mode = None
-
-    target.experience_years = None
-    target.education_level = None
-    target.location = None
-    target.work_mode = None
-
-    result = match_profiles(candidate, target)
-
-    expected = (
-        (2 / 3) * 0.60
-        + 1.0 * 0.20
-    ) / (0.60 + 0.20)
-
-    assert result.final_score == pytest.approx(expected)
-
-
-def test_scoring_version_is_present() -> None:
-    result = match_profiles(make_candidate(), make_job())
-
-    assert result.scoring_version == SCORING_VERSION
-
-
-def test_same_matcher_supports_reverse_direction() -> None:
-    candidate = make_candidate()
     job = make_job()
+    job.job_skills = [
+        JobSkill(
+            id=1,
+            job_id=1,
+            skill_id="SKILL_0001",
+            taxonomy_version="wrong-version",
+            role_importance=1.0,
+        ),
+    ]
 
-    forward = match_profiles(candidate, job)
-    reverse = match_profiles(job, candidate)
+    with pytest.raises(Exception, match="Taxonomy version mismatch"):
+        match_candidate_to_job(candidate, job)
 
-    assert forward.final_score != reverse.final_score
-    assert reverse.scoring_version == SCORING_VERSION
+
+def test_missing_job_skills_raises() -> None:
+    from app.core.matching import NoUsableJobSkillsError
+
+    candidate = make_candidate()
+
+    job = Job(
+        id=1,
+        company_id=1,
+        title="Empty",
+        status="published",
+    )
+
+    with pytest.raises(NoUsableJobSkillsError):
+        match_candidate_to_job(candidate, job)

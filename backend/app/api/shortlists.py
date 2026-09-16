@@ -1,15 +1,19 @@
+﻿"""Recruiter shortlist management API."""
 from __future__ import annotations
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query, status
+from sqlalchemy.exc import IntegrityError
+from sqlalchemy.orm import Session, joinedload
 
-from app.core.ranking import rank_candidates
-from app.core.representations import SkillEntry, SkillProfile
+from app.api.deps import get_db, require_roles
+from app.models.job import Job
+from app.models.shortlist import Shortlist
+from app.models.user import User
 from app.schemas.shortlist import (
-    ShortlistCandidate,
-    ShortlistRequest,
+    ShortlistCreate,
     ShortlistResponse,
+    ShortlistUpdate,
 )
-
 
 router = APIRouter(
     prefix="/shortlists",
@@ -17,85 +21,231 @@ router = APIRouter(
 )
 
 
-def _to_skill_profile(profile_data) -> SkillProfile:
-    profile = SkillProfile(
-        owner_id=profile_data.owner_id,
-        kind=profile_data.kind,
-        experience_years=profile_data.experience_years,
-        education_level=profile_data.education_level,
-        location=profile_data.location,
-        work_mode=profile_data.work_mode,
-        text=profile_data.text,
-    )
-
-    for skill in profile_data.skills:
-        profile.add_skill(
-            SkillEntry(
-                skill_id=skill.skill_id,
-                proficiency=skill.proficiency,
-                proficiency_level=skill.proficiency_level,
-                min_proficiency=skill.min_proficiency,
-                importance=skill.importance,
-                evidence=tuple(skill.evidence),
-            )
+def _check_recruiter_company(current_user: User) -> None:
+    if current_user.role.name == "recruiter" and current_user.company_id is None:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="You must create a company profile before managing shortlists.",
         )
 
-    return profile
+
+def _get_owned_job(job_id: int, current_user: User, db: Session) -> Job:
+    _check_recruiter_company(current_user)
+    job = db.get(Job, job_id)
+    if job is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Job not found.",
+        )
+    if current_user.role.name != "admin" and job.company_id != current_user.company_id:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Job not found.",
+        )
+    return job
 
 
-@router.post(
-    "",
-    response_model=ShortlistResponse,
-    summary="Rank candidates for a job",
-)
+def _get_candidate(candidate_id: int, db: Session) -> User:
+    candidate = db.get(User, candidate_id)
+    if candidate is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Candidate not found.",
+        )
+    if candidate.role.name != "applicant":
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Only candidates with applicant role can be shortlisted.",
+        )
+    return candidate
+
+
+@router.post("", response_model=ShortlistResponse, status_code=status.HTTP_201_CREATED)
 def create_shortlist(
-    request: ShortlistRequest,
-) -> ShortlistResponse:
-    job = _to_skill_profile(request.job)
+    payload: ShortlistCreate,
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> Shortlist:
+    """Shortlist a candidate for a job."""
+    job = _get_owned_job(payload.job_id, current_user, db)
+    candidate = _get_candidate(payload.candidate_id, db)
 
-    if job.kind != "job":
-        raise HTTPException(
-            status_code=422,
-            detail="job.kind must be 'job'.",
-        )
-
-    candidates = [
-        _to_skill_profile(candidate)
-        for candidate in request.candidates
-    ]
-
-    invalid_candidates = [
-        candidate.owner_id
-        for candidate in candidates
-        if candidate.kind != "candidate"
-    ]
-
-    if invalid_candidates:
-        raise HTTPException(
-            status_code=422,
-            detail="All candidate profiles must have kind='candidate'.",
-        )
-
-    ranked = rank_candidates(job, candidates)
-
-    return ShortlistResponse(
-        candidates=[
-            ShortlistCandidate(
-                candidate_id=item.candidate_id,
-                final_score=item.match.final_score,
-                matched_skills=item.match.matched_skills,
-                missing_skills=item.match.missing_skills,
-                scoring_version=item.match.scoring_version,
-                explanation={
-                    "skill_score": item.match.explanation.skill_score,
-                    "semantic_score": item.match.explanation.semantic_score,
-                    "experience_score": item.match.explanation.experience_score,
-                    "education_score": item.match.explanation.education_score,
-                    "location_mode_score": item.match.explanation.location_mode_score,
-                    "weights": item.match.explanation.weights,
-                    "final_score": item.match.explanation.final_score,
-                },
-            )
-            for item in ranked
-        ]
+    existing = (
+        db.query(Shortlist)
+        .filter(Shortlist.job_id == job.id, Shortlist.candidate_id == candidate.id)
+        .first()
     )
+    if existing is not None:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Candidate is already shortlisted for this job.",
+        )
+
+    shortlist_entry = Shortlist(
+        job_id=job.id,
+        candidate_id=candidate.id,
+        notes=payload.notes,
+        match_score=payload.match_score,
+    )
+    db.add(shortlist_entry)
+    try:
+        db.commit()
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Candidate is already shortlisted for this job.",
+        )
+    db.refresh(shortlist_entry)
+    return (
+        db.query(Shortlist)
+        .options(joinedload(Shortlist.candidate))
+        .filter(Shortlist.id == shortlist_entry.id)
+        .one()
+    )
+
+
+@router.get("/job/{job_id}", response_model=list[ShortlistResponse])
+def list_shortlists_for_job(
+    job_id: int,
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> list[Shortlist]:
+    """List shortlisted candidates for a recruiter-owned job."""
+    job = _get_owned_job(job_id, current_user, db)
+    return (
+        db.query(Shortlist)
+        .options(joinedload(Shortlist.candidate))
+        .filter(Shortlist.job_id == job.id)
+        .order_by(Shortlist.created_at.desc(), Shortlist.id.asc())
+        .all()
+    )
+
+
+@router.get("", response_model=list[ShortlistResponse])
+def list_shortlists(
+    job_id: int | None = Query(default=None, description="Filter by job ID"),
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> list[Shortlist]:
+    """List shortlists for recruiter's company or filtered by job."""
+    if job_id is not None:
+        return list_shortlists_for_job(job_id, current_user, db)
+
+    _check_recruiter_company(current_user)
+    query = db.query(Shortlist).options(joinedload(Shortlist.candidate))
+    if current_user.role.name != "admin":
+        query = query.join(Job, Shortlist.job_id == Job.id).filter(
+            Job.company_id == current_user.company_id
+        )
+    return query.order_by(Shortlist.created_at.desc(), Shortlist.id.asc()).all()
+
+
+@router.get("/{shortlist_id}", response_model=ShortlistResponse)
+def get_shortlist_entry(
+    shortlist_id: int,
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> Shortlist:
+    """Get a single shortlist entry."""
+    _check_recruiter_company(current_user)
+    entry = (
+        db.query(Shortlist)
+        .options(joinedload(Shortlist.candidate), joinedload(Shortlist.job))
+        .filter(Shortlist.id == shortlist_id)
+        .first()
+    )
+    if entry is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Shortlist entry not found.",
+        )
+    if current_user.role.name != "admin" and entry.job.company_id != current_user.company_id:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Shortlist entry not found.",
+        )
+    return entry
+
+
+@router.patch("/{shortlist_id}", response_model=ShortlistResponse)
+def update_shortlist_entry(
+    shortlist_id: int,
+    payload: ShortlistUpdate,
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> Shortlist:
+    """Update notes on a shortlist entry."""
+    _check_recruiter_company(current_user)
+    entry = (
+        db.query(Shortlist)
+        .options(joinedload(Shortlist.candidate), joinedload(Shortlist.job))
+        .filter(Shortlist.id == shortlist_id)
+        .first()
+    )
+    if entry is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Shortlist entry not found.",
+        )
+    if current_user.role.name != "admin" and entry.job.company_id != current_user.company_id:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Shortlist entry not found.",
+        )
+    if payload.notes is not None:
+        entry.notes = payload.notes
+    db.commit()
+    db.refresh(entry)
+    return entry
+
+
+@router.delete("/{shortlist_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_shortlist_by_id(
+    shortlist_id: int,
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> None:
+    """Remove a candidate from a shortlist by shortlist ID."""
+    _check_recruiter_company(current_user)
+    entry = (
+        db.query(Shortlist)
+        .join(Job, Shortlist.job_id == Job.id)
+        .filter(Shortlist.id == shortlist_id)
+        .first()
+    )
+    if entry is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Shortlist entry not found.",
+        )
+    if current_user.role.name != "admin" and entry.job.company_id != current_user.company_id:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Shortlist entry not found.",
+        )
+    db.delete(entry)
+    db.commit()
+
+
+@router.delete("/job/{job_id}/candidate/{candidate_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_shortlist_by_job_and_candidate(
+    job_id: int,
+    candidate_id: int,
+    current_user: User = Depends(require_roles("recruiter", "admin")),
+    db: Session = Depends(get_db),
+) -> None:
+    """Remove a candidate from a shortlist by job ID and candidate ID."""
+    job = _get_owned_job(job_id, current_user, db)
+    entry = (
+        db.query(Shortlist)
+        .filter(Shortlist.job_id == job.id, Shortlist.candidate_id == candidate_id)
+        .first()
+    )
+    if entry is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Candidate is not shortlisted for this job.",
+        )
+    db.delete(entry)
+    db.commit()

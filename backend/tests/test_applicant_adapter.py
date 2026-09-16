@@ -31,7 +31,7 @@ def db() -> Session:
                 normalized_name="python",
                 category="Programming",
                 source="ESCO",
-                taxonomy_version="test-v1",
+                taxonomy_version="v1.2.1",
                 is_active=True,
             )
         )
@@ -46,7 +46,6 @@ def db() -> Session:
         )
 
         session.commit()
-
         yield session
 
 
@@ -68,8 +67,7 @@ def test_applicant_skill_is_converted_to_canonical_id(
         years_experience=3,
     )
 
-    db.add(profile)
-    db.add(skill)
+    db.add_all([profile, skill])
     db.commit()
     db.refresh(skill)
 
@@ -79,9 +77,12 @@ def test_applicant_skill_is_converted_to_canonical_id(
         db,
     )
 
-    assert result.kind == "candidate"
-    assert "SKILL_0001" in result.skills
-    assert result.skills["SKILL_0001"].proficiency == pytest.approx(0.75)
+    assert result.subject_id == 101
+    assert result.subject_type == "applicant"
+    assert result.taxonomy_version == "v1.2.1"
+    assert [item.skill_id for item in result.skills] == ["SKILL_0001"]
+    assert result.skills[0].proficiency_level == "advanced"
+    assert result.skills[0].years_experience == 3
     assert unresolved == []
 
 
@@ -99,8 +100,7 @@ def test_alias_is_resolved_to_canonical_id(
         proficiency_level="expert",
     )
 
-    db.add(profile)
-    db.add(skill)
+    db.add_all([profile, skill])
     db.commit()
     db.refresh(skill)
 
@@ -110,7 +110,8 @@ def test_alias_is_resolved_to_canonical_id(
         db,
     )
 
-    assert "SKILL_0001" in result.skills
+    assert [item.skill_id for item in result.skills] == ["SKILL_0001"]
+    assert result.skills[0].proficiency_level == "expert"
     assert unresolved == []
 
 
@@ -128,8 +129,7 @@ def test_unknown_skill_is_reported_not_invented(
         proficiency_level="beginner",
     )
 
-    db.add(profile)
-    db.add(skill)
+    db.add_all([profile, skill])
     db.commit()
     db.refresh(skill)
 
@@ -139,7 +139,7 @@ def test_unknown_skill_is_reported_not_invented(
         db,
     )
 
-    assert result.skills == {}
+    assert result.skills == ()
     assert unresolved == ["Unknown Technology"]
 
 
@@ -164,8 +164,7 @@ def test_multiple_skills_are_deterministic(
         ),
     ]
 
-    db.add(profile)
-    db.add_all(skills)
+    db.add_all([profile, *skills])
     db.commit()
 
     for skill in skills:
@@ -177,6 +176,12 @@ def test_multiple_skills_are_deterministic(
         db,
     )
 
-    assert list(result.skills.keys()) == ["SKILL_0001"]
-    assert result.skills["SKILL_0001"].proficiency == pytest.approx(1.0)
+    assert [item.skill_id for item in result.skills] == [
+        "SKILL_0001",
+        "SKILL_0001",
+    ]
+    assert [item.proficiency_level for item in result.skills] == [
+        "beginner",
+        "expert",
+    ]
     assert unresolved == []

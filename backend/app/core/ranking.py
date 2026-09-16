@@ -3,37 +3,38 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Sequence
 
-from app.core.matcher import MatchResult, match_profiles
+from app.core.matcher import MatchResult, match_candidate_job
 from app.core.representations import SkillProfile
+from app.models.job import Job
 
 
 @dataclass(frozen=True)
 class RankedCandidate:
-    candidate_id: str
+    candidate_id: int
     match: MatchResult
 
 
 def rank_candidates(
-    job: SkillProfile,
-    candidates: Sequence[SkillProfile],
+    job: Job,
+    candidates: Sequence[tuple[int, SkillProfile]],
 ) -> list[RankedCandidate]:
     """
-    Rank candidates for a job using the shared matching engine.
+    Rank persisted candidates for a persisted job.
 
     Deterministic tie-breakers:
-    1. Higher final match score
+    1. Higher final score
     2. Higher skill coverage
     3. More matched skills
     4. Candidate ID ascending
     """
     ranked: list[RankedCandidate] = []
 
-    for candidate in candidates:
-        result = match_profiles(candidate, job)
+    for candidate_id, candidate in candidates:
+        result = match_candidate_job(candidate, job)
 
         ranked.append(
             RankedCandidate(
-                candidate_id=candidate.owner_id,
+                candidate_id=candidate_id,
                 match=result,
             )
         )

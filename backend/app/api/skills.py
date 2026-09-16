@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 
 from app.api.deps import get_db, require_roles
 from app.models.applicant_skill import ApplicantSkill
+from app.models.canonical_skill import CanonicalSkill
 from app.models.user import User
 from app.schemas.skills import (
     ApplicantSkillCreate,
@@ -14,6 +15,28 @@ router = APIRouter(
     prefix="/skills",
     tags=["Applicant Skills"],
 )
+
+
+def _validate_canonical_skill_reference(
+    skill_id: str | None,
+    taxonomy_version: str | None,
+    db: Session,
+) -> None:
+    if skill_id is None:
+        return
+
+    canonical_skill = db.get(CanonicalSkill, skill_id)
+    if canonical_skill is None:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Canonical skill not found",
+        )
+
+    if canonical_skill.taxonomy_version != taxonomy_version:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="taxonomy_version does not match the canonical skill",
+        )
 
 
 @router.get(
@@ -44,6 +67,12 @@ def create_skill(
     current_user: User = Depends(require_roles("applicant")),
     db: Session = Depends(get_db),
 ):
+    _validate_canonical_skill_reference(
+        skill_data.skill_id,
+        skill_data.taxonomy_version,
+        db,
+    )
+
     existing_skill = (
         db.query(ApplicantSkill)
         .filter(
@@ -97,6 +126,13 @@ def update_skill(
         )
 
     update_data = skill_data.model_dump(exclude_unset=True)
+
+    if "skill_id" in update_data or "taxonomy_version" in update_data:
+        _validate_canonical_skill_reference(
+            update_data.get("skill_id"),
+            update_data.get("taxonomy_version"),
+            db,
+        )
 
     if "skill_name" in update_data:
         duplicate_skill = (
