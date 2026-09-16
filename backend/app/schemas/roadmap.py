@@ -3,6 +3,8 @@ from enum import Enum
 
 from pydantic import BaseModel, Field, HttpUrl, model_validator
 
+from app.schemas.gap import GapContextRequest, GapTargetRequest
+
 
 class RoadmapStatus(str, Enum):
     active = "active"
@@ -42,6 +44,12 @@ class RoadmapCreate(BaseModel):
         if len(positions) != len(set(positions)):
             raise ValueError("Roadmap item positions must be unique")
         return self
+
+
+class RoadmapGenerateRequest(BaseModel):
+    target: GapTargetRequest
+    context: GapContextRequest = Field(default_factory=GapContextRequest)
+    title: str | None = Field(default=None, max_length=255)
 
 
 class RoadmapItemUpdate(BaseModel):

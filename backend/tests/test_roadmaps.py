@@ -8,10 +8,16 @@ from sqlalchemy.pool import StaticPool
 
 from app.api.deps import get_db
 from app.core.config import settings
+from app.core.security import create_access_token, hash_password
 from app.db.base import Base
 from app.main import app
+from app.models.applicant_profile import ApplicantProfile
+from app.models.applicant_skill import ApplicantSkill
 from app.models.canonical_skill import CanonicalSkill
-from app.models.user import Role
+from app.models.company import Company
+from app.models.job import Job
+from app.models.job_skill import JobSkill
+from app.models.user import Role, User
 
 
 engine = create_engine(
@@ -88,6 +94,21 @@ def register(client: TestClient, email: str, role: str) -> str:
     return response.json()["access_token"]
 
 
+def register_with_id(client: TestClient, email: str, role: str) -> tuple[str, int]:
+    response = client.post(
+        "/api/v1/auth/register",
+        json={
+            "email": email,
+            "password": "password123",
+            "full_name": "Roadmap User",
+            "role": role,
+        },
+    )
+    assert response.status_code == 201, response.text
+    body = response.json()
+    return body["access_token"], body["data"]["id"]
+
+
 def auth(token: str) -> dict[str, str]:
     return {"Authorization": f"Bearer {token}"}
 
@@ -113,6 +134,75 @@ def roadmap_payload() -> dict:
             },
         ],
     }
+
+
+def add_profile(
+    user_id: int,
+    *,
+    skill_ids: list[str] | None = None,
+) -> None:
+    db = TestingSessionLocal()
+    db.add(
+        ApplicantProfile(
+            user_id=user_id,
+            location="Pune",
+            education="BSc Computer Science",
+            experience_years=2,
+        )
+    )
+    for skill_id in skill_ids or []:
+        db.add(
+            ApplicantSkill(
+                user_id=user_id,
+                skill_id=skill_id,
+                taxonomy_version=settings.TAXONOMY_VERSION,
+                skill_name=skill_id,
+                proficiency_level="intermediate",
+            )
+        )
+    db.commit()
+    db.close()
+
+
+def add_role_token(email: str, role_name: str) -> str:
+    db = TestingSessionLocal()
+    role = db.query(Role).filter(Role.name == role_name).one()
+    user = User(
+        email=email,
+        password_hash=hash_password("password123"),
+        full_name="Roadmap Role User",
+        role_id=role.id,
+    )
+    db.add(user)
+    db.commit()
+    token = create_access_token(user.id, role_name)
+    db.close()
+    return token
+
+
+def add_published_job(skill_ids: list[str], *, status: str = "published") -> int:
+    db = TestingSessionLocal()
+    company = Company(company_name="Generation Company")
+    db.add(company)
+    db.flush()
+    job = Job(company_id=company.id, title="Generated Job", status=status)
+    db.add(job)
+    db.flush()
+    db.add_all(
+        [
+            JobSkill(
+                job_id=job.id,
+                skill_id=skill_id,
+                taxonomy_version=settings.TAXONOMY_VERSION,
+                role_importance=1.0,
+            )
+            for skill_id in skill_ids
+        ]
+    )
+    db.commit()
+    job_id = job.id
+    db.close()
+    return job_id
 
 
 def test_applicant_can_create_retrieve_and_update_roadmap(client: TestClient):
@@ -204,3 +294,214 @@ def test_item_versions_must_match_roadmap(client: TestClient):
     payload["items"][0]["taxonomy_version"] = "v9.9.9"
     response = client.post("/api/v1/roadmaps", headers=auth(token), json=payload)
     assert response.status_code == 422
+
+
+def test_generate_roadmap_loads_persisted_profile_and_maps_missing_skills(
+    client: TestClient,
+):
+    token, user_id = register_with_id(client, "roadmap-generate@example.com", "applicant")
+    add_profile(user_id, skill_ids=["SKILL_0001"])
+
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={
+            "target": {
+                "required_skills": [
+                    {
+                        "skill_id": "SKILL_0001",
+                        "taxonomy_version": settings.TAXONOMY_VERSION,
+                    },
+                    {
+                        "skill_id": "SKILL_0002",
+                        "taxonomy_version": settings.TAXONOMY_VERSION,
+                    },
+                ]
+            },
+            "title": "Generated roadmap",
+        },
+    )
+
+    assert response.status_code == 201, response.text
+    body = response.json()
+    assert body["title"] == "Generated roadmap"
+    assert len(body["items"]) == 1
+    item = body["items"][0]
+    assert item["skill_id"] == "SKILL_0002"
+    assert item["taxonomy_version"] == settings.TAXONOMY_VERSION
+    assert item["position"] == 0
+    assert item["status"] == "pending"
+    assert item["notes"] == "Required canonical skill is absent from the candidate profile."
+    assert item["course_id"] is None
+    assert item["resource_url"] is None
+    assert item["resource_title"] is None
+
+
+def test_generate_roadmap_supports_published_job_and_no_gaps(client: TestClient):
+    token, user_id = register_with_id(client, "roadmap-job-generate@example.com", "applicant")
+    add_profile(user_id, skill_ids=["SKILL_0001", "SKILL_0002"])
+    job_id = add_published_job(["SKILL_0001", "SKILL_0002"])
+
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={"target": {"job_id": job_id}},
+    )
+
+    assert response.status_code == 201, response.text
+    body = response.json()
+    assert body["title"] == "Roadmap for target job"
+    assert body["items"] == []
+
+
+def test_generate_roadmap_orders_priority_and_nulls_deterministically(
+    client: TestClient,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    from app.core import gap as gap_core
+
+    token, user_id = register_with_id(client, "roadmap-order-generate@example.com", "applicant")
+    add_profile(user_id)
+
+    def fake_signals(*, skill_ids, district_id, sector):
+        return {
+            "SKILL_0001": gap_core.DemandSignal(0.4, 1.0),
+            "SKILL_0002": gap_core.DemandSignal(0.8, 1.0),
+        }
+
+    monkeypatch.setattr(gap_core, "load_demand_signals", fake_signals)
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={
+            "target": {
+                "required_skills": [
+                    {
+                        "skill_id": "SKILL_0001",
+                        "taxonomy_version": settings.TAXONOMY_VERSION,
+                        "role_importance": 1.0,
+                    },
+                    {
+                        "skill_id": "SKILL_0002",
+                        "taxonomy_version": settings.TAXONOMY_VERSION,
+                        "role_importance": 1.0,
+                    },
+                ]
+            }
+        },
+    )
+
+    assert response.status_code == 201, response.text
+    assert [item["skill_id"] for item in response.json()["items"]] == [
+        "SKILL_0002",
+        "SKILL_0001",
+    ]
+
+
+def test_generate_roadmap_rejects_invalid_job_and_non_applicant(client: TestClient):
+    token, user_id = register_with_id(client, "roadmap-invalid-job@example.com", "applicant")
+    add_profile(user_id)
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={"target": {"job_id": 999999}},
+    )
+    assert response.status_code == 404
+
+    unpublished_job_id = add_published_job(["SKILL_0001"], status="draft")
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={"target": {"job_id": unpublished_job_id}},
+    )
+    assert response.status_code == 404
+
+    recruiter_token = register(client, "roadmap-generate-recruiter@example.com", "recruiter")
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(recruiter_token),
+        json={"target": {"required_skills": []}},
+    )
+    assert response.status_code == 403
+
+    government_token = add_role_token(
+        "roadmap-generate-government@example.com",
+        "government",
+    )
+    response = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(government_token),
+        json={"target": {"required_skills": []}},
+    )
+    assert response.status_code == 403
+
+
+def test_generate_roadmap_repeated_requests_create_new_roadmaps(client: TestClient):
+    token, user_id = register_with_id(client, "roadmap-repeat@example.com", "applicant")
+    add_profile(user_id)
+    payload = {
+        "target": {
+            "required_skills": [
+                {
+                    "skill_id": "SKILL_0002",
+                    "taxonomy_version": settings.TAXONOMY_VERSION,
+                }
+            ]
+        }
+    }
+
+    first = client.post("/api/v1/roadmaps/generate", headers=auth(token), json=payload)
+    second = client.post("/api/v1/roadmaps/generate", headers=auth(token), json=payload)
+
+    assert first.status_code == 201
+    assert second.status_code == 201
+    assert first.json()["id"] != second.json()["id"]
+
+
+def test_generate_roadmap_rejects_invalid_target_and_profile_state(client: TestClient):
+    token, user_id = register_with_id(
+        client,
+        "roadmap-invalid-target@example.com",
+        "applicant",
+    )
+    add_profile(user_id)
+
+    invalid_skill = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={
+            "target": {
+                "required_skills": [
+                    {
+                        "skill_id": "SKILL_9999",
+                        "taxonomy_version": settings.TAXONOMY_VERSION,
+                    }
+                ]
+            }
+        },
+    )
+    assert invalid_skill.status_code == 422
+
+    taxonomy_mismatch = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(token),
+        json={
+            "target": {
+                "required_skills": [
+                    {
+                        "skill_id": "SKILL_0001",
+                        "taxonomy_version": "v9.9.9",
+                    }
+                ]
+            }
+        },
+    )
+    assert taxonomy_mismatch.status_code == 422
+
+    no_profile_token = register(client, "roadmap-no-profile@example.com", "applicant")
+    no_profile = client.post(
+        "/api/v1/roadmaps/generate",
+        headers=auth(no_profile_token),
+        json={"target": {"required_skills": []}},
+    )
+    assert no_profile.status_code == 422
