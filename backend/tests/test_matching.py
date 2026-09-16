@@ -144,11 +144,33 @@ def add_candidate_data(db: Session, candidate_id: int, skill_ids: list[str]):
     db.commit()
 
 
-def test_candidate_matching_scores_components_and_renormalizes(client: TestClient):
-    candidate_token, candidate_id = register(client, "match-candidate@example.com", "applicant")
+def test_candidate_matching_scores_components_and_renormalizes(
+    client: TestClient,
+):
+    candidate_token, candidate_id = register(
+        client,
+        "match-candidate@example.com",
+        "applicant",
+    )
+
     db = TestingSessionLocal()
-    add_candidate_data(db, candidate_id, ["SKILL_0001"])
+    add_candidate_data(
+        db,
+        candidate_id,
+        ["SKILL_0001"],
+    )
+
+    candidate_profile = (
+        db.query(ApplicantProfile)
+        .filter(ApplicantProfile.user_id == candidate_id)
+        .one()
+    )
+    candidate_profile.bio = (
+        "Software engineer building matching systems and software applications."
+    )
+    db.commit()
     db.close()
+
     _, job = create_recruiter_job(
         client,
         "match-owner@example.com",
@@ -156,20 +178,58 @@ def test_candidate_matching_scores_components_and_renormalizes(client: TestClien
         role_importances=[1.0, 0.5],
     )
 
-    response = client.get("/api/v1/matching/jobs", headers=auth(candidate_token))
+    db = TestingSessionLocal()
+    persisted_job = db.get(Job, job["id"])
+    assert persisted_job is not None
+    persisted_job.description = (
+        "Software engineer building matching systems and software applications."
+    )
+    db.commit()
+    db.close()
+
+    response = client.get(
+        "/api/v1/matching/jobs",
+        headers=auth(candidate_token),
+    )
     assert response.status_code == 200, response.text
+
     body = response.json()
-    result = next(item for item in body["data"] if item["job_id"] == job["id"])
+    result = next(
+        item
+        for item in body["data"]
+        if item["job_id"] == job["id"]
+    )
+
     assert result["component_scores"]["skill_coverage"] == pytest.approx(2 / 3)
+    assert "semantic_similarity" in result["component_scores"]
+
+    semantic = result["component_scores"]["semantic_similarity"]
+    assert semantic > 0.0
+
     assert set(result["available_components"]) == {
         "skill_coverage",
+        "semantic_similarity",
         "experience",
         "education",
         "location_work_mode",
     }
-    assert "semantic_similarity" in result["omitted_components"]
-    assert result["score"] == pytest.approx((2 / 3 * 0.6 + 0.1 + 0.05 + 0.05) / 0.8)
-    assert any("Semantic similarity is unavailable" in warning for warning in result["warnings"])
+
+    assert "semantic_similarity" not in result["omitted_components"]
+
+    expected_score = (
+        (2 / 3) * 0.60
+        + semantic * 0.20
+        + 1.0 * 0.10
+        + 1.0 * 0.05
+        + 1.0 * 0.05
+    )
+    assert result["score"] == pytest.approx(expected_score)
+
+    assert not any(
+        "Semantic similarity is unavailable" in warning
+        for warning in result["warnings"]
+    )
+
     assert result["taxonomy_version"] == "v1.2.1"
     assert result["explanation"]
 

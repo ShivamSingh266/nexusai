@@ -55,6 +55,7 @@ def load_candidate_skill_profile(
         )
 
     expected_version = taxonomy_version or settings.TAXONOMY_VERSION
+
     persisted_skills = db.scalars(
         select(ApplicantSkill)
         .where(ApplicantSkill.user_id == candidate_id)
@@ -62,19 +63,23 @@ def load_candidate_skill_profile(
     ).all()
 
     skills: list[SkillProfileSkill] = []
+
     for persisted_skill in persisted_skills:
         if persisted_skill.skill_id is None:
             continue
 
         canonical_skill = db.get(CanonicalSkill, persisted_skill.skill_id)
+
         if canonical_skill is None:
             raise CandidateSkillValidationError(
                 f"Canonical skill not found: {persisted_skill.skill_id}"
             )
+
         if persisted_skill.taxonomy_version != expected_version:
             raise CandidateSkillValidationError(
                 f"Applicant skill taxonomy mismatch: {persisted_skill.skill_id}"
             )
+
         if canonical_skill.taxonomy_version != persisted_skill.taxonomy_version:
             raise CandidateSkillValidationError(
                 f"Canonical taxonomy mismatch: {persisted_skill.skill_id}"
@@ -89,6 +94,15 @@ def load_candidate_skill_profile(
             )
         )
 
+    semantic_parts = [
+        part.strip()
+        for part in (
+            profile.bio,
+            profile.education,
+        )
+        if part and part.strip()
+    ]
+
     return SkillProfile(
         subject_id=candidate_id,
         subject_type="applicant",
@@ -97,4 +111,5 @@ def load_candidate_skill_profile(
         location=profile.location,
         education=profile.education,
         experience_years=profile.experience_years,
+        semantic_text=" ".join(semantic_parts) or None,
     )

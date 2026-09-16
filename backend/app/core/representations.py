@@ -24,3 +24,4 @@ class SkillProfile:
     location: str | None = None
     education: str | None = None
     experience_years: float | None = None
+    semantic_text: str | None = None
