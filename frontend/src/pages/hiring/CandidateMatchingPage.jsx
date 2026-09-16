@@ -1,349 +1,412 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { AppShell } from '../../components/layout/AppShell'
-import { PageContainer } from '../../components/layout/PageContainer'
-import { Button } from '../../components/ui/Button'
+import { Users, Filter, MapPin, Clock, Award, CheckCircle, ChevronRight } from 'lucide-react'
 import { Card } from '../../components/ui/Card'
-import { candidateMatchData, jobOptions } from '../../mocks/candidateMatchingMockData'
-
-const formatStatusClass = (status) => {
-  const map = {
-    'Strong Match': 'bg-emerald-100 text-emerald-700',
-    'Good Match': 'bg-blue-100 text-blue-700',
-    'Potential Match': 'bg-amber-100 text-amber-700',
-  }
-
-  return map[status] || 'bg-slate-100 text-slate-700'
-}
-
-const scoreLabel = (score) => {
-  if (score >= 90) return 'Strong Match'
-  if (score >= 80) return 'Good Match'
-  return 'Potential Match'
-}
+import { Button } from '../../components/ui/Button'
+import { MatchScoreBadge } from '../../components/common/MatchScoreBadge'
+import { SkillChip } from '../../components/common/SkillChip'
+import { PriorityTag } from '../../components/common/PriorityTag'
+import { LoadingSkeleton } from '../../components/common/LoadingSkeleton'
+import { EmptyState } from '../../components/common/EmptyState'
+import { Toast } from '../../components/common/Toast'
+import { hiringService } from '../../services/hiringService'
 
 export function CandidateMatchingPage() {
   const navigate = useNavigate()
-  const [selectedJobId, setSelectedJobId] = useState(jobOptions[0].id)
-  const [selectedCandidateId, setSelectedCandidateId] = useState(candidateMatchData[0].id)
-  const [matchFilter, setMatchFilter] = useState('All')
-  const [experienceFilter, setExperienceFilter] = useState('All')
-  const [skillFilter, setSkillFilter] = useState('All')
-  const [statusFilter, setStatusFilter] = useState('All')
+  const [jobs, setJobs] = useState([])
+  const [candidates, setCandidates] = useState([])
+  const [loading, setLoading] = useState(true)
 
-  const selectedJob = jobOptions.find((job) => job.id === selectedJobId) || jobOptions[0]
+  // Filters
+  const [selectedJob, setSelectedJob] = useState('all-jobs')
+  const [selectedSkill, setSelectedSkill] = useState('All')
+  const [selectedExperience, setSelectedExperience] = useState('All')
+  const [selectedLocation, setSelectedLocation] = useState('All')
+  const [selectedMinScore, setSelectedMinScore] = useState('All')
+  const [selectedAvailability, setSelectedAvailability] = useState('All')
+
+  const [selectedCandidate, setSelectedCandidate] = useState(null)
+  const [toast, setToast] = useState(null)
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const [jobsData, candidatesData] = await Promise.all([
+          hiringService.getJobOptions(),
+          hiringService.getCandidates(),
+        ])
+        setJobs(jobsData)
+        setCandidates(candidatesData)
+        if (candidatesData.length > 0) {
+          setSelectedCandidate(candidatesData[0])
+        }
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadData()
+  }, [])
+
+  // Collect unique filter options
+  const allSkills = useMemo(() => {
+    return ['All', ...new Set(candidates.flatMap((c) => c.skills))]
+  }, [candidates])
+
+  const allLocations = useMemo(() => {
+    return ['All', ...new Set(candidates.map((c) => c.location))]
+  }, [candidates])
+
+  const allAvailabilities = useMemo(() => {
+    return ['All', ...new Set(candidates.map((c) => c.availability))]
+  }, [candidates])
+
   const filteredCandidates = useMemo(() => {
-    const selectedJobCandidates = candidateMatchData.filter((candidate) => candidate.jobId === selectedJobId)
+    return candidates.filter((c) => {
+      const matchesJob = selectedJob === 'all-jobs' || c.jobId === selectedJob
+      const matchesSkill = selectedSkill === 'All' || c.skills.includes(selectedSkill)
+      const matchesLocation = selectedLocation === 'All' || c.location === selectedLocation
+      const matchesAvailability = selectedAvailability === 'All' || c.availability === selectedAvailability
 
-    return selectedJobCandidates.filter((candidate) => {
-      const matchesScore = matchFilter === 'All' || scoreLabel(candidate.score) === matchFilter
-      const matchesExperience =
-        experienceFilter === 'All' ||
-        (experienceFilter === '5+ years' && Number.parseInt(candidate.experience, 10) >= 5) ||
-        (experienceFilter === '3+ years' && Number.parseInt(candidate.experience, 10) >= 3)
-      const matchesSkill = skillFilter === 'All' || candidate.skills.includes(skillFilter)
-      const matchesStatus = statusFilter === 'All' || candidate.status === statusFilter
+      let matchesExp = true
+      const expYears = Number.parseInt(c.experience, 10) || 0
+      if (selectedExperience === '5+ years') matchesExp = expYears >= 5
+      if (selectedExperience === '3-5 years') matchesExp = expYears >= 3 && expYears < 5
+      if (selectedExperience === '<3 years') matchesExp = expYears < 3
 
-      return matchesScore && matchesExperience && matchesSkill && matchesStatus
+      let matchesScore = true
+      if (selectedMinScore === '90+') matchesScore = c.score >= 90
+      if (selectedMinScore === '80+') matchesScore = c.score >= 80
+      if (selectedMinScore === '70+') matchesScore = c.score >= 70
+
+      return matchesJob && matchesSkill && matchesExp && matchesLocation && matchesScore && matchesAvailability
     })
-  }, [selectedJobId, matchFilter, experienceFilter, skillFilter, statusFilter])
+  }, [
+    candidates,
+    selectedJob,
+    selectedSkill,
+    selectedExperience,
+    selectedLocation,
+    selectedMinScore,
+    selectedAvailability,
+  ])
 
-  const selectedCandidate =
-    filteredCandidates.find((candidate) => candidate.id === selectedCandidateId) ||
-    filteredCandidates[0] ||
-    candidateMatchData.find((candidate) => candidate.jobId === selectedJobId) ||
-    candidateMatchData[0]
+  const handleResetFilters = () => {
+    setSelectedJob('all-jobs')
+    setSelectedSkill('All')
+    setSelectedExperience('All')
+    setSelectedLocation('All')
+    setSelectedMinScore('All')
+    setSelectedAvailability('All')
+  }
 
-  const summary = useMemo(() => {
-    const items = candidateMatchData.filter((candidate) => candidate.jobId === selectedJobId)
-    const strongMatches = items.filter((candidate) => candidate.score >= 90).length
-    const shortlisted = items.filter((candidate) => candidate.status !== 'Potential Match').length
-    const averageScore = items.length
-      ? Math.round(items.reduce((sum, candidate) => sum + candidate.score, 0) / items.length)
-      : 0
-
-    return {
-      analyzed: items.length,
-      strongMatches,
-      shortlisted,
-      averageScore,
-    }
-  }, [selectedJobId])
-
-  const uniqueSkills = Array.from(
-    new Set(candidateMatchData.filter((candidate) => candidate.jobId === selectedJobId).flatMap((candidate) => candidate.skills)),
-  )
-
-  const handleCandidateAction = (action, candidateId) => {
-    setSelectedCandidateId(candidateId)
-
-    if (action === 'Shortlist') {
-      navigate('/hiring/shortlist')
-      return
-    }
-
-    window.alert(`${action} action triggered for frontend-only review. No backend call was made.`)
+  const handleShortlistCandidate = (candidate) => {
+    setToast({
+      variant: 'success',
+      title: 'Candidate Shortlisted',
+      message: `${candidate.name} has been added to your hiring shortlist.`,
+    })
   }
 
   return (
-    <AppShell title="Hiring Dashboard">
-      <PageContainer>
-        <div className="flex flex-col gap-3 border-b border-slate-200 pb-6 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Hiring</p>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">Candidate Matching</h1>
-            <p className="mt-2 max-w-2xl text-sm text-slate-600">
-              NexusAI helps identify suitable candidates for a role by comparing skills, experience, and fit signals.
-            </p>
-          </div>
+    <div className="space-y-6">
+      {toast && (
+        <div className="fixed bottom-6 right-6 z-50">
+          <Toast
+            variant={toast.variant}
+            title={toast.title}
+            message={toast.message}
+            duration={3500}
+            onDismiss={() => setToast(null)}
+          />
+        </div>
+      )}
+
+      {/* Header */}
+      <div className="flex flex-col gap-4 border-b border-slate-200 pb-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Hiring</p>
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">AI Candidate Matching</h1>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
+            Intelligent semantic matching evaluating candidate proficiency, verified capabilities, experience depth, and organizational fit.
+          </p>
         </div>
 
-        <Card className="p-5">
-          <div className="grid gap-5 md:grid-cols-[1.2fr_2fr] md:items-end">
-            <label className="block text-sm font-medium text-slate-700">
-              Select Job
+        <Button
+          variant="secondary"
+          onClick={() => navigate('/hiring/shortlist')}
+          className="inline-flex items-center gap-2"
+        >
+          <span>View Shortlist</span>
+          <ChevronRight className="h-4 w-4" />
+        </Button>
+      </div>
+
+      {/* Multi-Filter Bar */}
+      <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 space-y-3">
+        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+          <Filter className="h-3.5 w-3.5 text-brand-600" />
+          <span>Filter Candidates</span>
+        </div>
+
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          {/* Target Role */}
+          <div>
+            <label className="block text-[11px] font-semibold text-slate-500 mb-1">Job Role</label>
+            <select
+              value={selectedJob}
+              onChange={(e) => setSelectedJob(e.target.value)}
+              className="w-full rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-400"
+            >
+              {jobs.map((j) => (
+                <option key={j.id} value={j.id}>
+                  {j.title}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Skill */}
+          <div>
+            <label className="block text-[11px] font-semibold text-slate-500 mb-1">Skill</label>
+            <select
+              value={selectedSkill}
+              onChange={(e) => setSelectedSkill(e.target.value)}
+              className="w-full rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-400"
+            >
+              {allSkills.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Experience */}
+          <div>
+            <label className="block text-[11px] font-semibold text-slate-500 mb-1">Experience</label>
+            <select
+              value={selectedExperience}
+              onChange={(e) => setSelectedExperience(e.target.value)}
+              className="w-full rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-400"
+            >
+              <option value="All">All Experience</option>
+              <option value="5+ years">5+ years</option>
+              <option value="3-5 years">3 - 5 years</option>
+              <option value="<3 years">&lt; 3 years</option>
+            </select>
+          </div>
+
+          {/* Location */}
+          <div>
+            <label className="block text-[11px] font-semibold text-slate-500 mb-1">Location</label>
+            <select
+              value={selectedLocation}
+              onChange={(e) => setSelectedLocation(e.target.value)}
+              className="w-full rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-400"
+            >
+              {allLocations.map((loc) => (
+                <option key={loc} value={loc}>
+                  {loc}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Min Score */}
+          <div>
+            <label className="block text-[11px] font-semibold text-slate-500 mb-1">Match Score</label>
+            <select
+              value={selectedMinScore}
+              onChange={(e) => setSelectedMinScore(e.target.value)}
+              className="w-full rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-400"
+            >
+              <option value="All">All Scores</option>
+              <option value="90+">90%+ Match</option>
+              <option value="80+">80%+ Match</option>
+              <option value="70+">70%+ Match</option>
+            </select>
+          </div>
+
+          {/* Availability */}
+          <div className="flex items-end gap-2">
+            <div className="flex-1">
+              <label className="block text-[11px] font-semibold text-slate-500 mb-1">Availability</label>
               <select
-                value={selectedJobId}
-                onChange={(event) => {
-                  setSelectedJobId(event.target.value)
-                  const nextCandidate = candidateMatchData.find(
-                    (candidate) => candidate.jobId === event.target.value,
-                  )
-                  if (nextCandidate) setSelectedCandidateId(nextCandidate.id)
-                }}
-                className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                value={selectedAvailability}
+                onChange={(e) => setSelectedAvailability(e.target.value)}
+                className="w-full rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 focus:outline-none focus:ring-1 focus:ring-brand-400"
               >
-                {jobOptions.map((job) => (
-                  <option key={job.id} value={job.id}>
-                    {job.title}
+                {allAvailabilities.map((av) => (
+                  <option key={av} value={av}>
+                    {av}
                   </option>
                 ))}
               </select>
-            </label>
-
-            <div className="rounded-xl border border-brand-100 bg-brand-50 px-4 py-3">
-              <div className="text-xs uppercase tracking-[0.18em] text-brand-700">Selected Role</div>
-              <div className="mt-1 text-lg font-semibold text-slate-900">{selectedJob.title}</div>
-              <div className="text-sm text-slate-600">
-                {selectedJob.department} • {selectedJob.location}
-              </div>
             </div>
+
+            <button
+              type="button"
+              onClick={handleResetFilters}
+              className="rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-100 transition"
+              title="Reset all filters"
+            >
+              Reset
+            </button>
           </div>
-        </Card>
+        </div>
+      </div>
 
-        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          <Card className="p-5">
-            <p className="text-sm text-slate-500">Candidates Analyzed</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">{summary.analyzed}</p>
-          </Card>
-          <Card className="p-5">
-            <p className="text-sm text-slate-500">Strong Matches</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">{summary.strongMatches}</p>
-          </Card>
-          <Card className="p-5">
-            <p className="text-sm text-slate-500">Shortlisted</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">{summary.shortlisted}</p>
-          </Card>
-          <Card className="p-5">
-            <p className="text-sm text-slate-500">Average Match Score</p>
-            <p className="mt-3 text-3xl font-bold text-slate-900">{summary.averageScore}%</p>
-          </Card>
-        </section>
+      {/* Main Candidate Match Grid & Details */}
+      {loading ? (
+        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <LoadingSkeleton variant="card" />
+          <LoadingSkeleton variant="card" />
+        </div>
+      ) : filteredCandidates.length === 0 ? (
+        <EmptyState
+          title="No candidates match current criteria"
+          description="Try broadening your skill, experience, or match score filters."
+          actionLabel="Reset Filters"
+          onAction={handleResetFilters}
+        />
+      ) : (
+        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.9fr]">
+          {/* Candidates List */}
+          <div className="space-y-3">
+            {filteredCandidates.map((candidate) => {
+              const isSelected = selectedCandidate?.id === candidate.id
 
-        <section className="grid gap-6 xl:grid-cols-[1.5fr_0.8fr]">
-          <Card className="p-5">
-            <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-              <h2 className="text-lg font-semibold text-slate-900">Matching Results</h2>
-              <div className="flex flex-wrap gap-2">
-                <select
-                  value={matchFilter}
-                  onChange={(event) => setMatchFilter(event.target.value)}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              return (
+                <div
+                  key={candidate.id}
+                  onClick={() => setSelectedCandidate(candidate)}
+                  className={`cursor-pointer rounded-2xl border p-4 transition-all ${
+                    isSelected
+                      ? 'border-brand-500 bg-brand-50/30 ring-2 ring-brand-400/20 shadow-sm'
+                      : 'border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50/50'
+                  }`}
                 >
-                  <option value="All">All Match Scores</option>
-                  <option value="Strong Match">Strong Match</option>
-                  <option value="Good Match">Good Match</option>
-                  <option value="Potential Match">Potential Match</option>
-                </select>
-
-                <select
-                  value={experienceFilter}
-                  onChange={(event) => setExperienceFilter(event.target.value)}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
-                >
-                  <option value="All">All Experience</option>
-                  <option value="5+ years">5+ years</option>
-                  <option value="3+ years">3+ years</option>
-                </select>
-
-                <select
-                  value={skillFilter}
-                  onChange={(event) => setSkillFilter(event.target.value)}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
-                >
-                  <option value="All">All Skills</option>
-                  {uniqueSkills.map((skill) => (
-                    <option key={skill} value={skill}>
-                      {skill}
-                    </option>
-                  ))}
-                </select>
-
-                <select
-                  value={statusFilter}
-                  onChange={(event) => setStatusFilter(event.target.value)}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
-                >
-                  <option value="All">All Status</option>
-                  <option value="Strong Match">Strong Match</option>
-                  <option value="Good Match">Good Match</option>
-                  <option value="Potential Match">Potential Match</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              {filteredCandidates.length > 0 ? (
-                filteredCandidates.map((candidate) => (
-                  <button
-                    key={candidate.id}
-                    type="button"
-                    onClick={() => setSelectedCandidateId(candidate.id)}
-                    className={`w-full rounded-xl border p-4 text-left transition ${
-                      selectedCandidate?.id === candidate.id
-                        ? 'border-brand-200 bg-brand-50'
-                        : 'border-slate-200 bg-slate-50 hover:border-brand-200 hover:bg-white'
-                    }`}
-                  >
-                    <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-                      <div>
-                        <div className="flex items-center gap-3">
-                          <div className="font-semibold text-slate-900">{candidate.name}</div>
-                          <span className={`rounded-full px-2 py-1 text-[10px] font-semibold ${formatStatusClass(candidate.status)}`}>
-                            {candidate.status}
-                          </span>
-                        </div>
-                        <div className="mt-1 text-sm text-slate-500">
-                          {candidate.currentRole} • {candidate.experience}
-                        </div>
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-base font-bold text-slate-900">{candidate.name}</h3>
+                        <PriorityTag priority={candidate.priority} />
                       </div>
-
-                      <div className="flex items-center gap-4">
-                        <div className="text-right">
-                          <div className="text-xs text-slate-500">Match Score</div>
-                          <div className="text-xl font-bold text-slate-900">{candidate.score}%</div>
-                        </div>
-                        <div className="w-24">
-                          <div className="h-2 rounded-full bg-slate-200">
-                            <div
-                              className="h-2 rounded-full bg-brand-600"
-                              style={{ width: `${candidate.score}%` }}
-                            />
-                          </div>
-                        </div>
-                      </div>
+                      <p className="text-xs text-slate-500 mt-0.5">
+                        {candidate.currentRole} • {candidate.experience}
+                      </p>
                     </div>
 
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {candidate.skills.map((skill) => (
-                        <span key={skill} className="rounded-full bg-white px-2.5 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </button>
-                ))
-              ) : (
-                <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-8 text-center text-sm text-slate-500">
-                  No candidates match the current filters.
-                </div>
-              )}
-            </div>
-          </Card>
-
-          <Card className="p-5">
-            {selectedCandidate ? (
-              <>
-                <div className="flex items-center justify-between gap-3">
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-brand-700">Candidate Overview</div>
-                    <h2 className="mt-2 text-xl font-semibold text-slate-900">{selectedCandidate.name}</h2>
-                  </div>
-                  <span className={`rounded-full px-2.5 py-1 text-xs font-semibold ${formatStatusClass(selectedCandidate.status)}`}>
-                    {selectedCandidate.status}
-                  </span>
-                </div>
-
-                <div className="mt-5 space-y-4">
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Role</div>
-                    <div className="mt-1 text-sm font-medium text-slate-700">{selectedCandidate.targetRole}</div>
+                    <MatchScoreBadge score={candidate.score} />
                   </div>
 
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Current Role</div>
-                    <div className="mt-1 text-sm font-medium text-slate-700">{selectedCandidate.currentRole}</div>
-                  </div>
-
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Experience</div>
-                    <div className="mt-1 text-sm font-medium text-slate-700">{selectedCandidate.experience}</div>
-                  </div>
-
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Education</div>
-                    <div className="mt-1 text-sm font-medium text-slate-700">{selectedCandidate.education}</div>
-                  </div>
-
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Availability</div>
-                    <div className="mt-1 text-sm font-medium text-slate-700">{selectedCandidate.availability}</div>
-                  </div>
-
-                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
-                    <div className="mb-2 flex items-center justify-between">
-                      <span className="text-sm font-medium text-slate-700">Match Score</span>
-                      <span className="text-sm font-semibold text-slate-900">{selectedCandidate.score}%</span>
-                    </div>
-                    <div className="h-2 rounded-full bg-slate-200">
-                      <div
-                        className="h-2 rounded-full bg-brand-600"
-                        style={{ width: `${selectedCandidate.score}%` }}
+                  {/* Skills preview with SkillChip */}
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {candidate.skills.map((skill) => (
+                      <SkillChip
+                        key={skill}
+                        skill={skill}
+                        variant={isSelected ? 'active' : 'default'}
                       />
-                    </div>
+                    ))}
                   </div>
 
-                  <div>
-                    <div className="text-xs uppercase tracking-[0.18em] text-slate-500">Why this match</div>
-                    <ul className="mt-2 space-y-2 text-sm text-slate-600">
-                      {selectedCandidate.reasons.map((reason) => (
-                        <li key={reason} className="flex items-start gap-2">
-                          <span className="mt-1 inline-block h-2 w-2 rounded-full bg-brand-500" />
-                          <span>{reason}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2 pt-2">
-                    <Button type="button" onClick={() => handleCandidateAction('Review', selectedCandidate.id)}>
-                      Review
-                    </Button>
-                    <Button type="button" variant="secondary" onClick={() => handleCandidateAction('Shortlist', selectedCandidate.id)}>
-                      Shortlist
-                    </Button>
-                    <Button type="button" variant="ghost" onClick={() => handleCandidateAction('Reject', selectedCandidate.id)}>
-                      Reject
-                    </Button>
+                  <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                    <span className="flex items-center gap-1">
+                      <MapPin className="h-3 w-3 text-slate-400" />
+                      {candidate.location}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="h-3 w-3 text-slate-400" />
+                      Available: {candidate.availability}
+                    </span>
                   </div>
                 </div>
-              </>
-            ) : (
-              <div className="text-sm text-slate-500">Select a candidate to review.</div>
-            )}
-          </Card>
-        </section>
-      </PageContainer>
-    </AppShell>
+              )
+            })}
+          </div>
+
+          {/* Selected Candidate Detailed Evaluation Panel */}
+          {selectedCandidate && (
+            <Card className="p-6 sticky top-24 h-fit">
+              <div className="flex items-start justify-between border-b border-slate-100 pb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-slate-900">{selectedCandidate.name}</h3>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    {selectedCandidate.currentRole} → {selectedCandidate.targetRole}
+                  </p>
+                </div>
+                <MatchScoreBadge score={selectedCandidate.score} />
+              </div>
+
+              <div className="mt-4 space-y-4">
+                <div>
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                    Candidate Profile Summary
+                  </h4>
+                  <p className="text-xs leading-relaxed text-slate-600 bg-slate-50 rounded-xl p-3 border border-slate-100">
+                    {selectedCandidate.summary}
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3 text-xs">
+                  <div className="rounded-xl border border-slate-100 bg-slate-50 p-2.5">
+                    <p className="text-slate-400 font-medium">Experience</p>
+                    <p className="font-bold text-slate-800 mt-0.5">{selectedCandidate.experience}</p>
+                  </div>
+                  <div className="rounded-xl border border-slate-100 bg-slate-50 p-2.5">
+                    <p className="text-slate-400 font-medium">Education</p>
+                    <p className="font-bold text-slate-800 mt-0.5">{selectedCandidate.education}</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
+                    Verified Competencies
+                  </h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {selectedCandidate.skills.map((skill) => (
+                      <SkillChip key={skill} skill={skill} variant="active" />
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
+                    Match Rationale
+                  </h4>
+                  <ul className="space-y-1.5 text-xs text-slate-600">
+                    {selectedCandidate.reasons.map((r, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <CheckCircle className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+                        <span>{r}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="pt-4 border-t border-slate-100 flex items-center gap-3">
+                  <Button
+                    onClick={() => handleShortlistCandidate(selectedCandidate)}
+                    className="flex-1"
+                  >
+                    Shortlist Candidate
+                  </Button>
+
+                  <Button
+                    variant="secondary"
+                    onClick={() => navigate('/hiring/shortlist')}
+                  >
+                    Shortlist
+                  </Button>
+                </div>
+              </div>
+            </Card>
+          )}
+        </div>
+      )}
+    </div>
   )
 }
+
+export default CandidateMatchingPage
