@@ -8,6 +8,7 @@ from app.api.recruiter_company import router as recruiter_company_router
 from app.api.skills import router as skills_router
 from app.api.taxonomy import router as taxonomy_router
 from app.api.matching import router as matching_router
+from app.api.gaps import router as gaps_router
 from app.models.user import User
 
 
@@ -25,7 +26,7 @@ app.include_router(recruiter_company_router, prefix="/api/v1")
 app.include_router(jobs_router, prefix="/api/v1")
 app.include_router(taxonomy_router, prefix="/api/v1")
 app.include_router(matching_router, prefix="/api/v1")
-
+app.include_router(gaps_router, prefix="/api/v1")
 
 @app.get("/health", tags=["System"])
 def health_check():
