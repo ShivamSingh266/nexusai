@@ -1,3 +1,4 @@
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -15,6 +16,24 @@ class Settings(BaseSettings):
     JWT_SECRET_KEY: str
     JWT_ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     JWT_REFRESH_TOKEN_EXPIRE_DAYS: int = 7
+
+    @model_validator(mode="after")
+    def reject_production_placeholder_secret(self) -> "Settings":
+        placeholders = {
+            "your-secret-key-here",
+            "replace-with-a-long-random-jwt-signing-secret",
+            "change-me",
+            "secret",
+            "jwt-secret",
+        }
+        if (
+            self.ENVIRONMENT.casefold() != "development"
+            and self.JWT_SECRET_KEY.strip().casefold() in placeholders
+        ):
+            raise ValueError("JWT_SECRET_KEY must not use a placeholder outside development")
+        if "*" in self.BACKEND_CORS_ORIGINS:
+            raise ValueError("BACKEND_CORS_ORIGINS must not include '*' when credentials are enabled")
+        return self
 
     model_config = SettingsConfigDict(
         env_file=".env",

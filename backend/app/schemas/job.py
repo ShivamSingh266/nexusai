@@ -89,6 +89,7 @@ class JobUpdate(BaseModel):
 class JobResponse(JobBase):
     id: int
     company_id: int
+    districts: list[str] = Field(default_factory=list)
     source_job_id: str | None = None
     source: str | None = None
     sector: str | None = None

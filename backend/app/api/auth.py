@@ -25,6 +25,8 @@ router = APIRouter(
     tags=["Authentication"],
 )
 
+PUBLIC_REGISTRATION_ROLES = frozenset({"applicant", "recruiter"})
+
 
 def build_auth_response(user: User) -> AuthResponse:
     role_name = user.role.name
@@ -57,6 +59,12 @@ def register(
     request: RegisterRequest,
     db: Session = Depends(get_db),
 ):
+    if request.role not in PUBLIC_REGISTRATION_ROLES:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="This role cannot be self-registered.",
+        )
+
     existing_user = db.scalar(
         select(User).where(User.email == request.email)
     )

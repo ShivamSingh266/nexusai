@@ -7,6 +7,7 @@ job-skill artifact; that is a separate phase with a separate ID audit.
 from __future__ import annotations
 
 import csv
+import hashlib
 import os
 import re
 from dataclasses import dataclass
@@ -18,8 +19,17 @@ from sqlalchemy.orm import Session
 
 from app.models.company import Company
 from app.models.job import Job
+from app.models.job_observation import JobLocationObservation, JobSourceObservation
 
 MARKET_COMPANY_SUFFIX = " (Market Data)"
+EXPECTED_JOBS_SHA256 = "6048cb4b2dcbd616695fa9ed350be6847170059d2e65e0da079c70b3c78dfab3"
+EXPECTED_JOBS_ROWS = 27824
+EXPECTED_JOBS_FIELDS = [
+    "id", "title", "company", "description", "district", "sector", "exp_min",
+    "exp_max", "salary_min", "salary_max", "mode", "source", "posting_time_type",
+    "posted_date", "anticipated_start_min", "anticipated_start_max", "status",
+]
+PIPELINE_VERSION = "market-jobs-import-v1"
 
 
 @dataclass(frozen=True)
@@ -30,6 +40,7 @@ class MarketImportResult:
     updated_jobs: int
     created_companies: int
     skipped_rows: int
+    created_observations: int
 
 
 def default_jobs_path() -> Path:
@@ -71,16 +82,8 @@ def _normalize_mode(value: str | None) -> str | None:
     return None
 
 
-def _combined_location(rows: Iterable[dict[str, str]]) -> str | None:
-    districts = sorted(
-        {
-            district
-            for row in rows
-            if (district := _text(row, "district")) is not None
-        },
-        key=str.casefold,
-    )
-    return " | ".join(districts) if districts else None
+def _artifact_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def _first_value(rows: list[dict[str, str]], field: str) -> str | None:
@@ -128,89 +131,135 @@ def _find_company(
         suffix += 1
 
 
-def _rows_by_source_id(path: Path) -> tuple[int, dict[str, list[dict[str, str]]], int]:
+def _validate_artifact(
+    path: Path,
+    *,
+    expected_sha256: str | None,
+    expected_row_count: int | None,
+) -> list[tuple[int, dict[str, str]]]:
     if not path.exists():
         raise FileNotFoundError(f"Market jobs artifact not found: {path}")
-
-    active_rows = 0
-    skipped_rows = 0
-    grouped: dict[str, list[dict[str, str]]] = {}
+    digest = _artifact_sha256(path)
+    if expected_sha256 is not None and digest != expected_sha256:
+        raise ValueError(f"Unexpected jobs artifact SHA-256: {digest}")
     with path.open(newline="", encoding="utf-8-sig") as jobs_file:
-        for row in csv.DictReader(jobs_file):
-            if (_text(row, "status") or "").casefold() != "active":
-                continue
-            active_rows += 1
-            source_job_id = _text(row, "id")
-            if source_job_id is None:
-                skipped_rows += 1
-                continue
-            grouped.setdefault(source_job_id, []).append(row)
-    return active_rows, grouped, skipped_rows
+        reader = csv.DictReader(jobs_file)
+        if reader.fieldnames != EXPECTED_JOBS_FIELDS:
+            raise ValueError(f"Unexpected jobs artifact header: {reader.fieldnames}")
+        rows = [(record_number, row) for record_number, row in enumerate(reader, 1)]
+    if expected_row_count is not None and len(rows) != expected_row_count:
+        raise ValueError(f"Unexpected jobs artifact row count: {len(rows)}")
+    return rows
 
 
-def import_market_jobs(db: Session, jobs_path: Path | None = None) -> MarketImportResult:
-    """Import active, location-deduplicated market jobs into the database."""
+def import_market_jobs(
+    db: Session,
+    jobs_path: Path | None = None,
+    *,
+    expected_sha256: str | None = EXPECTED_JOBS_SHA256,
+    expected_row_count: int | None = EXPECTED_JOBS_ROWS,
+    pipeline_version: str = PIPELINE_VERSION,
+    pipeline_run_id: str | None = None,
+) -> MarketImportResult:
+    """Validate and import jobs.csv, retaining every physical source row."""
     path = jobs_path or default_jobs_path()
-    active_rows, grouped, skipped_rows = _rows_by_source_id(path)
+    physical_rows = _validate_artifact(
+        path,
+        expected_sha256=expected_sha256,
+        expected_row_count=expected_row_count,
+    )
+    active_rows = [item for item in physical_rows if (_text(item[1], "status") or "").casefold() == "active"]
+    grouped: dict[tuple[str, str], list[dict[str, str]]] = {}
+    skipped_rows = 0
+    for _, row in active_rows:
+        source = _text(row, "source")
+        source_job_id = _text(row, "id")
+        if source is None or source_job_id is None:
+            skipped_rows += 1
+            continue
+        grouped.setdefault((source, source_job_id), []).append(row)
     created_jobs = 0
     updated_jobs = 0
     created_companies = 0
+    created_observations = 0
     company_cache: dict[str, Company] = {}
+    jobs_by_identity: dict[tuple[str, str], Job] = {}
 
-    for source_job_id in sorted(grouped):
-        rows = grouped[source_job_id]
-        company_name = _first_value(rows, "company")
-        if company_name is None:
-            skipped_rows += 1
-            continue
-        company_key = company_name.casefold()
-        company = company_cache.get(company_key)
-        if company is None:
-            company, created = _find_company(
-                db,
-                company_name,
-                sector=_first_value(rows, "sector"),
-            )
-            company_cache[company_key] = company
-            created_companies += int(created)
+    try:
+        for identity in sorted(grouped):
+            source, source_job_id = identity
+            rows = grouped[identity]
+            company_name = _first_value(rows, "company")
+            if company_name is None:
+                skipped_rows += 1
+                continue
+            company_key = company_name.casefold()
+            company = company_cache.get(company_key)
+            if company is None:
+                company, created = _find_company(db, company_name, sector=_first_value(rows, "sector"))
+                company_cache[company_key] = company
+                created_companies += int(created)
+            districts = sorted({_text(row, "district") for row in rows if _text(row, "district")}, key=str.casefold)
+            values = {
+                "company_id": company.id,
+                "title": _first_value(rows, "title") or "Untitled Market Job",
+                "description": _first_value(rows, "description"),
+                "location": districts[0] if len(districts) == 1 else None,
+                "work_mode": _normalize_mode(_first_value(rows, "mode")),
+                "experience_min": _first_float(rows, "exp_min"),
+                "experience_max": _first_float(rows, "exp_max"),
+                "salary_min": _first_float(rows, "salary_min"),
+                "salary_max": _first_float(rows, "salary_max"),
+                "status": "published", "source_job_id": source_job_id, "source": source,
+                "sector": _first_value(rows, "sector"),
+                "posting_time_type": _first_value(rows, "posting_time_type"),
+                "posted_date": _first_value(rows, "posted_date"),
+                "anticipated_start_min": _first_value(rows, "anticipated_start_min"),
+                "anticipated_start_max": _first_value(rows, "anticipated_start_max"),
+            }
+            job = db.scalar(select(Job).where(Job.source == source, Job.source_job_id == source_job_id))
+            if job is None:
+                job = Job(**values)
+                db.add(job)
+                db.flush()
+                created_jobs += 1
+            else:
+                for field, value in values.items():
+                    setattr(job, field, value)
+                updated_jobs += 1
+            jobs_by_identity[identity] = job
+            for district in districts:
+                if db.scalar(select(JobLocationObservation).where(JobLocationObservation.job_id == job.id, JobLocationObservation.district == district)) is None:
+                    db.add(JobLocationObservation(job_id=job.id, district=district))
 
-        first_row = sorted(
-            rows,
-            key=lambda row: tuple((_text(row, field) or "").casefold() for field in ("title", "description", "source")),
-        )[0]
-        source = _first_value(rows, "source")
-        job = db.scalar(select(Job).where(Job.source_job_id == source_job_id))
-        values = {
-            "company_id": company.id,
-            "title": _first_value(rows, "title") or "Untitled Market Job",
-            "description": _first_value(rows, "description"),
-            "location": _combined_location(rows),
-            "work_mode": _normalize_mode(_first_value(rows, "mode")),
-            "experience_min": _first_float(rows, "exp_min"),
-            "experience_max": _first_float(rows, "exp_max"),
-            "salary_min": _first_float(rows, "salary_min"),
-            "salary_max": _first_float(rows, "salary_max"),
-            "status": "published",
-            "source_job_id": source_job_id,
-            "source": source,
-            "sector": _first_value(rows, "sector"),
-        }
-        if job is None:
-            db.add(Job(**values))
-            created_jobs += 1
-        else:
-            for field, value in values.items():
-                setattr(job, field, value)
-            updated_jobs += 1
-
-    db.commit()
+        for record_number, row in physical_rows:
+            source = _text(row, "source")
+            source_job_id = _text(row, "id")
+            identity = (source, source_job_id) if source and source_job_id else None
+            job = jobs_by_identity.get(identity) if identity else None
+            if job is None and identity:
+                job = db.scalar(select(Job).where(Job.source == source, Job.source_job_id == source_job_id))
+            existing = db.scalar(select(JobSourceObservation).where(JobSourceObservation.artifact_sha256 == _artifact_sha256(path), JobSourceObservation.csv_record_number == record_number))
+            if existing is None:
+                db.add(JobSourceObservation(
+                    artifact_sha256=_artifact_sha256(path), csv_record_number=record_number,
+                    source=source, source_job_id=source_job_id, pipeline_version=pipeline_version,
+                    pipeline_run_id=pipeline_run_id, source_status=_text(row, "status"),
+                    job_id=job.id if job else None,
+                ))
+                created_observations += 1
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
     return MarketImportResult(
-        active_rows=active_rows,
+        active_rows=len(active_rows),
         distinct_source_jobs=len(grouped),
         created_jobs=created_jobs,
         updated_jobs=updated_jobs,
         created_companies=created_companies,
         skipped_rows=skipped_rows,
+        created_observations=created_observations,
     )
 
 

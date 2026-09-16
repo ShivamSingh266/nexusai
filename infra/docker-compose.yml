@@ -5,7 +5,7 @@ services:
     image: postgres:16
     environment:
       POSTGRES_USER: nexusai
-      POSTGRES_PASSWORD: nexusai
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in infra/.env}
       POSTGRES_DB: nexusai
     ports:
       - "5432:5432"
@@ -15,7 +15,8 @@ services:
   backend:
     build: ../backend
     environment:
-      DATABASE_URL: postgresql://nexusai:nexusai@postgres:5432/nexusai
+      DATABASE_URL: postgresql://nexusai:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in infra/.env}@postgres:5432/nexusai
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?Set JWT_SECRET_KEY in infra/.env}
     ports:
       - "8000:8000"
     depends_on:

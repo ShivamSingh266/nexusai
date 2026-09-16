@@ -54,24 +54,31 @@ def _education_score(candidate: SkillProfile, job: Job) -> float | None:
 
 
 def _location_work_mode_score(candidate: SkillProfile, job: Job) -> float | None:
-    if not candidate.location and not job.location and not job.work_mode:
+    normalized_districts = [
+        district.casefold().strip()
+        for district in job.districts
+        if district.strip()
+    ]
+    if not candidate.location and not job.location and not normalized_districts and not job.work_mode:
         return None
     if not candidate.location:
         return None
-    if not job.location and not job.work_mode:
+    if not job.location and not normalized_districts and not job.work_mode:
         return None
     cand_loc = candidate.location.casefold().strip()
     if job.work_mode and job.work_mode.casefold() == "remote":
         return 1.0
     if "remote" in cand_loc:
         return 1.0
-    if not job.location:
+    if not job.location and not normalized_districts:
         return None
-    job_loc = job.location.casefold().strip()
-    if cand_loc == job_loc or cand_loc in job_loc or job_loc in cand_loc:
-        return 1.0
-    job_tokens = [tok.strip() for tok in job_loc.replace("|", ",").split(",") if tok.strip()]
-    if any(cand_loc == tok or tok in cand_loc for tok in job_tokens):
+    job_locations = normalized_districts
+    if job.location:
+        job_locations.append(job.location.casefold().strip())
+    if any(
+        cand_loc == job_loc or cand_loc in job_loc or job_loc in cand_loc
+        for job_loc in job_locations
+    ):
         return 1.0
     return 0.0
 

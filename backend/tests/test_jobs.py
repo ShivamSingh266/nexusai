@@ -26,7 +26,11 @@ from sqlalchemy.pool import StaticPool
 from app.db.base import Base
 from app.main import app
 from app.api.deps import get_db
-from app.models.user import Role
+from app.models.company import Company
+from app.models.job import Job
+from app.models.job_observation import JobLocationObservation
+from app.models.user import Role, User
+from app.core.security import create_access_token, hash_password
 
 # ---------------------------------------------------------------------------
 # Isolated test database
@@ -100,6 +104,21 @@ def client() -> TestClient:
 def _register_and_login(
     client: TestClient, email: str, password: str, role: str
 ) -> str:
+    if role in {"government", "admin"}:
+        db: Session = _JobsTestingSessionLocal()
+        try:
+            role_record = db.query(Role).filter(Role.name == role).one()
+            user = User(
+                email=email,
+                password_hash=hash_password(password),
+                full_name="Test User",
+                role_id=role_record.id,
+            )
+            db.add(user)
+            db.commit()
+            return create_access_token(user.id, role)
+        finally:
+            db.close()
     resp = client.post(
         "/api/v1/auth/register",
         json={"email": email, "password": password, "full_name": "Test User", "role": role},
@@ -609,6 +628,55 @@ class TestJobFilters:
         assert resp.status_code == 200
         data = resp.json()["data"]
         assert all("Nairobi" in j["location"] for j in data)
+
+    def test_filter_by_normalized_market_districts_without_duplicates(
+        self, client: TestClient, setup: str
+    ):
+        db = _JobsTestingSessionLocal()
+        try:
+            company = db.query(Company).filter(Company.company_name == "Normalized Market Corp").first()
+            if company is None:
+                company = Company(company_name="Normalized Market Corp")
+                db.add(company)
+                db.flush()
+            recruiter_job = Job(
+                company_id=company.id,
+                title="Legacy Location Job",
+                location="Pune",
+                status="published",
+            )
+            market_job = Job(
+                company_id=company.id,
+                title="Multi District Market Job",
+                status="published",
+            )
+            db.add_all([recruiter_job, market_job])
+            db.flush()
+            db.add_all(
+                [
+                    JobLocationObservation(job_id=market_job.id, district="Pune"),
+                    JobLocationObservation(job_id=market_job.id, district="Mumbai"),
+                ]
+            )
+            db.commit()
+            recruiter_job_id = recruiter_job.id
+            market_job_id = market_job.id
+        finally:
+            db.close()
+
+        response = client.get("/api/v1/jobs?location=Pune")
+        assert response.status_code == 200
+        jobs = response.json()["data"]
+        matching_ids = [job["id"] for job in jobs if job["id"] in {recruiter_job_id, market_job_id}]
+        assert matching_ids.count(recruiter_job_id) == 1
+        assert matching_ids.count(market_job_id) == 1
+        market_response = next(job for job in jobs if job["id"] == market_job_id)
+        assert market_response["location"] is None
+        assert market_response["districts"] == ["Mumbai", "Pune"]
+
+        unrelated = client.get("/api/v1/jobs?location=Nairobi")
+        assert unrelated.status_code == 200
+        assert market_job_id not in [job["id"] for job in unrelated.json()["data"]]
 
     def test_filter_by_employment_type(self, client: TestClient, setup: str):
         resp = client.get("/api/v1/jobs?employment_type=full_time")

@@ -12,6 +12,8 @@ from app.db.base import Base
 from app.main import app
 from app.models.canonical_skill import CanonicalSkill
 from app.models.user import Role
+from app.models.user import User
+from app.core.security import create_access_token, hash_password
 from app.services import government_data
 
 
@@ -67,6 +69,21 @@ def client():
 
 
 def register(client: TestClient, email: str, role: str) -> str:
+    if role in {"government", "admin"}:
+        db = TestingSessionLocal()
+        try:
+            role_record = db.query(Role).filter(Role.name == role).one()
+            user = User(
+                email=email,
+                password_hash=hash_password("password123"),
+                full_name="Government User",
+                role_id=role_record.id,
+            )
+            db.add(user)
+            db.commit()
+            return create_access_token(user.id, role)
+        finally:
+            db.close()
     response = client.post(
         "/api/v1/auth/register",
         json={

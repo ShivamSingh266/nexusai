@@ -77,7 +77,10 @@ def matching_jobs(
     jobs = db.scalars(
         select(Job)
         .where(Job.status == JobStatus.published.value)
-        .options(selectinload(Job.job_skills))
+        .options(
+            selectinload(Job.job_skills),
+            selectinload(Job.location_observations),
+        )
         .order_by(Job.id)
     ).all()
     results: list[MatchingResultResponse] = []
@@ -103,7 +106,10 @@ def matching_candidates(
     job = db.scalar(
         select(Job)
         .where(Job.id == job_id)
-        .options(selectinload(Job.job_skills))
+        .options(
+            selectinload(Job.job_skills),
+            selectinload(Job.location_observations),
+        )
     )
     is_admin = current_user.role.name == "admin"
     if job is None or (not is_admin and current_user.company_id != job.company_id):

@@ -13,6 +13,7 @@ from sqlalchemy import (
     Numeric,
     String,
     Text,
+    UniqueConstraint,
     func,
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -47,6 +48,7 @@ class Job(Base):
     __table_args__ = (
         # Recruiter views filtered by company + status
         Index("ix_jobs_company_status", "company_id", "status"),
+        UniqueConstraint("source", "source_job_id", name="uq_jobs_source_source_job_id"),
     )
 
     id: Mapped[int] = mapped_column(primary_key=True)
@@ -89,6 +91,11 @@ class Job(Base):
         String(64),
         nullable=True,
     )
+
+    posting_time_type: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    posted_date: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    anticipated_start_min: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    anticipated_start_max: Mapped[str | None] = mapped_column(String(50), nullable=True)
 
     sector: Mapped[str | None] = mapped_column(
         String(100),
@@ -175,6 +182,26 @@ class Job(Base):
         cascade="all, delete-orphan",
         passive_deletes=True,
     )
+
+    source_observations: Mapped[list["JobSourceObservation"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        back_populates="job",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+
+    location_observations: Mapped[list["JobLocationObservation"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
+        back_populates="job",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+
+    @property
+    def districts(self) -> list[str]:
+        """Return normalized imported districts without changing legacy location."""
+        return sorted(
+            (observation.district for observation in self.location_observations),
+            key=str.casefold,
+        )
 
     shortlists: Mapped[list["Shortlist"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
         back_populates="job",

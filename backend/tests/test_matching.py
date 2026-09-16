@@ -14,6 +14,7 @@ from app.models.applicant_skill import ApplicantSkill
 from app.models.canonical_skill import CanonicalSkill
 from app.models.company import Company
 from app.models.job import Job
+from app.models.job_observation import JobLocationObservation
 from app.models.job_skill import JobSkill
 from app.models.user import Role, User
 
@@ -391,6 +392,44 @@ def test_core_match_candidate_to_job_components():
     # Available weights: 0.6 + 0.1 + 0.05 + 0.05 = 0.8
     # Score: (0.5*0.6 + 1.0*0.1 + 1.0*0.05 + 1.0*0.05) / 0.8 = (0.3 + 0.1 + 0.05 + 0.05) / 0.8 = 0.5 / 0.8 = 0.625
     assert result.score == pytest.approx(0.625)
+
+
+def test_core_matching_accepts_any_normalized_market_district_without_weight_changes():
+    from app.core.matching import MATCHING_WEIGHTS, match_candidate_to_job
+    from app.core.representations import SkillProfile, SkillProfileSkill
+
+    candidate = SkillProfile(
+        subject_id=1,
+        subject_type="applicant",
+        taxonomy_version="v1.2.1",
+        skills=(SkillProfileSkill(skill_id="SKILL_0001", taxonomy_version="v1.2.1"),),
+        location="Mumbai",
+    )
+    job = Job(id=1, company_id=1, title="Market Engineer", status="published")
+    job.location_observations = [
+        JobLocationObservation(job_id=1, district="Pune"),
+        JobLocationObservation(job_id=1, district="Mumbai"),
+    ]
+    job.job_skills = [
+        JobSkill(
+            id=1,
+            job_id=1,
+            skill_id="SKILL_0001",
+            taxonomy_version="v1.2.1",
+            role_importance=1.0,
+        )
+    ]
+
+    result = match_candidate_to_job(candidate, job)
+
+    assert result.component_scores["location_work_mode"] == 1.0
+    assert MATCHING_WEIGHTS == {
+        "skill_coverage": 0.60,
+        "semantic_similarity": 0.20,
+        "experience": 0.10,
+        "education": 0.05,
+        "location_work_mode": 0.05,
+    }
 
 
 def test_core_match_candidate_experience_out_of_range():

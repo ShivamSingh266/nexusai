@@ -21,10 +21,12 @@ Future extension point:
 import math
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
-from sqlalchemy.orm import Session
+from sqlalchemy import exists, select
+from sqlalchemy.orm import Session, selectinload
 
 from app.api.deps import get_current_user_optional, get_db, require_roles
 from app.models.job import Job, JobStatus
+from app.models.job_observation import JobLocationObservation
 from app.models.user import User
 from app.schemas.job import JobCreate, JobListResponse, JobResponse, JobUpdate
 
@@ -98,7 +100,13 @@ def _build_list_query(
     if title:
         q = q.filter(Job.title.ilike(f"%{title}%"))
     if location:
-        q = q.filter(Job.location.ilike(f"%{location}%"))
+        q = q.filter(
+            Job.location.ilike(f"%{location}%")
+            | exists().where(
+                (JobLocationObservation.job_id == Job.id)
+                & JobLocationObservation.district.ilike(f"%{location}%")
+            )
+        )
     if employment_type:
         q = q.filter(Job.employment_type == employment_type)
     if work_mode:
@@ -199,7 +207,8 @@ def list_jobs(
 
     total = q.count()
     jobs = (
-        q.order_by(Job.created_at.desc())
+        q.options(selectinload(Job.location_observations))
+        .order_by(Job.created_at.desc())
         .offset((page - 1) * page_size)
         .limit(page_size)
         .all()
@@ -235,7 +244,11 @@ def get_job(
     - Recruiters can view any job that belongs to their company (any status).
     - All other callers can only view published jobs.
     """
-    job = db.get(Job, job_id)
+    job = db.scalar(
+        select(Job)
+        .where(Job.id == job_id)
+        .options(selectinload(Job.location_observations))
+    )
 
     if job is None:
         raise HTTPException(

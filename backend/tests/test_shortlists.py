@@ -14,6 +14,7 @@ from app.models.company import Company
 from app.models.job import Job
 from app.models.shortlist import Shortlist
 from app.models.user import Role, User
+from app.core.security import create_access_token, hash_password
 
 engine = create_engine(
     "sqlite://",
@@ -408,7 +409,20 @@ def test_unauthenticated_requests_are_rejected(client: TestClient):
 
 def test_admin_can_manage_any_shortlist(client: TestClient):
     token_rec, _, job_id = create_recruiter_and_job(client, "comp_o")
-    token_admin, _ = register(client, "admin_shortlist@nexusai.com", "admin")
+    db: Session = TestingSessionLocal()
+    try:
+        admin_role = db.query(Role).filter(Role.name == "admin").one()
+        admin = User(
+            email="admin_shortlist@nexusai.com",
+            password_hash=hash_password("password123"),
+            full_name="Admin Shortlist",
+            role_id=admin_role.id,
+        )
+        db.add(admin)
+        db.commit()
+        token_admin = create_access_token(admin.id, "admin")
+    finally:
+        db.close()
     _, cand_id = register(client, "cand_o@test.com", "applicant")
 
     # Admin shortlists candidate for recruiter's job

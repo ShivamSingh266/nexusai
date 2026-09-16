@@ -10,6 +10,7 @@ from app.db.base import Base
 from app.db.seed_market_jobs import import_market_jobs
 from app.models.company import Company
 from app.models.job import Job
+from app.models.job_observation import JobLocationObservation, JobSourceObservation
 from app.models.user import Role, User
 
 
@@ -89,7 +90,7 @@ def test_import_deduplicates_locations_maps_fields_and_is_idempotent(tmp_path):
         db.add(existing_company)
         db.commit()
 
-        first = import_market_jobs(db, path)
+        first = import_market_jobs(db, path, expected_sha256=None, expected_row_count=None)
         assert first.active_rows == 2
         assert first.distinct_source_jobs == 1
         assert first.created_jobs == 1
@@ -101,15 +102,19 @@ def test_import_deduplicates_locations_maps_fields_and_is_idempotent(tmp_path):
         assert imported.source == "naukri:indian-job-market-dataset-2025"
         assert imported.status == "published"
         assert imported.company_id == existing_company.id
-        assert imported.location == "Mumbai | Pune"
+        assert imported.location is None
+        assert [item.district for item in imported.location_observations] == ["Mumbai", "Pune"]
+        assert db.query(JobSourceObservation).count() == 3
+        assert db.query(JobLocationObservation).count() == 2
         assert imported.work_mode == "remote"
         assert imported.sector == "IT/Software - Data & AI"
         assert float(imported.experience_min) == 2
         assert float(imported.salary_max) == 90000
 
-        second = import_market_jobs(db, path)
+        second = import_market_jobs(db, path, expected_sha256=None, expected_row_count=None)
         assert second.created_jobs == 0
         assert second.updated_jobs == 1
+        assert second.created_observations == 0
         assert db.query(Job).count() == 1
     finally:
         db.close()
@@ -121,14 +126,14 @@ def test_import_creates_missing_company_without_recruiter_and_reuses_it(tmp_path
     write_jobs_csv(path, [row(company="New Market Company")])
     db, engine = make_session()
     try:
-        result = import_market_jobs(db, path)
+        result = import_market_jobs(db, path, expected_sha256=None, expected_row_count=None)
         assert result.created_companies == 1
         company = db.query(Company).one()
         assert company.company_name == "New Market Company (Market Data)"
         assert company.recruiters == []
         assert db.query(Job).one().company_id == company.id
 
-        rerun = import_market_jobs(db, path)
+        rerun = import_market_jobs(db, path, expected_sha256=None, expected_row_count=None)
         assert rerun.created_companies == 0
         assert db.query(Company).count() == 1
     finally:
@@ -156,7 +161,7 @@ def test_recruiter_company_is_not_used_for_imported_jobs(tmp_path):
         )
         db.commit()
 
-        result = import_market_jobs(db, path)
+        result = import_market_jobs(db, path, expected_sha256=None, expected_row_count=None)
         assert result.created_companies == 1
         imported_job = db.query(Job).one()
         assert imported_job.company_id != company.id
@@ -196,16 +201,13 @@ def test_null_source_fields_remain_null_and_existing_jobs_are_untouched(tmp_path
         db.commit()
         existing_id = existing.id
 
-        import_market_jobs(db, path)
-        imported = db.query(Job).filter(Job.source_job_id == "100000000003").one()
-        assert imported.location is None
-        assert imported.sector is None
-        assert imported.source is None
-        assert imported.experience_min is None
-        assert imported.experience_max is None
-        assert imported.salary_min is None
-        assert imported.salary_max is None
-        assert imported.work_mode is None
+        result = import_market_jobs(db, path, expected_sha256=None, expected_row_count=None)
+        assert result.skipped_rows == 1
+        assert db.query(Job).filter(Job.source_job_id == "100000000003").count() == 0
+        observation = db.query(JobSourceObservation).one()
+        assert observation.source is None
+        assert observation.source_job_id == "100000000003"
+        assert observation.job_id is None
         assert db.get(Job, existing_id).title == "Recruiter Created Job"
         assert db.get(Job, existing_id).source_job_id is None
     finally:

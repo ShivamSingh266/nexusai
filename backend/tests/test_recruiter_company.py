@@ -18,7 +18,8 @@ from app.db.base import Base
 from app.db.session import SessionLocal
 from app.main import app
 from app.api.deps import get_db
-from app.models.user import Role
+from app.models.user import Role, User
+from app.core.security import create_access_token, hash_password
 
 # ---------------------------------------------------------------------------
 # Test database setup (in-memory SQLite)
@@ -95,6 +96,21 @@ def client() -> TestClient:
 
 
 def _register_and_login(client: TestClient, email: str, password: str, role: str) -> str:
+    if role in {"government", "admin"}:
+        db: Session = TestingSessionLocal()
+        try:
+            role_record = db.query(Role).filter(Role.name == role).one()
+            user = User(
+                email=email,
+                password_hash=hash_password(password),
+                full_name="Test User",
+                role_id=role_record.id,
+            )
+            db.add(user)
+            db.commit()
+            return create_access_token(user.id, role)
+        finally:
+            db.close()
     reg = client.post(
         "/api/v1/auth/register",
         json={
