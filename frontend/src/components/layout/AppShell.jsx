@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { useAuth } from '../../auth/AuthContext'
 
 const navItems = [
   { label: 'Overview', to: '/hiring/dashboard' },
@@ -8,6 +9,8 @@ const navItems = [
 ]
 
 export function AppShell({ children, title = 'Dashboard' }) {
+  const { currentUser, logout } = useAuth()
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur-sm">
@@ -36,6 +39,12 @@ export function AppShell({ children, title = 'Dashboard' }) {
               </NavLink>
             ))}
           </nav>
+          <div className="flex items-center gap-3">
+            <span className="hidden text-sm text-slate-600 sm:inline">{currentUser?.full_name}</span>
+            <button type="button" onClick={logout} className="text-sm font-semibold text-brand-700 hover:text-brand-800">
+              Log out
+            </button>
+          </div>
         </div>
       </header>
 
