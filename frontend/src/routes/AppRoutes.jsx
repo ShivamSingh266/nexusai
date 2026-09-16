@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import App from '../App'
-import { ApplicantLayout } from '../app/layouts/ApplicantLayout'
+import { AppLayout } from '../app/layouts/AppLayout'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { DashboardPage } from '../pages/applicant/DashboardPage'
 import { ProfilePage } from '../pages/applicant/ProfilePage'
@@ -41,7 +41,7 @@ export function AppRoutes() {
         path="/applicant"
         element={
           <ProtectedRoute allowedRoles={['applicant']}>
-            <ApplicantLayout />
+            <AppLayout />
           </ProtectedRoute>
         }
       >
@@ -60,7 +60,7 @@ export function AppRoutes() {
         path="/hiring"
         element={
           <RoleRoute allowedRoles={['recruiter']} fallbackPath="/login">
-            <ApplicantLayout />
+            <AppLayout />
           </RoleRoute>
         }
       >
@@ -75,7 +75,7 @@ export function AppRoutes() {
         path="/government"
         element={
           <RoleRoute allowedRoles={['government']} fallbackPath="/login">
-            <ApplicantLayout />
+            <AppLayout />
           </RoleRoute>
         }
       >

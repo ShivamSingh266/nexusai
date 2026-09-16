@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
-import { CheckCircle, AlertCircle, Lightbulb, Compass, Building, Users } from 'lucide-react'
-import { Card } from '../../components/ui/Card'
+import { Compass, Building, Users } from 'lucide-react'
 import { PriorityTag } from '../../components/common/PriorityTag'
 import { AccordionRow } from '../../components/common/AccordionRow'
-import { StatCard } from '../../components/common/StatCard'
 import { LoadingSkeleton } from '../../components/common/LoadingSkeleton'
 import { governmentService } from '../../services/governmentService'
 

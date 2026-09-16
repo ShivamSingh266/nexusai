@@ -40,9 +40,25 @@ export const hiringService = {
   createJob: async (job) => {
     try {
       return await api.post('/api/v1/jobs', job)
-    } catch {
-      // Mock creation when offline
-      return { data: { id: Date.now(), ...job, status: 'published' } }
+    } catch (err) {
+      // Re-throw genuine API responses (e.g. 403 company required, 422 validation, 401 unauthorized)
+      const isNetworkError =
+        !err?.message ||
+        err.message.includes('Failed to fetch') ||
+        err.message.includes('NetworkError') ||
+        err.message.includes('Load failed')
+      if (!isNetworkError) {
+        throw err
+      }
+      // Mock creation when offline / backend not running
+      return {
+        data: {
+          id: Date.now(),
+          ...job,
+          status: job.status || 'published',
+          created_at: new Date().toISOString(),
+        },
+      }
     }
   },
 
@@ -52,13 +68,67 @@ export const hiringService = {
   getCompanyProfile: async () => {
     try {
       return await api.get('/api/v1/recruiter/company')
-    } catch {
+    } catch (err) {
+      // Re-throw genuine 404 so caller can render empty/create state
+      if (err?.message?.includes('404') || err?.message?.includes('No company profile found')) {
+        throw err
+      }
+      // Re-throw other genuine HTTP errors (401, 403, etc.)
+      const isNetworkError =
+        !err?.message ||
+        err.message.includes('Failed to fetch') ||
+        err.message.includes('NetworkError') ||
+        err.message.includes('Load failed')
+      if (!isNetworkError) {
+        throw err
+      }
       return { data: companyProfile }
     }
   },
 
-  createCompanyProfile: (company) => api.post('/api/v1/recruiter/company', company),
-  updateCompanyProfile: (company) => api.patch('/api/v1/recruiter/company', company),
+  createCompanyProfile: async (company) => {
+    try {
+      return await api.post('/api/v1/recruiter/company', company)
+    } catch (err) {
+      const isNetworkError =
+        !err?.message ||
+        err.message.includes('Failed to fetch') ||
+        err.message.includes('NetworkError') ||
+        err.message.includes('Load failed')
+      if (!isNetworkError) {
+        throw err
+      }
+      return {
+        data: {
+          id: Date.now(),
+          ...company,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        },
+      }
+    }
+  },
+
+  updateCompanyProfile: async (company) => {
+    try {
+      return await api.patch('/api/v1/recruiter/company', company)
+    } catch (err) {
+      const isNetworkError =
+        !err?.message ||
+        err.message.includes('Failed to fetch') ||
+        err.message.includes('NetworkError') ||
+        err.message.includes('Load failed')
+      if (!isNetworkError) {
+        throw err
+      }
+      return {
+        data: {
+          ...company,
+          updated_at: new Date().toISOString(),
+        },
+      }
+    }
+  },
 
   // TODO: Replace mock data when Candidate Matching API is available: GET /api/v1/candidates/matching
   getCandidates: async (jobId) => {

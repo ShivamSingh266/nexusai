@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Sparkles, TrendingUp, Compass, ArrowUpRight } from 'lucide-react'
+import { Sparkles, Compass } from 'lucide-react'
 import { Card } from '../../components/ui/Card'
 import { PriorityTag } from '../../components/common/PriorityTag'
 import { TrendArrow } from '../../components/common/TrendArrow'

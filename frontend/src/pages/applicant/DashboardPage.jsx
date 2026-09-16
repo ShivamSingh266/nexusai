@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { ApplicantLayout } from '../../app/layouts/ApplicantLayout'
 import { StatCard } from '../../components/common/StatCard'
 import { JobPreviewCard } from '../../components/dashboard/JobPreviewCard'
 import { ReadinessGauge } from '../../components/dashboard/ReadinessGauge'
@@ -10,8 +9,7 @@ import { applicantDashboardStats, applicantJobs, applicantInsights } from '../..
 
 export function DashboardPage() {
   return (
-    <ApplicantLayout>
-      <div className="space-y-6">
+    <div className="space-y-6">
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Overview</p>
@@ -75,6 +73,5 @@ export function DashboardPage() {
           </div>
         </section>
       </div>
-    </ApplicantLayout>
   )
 }
