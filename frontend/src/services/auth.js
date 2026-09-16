@@ -13,7 +13,16 @@ export const roleRedirectMap = {
 
 export const getDefaultDashboardForRole = (role) => roleRedirectMap[role] || '/'
 
-export const getAccessToken = () => localStorage.getItem(TOKEN_KEY)
+export const getAccessToken = () => {
+  const token = localStorage.getItem(TOKEN_KEY)
+  if (token) return token
+  try {
+    const stored = JSON.parse(localStorage.getItem('nexusai.auth'))
+    return stored?.access_token || null
+  } catch {
+    return null
+  }
+}
 
 export const getRefreshToken = () => localStorage.getItem(REFRESH_TOKEN_KEY)
 
@@ -44,6 +53,11 @@ export const getAuthHeaders = () => {
 export const saveSession = (data) => {
   if (data?.access_token) {
     localStorage.setItem(TOKEN_KEY, data.access_token)
+    localStorage.setItem('nexusai.auth', JSON.stringify({
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      token_type: data.token_type || 'bearer',
+    }))
   }
 
   if (data?.refresh_token) {
@@ -65,6 +79,7 @@ export const clearSession = () => {
   localStorage.removeItem(TOKEN_KEY)
   localStorage.removeItem(REFRESH_TOKEN_KEY)
   localStorage.removeItem(USER_KEY)
+  localStorage.removeItem('nexusai.auth')
 }
 
 const parseError = (data, fallbackMessage) => {
@@ -144,5 +159,10 @@ export const auth = {
     return true
   },
 }
+
+export const login = (credentials) => auth.login(credentials.email || credentials.username, credentials.password)
+export const register = (details) => auth.register(details)
+export const getCurrentUser = () => auth.getCurrentUser()
+export const logout = () => auth.logout()
 
 export default auth
