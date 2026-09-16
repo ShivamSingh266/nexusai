@@ -20,3 +20,31 @@ export const searchTaxonomy = (query, accessToken) => api.get('/taxonomy/skills/
 })
 
 export const getVersions = (accessToken) => api.get('/meta/versions', { accessToken })
+
+export const getCandidateMatches = (jobId, accessToken) => (
+  api.get(`/matching/candidates/${jobId}`, { accessToken })
+)
+
+export const listShortlists = (accessToken, query = {}) => (
+  api.get('/shortlists', { accessToken, query })
+)
+
+export const listShortlistsForJob = (jobId, accessToken) => (
+  api.get(`/shortlists/job/${jobId}`, { accessToken })
+)
+
+export const createShortlist = (payload, accessToken) => (
+  api.post('/shortlists', payload, { accessToken })
+)
+
+export const updateShortlist = (shortlistId, payload, accessToken) => (
+  api.patch(`/shortlists/${shortlistId}`, payload, { accessToken })
+)
+
+export const deleteShortlist = (shortlistId, accessToken) => (
+  api.delete(`/shortlists/${shortlistId}`, { accessToken })
+)
+
+export const deleteShortlistCandidate = (jobId, candidateId, accessToken) => (
+  api.delete(`/shortlists/job/${jobId}/candidate/${candidateId}`, { accessToken })
+)
