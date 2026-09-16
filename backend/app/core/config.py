@@ -17,6 +17,13 @@ class Settings(BaseSettings):
     JWT_ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     JWT_REFRESH_TOKEN_EXPIRE_DAYS: int = 7
 
+    # Member 5 scoring configuration
+    MATCH_SKILL_WEIGHT: float = 0.60
+    MATCH_SEMANTIC_WEIGHT: float = 0.20
+    MATCH_EXPERIENCE_WEIGHT: float = 0.10
+    MATCH_EDUCATION_WEIGHT: float = 0.05
+    MATCH_LOCATION_MODE_WEIGHT: float = 0.05
+
     @model_validator(mode="after")
     def reject_production_placeholder_secret(self) -> "Settings":
         placeholders = {
@@ -30,10 +37,21 @@ class Settings(BaseSettings):
             self.ENVIRONMENT.casefold() != "development"
             and self.JWT_SECRET_KEY.strip().casefold() in placeholders
         ):
-            raise ValueError("JWT_SECRET_KEY must not use a placeholder outside development")
+            raise ValueError(
+                "JWT_SECRET_KEY must not use a placeholder outside development"
+            )
         if "*" in self.BACKEND_CORS_ORIGINS:
-            raise ValueError("BACKEND_CORS_ORIGINS must not include '*' when credentials are enabled")
+            raise ValueError(
+                "BACKEND_CORS_ORIGINS must not include '*' when credentials are enabled"
+            )
         return self
+
+    # Member 5 scoring configuration
+    MATCH_SKILL_WEIGHT: float = 0.60
+    MATCH_SEMANTIC_WEIGHT: float = 0.20
+    MATCH_EXPERIENCE_WEIGHT: float = 0.10
+    MATCH_EDUCATION_WEIGHT: float = 0.05
+    MATCH_LOCATION_MODE_WEIGHT: float = 0.05
 
     model_config = SettingsConfigDict(
         env_file=".env",
