@@ -10,6 +10,7 @@ from app.api.taxonomy import router as taxonomy_router
 from app.api.matching import router as matching_router
 from app.api.gaps import router as gaps_router
 from app.api.roadmaps import router as roadmaps_router
+from app.api.shortlists import router as shortlists_router
 from app.models.user import User
 
 
@@ -29,6 +30,7 @@ app.include_router(taxonomy_router, prefix="/api/v1")
 app.include_router(matching_router, prefix="/api/v1")
 app.include_router(gaps_router, prefix="/api/v1")
 app.include_router(roadmaps_router, prefix="/api/v1")
+app.include_router(shortlists_router, prefix="/api/v1")
 
 @app.get("/health", tags=["System"])
 def health_check():
