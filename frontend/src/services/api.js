@@ -1,6 +1,7 @@
 import { API_BASE_URL } from '../config/env'
 
 const API_PREFIX = '/api/v1'
+const TOKEN_KEY = 'nexusai_access_token'
 
 export class ApiError extends Error {
   constructor(message, { status, detail, response } = {}) {
@@ -12,9 +13,14 @@ export class ApiError extends Error {
   }
 }
 
+const getAccessToken = () => localStorage.getItem(TOKEN_KEY)
+
 const buildUrl = (path, query) => {
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`
-  const url = new URL(`${API_BASE_URL}${API_PREFIX}${normalizedPath}`)
+  let normalizedPath = path.startsWith('/') ? path : `/${path}`
+  if (!normalizedPath.startsWith(API_PREFIX) && !normalizedPath.startsWith('http')) {
+    normalizedPath = `${API_PREFIX}${normalizedPath}`
+  }
+  const url = new URL(`${API_BASE_URL}${normalizedPath}`)
 
   if (query) {
     Object.entries(query).forEach(([key, value]) => {
@@ -35,12 +41,13 @@ const getErrorDetail = (responseBody, status) => {
   return `Request failed with status ${status}.`
 }
 
-const request = async (path, options = {}) => {
+export const request = async (path, options = {}) => {
   const { accessToken, body, headers: customHeaders, query, ...fetchOptions } = options
+  const token = accessToken || getAccessToken()
   const headers = new Headers(customHeaders)
   const isFormData = body instanceof FormData
 
-  if (accessToken) headers.set('Authorization', `Bearer ${accessToken}`)
+  if (token) headers.set('Authorization', `Bearer ${token}`)
   if (body !== undefined && !isFormData && !headers.has('Content-Type')) {
     headers.set('Content-Type', 'application/json')
   }
@@ -76,8 +83,29 @@ export const api = {
   getUrl: (path) => `${API_BASE_URL}${API_PREFIX}${path.startsWith('/') ? path : `/${path}`}`,
   request,
   get: (path, options = {}) => request(path, { ...options, method: 'GET' }),
-  post: (path, body, options = {}) => request(path, { ...options, body, method: 'POST' }),
-  put: (path, body, options = {}) => request(path, { ...options, body, method: 'PUT' }),
-  patch: (path, body, options = {}) => request(path, { ...options, body, method: 'PATCH' }),
+  post: (path, bodyOrOptions, options = {}) => {
+    const isOptions = bodyOrOptions && !Array.isArray(bodyOrOptions) && typeof bodyOrOptions === 'object' && ('body' in bodyOrOptions || 'accessToken' in bodyOrOptions)
+    if (isOptions && Object.keys(options).length === 0) {
+      return request(path, { ...bodyOrOptions, method: 'POST' })
+    }
+    return request(path, { ...options, body: bodyOrOptions, method: 'POST' })
+  },
+  put: (path, bodyOrOptions, options = {}) => {
+    const isOptions = bodyOrOptions && !Array.isArray(bodyOrOptions) && typeof bodyOrOptions === 'object' && ('body' in bodyOrOptions || 'accessToken' in bodyOrOptions)
+    if (isOptions && Object.keys(options).length === 0) {
+      return request(path, { ...bodyOrOptions, method: 'PUT' })
+    }
+    return request(path, { ...options, body: bodyOrOptions, method: 'PUT' })
+  },
+  patch: (path, bodyOrOptions, options = {}) => {
+    const isOptions = bodyOrOptions && !Array.isArray(bodyOrOptions) && typeof bodyOrOptions === 'object' && ('body' in bodyOrOptions || 'accessToken' in bodyOrOptions)
+    if (isOptions && Object.keys(options).length === 0) {
+      return request(path, { ...bodyOrOptions, method: 'PATCH' })
+    }
+    return request(path, { ...options, body: bodyOrOptions, method: 'PATCH' })
+  },
   delete: (path, options = {}) => request(path, { ...options, method: 'DELETE' }),
+  del: (path, options = {}) => request(path, { ...options, method: 'DELETE' }),
 }
+
+export default api

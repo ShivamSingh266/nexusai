@@ -1,58 +1,141 @@
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '../../auth/AuthContext'
-import { getRoleHome } from '../../auth/roleUtils'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { AuthLayout } from '../../app/layouts/AuthLayout'
+import { auth, getDefaultDashboardForRole } from '../../services/auth'
+
+const roleOptions = ['applicant', 'recruiter', 'government']
 
 export function RegisterPage() {
-  const { register } = useAuth()
   const navigate = useNavigate()
-  const [form, setForm] = useState({ email: '', password: '', full_name: '', role: 'applicant' })
+  const [form, setForm] = useState({
+    full_name: '',
+    email: '',
+    password: '',
+    role: 'applicant',
+  })
   const [error, setError] = useState('')
-  const [submitting, setSubmitting] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  const update = (field, value) => setForm((current) => ({ ...current, [field]: value }))
+  const user = auth.getUser()
+
+  if (auth.isAuthenticated() && user) {
+    return <Navigate to={getDefaultDashboardForRole(user.role)} replace />
+  }
+
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setForm((current) => ({ ...current, [name]: value }))
+  }
+
   const handleSubmit = async (event) => {
     event.preventDefault()
+    setLoading(true)
     setError('')
-    setSubmitting(true)
+
     try {
-      const user = await register(form)
-      navigate(getRoleHome(user.role), { replace: true })
-    } catch (requestError) {
-      setError(requestError.message)
+      const result = await auth.register(form)
+      const nextUser = result?.data || auth.getUser()
+      const redirectTo = getDefaultDashboardForRole(nextUser?.role)
+
+      navigate(redirectTo, { replace: true })
+    } catch (submissionError) {
+      setError(submissionError.message || 'Registration failed')
     } finally {
-      setSubmitting(false)
+      setLoading(false)
     }
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
-      <section className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
-        <h1 className="text-2xl font-bold text-slate-900">Create your NexusAI account</h1>
-        <p className="mt-2 text-sm text-slate-600">Register as an applicant or recruiter.</p>
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          <label className="block text-sm font-medium text-slate-700">Full name
-            <input required minLength="2" value={form.full_name} onChange={(event) => update('full_name', event.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 px-3.5 py-2.5" />
+    <AuthLayout title="Create account" subtitle="Join NexusAI and start exploring opportunities">
+      <form onSubmit={handleSubmit} className="space-y-5">
+        <div>
+          <label htmlFor="full_name" className="mb-2 block text-sm font-medium text-slate-700">
+            Full name
           </label>
-          <label className="block text-sm font-medium text-slate-700">Email
-            <input required type="email" value={form.email} onChange={(event) => update('email', event.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 px-3.5 py-2.5" />
+          <input
+            id="full_name"
+            name="full_name"
+            type="text"
+            required
+            value={form.full_name}
+            onChange={handleChange}
+            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-sm text-slate-800 outline-none transition focus:border-brand-300 focus:bg-white focus:ring-2 focus:ring-brand-100"
+            placeholder="Jane Doe"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
+            Email
           </label>
-          <label className="block text-sm font-medium text-slate-700">Password
-            <input required minLength="8" type="password" value={form.password} onChange={(event) => update('password', event.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 px-3.5 py-2.5" />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            value={form.email}
+            onChange={handleChange}
+            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-sm text-slate-800 outline-none transition focus:border-brand-300 focus:bg-white focus:ring-2 focus:ring-brand-100"
+            placeholder="jane@example.com"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="password" className="mb-2 block text-sm font-medium text-slate-700">
+            Password
           </label>
-          <label className="block text-sm font-medium text-slate-700">Account type
-            <select value={form.role} onChange={(event) => update('role', event.target.value)} className="mt-2 w-full rounded-xl border border-slate-200 px-3.5 py-2.5">
-              <option value="applicant">Applicant</option>
-              <option value="recruiter">Recruiter</option>
-            </select>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            required
+            value={form.password}
+            onChange={handleChange}
+            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-sm text-slate-800 outline-none transition focus:border-brand-300 focus:bg-white focus:ring-2 focus:ring-brand-100"
+            placeholder="Create a password"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="role" className="mb-2 block text-sm font-medium text-slate-700">
+            Role
           </label>
-          {error ? <p className="rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</p> : null}
-          <button disabled={submitting} className="w-full rounded-xl bg-brand-600 px-4 py-3 text-sm font-semibold text-white disabled:opacity-60">
-            {submitting ? 'Creating account...' : 'Create account'}
-          </button>
-          <p className="text-center text-sm text-slate-600">Already registered? <Link className="font-semibold text-brand-700" to="/login">Sign in</Link></p>
-        </form>
-      </section>
-    </main>
+          <select
+            id="role"
+            name="role"
+            value={form.role}
+            onChange={handleChange}
+            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-sm text-slate-800 outline-none transition focus:border-brand-300 focus:bg-white focus:ring-2 focus:ring-brand-100"
+          >
+            {roleOptions.map((role) => (
+              <option key={role} value={role}>
+                {role}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {error && (
+          <div className="rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700">
+            {error}
+          </div>
+        )}
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full rounded-xl bg-brand-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:bg-brand-400"
+        >
+          {loading ? 'Creating account...' : 'Create account'}
+        </button>
+
+        <div className="text-center text-sm text-slate-600">
+          Already have an account?{' '}
+          <Link to="/login" className="font-semibold text-brand-700 hover:text-brand-800">
+            Sign in
+          </Link>
+        </div>
+      </form>
+    </AuthLayout>
   )
 }
